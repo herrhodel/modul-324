@@ -6,7 +6,7 @@
 
 ## GIT
 
-tutorial
+[Tutorial](https://www.hostinger.com/tutorials/git-tutorial)
 
 ### Pull Request
 
@@ -20,6 +20,8 @@ Vorteile
 Kommunikationsstiel
 
 ### Git Flow 
+
+[Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 Feature Branch
 Release Branch

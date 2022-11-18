@@ -10,3 +10,4 @@
 ### Maven
 ### NPM / Yarn
 ### Bundler
+### Composer (PHP)
