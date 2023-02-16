@@ -160,3 +160,13 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 - Hohes Vertrauen
 
 ---
+
+<!-- _class: big center -->
+# DevOps ist ein Mindset
+
+- Ausfallsicherheit
+- Risikominimierung
+- Kundenzufriedenheit
+- Mitarbeiterzufriedenheit
+
+---

@@ -2,7 +2,13 @@
 sidebar_position: 6
 ---
 
+
 # Testautomation
+
+## Handlungsziele
+
+2. Konfiguriert und nutzt die lokale Entwicklungsumgebung integriert mit den automatisierenden Tools.
+    1. Kennt Möglichkeiten, um automatisierende Tools in der Entwicklungsumgebung zu nutzen (z.B. Linting, Build, Ausführen, **Testen**, Versionierung, Abhängigkeiten/Pakete).
 
 ## Wofür ist es gut?
 

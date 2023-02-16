@@ -4,6 +4,12 @@ sidebar_position: 7
 
 # CI / CD
 
+## Handlunsziele
+
+4. Nutzt einen automatisierten Integrationsprozess (Build, Qualitätssicherung/Test der Artefakte). 
+    1. Kennt Möglichkeiten, um die Applikation und Komponenten automatisiert zu builden, auszuführen und zu testen (z.B. Build-Management wie gradle/npm, Container, Pipelines etc.).
+5. Kennt Möglichkeiten, um die Applikation automatisiert zu deployen und konfigurieren (z.B. Infrastructure as Code, Scripting, Virtualisierung, Konfiguration mit YAML, Vaults, Profile, SSH-Key etc.).
+
 ## Continious Integration
 
 ### Automatisierungstools

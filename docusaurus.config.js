@@ -4,12 +4,13 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const oembed = require('@agentofuser/remark-oembed');
+const modulConfig = require('./modul.config')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Modul 324',
-  tagline: 'DevOps-Prozesse mit Tools unterstützen',
-  url: 'https://codingluke.github.io',
+  title: modulConfig.title || "Unbenanntes Modul",
+  tagline: modulConfig.tagline || "Tolles Modul!",
+  url: modulConfig.url,
   baseUrl: '/bbzbl-modul-324/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
@@ -21,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'codingluke', // Usually your GitHub org/user name.
-  projectName: 'bbzbl-modul-324', // Usually your repo name.
+  organizationName: modulConfig.organizationName || 'noname-corp', // Usually your GitHub org/user name.
+  projectName: modulConfig.repoName, // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -49,10 +50,13 @@ const config = {
     ["devserver-config",
       {
         proxy: {
-          "/bbzbl-modul-324/slides": {
+          [`/${modulConfig.repoName}/slides`]: {
             target: "http://localhost:3003",
             pathRewrite: function(/** @type {string} */ path, /** @type {any} */ _req) {
-              return path.replace("/bbzbl-modul-324/slides", '') + ".md";
+              if (path.match(/.*\..*$/)) {
+                return path.replace(`/${modulConfig.repoName}/slides`, '');
+              }
+              return path.replace(`/${modulConfig.repoName}/slides`, '') + ".md";
             }
           }
         }
@@ -70,7 +74,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/codingluke/bbzbl-modul-324/tree/main/',
+            `https://github.com/codingluke/${modulConfig.repoName}/tree/main/`,
           remarkPlugins: [oembed],
         },
         // blog: {
@@ -94,7 +98,7 @@ const config = {
         theme: { light: 'neutral', dark: 'forest' },
       },
       navbar: {
-        title: 'Modul 324',
+        title: modulConfig.title,
         logo: {
           alt: 'BBZBL Logo',
           src: 'img/bbzbl-logo.png',
@@ -108,7 +112,7 @@ const config = {
           },
           { to: '/slides/', label: 'Präsentationen', position: 'left' },
           {
-            href: 'https://github.com/codingluke/bbzbl-modul-324',
+            href: `https://github.com/codingluke/${modulConfig.repoName}`,
             label: 'GitHub',
             position: 'right',
           },

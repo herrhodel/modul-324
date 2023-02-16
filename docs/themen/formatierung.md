@@ -4,6 +4,11 @@ sidebar_position: 4
 
 # Formatierung
 
+## Handlungsziele
+
+2. Konfiguriert und nutzt die lokale Entwicklungsumgebung integriert mit den automatisierenden Tools.
+    1. Kennt Möglichkeiten, um automatisierende Tools in der Entwicklungsumgebung zu nutzen (z.B. **Linting**, Build, Ausführen, Testen, Versionierung, Abhängigkeiten/Pakete).
+
 ## Wiso wichtig?
 
 - Lesbarkeit
