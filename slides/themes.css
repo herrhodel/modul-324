@@ -124,9 +124,9 @@ section hr {
 }
 
 /* big */
-section.big {
-  justify-content: center;
-}
+/* section.big { */
+/*   justify-content: center; */
+/* } */
 section.big h1 {
   font-size: 3rem;
 }
@@ -172,11 +172,14 @@ section.center {
   text-align: center;
   justify-content: center;
 }
-
 section.center footer {
   text-align: left;
   justify-content: left;
 }
+section.center ul {
+  list-style: none;
+} 
+
 
 section blockquote {
   color: var(--color-fg-blockquote);

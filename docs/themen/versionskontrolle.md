@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Versionskontrolle
 
 ## Wofür ist es gut?
