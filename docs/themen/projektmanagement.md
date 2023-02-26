@@ -40,7 +40,7 @@ Beiden Modelle verwenden eine **iterative Vorgehensweise**. Anders als in klassi
 
 Wo _SCRUM_ einer klar definiertem Struktur mit vordefinierten Zeremonien folgt (Daily, Refinement, Review, Retrospektive) ist _Kanban_ einfacher/flexibler gehalten.
 
-Da das Modul 324 nicht Projektmanagement im Fokus hat, **werden wir für das Projekt _Kanban_ verwenden**. 
+Da das Modul 324 nicht Projektmanagement im Fokus hat, **werden wir für das Projekt _Kanban_ verwenden**.
 
 :::note Protip
 
@@ -67,28 +67,165 @@ Für Arbeitspakete, welche **"In Process" sind, jedoch auf externe gewartet wird
 
 ![](images/github-kanban-board.png)
 
-1. Mit **Add item** können direkt neue Arbeitspakete (*Issues*) erstellt werden
-2. Mit dem rechten **+** können neue Stati hinzugefügt werden (z.B. *Waiting*)
-3. Die *Arbeitspakete 3* und *4* wurden noch nicht begonnen
-4. Das *Arbeitspaket 2* ist begonnen und es wurde eine Person zugeteilt
-5. Das *Arbeitspaket 1* wurde bereits fertiggestellt
+1. Mit **Add item** können direkt neue Arbeitspakete (_Issues_) erstellt werden
+2. Mit dem rechten **+** können neue Stati hinzugefügt werden (z.B. _Waiting_)
+3. Die _Arbeitspakete 3_ und _4_ wurden noch nicht begonnen
+4. Das _Arbeitspaket 2_ ist begonnen und es wurde eine Person zugeteilt
+5. Das _Arbeitspaket 1_ wurde bereits fertiggestellt
 
-### Arbeitspakete (Github Issues)
+## Arbeitspakete (Github Issues)
 
-Die Arbeitspakete, auch Issues/Stories/Cards/Tickets usw. genannt beinhalten die Tätigkeiten, welche erledigt werden müssen, um das Projekt erfolgreich umzusetzen.
+Die Arbeitspakete beschreiben die Aufgaben, welche erledigt werden müssen, um das Projekt erfolgreich umzusetzen. Sie werden je nach Software und Vorgehensmodell auch [**Issues**](https://github.com/features/issues), Stories, Cards, Tickets usw. genannt.
 
-- haben **Abhängigkeiten**
-- müssen eine **klare "Definition of Done"** besitzen
-- sollten **nur eine Aufgabe** beschreiben
-  - die ein "und" im Titel haben, können meistens Aufgesplitte
+:::info Arbeitspakete
 
-[:link: Github Issues](https://github.com/features/issues)
+- müssen eine **klare "Definition of Done"** (Akzeptanzkriterien) besitzen
+- dürfen **nur eine Aufgabe** beschreiben
+  - Ein _"und"_ im Titel ist ein Hinweis darauf, dass ein Arbeitspaket aufgesplittet werden soll
+- müssen **auf den Code verweisen** (Branch, Pull-Request), welcher die Beschreibung implementiert
+  - Natürlich geht dies erst wenn das Paket "In Progress" ist und es sich durch Code lösen lässt
+- müssen vorhandene **Abhängigkeiten** aufzeigen
+  - Es gibt auch Arbeitspakete die isoliert, also unabhängig implementiert werden können
 
-#### Verknüpfen mit Code (git, pull requests)
+:::
 
-### Akzeptanzkriterien
+### Definition of Done (Akzeptanzkriterien)
 
-## Kosten / Nutzen
+Die Akzeptanzkriterien geben vor, **wie geprüft werden kann ob das Arbeitspaket korrekt umgesetzt wurde**. Grundsätzlich kann zwischen zwei Arbeitspaket-Typen unterschieden werden, _[formelle Tätigkeiten](#1-formelle-und-administrative-tätigkeiten)_ und [_programmierbare Funktionalitäten_](#2-programmierbare-funktionalitäten).
+
+:::danger wichtig
+
+Ein Arbeitspaket ist erst dann "Done" wenn die Akzeptanzkriterien auf dem Testsystem erfolgreich durchgeführt wurden.
+
+:::
+
+#### 1. Formelle und administrative Tätigkeiten
+
+- Beschaffung von Infrastruktur
+- Beschaffung von Lizenzen
+- Meetings mit Kunden
+- Ausarbeiten der Arbeitspakete
+- ...
+
+:::info Formell: Definition of Done
+
+**Erwartete Artefakte** (z.B. GUI Skizzen, Dokumente usw.) und wo diese gefunden werden können.
+
+:::
+
+#### 2. Programmierbare Funktionalitäten
+
+- Jegliche Software Funktionalität die umgesetzt werden soll
+- DevOps Automatisierungen
+- Infrastruktur as Code
+- Alles was in Code resultiert
+- ...
+
+:::info Code: Definition of Done
+
+**Erwartete Funktionalität**, wo sie gefunden und getestet werden kann
+
+:::
+
+#### :superhero: Protip
+
+:::tip Schnelles Kundenfeedback
+
+Wenn das Projekt im DevOps Model mit einer [CI/CD Pipeline](./ci-cd.md) umgesetzt wird, können die abgeschlossenen Arbeitspakete direkt im Testsystem überprüft werden, da neue Funktionen _(features)_ automatisiert online gestellt _(deployed)_ werden.
+
+- Optimalerweise kann dies direkt vom Kunde übernommen werden.
+
+:::
+
+:::tip Automatisierte Integrations-Tests
+
+Automatisierter **Integrations Test** durch ein Testing Framework wie [Puperteer](https://pptr.dev/), [Playwright](https://playwright.dev/), [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html) **spart Zeit und garantiert das Funktionieren auf Zeit**
+
+- Geht nur für Web-Applikationen
+- Vergleichbar mit einem Suchmaschienen-Bot
+
+:::
+
+### Eine klare Aufgabe pro Arbeitspaket
+
+Jede komplexe Aufgabe besteht aus vielen einfacheren Unteraufgaben. Dabei gibt es häufig Unteraufgaben, die schneller und solche die weniger schnell gelöst werden können.
+
+Wenn nun eine komplexe Aufgabe in einem Arbeitspaket beschreiben wird, werden diese meistens sowieso im Arbeitspaket nacheinander gelöst. Dies führt dazu, dass nun Teilbereiche der Aufgabe bereits fertiggestellt sind, jedoch noch nicht Abgeschlossen werden können, da sie von der komplexeren Aufgabe blockiert werden.
+
+:::info Vorteil von Kleinen Arbeitspakete
+
+- Sie sind **schneller gelöst**
+- Es gibt ein **Erfolgsgefühl** ein Arbeitspaket abschiessen zu können
+- Die **Motivation steigt** das Arbeitspaket überhaupt anzufangen
+- Es **verhindert Knotenrisiko** ("Eigentlich sind wir ja fertig, wenn nur Xy funktionieren würde")
+- Garantiert schnelles **Feedback vom Kunden**
+  - erhöht die **Kundenzufriedenheit**
+  - vermeidet, **löst Missverständnisse** frühzeitig
+- Macht die **Gedanken frei** um sich auf etwas zu konzentrieren
+- Wenn bereits beim erstellen der Arbeitspakete überlegt wird, ob man dieses noch mehr unterteilen kann, setzt man sich schon früh mit der Funktionalität auseinander. Dies führt dazu dass **eventuelle Probleme schon früher erkennbar werden**.
+
+:::
+
+:::tip lesse faire
+
+- Natürlich darf man im agilen Projektmanagement ein **Arbeitspaket auch noch im Nachhinein splitten!** :sweat_smile:
+
+:::
+
+### Verweist auf den Code
+
+Handelt es sich bei einem Arbeitspaket um eine **programmierbare Funktionalität**, muss das Arbeitspaket auf den Code verweisen, welches es umsetzt.
+
+Dies wird in diesem Modul durch die Versionskontrolle [_Git_](https://git-scm.com/) in Kombination mit der Plattform [_GitHub_](https://github.com) ermöglicht.
+
+Natürlich muss die Verweisung erst angefügt werden, sobald das Arbeitspaket umgesetzt wird und in den Status **In Progress** gesetzt wird.
+
+### Verweist auf Abhängigkeiten
+
+Ist ein Arbeitspaket abhängig von anderen Arbeitspaketen, muss diese Abhängigkeit klar ersichtlich sein. Dafür wird am Anfang der Beschreibung eine Liste erstellt, welche auf Arbeitspakete verweist, welche **davor** gemacht werden müssen.
+
+In GitHub Markdown sieht eine Liste so aus:
+
+````markdown
+# Abhängigkeiten
+
+- [X] #1
+- [ ] #2
+
+# Beschreibung
+
+Die genaue Beschreibung...
+``````
+
+- `#1` ist die **Nummer des Github Issues** und wird automatisch von GitHub aufgelöst
+
+### Github Issues: Verweisung auf Code und Abhängigkeiten in 
+
+![](images/issue-referenzen.png)
+
+1. Das _Arbeitspaket 2_ ist **"In Progress"**
+2. Es **hat Abhängigkeiten**, wobei eine noch aussteht
+3. Es **zeigt auf denn _"Pull-Request"_**, also den Code welche zur implementation benötigt wird.
+
+## Kosten / Nutzen der Agilen Vorgehensweise
+
+Bei der Agile Vorgehensweise mit dem DevOps Model, entstehen traditionellerweise **am Anfang höhere Kosten**, da alle Entwicklungsumgebungen, das Testsystem, die CI/CD Pipelines usw. aufgebaut werden müssen. Während des Projektes sinken die Kosten für gewöhnlich. 
+
+Der **wichtigste Nutzen ist die Risikominimierung**, dass das Ziel auch wirklich der Kundenerwartung entspricht und tatsächlich funktionsfähig ist.
+
+:::info Vorteile der Agilen Vorgehensweise
+
+- Missverständnisse werden früh gefunden durch **schnelles Kundenfeedback**
+- Es existiert von Anfang an ein **Funktionsfähiges System**
+- Für alle **klarer Entwicklungsstand** _(Keine Katze im Sack)_
+    - works-on-my-machine wird ausgehebelt
+- Das **Risiko wird minimiert**, da der Kunde frühzeitig einschreiten kann, wenn was nicht stimmt.
+- Teure **Nachbesserungsarbeiten, werden vermieden**
+- Die **administrativen Tätigkeiten werden gesenkt**, da weniger über das Einhalten von Verträgen (Pflichtenheft) verhandelt werden muss
+- Eine Funktionalität wird meistens erst klar wenn man sie umsetzt. Die "hands-on" Mentalität führt dazu dass schnell umgesetzt wird und somit **schneller klar ist, was der Kunde genau will und wie es am besten umsetzbar** ist.
+
+:::
+
 
 ## Kundenfeedback
 
