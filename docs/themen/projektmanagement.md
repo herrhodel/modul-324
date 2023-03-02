@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Handlungsziel
 
-1. Erfasst und verwaltet die Anforderungen und Umsetzungsschritte nachvollziehbar für die Entwicklung **im Team**
+1. Erfasst und verwaltet die Anforderungen und **Umsetzungsschritte nachvollziehbar** für die Entwicklung im Team.
    1. Kennt den Nutzen bezüglich **kontinuierlicher toolunterstützter Entwicklung** und Wartung (z.B. MVP, Kundenfeedback, Kosten/Nutzen, Qualität, Risiko- reduktion).
    2. Kennt **Vorgehensweisen zur Verwaltung von Anforderungen** (z.B. Stories, Issues, Akzeptanzkriterien etc.).
    3. Kennt Vorgehensweisen zur nachvollziehbaren Entwicklung im Team (z.B. **Verknüpfung Commit mit Story, Pullrequest/PeerReview**).
@@ -33,35 +33,39 @@ sidebar_position: 2
 >
 > -- https://agilemanifesto.org/iso/de/manifesto.html
 
-## Das Vorgehensmodell _Kanban_
+## Das Vorgehensmodell **Kanban**
 
 Im Agilen Projektmanagement haben sich die Vorgehensmodelle _SCRUM_ und _Kanban_ durchgesetzt.
 Beiden Modelle verwenden eine **iterative Vorgehensweise**. Anders als in klassischen Vorgehensmodelle wie dem Wasserfall-Model, werden in die **Arbeitspakete fortwährend erstellt und angepasst**.
 
 Wo _SCRUM_ einer klar definiertem Struktur mit vordefinierten Zeremonien folgt (Daily, Refinement, Review, Retrospektive) ist _Kanban_ einfacher/flexibler gehalten.
 
-Da das Modul 324 nicht Projektmanagement im Fokus hat, **werden wir für das Projekt _Kanban_ verwenden**.
 
-:::note Protip
+<box>
+
+In _Kanban_ werden die Arbeitspakete in verschiedene **Stati** eingeteilt. Standardmässig heissen diese:
+
+- **To do:** Arbeitspakete welche bereits definiert wurden, jedoch noch nicht bearbeitet werden
+- **In Process:** Arbeitspakete welche momentan gerade bearbeitet werden
+  - immer nur <u>1 Arbeitspaket pro Person</u>
+- **Done:** Arbeitspakete welche erfolgreich umgesetzt wurden
+- **Waiting:** Für Arbeitspakete, welche "In Process" sind, jedoch auf externe Einflüsse gewartet wird darf ein <u>optionaler Status</u> _Waiting_ eingeführt werden. (z.B. Warten auf eine Unterschrift, Infrastruktur usw.)
+
+
+
+</box>
+
+Da das Modul 324 nicht Projektmanagement im Fokus hat, werden wir für das Projekt Kanban verwenden.
+
+
+
+
+:::tip Protip
 
 _Kanban_ eignet sich auch für kleine Privatprojekte, oder sogar zum Planen vom eigenen Tagesablauf.
 
 :::
 
-In _Kanban_ werden die Arbeitspakete in verschiedene Stati unterteilt. Standardmässig heissen diese:
-
-- **To do**: Arbeitspakete welche bereits definiert wurden, jedoch noch nicht bearbeitet werden
-- **In Process**: Arbeitspakete welche momentan gerade bearbeitet werden
-  - immer nur 1 Arbeitspaket pro Person
-- **Done**: Arbeitspakete welche erfolgreich umgesetzt wurden
-
-Dabei ist wichtig, dass immer nur **ein Arbeitspaket pro Person "In Process"** ist. Ansonsten gibt es bei _Kanban_ nicht so viele Regeln.
-
-:::tip Status Waiting
-
-Für Arbeitspakete, welche **"In Process" sind, jedoch auf externe gewartet wird** darf ein zusätzlicher Status _Waiting_ eingeführt werden. (z.B. Warten auf eine Unterschrift, Infrastruktur usw.)
-
-:::
 
 ### Einfaches Github Kanban Board
 
@@ -75,11 +79,13 @@ Für Arbeitspakete, welche **"In Process" sind, jedoch auf externe gewartet wird
 
 ## Arbeitspakete (Github Issues)
 
-Die Arbeitspakete beschreiben die Aufgaben, welche erledigt werden müssen, um das Projekt erfolgreich umzusetzen. Sie werden je nach Software und Vorgehensmodell auch [**Issues**](https://github.com/features/issues), Stories, Cards, Tickets usw. genannt.
+Die Arbeitspakete beschreiben die Aufgaben, welche erledigt werden müssen, um das Projekt erfolgreich umzusetzen. 
 
-:::info Arbeitspakete
+<box>
 
-- müssen eine **klare "Definition of Done"** (Akzeptanzkriterien) besitzen
+Sie werden je nach Software und Vorgehensmodell auch [**Issues**](https://github.com/features/issues), Stories, Cards, Tickets usw. genannt und:
+
+- müssen eine **klare ["Definition of Done"](#definition-of-done-akzeptanzkriterien)** (Akzeptanzkriterien) besitzen
 - dürfen **nur eine Aufgabe** beschreiben
   - Ein _"und"_ im Titel ist ein Hinweis darauf, dass ein Arbeitspaket aufgesplittet werden soll
 - müssen **auf den Code verweisen** (Branch, Pull-Request), welcher die Beschreibung implementiert
@@ -87,19 +93,16 @@ Die Arbeitspakete beschreiben die Aufgaben, welche erledigt werden müssen, um d
 - müssen vorhandene **Abhängigkeiten** aufzeigen
   - Es gibt auch Arbeitspakete die isoliert, also unabhängig implementiert werden können
 
-:::
+</box>
 
 ### Definition of Done (Akzeptanzkriterien)
 
 Die Akzeptanzkriterien geben vor, **wie geprüft werden kann ob das Arbeitspaket korrekt umgesetzt wurde**. Grundsätzlich kann zwischen zwei Arbeitspaket-Typen unterschieden werden, _[formelle Tätigkeiten](#1-formelle-und-administrative-tätigkeiten)_ und [_programmierbare Funktionalitäten_](#2-programmierbare-funktionalitäten).
 
-:::danger wichtig
 
-Ein Arbeitspaket ist erst dann "Done" wenn die Akzeptanzkriterien auf dem Testsystem erfolgreich durchgeführt wurden.
+#### 1. **Administrativen Tätigkeiten**
 
-:::
-
-#### 1. Formelle und administrative Tätigkeiten
+Definieren der erwartete **Artefakte** (z.B. GUI Skizzen, Dokumente usw.) und wo diese gefunden werden können:
 
 - Beschaffung von Infrastruktur
 - Beschaffung von Lizenzen
@@ -107,13 +110,9 @@ Ein Arbeitspaket ist erst dann "Done" wenn die Akzeptanzkriterien auf dem Testsy
 - Ausarbeiten der Arbeitspakete
 - ...
 
-:::info Formell: Definition of Done
+#### 2. **Programmierbare Funktionalitäten**
 
-**Erwartete Artefakte** (z.B. GUI Skizzen, Dokumente usw.) und wo diese gefunden werden können.
-
-:::
-
-#### 2. Programmierbare Funktionalitäten
+Definieren der erwarteten Funktionalität, **wo sie gefunden und getestet werden kann**:
 
 - Jegliche Software Funktionalität die umgesetzt werden soll
 - DevOps Automatisierungen
@@ -121,13 +120,11 @@ Ein Arbeitspaket ist erst dann "Done" wenn die Akzeptanzkriterien auf dem Testsy
 - Alles was in Code resultiert
 - ...
 
-:::info Code: Definition of Done
+:::danger wichtig
 
-**Erwartete Funktionalität**, wo sie gefunden und getestet werden kann
+Ein Arbeitspaket ist erst dann **"Done"** wenn die Akzeptanzkriterien <u>auf dem **Testsystem** erfolgreich durchgeführt</u> wurden.
 
 :::
-
-#### :superhero: Protip
 
 :::tip Schnelles Kundenfeedback
 
@@ -146,13 +143,15 @@ Automatisierter **Integrations Test** durch ein Testing Framework wie [Puperteer
 
 :::
 
-### Eine klare Aufgabe pro Arbeitspaket
+### **<u>Eine</u> klare Aufgabe** pro Arbeitspaket
 
 Jede komplexe Aufgabe besteht aus vielen einfacheren Unteraufgaben. Dabei gibt es häufig Unteraufgaben, die schneller und solche die weniger schnell gelöst werden können.
 
 Wenn nun eine komplexe Aufgabe in einem Arbeitspaket beschreiben wird, werden diese meistens sowieso im Arbeitspaket nacheinander gelöst. Dies führt dazu, dass nun Teilbereiche der Aufgabe bereits fertiggestellt sind, jedoch noch nicht Abgeschlossen werden können, da sie von der komplexeren Aufgabe blockiert werden.
 
-:::info Vorteil von Kleinen Arbeitspakete
+<box>
+
+#### Vorteil von kleinen Arbeitspakete
 
 - Sie sind **schneller gelöst**
 - Es gibt ein **Erfolgsgefühl** ein Arbeitspaket abschiessen zu können
@@ -164,27 +163,27 @@ Wenn nun eine komplexe Aufgabe in einem Arbeitspaket beschreiben wird, werden di
 - Macht die **Gedanken frei** um sich auf etwas zu konzentrieren
 - Wenn bereits beim erstellen der Arbeitspakete überlegt wird, ob man dieses noch mehr unterteilen kann, setzt man sich schon früh mit der Funktionalität auseinander. Dies führt dazu dass **eventuelle Probleme schon früher erkennbar werden**.
 
-:::
+</box>
 
-:::tip lesse faire
+:::important 
 
-- Natürlich darf man im agilen Projektmanagement ein **Arbeitspaket auch noch im Nachhinein splitten!** :sweat_smile:
+- Natürlich darf man im agilen Projektmanagement ein <u>Arbeitspaket auch noch im Nachhinein splitten!</u> :sweat_smile:
 
 :::
 
 ### Verweist auf den Code
 
-Handelt es sich bei einem Arbeitspaket um eine **programmierbare Funktionalität**, muss das Arbeitspaket auf den Code verweisen, welches es umsetzt.
+Handelt es sich bei einem Arbeitspaket um eine **programmierbare Funktionalität**, muss das Arbeitspaket auf den **Code verweisen**, welches es umsetzt.
 
 Dies wird in diesem Modul durch die Versionskontrolle [_Git_](https://git-scm.com/) in Kombination mit der Plattform [_GitHub_](https://github.com) ermöglicht.
 
-Natürlich muss die Verweisung erst angefügt werden, sobald das Arbeitspaket umgesetzt wird und in den Status **In Progress** gesetzt wird.
+Natürlich muss die Verweisung erst angefügt werden, **sobald das Arbeitspaket umgesetzt wird** und in den Status <u>"In Progress"</u> gesetzt wurde.
 
 ### Verweist auf Abhängigkeiten
 
-Ist ein Arbeitspaket abhängig von anderen Arbeitspaketen, muss diese Abhängigkeit klar ersichtlich sein. Dafür wird am Anfang der Beschreibung eine Liste erstellt, welche auf Arbeitspakete verweist, welche **davor** gemacht werden müssen.
+Ist ein Arbeitspaket abhängig von anderen Arbeitspaketen, muss diese Abhängigkeit klar ersichtlich sein. Dafür wird am Anfang der Beschreibung eine Liste erstellt, welche **auf Arbeitspakete verweist, welche davor gemacht werden müssen**.
 
-In GitHub Markdown sieht eine Liste so aus:
+In GitHub Markdown sieht eine Liste folgendermassen aus:
 
 ````markdown
 # Abhängigkeiten
@@ -197,41 +196,39 @@ In GitHub Markdown sieht eine Liste so aus:
 Die genaue Beschreibung...
 ``````
 
-- `#1` ist die **Nummer des Github Issues** und wird automatisch von GitHub aufgelöst
+- `#1` ist die **Nummer des Github Issues** und wird <u>automatisch</u> von GitHub aufgelöst
 
 ### Github Issues: Verweisung auf Code und Abhängigkeiten in 
 
 ![](images/issue-referenzen.png)
 
 1. Das _Arbeitspaket 2_ ist **"In Progress"**
-2. Es **hat Abhängigkeiten**, wobei eine noch aussteht
-3. Es **zeigt auf denn _"Pull-Request"_**, also den Code welche zur implementation benötigt wird.
+2. Es hat **Abhängigkeiten**, wobei eine noch aussteht
+3. Es zeigt auf denn **_"Pull-Request"_, also den Code** welche zur implementation benötigt wird.
 
 ## Kosten / Nutzen der Agilen Vorgehensweise
 
 Bei der Agile Vorgehensweise mit dem DevOps Model, entstehen traditionellerweise **am Anfang höhere Kosten**, da alle Entwicklungsumgebungen, das Testsystem, die CI/CD Pipelines usw. aufgebaut werden müssen. Während des Projektes sinken die Kosten für gewöhnlich. 
 
-Der **wichtigste Nutzen ist die Risikominimierung**, dass das Ziel auch wirklich der Kundenerwartung entspricht und tatsächlich funktionsfähig ist.
+<box>
 
-:::info Vorteile der Agilen Vorgehensweise
+### Vorteile der Agilen Vorgehensweise
 
 - Missverständnisse werden früh gefunden durch **schnelles Kundenfeedback**
 - Es existiert von Anfang an ein **Funktionsfähiges System**
-- Für alle **klarer Entwicklungsstand** _(Keine Katze im Sack)_
-    - works-on-my-machine wird ausgehebelt
-- Das **Risiko wird minimiert**, da der Kunde frühzeitig einschreiten kann, wenn was nicht stimmt.
+- Für alle **klarer Entwicklungsstand** _(Keine Katze im Sack, works-on-my-machine wird ausgehebelt)_
+- Das **<u>Risiko wird minimiert</u>**, da der Kunde frühzeitig einschreiten kann, wenn was nicht stimmt.
 - Teure **Nachbesserungsarbeiten, werden vermieden**
 - Die **administrativen Tätigkeiten werden gesenkt**, da weniger über das Einhalten von Verträgen (Pflichtenheft) verhandelt werden muss
-- Eine Funktionalität wird meistens erst klar wenn man sie umsetzt. Die "hands-on" Mentalität führt dazu dass schnell umgesetzt wird und somit **schneller klar ist, was der Kunde genau will und wie es am besten umsetzbar** ist.
+- Eine Funktionalität wird meistens erst klar wenn man sie umsetzt. Die "hands-on" Mentalität führt dazu dass schnell umgesetzt wird und somit schneller klar ist, **was der <u>Kunde</u> genau will** und wie es **am besten umsetzbar** ist.
 
-:::
-
+</box>
 
 ## Kundenfeedback
 
 ## :toolbox: Tools
 
-- [**Github Projects**](https://docs.github.com/en/issues/planning-and-tracking-with-projects) **:point_left: Im Unterricht verwendet**
+- [**Github Projects**](https://docs.github.com/en/issues/planning-and-tracking-with-projects) <u>:point_left: Im Unterricht verwendet</u>
 - [Trello](https://trello.com/)
 - [Jira](https://www.atlassian.com/software/jira)
   - wird von vielen Grossfirmen verwendet in Kombiation mit BitBucket und Confluence
