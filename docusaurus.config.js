@@ -110,7 +110,7 @@ const config = {
             label: "Unterlagen",
           },
           {
-            to: `${modulConfig.url}/${modulConfig.repoName}/assets/pdf/${modulConfig.pdfs[0].filename}.pdf`,
+            to: `${modulConfig.url}/${modulConfig.repoName}/assets/pdf/${modulConfig.pdfs[0].filename}`,
             label: "PDF Download",
             position: "right",
           },
