@@ -75,13 +75,6 @@ export default {
       </R>
     );
   },
-  blockquote: (props) => {
-    return (
-      <R type="bracket" brackets={["left", "right"]} color="gray" strokeWidth="3" show={true} animate={false}>
-        {props.children}
-      </R>
-    );
-  },
   ub: (props) => {
     return (
       <R type="bracket" brackets={["bottom"]} color="gray" strokeWidth="2" show={true} animate={false}>

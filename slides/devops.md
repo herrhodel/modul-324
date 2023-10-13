@@ -9,7 +9,6 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 <!-- _class: big center -->
 
 # DevOps
-## Modul 324
 
 ---
 
@@ -52,7 +51,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## Infrastruktur
 
-- Hardware 
+- Hardware
 - Virtuelle Maschinen
 - Cloud
 
@@ -91,9 +90,10 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # DevOops
 
-Laut [Wikipedia](https://en.wikipedia.org/wiki/DevOps) existiert **keine universelle Definition** vom Begriff _**DevOps**_.
+Laut [Wikipedia](https://en.wikipedia.org/wiki/DevOps) existiert **keine
+universelle Definition** vom Begriff _**DevOps**_.
 
---- 
+---
 
 <!-- _class: big center -->
 
@@ -101,7 +101,8 @@ Laut [Wikipedia](https://en.wikipedia.org/wiki/DevOps) existiert **keine univers
 
 Der Begriff ist **nicht geschützt**!
 
-Es handelt sich um ein sogenanntes [Buzzword](https://en.wikipedia.org/wiki/Buzzword)!
+Es handelt sich um ein sogenanntes
+[Buzzword](https://en.wikipedia.org/wiki/Buzzword)!
 
 ---
 
@@ -127,7 +128,7 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 <!-- _class: big center -->
 
-# :superhero_woman: :superhero: 
+# :superhero_woman: :superhero:
 
 # **Jeder** kann und kennt alles
 
@@ -155,13 +156,14 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 # **Kunde** hilft dabei!
 
-- Schnelles Feedback 
+- Schnelles Feedback
 - Hohe Zufriedenheit
 - Hohes Vertrauen
 
 ---
 
 <!-- _class: big center -->
+
 # DevOps ist ein Mindset
 
 - Ausfallsicherheit

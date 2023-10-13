@@ -6,9 +6,13 @@ sidebar_position: 3
 
 ## Handlunsziele
 
-3. Wendet die Sourcecode- und Artefaktverwaltung für eine anforderungsorientierte Entwicklung im Team an.
-    1. Kennt Praktiken, um Sourcecode featurebasiert zu verwalten (z.B. **GIT-Workflow**, **semantic Versioning** etc.).
-    2. Kennt Möglichkeiten, um benötigte und erstellte Artefakte/Binaries zu verwalten (z.B. Artefakt-Repository/Registry, Dependency-Management wie npm/maven etc.).
+3. Wendet die Sourcecode- und Artefaktverwaltung für eine
+   anforderungsorientierte Entwicklung im Team an.
+   1. Kennt Praktiken, um Sourcecode featurebasiert zu verwalten (z.B.
+      **GIT-Workflow**, **semantic Versioning** etc.).
+   2. Kennt Möglichkeiten, um benötigte und erstellte Artefakte/Binaries zu
+      verwalten (z.B. Artefakt-Repository/Registry, Dependency-Management wie
+      npm/maven etc.).
 
 ## Wofür ist es gut?
 
@@ -20,22 +24,16 @@ sidebar_position: 3
 
 ### Pull Request
 
-Machen
-Erläutern
-Grösse
+Machen Erläutern Grösse
 
 **Code Review**
 
-Vorteile
-Kommunikationsstiel
+Vorteile Kommunikationsstiel
 
-### Git Flow 
+### Git Flow
 
 [Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
-Feature Branch
-Release Branch
-Semantic versionin
+Feature Branch Release Branch Semantic versionin
 
 ## Semantic Versioning
-

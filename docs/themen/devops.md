@@ -8,7 +8,8 @@ sidebar_position: 1
 
 ## :teacher: Präsentation
 
-[:computer: Im Browser öffnen](pathname:///slides/devops) | [:floppy_disk: PDF speichern](pathname:///slides/devops.pdf)
+[:computer: Im Browser öffnen](pathname:///slides/devops) |
+[:floppy_disk: PDF speichern](pathname:///slides/devops.pdf)
 
 <iframe src="/bbzbl-modul-324/slides/devops" width="100%" height="400px"></iframe>
 
@@ -16,6 +17,6 @@ sidebar_position: 1
 
 ## Wiso wichtig?
 
-- Kennt den Nutzen bezüglich kontinuierlicher toolunterstützter Entwicklung
-und Wartung (z.B. MVP, Kundenfeedback, Kosten/Nutzen, Qualität, Risiko-
-reduktion).
+- Kennt den Nutzen bezüglich kontinuierlicher toolunterstützter Entwicklung und
+  Wartung (z.B. MVP, Kundenfeedback, Kosten/Nutzen, Qualität, Risiko-
+  reduktion).

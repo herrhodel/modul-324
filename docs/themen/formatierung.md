@@ -6,8 +6,11 @@ sidebar_position: 4
 
 ## Handlungsziele
 
-2. Konfiguriert und nutzt die lokale Entwicklungsumgebung integriert mit den automatisierenden Tools.
-    1. Kennt Möglichkeiten, um automatisierende Tools in der Entwicklungsumgebung zu nutzen (z.B. **Linting**, Build, Ausführen, Testen, Versionierung, Abhängigkeiten/Pakete).
+2. Konfiguriert und nutzt die lokale Entwicklungsumgebung integriert mit den
+   automatisierenden Tools.
+   1. Kennt Möglichkeiten, um automatisierende Tools in der Entwicklungsumgebung
+      zu nutzen (z.B. **Linting**, Build, Ausführen, Testen, Versionierung,
+      Abhängigkeiten/Pakete).
 
 ## Wiso wichtig?
 
@@ -25,23 +28,23 @@ sidebar_position: 4
 - Mac: `⌘` + `⇧` + `F`
 
 :::tip Autoformat beim Speichern
-`Window -> Preferences -> Java -> Editor -> SaveActions` das Häckchen **Source Code Formattieruen** setzen.
-Nun sollte der Source Code automatisch formattiert werden, sobald die Datei gespeichert wird.
-:::
+`Window -> Preferences -> Java -> Editor -> SaveActions` das Häckchen **Source
+Code Formattieruen** setzen. Nun sollte der Source Code automatisch formattiert
+werden, sobald die Datei gespeichert wird. :::
 
 ### IntelliJ
 
 **Tastenkürzel**
 
 - Windows / Linux: `Ctrl` + `Alt` + `L`
-- Mac: `⌥` +  `⌘` + `L`
+- Mac: `⌥` + `⌘` + `L`
 
-:::tip Autoformat beim Speichern
-`Preferences -> Tools -> Actions On Save` die Häckchen **Reformat Code** und **Optimize imports** setzen.
-Nun sollte der Source Code automatisch formatiert werden, sobald die Datei gespeichert wird.
+:::tip Autoformat beim Speichern `Preferences -> Tools -> Actions On Save` die
+Häckchen **Reformat Code** und **Optimize imports** setzen. Nun sollte der
+Source Code automatisch formatiert werden, sobald die Datei gespeichert wird.
 :::
 
-## Automatisches Linting 
+## Automatisches Linting
 
 ### Was ist Linting
 
@@ -51,4 +54,3 @@ Der unterschied von Linting zu Formatierung
 
 - [Coala](https://github.com/coala/coala)
 - [SonarQube](https://www.sonarqube.org)
-
