@@ -30,9 +30,12 @@ keywords:
 - Mac: `⌘` + `⇧` + `F`
 
 :::tip Autoformat beim Speichern
+
 `Window -> Preferences -> Java -> Editor -> SaveActions` das Häckchen **Source
 Code Formattieruen** setzen. Nun sollte der Source Code automatisch formattiert
-werden, sobald die Datei gespeichert wird. :::
+werden, sobald die Datei gespeichert wird. 
+
+:::
 
 ### IntelliJ
 
@@ -42,8 +45,10 @@ werden, sobald die Datei gespeichert wird. :::
 - Mac: `⌥` + `⌘` + `L`
 
 :::tip Autoformat beim Speichern `Preferences -> Tools -> Actions On Save` die
+
 Häckchen **Reformat Code** und **Optimize imports** setzen. Nun sollte der
 Source Code automatisch formatiert werden, sobald die Datei gespeichert wird.
+
 :::
 
 ## Automatisches Linting

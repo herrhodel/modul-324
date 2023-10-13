@@ -11,7 +11,9 @@ Hier finden Sie Informationen und Unterlagen zum Unterricht.
 :::tip
 
 - Ausserdem finden Sie auch weiterführende Links.
-- Auf diese werden Sie im Unterricht nicht ausdrücklich hingewiesen. :::
+- Auf diese werden Sie im Unterricht nicht ausdrücklich hingewiesen.
+
+:::
 
 ## Entwicklungsumgebung
 
