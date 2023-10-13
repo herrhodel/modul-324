@@ -11,7 +11,7 @@ const config = {
   title: modulConfig.title || "Unbenanntes Modul",
   tagline: modulConfig.tagline || "Tolles Modul!",
   url: modulConfig.url,
-  baseUrl: '/applikationsentwicklung/324-devops-prozesse-mit-tools-unterstuetzen/',
+  baseUrl: `/${modulConfig.repoName}/`,
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
