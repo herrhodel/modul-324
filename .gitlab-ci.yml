@@ -19,6 +19,8 @@ pages:
   script:
     - yarn build
     - yarn build-marp && yarn run copy-marp-images
+    - yarn build-marp-pdf
+    - yarn build:pdf
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
