@@ -10,10 +10,7 @@ keywords:
 
 ## :teacher: Präsentation
 
-[:computer: Im Browser öffnen](pathname:///slides/devops) |
-[:floppy_disk: PDF speichern](pathname:///slides/devops.pdf)
-
-<iframe src="pathname:///slides/devops" width="100%" height="400px"></iframe>
+<Slide name="devops" />
 
 ## Bedeutung
 
