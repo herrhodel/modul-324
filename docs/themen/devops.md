@@ -13,7 +13,7 @@ keywords:
 [:computer: Im Browser öffnen](pathname:///slides/devops) |
 [:floppy_disk: PDF speichern](pathname:///slides/devops.pdf)
 
-<iframe src="/bbzbl-modul-324/slides/devops" width="100%" height="400px"></iframe>
+<iframe src="pathname:///slides/devops" width="100%" height="400px"></iframe>
 
 ## Bedeutung
 
