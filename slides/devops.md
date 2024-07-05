@@ -12,71 +12,103 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-# **Dev**elopment - Software Entwickelung
+# :pencil: Aufgabe 1: **Von der Idee zum Produkt**
 
-::: columns
+::: columns l65
 
-## Projektmanagement
+1. Zufällige 4er Gruppen
 
-- Anforderungsanalyse
-- Prozesssteuerung
-- Arbeitspakete
+2. Plakat erstellen über die Schritte welche nötig sind um Programmcode von der
+   Idee bis zum Kunde zu bringen.
+3. Präsentieren im Plenum
 
-## Programmieren
+::: split light-bg
 
-- Neue Software erschaffen
-- Bestehende Software verbessern/erweitern
+- 🕵️ _"Gruppenarbeit"_
 
-::: split
-
-## Qualitätsmanagement
-
-- Automatische Tests
-- Nomenklatur (Formatierung)
-- Codequalität garantieren (Linting)
-
-## Ausliefern
-
-- Software bauen
-- Images erstellen (Containerisieren)
-- In Betrieb nehmen
+- :clock2: **30 Minuten**
+- :toolbox: Plakat
+- :dart: Vorwissen abfragen
 
 :::
 
 ---
 
-# **Op**eration**s** - IT Betrieb
+<!-- _class: big center -->
 
-::: columns
+# Development
 
-## Infrastruktur
+## Software Entwickelung
+
+---
+
+# Projektmanagement
+
+- Anforderungsanalyse
+- Prozesssteuerung
+- Arbeitspakete
+
+---
+
+# Programmieren
+
+- Neue Software erschaffen
+- Bestehende Software verbessern/erweitern
+
+---
+
+# Qualitätsmanagement
+
+- Automatische Tests
+- Nomenklatur (Formatierung)
+- Codequalität garantieren (Linting)
+
+---
+
+# Ausliefern
+
+- Software bauen
+- Images erstellen (Containerisieren)
+- "In Betrieb nehmen" ?
+
+---
+
+<!-- _class: big center -->
+
+# Operations
+
+## IT Betrieb
+
+---
+
+# Infrastruktur
 
 - Hardware
 - Virtuelle Maschinen
 - Cloud
 
-## Service
+---
+
+# Service
 
 - Picketdienst
 - Monitoring
 - Backup / Failure recovery
 
-::: split
+---
 
-## Applikationen
+# Applikationen betreiben
 
-**Konventionell**
+## Konventionell
 
-- Webserver
-- Datenbanken (DBA)
+- Artefakte (.jar / .war / sourcecode)
+- Manuelle Konfiguration der Servers
 
-**Container**
+## Container
 
 - Docker / Images
 - Docker Compose / Swarm
 - Kubernetes / OpenShift
-
-:::
 
 ---
 
@@ -112,7 +144,7 @@ Es handelt sich um ein sogenanntes
 
 ---
 
-<!-- _class: big center -->
+<!-- _class: big center emoji-list -->
 
 # DevOps / **Prinzipien**
 
@@ -120,13 +152,13 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 <hr>
 
-- :white_check_mark: Geteilte Verantwortung :key:
-- :white_check_mark: Arbeitsprozess Automatisierung :robot:
-- :white_check_mark: Schelles Feedback :boomerang:
+- Geteilte Verantwortung :key:
+- Arbeitsprozess Automatisierung :robot:
+- Schelles Feedback :boomerang:
 
 ---
 
-<!-- _class: big center -->
+<!-- _class: big center emoji-list -->
 
 # :superhero_woman: :superhero:
 
@@ -138,7 +170,7 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 ---
 
-<!-- _class: big center -->
+<!-- _class: big center emoji-list -->
 
 # :robot:
 
@@ -150,7 +182,7 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 ---
 
-<!-- _class: big center -->
+<!-- _class: big center emoji-list -->
 
 # :crown:
 
@@ -162,7 +194,11 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 ---
 
-<!-- _class: big center -->
+![bg w:65%](./images/devops-loop.png)
+
+---
+
+<!-- _class: big center emoji-list -->
 
 # DevOps ist ein Mindset
 

@@ -234,6 +234,20 @@ h3:first-child {
   grid-template-columns: 70% 20%;
 }
 
+.light-bg {
+  background-color: hsla(0, 0%, 10%, 0.08);
+}
+
+section.dark {
+  --h1-color: white;
+  --h2-color: white;
+}
+section.dark h1,
+section.dark h2 
+{
+  text-shadow: 2px 2px 5px black;
+}
+
 /* variables */
 
 section {
@@ -248,8 +262,8 @@ section {
   /* --color-fg-strong: #f72585; */
   --h1-color: #580c1f;
   /* --h1-color: #000; */
-  --h2-color: #a7333f;
-  --color-fg-strong: #c52233;
+  /* --h2-color: #a7333f; */
+  /* --color-fg-strong: #c52233; */
   /* --h1-color-strong: #c52233; */
   /* color:  #c52233 ; */
 }
