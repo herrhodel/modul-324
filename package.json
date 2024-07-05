@@ -6,7 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "wireit",
     "start-poll": "docusaurus start --poll 1 --host 0.0.0.0",
-    "start-marp": "env PORT=3003 marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css --watch --server slides",
+    "start-marp": "env PORT=4001 marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css --watch --server slides",
     "build": "docusaurus build --out-dir public",
     "build-marp": "marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css -I slides --output public/slides",
     "build-marp-pdf": "marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css -I slides --output public/slides --pdf --pdf-outlines --pdf-outlines.pages=false",
@@ -23,7 +23,7 @@
   },
   "wireit": {
     "start": {
-      "command": "docusaurus start",
+      "command": "docusaurus start --no-open --port 4000",
       "service": {
         "readyWhen": {
           "lineMatches": "Docusaurus website is running at.*"
@@ -37,7 +37,7 @@
       ]
     },
     "start:marp": {
-      "command": "env PORT=3003 marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css --watch --server slides",
+      "command": "env PORT=4001 marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css --watch --server slides",
       "service": true
     },
     "build:pdf": {
