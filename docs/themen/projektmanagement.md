@@ -12,54 +12,54 @@ keywords:
    nachvollziehbar** für die Entwicklung im Team.
    1. Kennt den Nutzen bezüglich **kontinuierlicher toolunterstützter
       Entwicklung** und Wartung (z.B. MVP, Kundenfeedback, Kosten/Nutzen,
-      Qualität, Risiko- reduktion).
-   2. Kennt **Vorgehensweisen zur Verwaltung von Anforderungen** (z.B. Stories,
+      Qualität, -Risikoreduktion).
+   2. Kennt **Vorgehensweisen zur Verwaltung von Anforderungen** (z.B. Storys,
       Issues, Akzeptanzkriterien etc.).
    3. Kennt Vorgehensweisen zur nachvollziehbaren Entwicklung im Team (z.B.
-      **Verknüpfung Commit mit Story, Pullrequest/PeerReview**).
+      **Verknüpfung Commit mit Story, Pull Request/Peer-Review**).
 
 ## Projektdefinition
 
 > Vorhaben, das im Wesentlichen durch die Einmaligkeit aber auch Konstante der
-> Bedingungen in ihrer Gesamtheit gekennzeichnet ist, wie Z . B. Zielvorgabe,
+> Bedingungen in ihrer Gesamtheit gekennzeichnet ist, wie z.B. Zielvorgabe,
 > zeitliche, finanzielle, personelle und andere Begrenzungen; Abgrenzung
 > gegenüber anderen Vorhaben; projektspezifische Organisation.
 >
 > -- DIN 69901
 
-## Agiles Manifesto
+## Agiles Manifest
 
-> Wir erschließen bessere Wege, Software zu entwickeln, indem wir es selbst tun
+> Wir erschliessen bessere Wege, Software zu entwickeln, indem wir es selbst tun
 > und anderen dabei helfen. Durch diese Tätigkeit haben wir diese Werte zu
 > schätzen gelernt:
 >
-> - **Individuen und Interaktionen** mehr als Prozesse und Werkzeuge
-> - **Funktionierende Software** mehr als umfassende Dokumentation
-> - **Zusammenarbeit mit dem Kunden** mehr als Vertragsverhandlung
-> - **Reagieren auf Veränderung** mehr als das Befolgen eines Plans
+> - **Individuen und Interaktionen** mehr als Prozesse und Werkzeuge.
+> - **Funktionierende Software** mehr als umfassende Dokumentation.
+> - **Zusammenarbeit mit dem Kunden** mehr als Vertragsverhandlung.
+> - **Reagieren auf Veränderung** mehr als das Befolgen eines Plans.
 >
-> Das heißt, obwohl wir die Werte auf der rechten Seite wichtig finden, schätzen
-> wir die Werte auf der linken Seite höher ein.
+> Das heisst, obwohl wir die Werte auf der rechten Seite wichtig finden,
+> schätzen wir die Werte auf der linken Seite höher ein.
 >
-> -- https://agilemanifesto.org/iso/de/manifesto.html
+> -- [agilemanifesto](https://agilemanifesto.org/iso/de/manifesto.html)
 
 ## Das Vorgehensmodell <u>Kanban</u>
 
-Im Agilen Projektmanagement haben sich die Vorgehensmodelle _SCRUM_ und _Kanban_
+Im agilen Projektmanagement haben sich die Vorgehensmodelle _SCRUM_ und _Kanban_
 durchgesetzt. Beiden Modelle verwenden eine **iterative Vorgehensweise**. Anders
-als in klassischen Vorgehensmodelle wie dem Wasserfall-Model, werden in die
+als in klassischen Vorgehensmodelle wie dem Wasserfall-Model werden die
 **Arbeitspakete fortwährend erstellt und angepasst**.
 
 Wo _SCRUM_ einer klar definiertem Struktur mit vordefinierten Zeremonien folgt
 (Daily, Refinement, Review, Retrospektive) ist _Kanban_ einfacher/flexibler
 gehalten.
 
-In _Kanban_ werden die Arbeitspakete in verschiedene **Stati** eingeteilt.
+In _Kanban_ werden die Arbeitspakete in verschiedene **Status** eingeteilt.
 Standardmässig heissen diese:
 
-- **To do:** Arbeitspakete welche bereits definiert wurden, jedoch noch nicht
+- **To do:** Arbeitspakete, welche bereits definiert wurden, jedoch noch nicht
   bearbeitet werden
-- **In Process:** Arbeitspakete welche momentan gerade bearbeitet werden
+- **In Process:** Arbeitspakete, welche momentan gerade bearbeitet werden
   - immer nur <u>1 Arbeitspaket pro Person</u>
 - **Done:** Arbeitspakete welche erfolgreich umgesetzt wurden
 - **Waiting:** Für Arbeitspakete, welche "In Process" sind, jedoch auf externe
@@ -78,15 +78,15 @@ eigenen Tagesablauf.
 
 ### Einfaches Github Kanban Board
 
-![](images/github-kanban-board.png)
+![kanban-board](images/github-kanban-board.png)
 
 1. Mit <u>Add item</u> können direkt neue Arbeitspakete (_Issues_) erstellt
-   werden
+   werden.
 2. Mit dem rechten <u>+</u> können neue Stati hinzugefügt werden (z.B.
-   _Waiting_)
-3. Die _Arbeitspakete 3_ und _4_ wurden noch nicht begonnen
-4. Das _Arbeitspaket 2_ ist begonnen und es wurde eine Person zugeteilt
-5. Das _Arbeitspaket 1_ wurde bereits fertiggestellt
+   _Waiting_).
+3. Die _Arbeitspakete 3_ und _4_ wurden noch nicht begonnen.
+4. Das _Arbeitspaket 2_ ist begonnen und es wurde eine Person zugeteilt.
+5. Das _Arbeitspaket 1_ wurde bereits fertiggestellt.
 
 ## Arbeitspakete (Github Issues)
 
@@ -115,9 +115,8 @@ usw. genannt und:
 
 Die Akzeptanzkriterien geben vor, **wie geprüft werden kann ob das Arbeitspaket
 korrekt umgesetzt wurde**. Grundsätzlich kann zwischen zwei Arbeitspaket-Typen
-unterschieden werden,
-_[formelle Tätigkeiten](#1-formelle-und-administrative-tätigkeiten)_ und
-[_programmierbare Funktionalitäten_](#2-programmierbare-funktionalitäten).
+unterschieden werden, _[formelle Tätigkeiten](#1-administrativen-tätigkeiten)_
+und [_programmierbare Funktionalitäten_](#2-programmierbare-funktionalitäten).
 
 #### 1. **Administrativen Tätigkeiten**
 
@@ -244,7 +243,7 @@ Die genaue Beschreibung...
 
 ### Github Issues: Verweisung auf Code und Abhängigkeiten in
 
-![](images/issue-referenzen.png)
+![referenzen](images/issue-referenzen.png)
 
 1. Das _Arbeitspaket 2_ ist **"In Progress"**
 2. Es hat **Abhängigkeiten**, wobei eine noch aussteht

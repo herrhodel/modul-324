@@ -20,3 +20,4 @@ yarn-debug.log*
 yarn-error.log*
 .wireit
 public
+.yarn/cache/devserver-config-file-8a15eeae3a-32731c67f0.zip

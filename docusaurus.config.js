@@ -1,9 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const oembed = require("@agentofuser/remark-oembed");
+const { themes } = require("prism-react-renderer");
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
+// const oembed = require("@agentofuser/remark-oembed");
 const modulConfig = require("./modul.config");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -34,20 +35,20 @@ const config = {
   },
 
   themes: [
-    // [
-    //   require.resolve("@easyops-cn/docusaurus-search-local"),
-    //   {
-    //     hashed: true,
-    //     language: ["de"],
-    //     indexBlog: false,
-    //     indexPages: true
-    //   },
-    // ],
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["de"],
+        indexBlog: false,
+        indexPages: true
+      },
+    ],
     require.resolve("@docusaurus/theme-mermaid"),
   ],
 
   plugins: [
-    "@orama/plugin-docusaurus",
+    // "@orama/plugin-docusaurus",
     [
       "devserver-config",
       {
@@ -81,7 +82,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `https://gitlab.com/bbzbl-it/${modulConfig.repoName}/tree/main/`,
-          remarkPlugins: [oembed],
+          remarkPlugins: [],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
