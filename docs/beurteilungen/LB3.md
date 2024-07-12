@@ -4,21 +4,33 @@ keywords:
   - pdf
 ---
 
-# LB 3 - Arbeitsvorgang
+# 👬 LB 3 - Arbeitsvorgang
 
-| Sozialform    | Form              | Abgabe  | Gewicht |
-| :------------ | :---------------- | :-----: | ------: |
-| Gruppenarbeit | GitHub Issues/PRs | Woche 9 |     10% |
-| Einzelarbeit  | Git commits       | Woche 9 |     10% |
+Am **Ende jedes Sprints** wird der Arbeitsvorgang **der Gruppe** analysiert und
+bewertet.
 
-## Gruppe
+| Sozialform           | Form                                        |     Abgabe      |  Gewicht |
+| :------------------- | :------------------------------------------ | :-------------: | -------: |
+| 👬 **Gruppenarbeit** | GitHub Issues / Pull-Requests / Git Commits | Woche 4 / 7 / 9 | 3 \* 10% |
 
-- [ ] Issues sind Verständlich dokumentiert.
-- [ ] Issues sind an PR verknüpft.
-- [ ] Es existieren PR-Reviews und Kommentare.
+:::caution Achtung Kollektivnote!
 
-## Individuell
+Bitte kontrolliert euch selbst, dass alle sich an die Vorgaben halten. Diese
+Note ist bewusst nicht individuell, damit die Gruppe sich zusammenrauft ;)
 
-- [ ] Es kann durch den Commitverlauf den Arbeitsvorgang nachvollzogen werden.
-- [ ] Commit Messages sind aussagekräftig.
-- [ ] Es wurden Pullrequests aktiv reviewed und kommentiert.
+:::
+
+## Bewertung
+
+| Thema                                                          | Punkte |
+| :------------------------------------------------------------- | :----: |
+| Issues sind klar und verständlich beschrieben                  |   2    |
+| Fertige Issues sind an einen Pull-Request geknüpft             |   1    |
+| Ein Issue beschreibt nur eine Aufgabe                          |   1    |
+| Pull-Requests besitzen eine Beschreibung                       |   1    |
+| Pull-Requests sind konstruktiv kommentiert                     |   2    |
+| Ein Pull-Request bezieht sich immer genau auf einen Issue      |   1    |
+| Der Commit-Verlauf erlaubt den Arbeitsvorgang nachzuvollziehen |   1    |
+| Der Commit-Nachrichten sind kurz aber aussagekräftig gehalten  |   2    |
+|                                                                |        |
+| **TOTAL**                                                      | **10** |
