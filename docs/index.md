@@ -22,7 +22,7 @@ sidebar_label: 🏠 Modul 324
 
 ## DevOps-Prozese mit Tools unterstützen
 
-Auf deser Webseiten finden Sie alle Informationen und Unterlagen zum Unterricht.
+Auf dieser Webseiten finden Sie alle Informationen und Unterlagen zum Unterricht.
 
 :::caution
 

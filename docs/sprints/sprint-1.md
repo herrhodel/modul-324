@@ -1,7 +1,8 @@
 # 🦶 Sprint 1 - Kickoff
 
 Der Sprint 1 hat zum Ziel, dass sich die Gruppe kennenlernt, zusammen ein
-Projekt definiert wird und die Grundlage gesetzt wird um das Projekt umzusetzen.
+Projekt definiert wird und die Grundlage gesetzt wird, um das Projekt
+umzusetzen.
 
 ## Themen
 
@@ -27,7 +28,7 @@ Projekt definiert wird und die Grundlage gesetzt wird um das Projekt umzusetzen.
 
 ## Inputs
 
-- Kurz Github vorstellen
+- Kurz GitHub vorstellen
   - Project / Issues / PR vorstellen
 - Unterschied von linting und formatting
   - Tools vorstellen (sonarlint, eslint)

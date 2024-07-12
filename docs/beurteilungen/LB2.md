@@ -4,25 +4,62 @@ keywords:
   - pdf
 ---
 
-# LB 2 Sprint-Reviews (Fachgespräch)
+# 🪩 LB 2 - Sprint-Reflexion
 
-Am **Ende jedes Sprints** findet ein Sprint-Review, in Form eines
-**Fachgespräches** statt. Jedes Gruppenmitglied darf dabei von **4 Couverts**
-aussuchen und hat dann **8 Min** Zeit Fragen zum entsprechende Thema
-beantworten.
+Am **Ende jedes Sprints** wird in **Einzelarbeit** eine **schriftliche
+Reflexion** über den Verlauf des letzten Sprints verfasst.
 
-| Sozialform   | Form                  | Abgabe  | Gewicht |
-| :----------- | :-------------------- | :------ | :------ |
-| Einzelarbeit | Fachgespräch Sprint 1 | Woche 4 | 15%     |
-| Einzelarbeit | Fachgespräch Sprint 2 | Woche 7 | 15%     |
-| Einzelarbeit | Fachgespräch Sprint 3 | Woche 9 | 15%     |
-| **Total**    |                       |         | **45%** |
+| Sozialform               | Form                                 |     Abgabe      |  Gewicht |
+| :----------------------- | :----------------------------------- | :-------------: | -------: |
+| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion pro Sprint | Woche 4 / 7 / 9 | 3 \* 10% |
 
-## Bewertungskriterien
+:::info Reflexion: Wohin damit?
 
-| **Gütestufe**   | **Punkte** | **Beschreibung**                                                                                                                                                                                                                                                                                                                                           |
-| --------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Gütestufe 3** | 6 - 10     | Die Beantwortung der Fragestellung behandelt alle Aspekte professionell in differenzierter Weise. Alle getätigten Aussagen sind - wo notwendig - mit Beispielen oder logischen Schlussfolgerungen belegt. Die Antworten sind fachlich kompetent und korrekt. Der Kandidat kann auch zu Details präzise Auskunft geben.                                     |
-| **Gütestufe 2** | 3 - 6      | Die Beantwortung der Fragestellung lässt einen oder mehrere Nebensachen. Aspekte ausser Acht, oder ein zentraler Aspekt ist nicht hinreichend differenziert. Die meisten Aussagen sind - wo notwendig - mit Beispielen oder logischen Schlussfolgerungen belegt. Der Kandidat gibt meist korrekte Antworten, kann zu Details meist präzise Auskunft geben. |
-| **Gütestufe 1** | 1 - 3      | Die Beantwortung der Fragestellung lässt einen zentralen Aspekt ganz ausser Acht oder ist bezüglich des überwiegenden Teils der zentralen Aspekte nicht hinreichend differenziert. Viele Aussagen sind nicht - wo notwendig - mit Beispielen oder logischen Schlussfolgerungen belegt. Der Kandidat gibt häufig falsche oder unpräzise Antworten.          |
-| **Gütestufe 0** | 0          | Der Kandidat kann die Fragen zu seiner Facharbeit nicht korrekt beantworten.                                                                                                                                                                                                                                                                               |
+- :star: Sie darf als **GitHub Issue** im Projekt bestehen
+- :rocket: Sie darf als **Markdown Dokument** im Projekt Git-Repository
+  bestehen.
+- :older_man: Natürlich ist auch ein gutes, altes **Google Dokument** erlaubt.
+- **Sie muss der pro Person, der Lehrperson zugänglich sein.**
+
+:::
+
+## Bewertung
+
+| Thema                                                       | Punkte |
+| :---------------------------------------------------------- | -----: |
+| Alle Leitfragen sind beantwortet _(0.5 pro Frage)_          |      6 |
+| Die Antworten sind Tiefgründig und **kritisch** hiterfragt. |      4 |
+|                                                             |        |
+| **TOTAL**                                                   | **10** |
+
+## Leitfragen
+
+:::caution Achtung!
+
+Die Reflexionen müssen auf **alle** Leitfragen eingehen.
+
+:::
+
+### Inhalt
+
+- [x] Welche verschiedenen Themen beinhaltete der Sprint?
+- [x] Sind diese Themen zum Zeitpunkt im Projekt gut gewählt?
+- [x] Was wurde in diesem Sprint erreicht?
+- [x] Was wurde in diesem Sprint nicht erreicht?
+
+### Gruppendynamik
+
+- [x] Wie war die Zusammenarbeit im Team?
+- [x] War die Kommunikation konstruktiv und gewinnbringend?
+- [x] Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
+
+### Lernzuwachs
+
+- [x] Was kann ich nun mehr als vorher?
+- [x] Dieses Thema sehen ich als besonders relevant an weil...
+- [x] Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
+
+### Lerneffekt
+
+- [x] Was sollte beibehalten werden?
+- [x] Was sollte geändert werden?
