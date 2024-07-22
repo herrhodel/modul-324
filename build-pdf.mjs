@@ -17,7 +17,7 @@ const getBase64ImgTag = (path) => {
 
 modulConfig.pdfs.forEach((pdfConfig) => {
   generatePDF({
-    initialDocURLs: [`http://localhost:3000/${modulConfig.repoName}/docs`],
+    initialDocURLs: [`http://localhost:4000/${modulConfig.repoName}/docs`],
     puppeteerArgs: [
       "--no-sandbox",
       "--disable-web-security",
@@ -28,7 +28,7 @@ modulConfig.pdfs.forEach((pdfConfig) => {
     ],
     pdfMargin: { top: 110, right: 72, bottom: 60, left: 72 },
     disableTOC: true,
-    outputPDFFilename: `public/assets/pdf/${pdfConfig.filename}`,
+    outputPDFFilename: `build/assets/pdf/${pdfConfig.filename}`,
     filterKeyword: pdfConfig.filterKeyword,
     coverTitle: pdfConfig.coverTitle,
     coverSub: pdfConfig.coverSub,
