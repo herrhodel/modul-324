@@ -8,15 +8,15 @@ keywords:
 
 ## Handlungsziele
 
-3. Wendet die Sourcecode- und Artefaktverwaltung für eine
+3. Wendet die Source-Code- und Artefaktverwaltung für eine
    anforderungsorientierte Entwicklung im Team an.
    1. Kennt Praktiken, um Sourcecode featurebasiert zu verwalten (z.B.
-      GIT-Workflow, semantic Versioning etc.).
+      Git-Workflow, Semantic Versioning etc.).
    2. Kennt Möglichkeiten, um benötigte und erstellte Artefakte/Binaries zu
       verwalten (z.B. **Artefakt-Repository/Registry**,
       **Dependency-Management** wie **npm/maven/gradle** etc.).
 
-## Was ist ein Paketgemanager?
+## Was ist ein Paketmanager?
 
 ## Wofür braucht man diese?
 
@@ -32,4 +32,4 @@ keywords:
 
 ### Composer (PHP)
 
-## :superhero: asdf
+## :superhero: asdf / mise en place

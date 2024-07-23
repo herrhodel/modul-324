@@ -7,8 +7,8 @@ unterteilt, wobei jeder LB mit 10 Punkte gleichwertig gewichtet ist. Die
 - Der LB 3, der Arbeitsvorgang, wird als Gruppe bewertet, da hier die
   Zusammenarbeit sichtbar wird.
 
-Modulnote besteht somit, wie folgt abgebildet, aus einer Matrix mit 3 Sprint-Noten, welche wiederum
-jeweils aus 3 LBs bestehen:
+Modulnote besteht somit, wie folgt abgebildet, aus einer Matrix mit 3
+Sprint-Noten, welche wiederum jeweils aus 3 LBs bestehen:
 
 | Abgabe | Sprint                                                        | [🗣️ LB 1](/docs/beurteilungen/LB1.md) | [🪩 LB 2](/docs/beurteilungen/LB2.md) | [👬 LB 3](/docs/beurteilungen/LB3.md) | Punkte | Note      |
 | :----- | ------------------------------------------------------------- | :-----------------------------------: | :-----------------------------------: | :-----------------------------------: | -----: | --------- |

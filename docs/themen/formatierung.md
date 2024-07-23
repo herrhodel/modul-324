@@ -14,13 +14,13 @@ keywords:
       zu nutzen (z.B. **Linting**, Build, Ausführen, Testen, Versionierung,
       Abhängigkeiten/Pakete).
 
-## Wiso wichtig?
+## Wieso ist Formatierung wichtig?
 
 - Lesbarkeit
 - Wartbarkeit
 - Konsistenz
 
-## Automtische Formattierung
+## Automatische Formatierung
 
 ### Eclipse
 
@@ -31,9 +31,9 @@ keywords:
 
 :::tip Autoformat beim Speichern
 
-`Window -> Preferences -> Java -> Editor -> SaveActions` das Häckchen **Source
-Code Formattieruen** setzen. Nun sollte der Source Code automatisch formattiert
-werden, sobald die Datei gespeichert wird. 
+`Window -> Preferences -> Java -> Editor -> SaveActions` das Häkchen **Source
+Code Formatierungen** setzen. Nun sollte der Source Code automatisch formatiert
+werden, sobald die Datei gespeichert wird.
 
 :::
 
@@ -46,16 +46,16 @@ werden, sobald die Datei gespeichert wird.
 
 :::tip Autoformat beim Speichern `Preferences -> Tools -> Actions On Save` die
 
-Häckchen **Reformat Code** und **Optimize imports** setzen. Nun sollte der
+Häkchen **Reformat Code** und **Optimize imports** setzen. Jetzt sollte der
 Source Code automatisch formatiert werden, sobald die Datei gespeichert wird.
 
 :::
 
 ## Automatisches Linting
 
-### Was ist Linting
+### Was ist Linting?
 
-Der unterschied von Linting zu Formatierung
+Der Unterschied von Linting zu Formatierung
 
 ### Tools
 

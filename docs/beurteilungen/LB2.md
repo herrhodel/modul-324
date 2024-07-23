@@ -25,12 +25,12 @@ Reflexion** über den Verlauf des letzten Sprints verfasst.
 
 ## Bewertung
 
-| Thema                                                       | Punkte |
-| :---------------------------------------------------------- | -----: |
-| Alle Leitfragen sind beantwortet _(0.5 pro Frage)_          |      6 |
-| Die Antworten sind Tiefgründig und **kritisch** hiterfragt. |      4 |
-|                                                             |        |
-| **TOTAL**                                                   | **10** |
+| Thema                                                        | Punkte |
+| :----------------------------------------------------------- | -----: |
+| Alle Leitfragen sind beantwortet _(0.5 pro Frage)_           |      6 |
+| Die Antworten sind Tiefgründig und **kritisch** hinterfragt. |      4 |
+| ...                                                          |        |
+| **TOTAL**                                                    | **10** |
 
 ## Leitfragen
 
@@ -56,7 +56,7 @@ Die Reflexionen müssen auf **alle** Leitfragen eingehen.
 ### Lernzuwachs
 
 - [x] Was kann ich nun mehr als vorher?
-- [x] Dieses Thema sehen ich als besonders relevant an weil...
+- [x] Dieses Thema sehen ich als besonders relevant an weil, ...
 - [x] Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 
 ### Lerneffekt

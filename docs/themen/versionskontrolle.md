@@ -20,7 +20,7 @@ keywords:
 
 ## Probleme beim Programmieren
 
-## GIT
+## Git
 
 [Tutorial](https://www.hostinger.com/tutorials/git-tutorial)
 

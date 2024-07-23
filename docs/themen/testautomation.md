@@ -18,7 +18,7 @@ keywords:
 
 ## Arten
 
-### UnitTest
+### Unit Test
 
 - [JUnit (Java)](https://junit.org/junit5/)
 - [Jest (Javascript)](https://jestjs.io/)

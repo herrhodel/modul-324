@@ -20,11 +20,7 @@ umzusetzen.
 
 - Projektrollen verteilen
 - Projekt finden
-- Was wollen wir machen? (sollte nicht zu gross sein)
-
-### Generell
-
-- ePortfolio weiterführen
+- Was wollen wir machen? (sollte nicht zu gross eein)
 
 ## Inputs
 

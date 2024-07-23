@@ -29,5 +29,5 @@ ersichtlich.
 | Wissen        | Brauchte keine Hilfestellungen.                           | 2      |
 | Fachbegriffe  | Werden richtig und an stelle von Umschreibungen verwendet | 2      |
 | Kommunikation | Die Antworten erfolgen deutlich, zügig und klar           | 2      |
-|               |                                                           |
+| ...           |                                                           |        |
 | **Total**     |                                                           | **10** |
