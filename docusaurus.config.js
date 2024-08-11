@@ -35,20 +35,20 @@ const config = {
   },
 
   themes: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        language: ["de"],
-        indexBlog: false,
-        indexPages: true
-      },
-    ],
+    // [
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   {
+    //     hashed: true,
+    //     language: ["de"],
+    //     indexBlog: false,
+    //     indexPages: true,
+    //   },
+    // ],
     require.resolve("@docusaurus/theme-mermaid"),
   ],
 
   plugins: [
-    // "@orama/plugin-docusaurus",
+    // "@orama/plugin-docusaurus-v3",
     [
       "devserver-config",
       {
@@ -57,7 +57,7 @@ const config = {
             target: "http://localhost:4001",
             pathRewrite: function (
               /** @type {string} */ path,
-              /** @type {any} */ _req
+              /** @type {any} */ _req,
             ) {
               if (path.match(/.*\..*$/)) {
                 return path.replace(`/${modulConfig.repoName}/slides`, "");

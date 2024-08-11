@@ -37,8 +37,9 @@ Unterricht.
 ### :star2: Empfohlen
 
 Es ist empfohlen auf euren privaten Rechner die Entwicklungsumgebung
-vorzubereiten. Wir werden im Unterricht mit vscode arbeiten, da es dafür viele
-DevOps bezogene plugins gibt.
+vorzubereiten. Wir werden im Unterricht mit **VS Code** von Microsoft arbeiten,
+da es dafür viele DevOps bezogene plugins gibt. Auch setzt
+[GitHub Codespaces](https://github.com/features/codespaces) auf _VS Code_
 
 Wenn Ihr im Büro mit Eclipse oder IntelliJ arbeitet und damit vertrauter sind
 ist dies auch O.K. Grundsätzlich solltet Ihr im 4ten Lehrjahr als

@@ -49,13 +49,17 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-# SCRUM<sup>5</sup>
+# eduSCRUM<sup>5</sup>
 
 ![bg w:70%](https://www.marketinginstitut.biz/blog/wp-content/uploads/2020/09/SCRUM-1.png)
 
-::: footnotes 5. [Wikipedia | SCRUM](https://de.wikipedia.org/wiki/Scrum),
-[Marketinginstitut.biz](https://www.marketinginstitut.biz/blog/scrum/),
-[Youtube](https://www.youtube.com/watch?v=Ibz9STVjtzI) :::
+::: footnotes
+
+5. [Wikipedia | SCRUM](https://de.wikipedia.org/wiki/Scrum),
+   [Marketinginstitut.biz](https://www.marketinginstitut.biz/blog/scrum/),
+   [Youtube](https://www.youtube.com/watch?v=Ibz9STVjtzI)
+
+:::
 
 ---
 
