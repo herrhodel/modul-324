@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: 🏠 Modul 324
 ---
 
@@ -7,18 +7,18 @@ sidebar_label: 🏠 Modul 324
 
 ## :calendar: Quartalsübersicht
 
-|    Woche     |            Datum            | Thema                             | Leistungsbewertung |
-| :----------: | :-------------------------: | :-------------------------------- | :----------------- |
-| Woche&nbsp;1 |         12.08.2024          | DevOps / Agiles Projektmanagement |                    |
-| Woche&nbsp;2 |         19.08.2024          | Sprint 1                          |                    |
-| Woche&nbsp;3 |         26.08.2024          | Sprint 1                          |                    |
-| Woche&nbsp;4 |         02.09.2024          | Sprint 1                          |                    |
-| Woche&nbsp;5 |         09.09.2024          | Sprint 2                          |                    |
-| Woche&nbsp;6 |         16.09.2024          | Sprint 2                          |                    |
-| Woche&nbsp;7 |         23.09.2024          | Sprint 2                          |                    |
-|              | 30.09.2024 <br/> 07.10.2024 | _:star2: Herbstferien :star2:_    |                    |
-| Woche&nbsp;8 |         14.10.2024          | Sprint 3                          |                    |
-| Woche&nbsp;9 |         21.10.2024          | Sprint 3                          |                    |
+|      Woche       |            Datum            | Thema                          | Leistungsbewertung                           |
+| :--------------: | :-------------------------: | :----------------------------- | :------------------------------------------- |
+|   Woche&nbsp;1   |         12.08.2024          | DevOps / Umgebung aufbauen     |                                              |
+|   Woche&nbsp;2   |         19.08.2024          | eduScrum mit GitHub / Sprint 1 |                                              |
+|   Woche&nbsp;3   |         26.08.2024          | Sprint 1                       |                                              |
+| **Woche&nbsp;4** |         02.09.2024          | Sprint 1                       | [**Sprint 1**](/docs/beurteilungen/index.md) |
+|   Woche&nbsp;5   |         09.09.2024          | Sprint 2                       |                                              |
+|   Woche&nbsp;6   |         16.09.2024          | Sprint 2                       |                                              |
+| **Woche&nbsp;7** |         23.09.2024          | Sprint 2                       | [**Sprint 2**](/docs/beurteilungen/index.md) |
+|                  | 30.09.2024 <br/> 07.10.2024 | _:star2: Herbstferien :star2:_ |                                              |
+|   Woche&nbsp;8   |         14.10.2024          | Sprint 3                       |                                              |
+| **Woche&nbsp;9** |         21.10.2024          | Sprint 3                       | [**Sprint 3**](/docs/beurteilungen/index.md) |
 
 ## DevOps-Prozese mit Tools unterstützen
 
@@ -34,27 +34,21 @@ Unterricht.
 
 ## :building_construction: Entwicklungsumgebung
 
-### :star2: Empfohlen
-
 Es ist empfohlen auf euren privaten Rechner die Entwicklungsumgebung
 vorzubereiten. Wir werden im Unterricht mit **VS Code** von Microsoft arbeiten,
 da es dafür viele DevOps bezogene plugins gibt. Auch setzt
-[GitHub Codespaces](https://github.com/features/codespaces) auf _VS Code_
+[GitHub Codespaces](https://github.com/features/codespaces) auf
+[VS Code](https://code.visualstudio.com/)
 
-Wenn Ihr im Büro mit Eclipse oder IntelliJ arbeitet und damit vertrauter sind
+Wenn Ihr im Büro mit [Eclipse](https://www.eclipse.org/downloads/) oder
+[IntelliJ](https://www.jetbrains.com/idea/) arbeitet und damit vertrauter sind
 ist dies auch O.K. Grundsätzlich solltet Ihr im 4ten Lehrjahr als
 Applikationsentwickler mit einer IDE vertraut sein.
 
-### Alternativ
+[Devcontainers](https://containers.dev/), welche in VS Code funktionieren,
+sollten auch in [IntelliJ](https://www.jetbrains.com/idea/) gehen.
 
-An der Schule steht Ihnen grundsätzlich ein Rechner mit einer virtuellen Windows
-10 Maschine zur Verfügung. Darauf sind alle nötigen Programme installiert.
-Alternativ dürfen Sie natürlich die Programme auch auf Ihrem privaten Gerät
-installieren und verwenden.
-
-Zusätzlich stellen wir Ihnen eine virtuelle Maschine zur Verfügung, die Sie
-verwenden dürfen. Diese haben Sie am besten auf einer externen Festplatte dabei.
-So haben Sie an der Schule wie auch zu Hause immer die selbe Umgebung.
+- [https://www.jetbrains.com/help/idea/connect-to-devcontainer.html](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html)
 
 ## Modulidentifikation
 
