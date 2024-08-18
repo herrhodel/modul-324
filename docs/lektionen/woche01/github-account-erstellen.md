@@ -14,7 +14,7 @@ GitHub Account besitzt.
 - [x] [GitHub - Signup](https://github.com/signup) öffnen
 - [x] Einen Account mit der `ihr-name@bbzbl-it.ch` Email-Adresse erstellen.
 
-![GitHub signup](../img/github_signup.png)
+![GitHub signup](../../img/github_signup.png)
 
 :::note
 

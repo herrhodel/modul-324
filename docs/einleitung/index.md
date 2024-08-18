@@ -1,3 +1,0 @@
-# ⚡ Vorbereitungen
-
-<DocCardList />

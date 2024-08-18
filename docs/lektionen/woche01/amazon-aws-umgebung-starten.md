@@ -15,11 +15,11 @@ AWS-Lerner-Lab zu starten.
 
 ### 1. Auf **"Get Started"** klicken
 
-![Amazon Email](../img/01_aws_invitation_mail.png)
+![Amazon Email](../../img/01_aws_invitation_mail.png)
 
 ### 2. Auf **"Create My Account"** klicken
 
-![Amazon Create Account](../img/02_create_my_account.png)
+![Amazon Create Account](../../img/02_create_my_account.png)
 
 ### 3. Formular ausfüllen
 
@@ -28,7 +28,7 @@ AWS-Lerner-Lab zu starten.
 - AGB akzeptieren
 - Mit **"Register"** abschicken
 
-![Amazon Registrieren](../img/03_register.png)
+![Amazon Registrieren](../../img/03_register.png)
 
 ### 4. Academy - Home
 
@@ -37,24 +37,24 @@ Nach dem Registrieren solltet Ihr auf folgende Übersichtsseite gelangen. Diese
 
 - Ihr könnt direkt zur Seite **"Modules"** navigieren.
 
-  ![AWS Learner Lab - Home](../img/04_class_overview.png)
+  ![AWS Learner Lab - Home](../../img/04_class_overview.png)
 
 ### 5. Academy - Modules
 
 - Unter "Modules" interessiert nur **"Launch AWS Academy Learner Lab"**
 - Öffnet **"Launch AWS Academy Learner Lab"**
 
-  ![AWS Academy Learner Lab - Modules](../img/05_class_moduls.png)
+  ![AWS Academy Learner Lab - Modules](../../img/05_class_moduls.png)
 
 ### 6. Launch Academy Learner Lab
 
 - Als Erstes muss die AGB mit **"I Agree"** akzeptiert werden.
 
-  ![Launch Academy Learner Lab - AGB](../img/06_class_launch_aws_academy_learner_lab_agree.png)
+  ![Launch Academy Learner Lab - AGB](../../img/06_class_launch_aws_academy_learner_lab_agree.png)
 
 - Jetzt sollte folgende **Übersicht** zu sehen sein.
 
-  ![Launch Academy Learner Lab - Overview](../img/07_class_launch_aws_academy_learner_lab_overview.png)
+  ![Launch Academy Learner Lab - Overview](../../img/07_class_launch_aws_academy_learner_lab_overview.png)
 
 1. Link zur **AWS Management Console**
    - wenn **rot** ist die Umgebung gestoppt wenn **gelb** ist die Umgebung am
@@ -71,11 +71,11 @@ Nach dem Registrieren solltet Ihr auf folgende Übersichtsseite gelangen. Diese
 
 - Starte jetzt die Umgebung mit **Start Lab**
 - Das "Lämbchen" wird nun gelb
-  ![Launch Academy Learner Lab - Start Lab](../img/08_class_lauch_aws_academy_learner_lab_start_lab.png)
+  ![Launch Academy Learner Lab - Start Lab](../../img/08_class_lauch_aws_academy_learner_lab_start_lab.png)
 
 ### 8. AWS Details
 
 - Ist das "Lämpchen" grün, ist die Umgebung gestartet.
 - über "AWS Details" können nun alle Informationen und Credentials angezeigt
   werden.
-  ![AWS Details](../img/09_class_lauch_aws_academy_learner_lab_details.png)
+  ![AWS Details](../../img/09_class_lauch_aws_academy_learner_lab_details.png)

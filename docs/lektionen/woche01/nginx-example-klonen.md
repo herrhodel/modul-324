@@ -27,9 +27,9 @@ angepasst wird.
 - [https://github.com/codingluke/bbzbl-modul-324-nginx](https://github.com/codingluke/bbzbl-modul-324-nginx)
   aufrufen
 - "Use this Template" -> "Create a new repository" wählen
-  ![github_create_repository_from_template](../img/github_create_repository_from_template.png)
+  ![github_create_repository_from_template](../../img/github_create_repository_from_template.png)
 - Formular ausfüllen
-  ![Github Create New Repository](../img/github_create_new_repository.png)
+  ![Github Create New Repository](../../img/github_create_new_repository.png)
   - Der Name dürft Ihr selber wählen.
   - Bitte **"Private"** auswählen, später mir (codingluke) berechtigen
   - Mit **"Create Repository"** bestätigen
@@ -39,16 +39,16 @@ angepasst wird.
 - Im neu erstellten Repository auf **"Settings" -> "Secrets and variables" ->
   "Actions"** navigieren
 - Auf **"New Repository secret"** klicken
-  ![GitHub Repository Secret](../img/github_create_secrets.png)
+  ![GitHub Repository Secret](../../img/github_create_secrets.png)
 - Für alle Einträge unter **"AWS Details"** ein Secret erstellen, es sollten **5
   Secrets** existieren
   - AWS_ACCESS_KEY_ID
   - AWS_SECRET_ACCESS_KEY
   - AWS_SESSION_TOKEN
   - AWS_SSH_PRIVATE_KEY
-    ![GitHub AWS Secrets Map](../img/github_copy_secrets.png)
+    ![GitHub AWS Secrets Map](../../img/github_copy_secrets.png)
   - AWS_ACCOUNT_ID
-    ![GitHub AWS Secrets Account](../img/github_ceate_secrets_account_id.png)
+    ![GitHub AWS Secrets Account](../../img/github_ceate_secrets_account_id.png)
 
 ### GitHub Action neu starten
 
@@ -60,20 +60,20 @@ Nun, da diese übertragen wurden, können wir die Action neu starten.
 
 - Nach **"Actions"** navigieren
 - Die fehlgeschlagene Action **"Inital commit"** auswählen
-  ![GitHub Action initial commit](../img/github_restart_initial_commit_action.png)
+  ![GitHub Action initial commit](../../img/github_restart_initial_commit_action.png)
 - **"Re-run jobs"** starten
-  ![GitHub Action re-run](../img/github_rerun_jobs.png)
+  ![GitHub Action re-run](../../img/github_rerun_jobs.png)
 - **Warten, und warten** bis...
-  ![GitHub Action success](../img/github_success_action.png)
+  ![GitHub Action success](../../img/github_success_action.png)
 
 ### Webseite in Browser öffnen
 
 Nun ist die Web-App auf AWS ausgeliefert und öffentlich verfügbar.
 
 - Kopiert die Public-IP ganz am Ende vom "output".
-  ![GitHub Action success](../img/github_success_action.png)
+  ![GitHub Action success](../../img/github_success_action.png)
 - öffnet in einem Browser "http://eure-ip"
-  ![Public Website](../img/nginx_webseite_public.png)
+  ![Public Website](../../img/nginx_webseite_public.png)
 
 :::info HTTP ist unsicher...
 
@@ -88,9 +88,9 @@ Nun ist es möglich Änderungen an der App vorzunehmen, welche automatisch auf A
 deployed werden!
 
 - Navigiert zu **"Code -> src -> index.html"** und klickt auf **"Edit"**
-  ![Edit index.html](../img/github_edit_index_html.png)
+  ![Edit index.html](../../img/github_edit_index_html.png)
 - Ändere die Seite nach belieben ab
-  ![Magic](../img/github_edit_index_magic.png)
+  ![Magic](../../img/github_edit_index_magic.png)
 
   :::tip Beispiel Änderung
 
@@ -103,7 +103,7 @@ deployed werden!
   :::
 
 - Änderungen "commiten". Die Nachricht ist noch nicht wichtig.
-  ![Commit](../img/github_edit_index_html_commit.png)
+  ![Commit](../../img/github_edit_index_html_commit.png)
 - Warten bis die GitHub Actions fertig sind
-  ![Commit Action](../img/github_edit_index_html_action.png)
+  ![Commit Action](../../img/github_edit_index_html_action.png)
 
