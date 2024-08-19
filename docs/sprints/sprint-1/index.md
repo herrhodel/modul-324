@@ -22,8 +22,6 @@ umzusetzen.
 
 ## Präsentationen
 
-### Woche 1
-
 <Slide name="projektmanagement"/>
 
 ## Themen

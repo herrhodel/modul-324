@@ -8,9 +8,11 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Projektmanagement
+# Woche 2
 
-## Modul 324
+## Projektmanagement / Sprint 1
+
+### Modul 324
 
 ---
 
@@ -77,6 +79,15 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
+# Sprint 1 - Kickoff
+
+- :dart: Gruppen kennenlernen
+- :dart: Projekt finden
+- :dart: GitHub kennenlernen
+- :dart: Arbeitsgrundlage schaffen
+
+---
+
 # GitHub Issues _(Arbeitspakete)_
 
 - haben **Abhängigkeiten** zu anderen Arbeitspakete.
@@ -131,105 +142,160 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-# :pen: Teambildung (10 Min)
+# Teambildung
 
-- Jedes Team sollte einen im Team haben der gerne koordiniert
-- Jedes Team sollte einen im Team haben der gerne Überprüft
-- Jedes Team sollte einen im Team haben der Programmieren leidenschaftlich gerne
-  hat.
+- :dart: Jeder kennt sein Team
 
-## :muscle: Nur zusammen ist man Stark
+### :pencil: Auftrag
 
----
+::: columns l60
 
-# :pen: Rollen bestimmen (5 Min)
+Zusammen werden die Gruppen zusammengestellt:
 
-- **Teamleader**:
-
-  Erstellt das GitHub repo und ladet andere ein, übernimmt Admin Aufgaben
-
-- **Stakeholder**:
-
-  Schaut sich die Arbeitspakete besonders gut an und prüft die Kriterien
-
-- **Mitarbeiter**:
-
-  Ist besonders fleissig am Programmieren
-
-## 🏅Gute Rollenverteilung ist die halbe Miete
-
----
-
-# :pen: GitHub repository erstellen (10 Min)
-
-- Der Teamleader **erstellt** ein GitHub repository
-
-  - Ihr dürft meine Vorlage nehmen!
-  - Ihr dürft leer starten und von mir schrittweise kopieren
-  - Ihr dürft alles selber machen (sollte aber gehen ;)
-  - :bulb: Der Namen könnt ihr später noch ändern.
-  - :bulb: `projekt-m324` sollte für alles passen
-
-- Der Teamleader gibt allen Mitglieder, inkl. der Lehrperson, die
-  **Berechtigung** auf das Repository
-
----
-
-# :pen: GitHub Projekt erstellen (20 Min)
-
-::: columns
-
-- Im erstellten Repository ein
-  [GitHub Projekt](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-  erstellen.
-
-  - [📜 GitHub Projekt Doku](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+- Eine Person die gerne koordiniert
+- Eine Person die gerne überprüft
+- Eine Person die leidenschaftlich gerne programmiert
 
 ::: split
 
-- Erste test-Issues erstellen und experimentieren
-
-  - Verknüpfen, Taggen
-  - Erstellt Tasks in Markdown <br> `- [ ] task`
-
-  - [📜 GitHub Issues Doku](https://github.com/features/issues)
+- :dna: Gruppenarbeit
+- :clock1: 10 Min
+- :boom: **Nur zusammen ist man Stark!**
 
 :::
 
-> 💡 Schliesst die test-issues, nicht löschen! Sie dienen als Doku.
-
 ---
 
-# :pen: Projekt finden
+# Rollen verteilen
 
-- Projekt als **GitHub Issue** beschreiben, was ist das Ziel?
+- :dart: Jeder kennt seine Rolle im Team
 
-- Es sollte ein **Web-Projekt** sein, da es nach AWS ausgeliefert wird
-- Die Programmiersprache und Frameworks sind **frei wählbar**
-- Es **muss nicht fertig werden**!
-- Es **darf ein bestehendes Projekt sein**, dass nun ins DevOps-Modell überführt wird.
+### :pencil: Auftrag
 
-> 💡 Dieses Issue muss nicht nur eine Aufgabe besitzen
+::: columns l60
 
----
+- **1 Teamleader**: Erstellt das GitHub repo und ladet andere ein, übernimmt
+  Admin Aufgaben
 
-# :pen: Erste Epics und Issues definieren
+- **1 Stakeholder**: Schaut sich die Arbeitspakete besonders gut an und prüft
+  die Kriterien
 
-::: columns
-
-## z.B Technische (wie)
-
-- Technologiewahl treffen
-
-- Infrastruktur aufbauen
-- Hello World mit gewählter Technologie
+- **1-2 Mitarbeiter**: Ist besonders fleissig am Programmieren
 
 ::: split
 
-## z.B. Sachliche (was)
+- :dna: Gruppenarbeit
+- :clock1: 5 Min
+- :boom: **Gute Rollenverteilung ist die halbe Miete!**
 
-- Projekt beschreiben, was ist das Ziel?
-- Einzelne Features beschreiben
-- :bulb: Für alle ein Ticket für die Reflektion zum Sprint 1 erstellen
+:::
+
+---
+
+# GitHub Repository erstellen
+
+- :dart: Arbeitsgrundlage schaffen
+
+### :pencil: Auftrag
+
+::: columns l60
+
+- Der Teamleader **erstellt** ein GitHub repository
+
+  - Ihr dürft meine Vorlage nehmen
+  - Der Namen ist änderbar (z.B `projekt-m324-gruppe-x`)
+
+- Der Teamleader gibt allen Mitgliedern die Berechtigungen, inkl. der
+  Lehrperson.
+
+::: split
+
+- :dna: Gruppenarbeit<br> _(einer macht, die anderen schauen zu)_
+- :clock1: 10 Min
+- :boom: **Ihr arbeitet alle im gleichen Repository!**
+
+:::
+
+---
+
+# GitHub Projekt erstellen
+
+- :dart: Arbeitsgrundlage schaffen
+- :dart: GitHub kennenlernen
+
+### :pencil: Auftrag
+
+::: columns l60
+
+- Im erstellten Repository ein
+  [📜 GitHub Projekt](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+  erstellen.
+- Erste [test-Issues](https://github.com/features/issues) erstellen und damit
+  spielen
+  - Verknüpfen, Taggen
+  - Erstellt Tasks in Markdown <br>
+    ```markdown
+    - [ ] Task 1
+    ```
+
+::: split
+
+- :dna: Gruppenarbeit<br> (oder auch Einzeln)
+- :clock1: 20 Min
+- :boom: **Schliesst die test-issues, nicht löschen! Sie dienen als Doku.**
+
+:::
+
+---
+
+# Projekt finden
+
+- :dart: Arbeitsgrundlage schaffen
+- :dart: Kompromisse eingehen
+
+### :pencil: Auftrag
+
+::: columns l60
+
+- Projekt als **GitHub Issue** beschreiben
+- Es muss ein **Web-Projekt** sein
+- Es **muss nicht fertig werden**!
+- Es **darf ein bestehendes Projekt sein**
+
+> :bulb: Statische HTML-Seite, ToDo App oder was grosses? Seit mutig und
+> kreativ!
+
+::: split
+
+- :dna: Gruppenarbeit
+- :clock1: 20 Min
+- :boom: **Dieses Issue muss nicht nur eine Aufgabe besitzen**
+
+:::
+
+---
+
+# Erste Epics und Issues definieren
+
+- :dart: Projekt grob erfasst haben
+
+### :pencil: Auftrag
+
+::: columns l60
+
+Hier ein Beispiel von Themen:
+
+- Technologiewahl treffen
+  - Die Programmiersprache ist **frei wählbar**
+- Infrastruktur aufbauen
+- Hello World mit gewählter Technologie
+- Erste Features beschreiben
+- Wireframe erstellen
+
+::: split
+
+- :dna: Gruppenarbeit
+- :clock1: 45 Min
+- :boom: **Für alle ein Ticket für die Reflektion zum Sprint 1 erstellen**
 
 :::
