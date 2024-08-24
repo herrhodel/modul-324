@@ -16,13 +16,17 @@ umzusetzen.
    **nachvollziehbar** für die Entwicklung im Team.
 
    - Kennt den **Nutzen** bezüglich **kontinuierlicher toolunterstützter
-     Entwicklung** und Wartung 
+     Entwicklung** und Wartung
    - Kennt Vorgehensweisen zur **Verwaltung von Anforderungen**
    - Kennt Vorgehensweisen zur **nachvollziehbaren Entwicklung im Team**
 
 ## Präsentationen
 
 <Slide name="projektmanagement"/>
+
+<Slide name="local-development"/>
+
+<Slide name="formatting"/>
 
 ## Themen
 
