@@ -16,12 +16,39 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-# Wieso ist Formatierung wichtig?
+# Was ist Formatierung?
 
-- Lesbarkeit
+Definition der **Darstellung des Codes** durch
 
-- Wartbarkeit
-- Konsistenz
+- **Leerzeichen**
+
+- **Einzüge**
+- **Zeilenumbrüche**
+
+![bg right fit](./images/formating-html.gif)
+
+---
+
+# Ziele der Formatierung
+
+::: columns
+
+- :dart: Lesbarkeit
+
+- :dart: Wartbarkeit
+- :dart: Konsistenz
+
+## Tastenkürzel
+
+> - Windows: `Shift` + `Alt` + `F`
+> - Mac: `Shift` + `Option` + `F`
+> - Linux `Ctrl` + `Shift` + `I`
+
+::: split
+
+# <!--fit --> 💅
+
+:::
 
 ---
 
@@ -31,36 +58,58 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 - Je nach Programmiersprache gibt es eigene standards.
 
-## Plugins für Sprachen
+> :bulb: Nehmt am besten den Standard der IDE!
 
-- [Java formatting and linting](https://code.visualstudio.com/docs/java/java-linting)
-- [JavaScript / TypeScript - Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## Gängige Plugins
+
+- [Google Java Format](https://marketplace.visualstudio.com/items?itemName=wx-chevalier.google-java-format)
+- [Prettier (JS/TS)](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ---
 
-<!-- _class: big center -->
+<!-- _class: big -->
 
 # :bulb: Merken
 
-## Syntaktisch falscher Code kann nicht formatiert werden.
-
-
----
-
-<!-- _class: big center -->
-
-# Formatierung zeigt Professionalität
-
-![bg cover](images/formatting-professional-watch.png)
-
----
-
-<!-- _class: big center -->
-
-# Linting
+- ### Syntaktisch falscher Code kann nicht formatiert werden
+- ### Formatierung zeigt Professionalität
 
 ---
 
 # Was ist Linting?
 
-- Überprüfen des Codes
+Garantiert die **funktionale Korrektheit** durch das Identifizieren von
+
+- **potenziellen Fehlern**
+
+- **stilistischen Problemen**
+- **unsicheren Praktiken**
+
+![bg right fit](./images/linting-htmlhint.jpg)
+
+---
+
+# :dart: Ziele vom Linting
+
+::: columns
+
+- **Konformität und Standards**
+
+- **einheitliche Qualität**
+- **Sicherheit** -> _DevSecOps_
+
+::: split
+
+# <!-- fit --> 👮
+
+:::
+
+---
+
+<!-- _class: big -->
+
+# :bulb: Merken
+
+- ### Syntaktisch falscher Code kann geprüft werden
+- ### Gängige Strukturfehler werden erkannt (best practices)
+- ### Linting erhöht massiv die Sicherheit!
