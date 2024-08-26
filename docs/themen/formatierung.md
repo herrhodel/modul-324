@@ -31,6 +31,8 @@ Das Ziel ist es, den Code lesbar und konsistent zu gestalten.
 
 #### VS Code
 
+
+
 **Tastenkürzel**
 
 - Windows: `Shift` + `Alt` + `F`

@@ -116,11 +116,11 @@ sofern "Dev Container" installiert wurde.
 
 ---
 
-# DevContainer open zsh terminal
+# DevContainer Terminal
 
-1. Mit `+` kann ein neues Terminal geöffnet werden, z.B. (zsh)
+1. Mit `+` kann ein neues Terminal geöffnet werden, _(z.B. zsh)_
 
-2. Nun existiert ein Terminal im Container! So arbeiten alle mit allem.
+2. Nun existiert ein ubuntu Terminal im Container. <br> _(selbst unter Windows)_
 
 3. Die Dateien sind "gemountet" unter `/workspaces/[repository-name]`
 
@@ -130,12 +130,24 @@ sofern "Dev Container" installiert wurde.
 
 # Docker Compose
 
+::: columns
+
+Infos unter
+[Docker Compose](https://docs.docker.com/compose/intro/features-uses/)
+
+- Es verwendet das `dev.Dockerfile`
+- Momentan wird `./src` zum Nginx gemountet
+- `./local/.env` Environment Variablen werden auch im Container hinzugefügt
+- Nginx wird auf port 3000 exposed. Öffnet http://localhost:3000
+
+::: split
+
 ```yaml
 # docker-compose.yml
 services:
   nginx:
     build:
-      context: . # Muss zum Ordner mit einem Dockerfile zeigen
+      context: .
       dockerfile: dev.Dockerfile
     container_name: nginx
     ports:
@@ -143,11 +155,24 @@ services:
     env_file: ./local/.env
     volumes:
       - ./src/:/usr/share/nginx/html
-      - ./local/aws:/root/.aws
-      - ./local/ssh/id_rsa.pem:/root/.ssh/id_rsa.pem
+      ...
 ```
 
-- Nginx wird auf port 3000 exposed. Öffnet http://localhost:3000
+:::
+
+---
+
+# dev.Dockerfile
+
+Es existiert zusätzlich zum `Dockerfile` ein `dev.Dockerfile`.
+
+- im docker-compose wird dieses referenziert
+- es ermöglicht es lokal zusätzliche tools im container zu installieren.
+- es sollte so nahe am `Dockerfile` wie möglich sein
+
+<br><br>
+
+> 💡Weitere Inputs zum `Dockerfile` folgen in der Woche 5
 
 ---
 
@@ -185,3 +210,24 @@ mise use node
 mise node@22.7.0 ✓ installed
 mise /workspaces/bbzbl-modul-324-nginx/.mise.toml tools: node@22.7.0
 ```
+
+---
+
+# Installiere Programmiersprachen im `dev.Dockerfile`
+
+Wir ein Container neu gestartet, müssen die Programmiersprachen neu installiert
+werden.
+
+::: columns
+
+- Durch das `dev.Dockerfile` können sprachen beim erstellen vom image
+  installiert werden.
+- Links ein Beispiel für Java
+
+::: split
+
+```bash
+~/.local/bin/mise use --global java
+```
+
+:::
