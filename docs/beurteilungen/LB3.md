@@ -20,7 +20,20 @@ Note ist bewusst nicht individuell, damit die Gruppe sich zusammenrauft ;)
 
 :::
 
-## Bewertung
+## Bewertung für Sprint 1
+
+Da im Sprint 1 noch nicht viel programmiert wird, gelten folgende Kriterien
+
+| Thema                                         | Punkte |
+| :-------------------------------------------- | :----: |
+| Der Projektberschirb ist aussagekräftig       |   3    |
+| Epics verweisen auf Issues die ihn umsetzen   |   2    |
+| Issues sind klar und verständlich beschrieben |   3    |
+| Ein Issue beschreibt nur eine Aufgabe         |   2    |
+| ...                                           |        |
+| **TOTAL**                                     | **10** |
+
+## Bewertung für Sprint 2 und 3
 
 | Thema                                                          | Punkte |
 | :------------------------------------------------------------- | :----: |
