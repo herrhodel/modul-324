@@ -28,6 +28,8 @@ umzusetzen.
 
 <Slide name="formatting"/>
 
+<Slide name="sprint1-ende"/>
+
 ## Themen
 
 ### Technisch
