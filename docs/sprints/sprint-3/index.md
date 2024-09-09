@@ -11,12 +11,10 @@ jeder "gemerged" PR automatisch ausgeliefert wird.
 
 ### Technisch
 
-- AWS Management Konsole kennenlernen
-- `aws-cli` installieren und verbinden können
-- Terraform Script erstellen (gibt eine Demo von mir!)
-  - alternativ auch manuell auf AWS konfigurieren
-- `aws-cli` von Github-Actions aus einsetzen
-- Dockerimage nach AWS-Registry pushen
+- CI: GitHub Actions verstehen
+- CI: Eigene GitHub Actions erstellen
+- `aws-cli` lokal verbinden können
+- vorhandenes Terraform verstehen
 
 ### Produkt
 
@@ -25,6 +23,6 @@ jeder "gemerged" PR automatisch ausgeliefert wird.
 
 ## Inputs
 
+- GitHub Actions erklären
 - Überblick über AWS zeigen
 - Terraform vorstellen
-- Zusammen die AWS Umgebung aufsetzen

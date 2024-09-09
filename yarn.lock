@@ -1843,6 +1843,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/logger@npm:3.5.2":
+  version: 3.5.2
+  resolution: "@docusaurus/logger@npm:3.5.2"
+  dependencies:
+    chalk: "npm:^4.1.2"
+    tslib: "npm:^2.6.0"
+  checksum: 10/9cc1ac17503fdd739ceba6340289bf39740e1aad87e0a7e5da97fcd2f6186b5f4da05bbbbf660a43af04f0ec8bc2aaac086d6d31c79ab64c71acb3da36213b9e
+  languageName: node
+  linkType: hard
+
 "@docusaurus/mdx-loader@npm:3.5.1":
   version: 3.5.1
   resolution: "@docusaurus/mdx-loader@npm:3.5.1"
@@ -2229,6 +2239,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/utils-common@npm:3.5.2":
+  version: 3.5.2
+  resolution: "@docusaurus/utils-common@npm:3.5.2"
+  dependencies:
+    tslib: "npm:^2.6.0"
+  peerDependencies:
+    "@docusaurus/types": "*"
+  peerDependenciesMeta:
+    "@docusaurus/types":
+      optional: true
+  checksum: 10/9d550c89663d4271456ae0832c82a1691207ccc95e21df3a05a4bd6bbd2624bb9e3ab7327d939c04b2023378987bcf99321b2c37be1af214852832f65d6db14a
+  languageName: node
+  linkType: hard
+
 "@docusaurus/utils-validation@npm:3.5.1":
   version: 3.5.1
   resolution: "@docusaurus/utils-validation@npm:3.5.1"
@@ -2275,6 +2299,39 @@ __metadata:
     "@docusaurus/types":
       optional: true
   checksum: 10/f03cf104750eb90534fd11ae55521de694d19770fcad8a6832ca2170587c740714f06d7cb6dea77f94abb3aa7fe1fd696507556fed58f4b6d324f9bc30a64fa3
+  languageName: node
+  linkType: hard
+
+"@docusaurus/utils@npm:^3.0.1":
+  version: 3.5.2
+  resolution: "@docusaurus/utils@npm:3.5.2"
+  dependencies:
+    "@docusaurus/logger": "npm:3.5.2"
+    "@docusaurus/utils-common": "npm:3.5.2"
+    "@svgr/webpack": "npm:^8.1.0"
+    escape-string-regexp: "npm:^4.0.0"
+    file-loader: "npm:^6.2.0"
+    fs-extra: "npm:^11.1.1"
+    github-slugger: "npm:^1.5.0"
+    globby: "npm:^11.1.0"
+    gray-matter: "npm:^4.0.3"
+    jiti: "npm:^1.20.0"
+    js-yaml: "npm:^4.1.0"
+    lodash: "npm:^4.17.21"
+    micromatch: "npm:^4.0.5"
+    prompts: "npm:^2.4.2"
+    resolve-pathname: "npm:^3.0.0"
+    shelljs: "npm:^0.8.5"
+    tslib: "npm:^2.6.0"
+    url-loader: "npm:^4.1.1"
+    utility-types: "npm:^3.10.0"
+    webpack: "npm:^5.88.1"
+  peerDependencies:
+    "@docusaurus/types": "*"
+  peerDependenciesMeta:
+    "@docusaurus/types":
+      optional: true
+  checksum: 10/93355851b49de217d21f9a31d5e4083bd2b1b761af438fed5eb49c3890f01aba4bcb1801f1cd69e440ef88aa29b81783479c22302ad08a061fb1b559659e34e6
   languageName: node
   linkType: hard
 
@@ -2509,7 +2566,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mermaid-js/mermaid-cli@npm:^10.4.0":
+"@mermaid-js/mermaid-cli@npm:^10.9.1":
   version: 10.9.1
   resolution: "@mermaid-js/mermaid-cli@npm:10.9.1"
   dependencies:
@@ -2595,7 +2652,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@orama/plugin-analytics@npm:2.0.22, @orama/plugin-analytics@npm:^2.0.12":
+"@orama/orama@npm:2.0.24":
+  version: 2.0.24
+  resolution: "@orama/orama@npm:2.0.24"
+  checksum: 10/8b7065be8e50e67d873786f07e5c01c98c4730483276af7d979b04cd5f86ec59753093cfe6d78d722e5c043fdca16b4482e322e38308b4abc6e6f2eff6ece35c
+  languageName: node
+  linkType: hard
+
+"@orama/plugin-analytics@npm:2.0.24":
+  version: 2.0.24
+  resolution: "@orama/plugin-analytics@npm:2.0.24"
+  dependencies:
+    "@orama/orama": "npm:2.0.24"
+  checksum: 10/8e7611a4f590d81f1752ca881812eae6e4242b8f2f0c2db36889b751832ce272d98907835ad765c0a871609f7ca86b54b03b510fa2057cd9ba995e0a52269738
+  languageName: node
+  linkType: hard
+
+"@orama/plugin-analytics@npm:^2.0.12":
   version: 2.0.22
   resolution: "@orama/plugin-analytics@npm:2.0.22"
   dependencies:
@@ -2604,16 +2677,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@orama/plugin-docusaurus-v3@npm:^2.0.22":
-  version: 2.0.22
-  resolution: "@orama/plugin-docusaurus-v3@npm:2.0.22"
+"@orama/plugin-docusaurus-v3@npm:^2.0.24":
+  version: 2.0.24
+  resolution: "@orama/plugin-docusaurus-v3@npm:2.0.24"
   dependencies:
     "@docusaurus/plugin-content-docs": "npm:^3.2.0"
     "@docusaurus/theme-common": "npm:^3.2.0"
+    "@docusaurus/utils": "npm:^3.0.1"
     "@orama/highlight": "npm:^0.1.5"
-    "@orama/orama": "npm:2.0.22"
-    "@orama/plugin-analytics": "npm:2.0.22"
-    "@orama/plugin-parsedoc": "npm:2.0.22"
+    "@orama/orama": "npm:2.0.24"
+    "@orama/plugin-analytics": "npm:2.0.24"
+    "@orama/plugin-parsedoc": "npm:2.0.24"
     "@orama/searchbox": "npm:^1.0.0-rc44"
     "@oramacloud/client": "npm:^1.0.14"
     github-slugger: "npm:^2.0.0"
@@ -2631,15 +2705,15 @@ __metadata:
     "@docusaurus/types": ">= 3.2.0"
     react: ">= 18.0.0"
     react-dom: ">= 18.0.0"
-  checksum: 10/94be3871f287420fc59cbf89f4c8aafd0b3b6fe2d0e1661e505b42c3681dbc2c6ea0c5b8643cd8852bf4f1aadacd277507be88be662b852ba0495bd9332fb4cf
+  checksum: 10/7208812d82e79dc3ec520dfde345ecdb7309a27c8c59d2d6b72f902857843017d3bd431e964fd155064f3fc4caac16a54703e2563bb107960a34c71a64f9a8c7
   languageName: node
   linkType: hard
 
-"@orama/plugin-parsedoc@npm:2.0.22":
-  version: 2.0.22
-  resolution: "@orama/plugin-parsedoc@npm:2.0.22"
+"@orama/plugin-parsedoc@npm:2.0.24":
+  version: 2.0.24
+  resolution: "@orama/plugin-parsedoc@npm:2.0.24"
   dependencies:
-    "@orama/orama": "npm:2.0.22"
+    "@orama/orama": "npm:2.0.24"
     glob: "npm:^8.1.0"
     hast-util-from-html: "npm:^1.0.1"
     hast-util-from-string: "npm:^2.0.0"
@@ -2652,7 +2726,7 @@ __metadata:
     remark-parse: "npm:^10.0.1"
     remark-rehype: "npm:^10.1.0"
     unified: "npm:^10.1.2"
-  checksum: 10/ece7fe06832941815f73941617b7f1a841f87b8a7e36a3277fe7ff4a8dff6eff445a6ee7f2e8a1d6b9f2c17785ae201019e435af079d816c924047c9834a621a
+  checksum: 10/93fea42749effb3b3c8f9a9c25e81cb55f9e06dc0581b7cfa81b7ad725fd3020df11f55c6bff377bea246de4db904e4884ba31163d3637d8d07712e49df053c7
   languageName: node
   linkType: hard
 
@@ -4546,8 +4620,8 @@ __metadata:
     "@marp-team/marp-core": "npm:^3.9.0"
     "@mdit/plugin-mark": "npm:^0.8.0"
     "@mdx-js/react": "npm:^3.0.0"
-    "@mermaid-js/mermaid-cli": "npm:^10.4.0"
-    "@orama/plugin-docusaurus-v3": "npm:^2.0.22"
+    "@mermaid-js/mermaid-cli": "npm:^10.9.1"
+    "@orama/plugin-docusaurus-v3": "npm:^2.0.24"
     "@puppeteer/browsers": "npm:^2.3.0"
     "@types/react": "npm:^18.0.0"
     clsx: "npm:^2.0.0"

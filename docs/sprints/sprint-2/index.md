@@ -1,19 +1,25 @@
 # 🏗️ Sprint 2 - Build it
 
 Der Sprint 2 hat zum Ziel, dass die CI/Pipeline so automatisiert ist, dass
-Codeänderungen, welche eingecheckt werden, automatisiert getestet und
-ein Dockerimage der Applikation gebaut wird.
+Codeänderungen, welche eingecheckt werden, automatisiert getestet und ein
+Dockerimage der Applikation gebaut wird.
+
+## Präsentationen
+
+<Slide name="formatting"/>
+
+<Slide name="git"/>
 
 ## Themen
 
 ### Technisch
 
-- Testautomation aufbauen
-- Semantic Versioning verwenden
-  - Git Tags einsetzen
-- GitHub Actions verstehen
-- GitHub Actions erstellen
-- Dockerfile erstellen
+- Git: GitHub flow vs Git flow
+- Git: Conventional Commits
+- Git: Semantic Versioning verwenden und Tags
+- Package Manager: npm / gradle und co. verwenden
+- CI: Testautomation aufbauen
+- docker: Produktives Dockerfile erstellen
 
 ### Produkt
 
@@ -23,8 +29,8 @@ ein Dockerimage der Applikation gebaut wird.
 
 ## Inputs
 
-- Testautomation Frameworks vorstellen
-- Was ist Semantic Versioning?
+- Git flows
+- Conventional Commits + Semantic Versioning
   - Wie macht man ein Git Tag?
-- Github Actions erklären
+- Testautomation Frameworks vorstellen
 - Dockerfile erklären
