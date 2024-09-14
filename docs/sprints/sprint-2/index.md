@@ -10,6 +10,10 @@ Dockerimage der Applikation gebaut wird.
 
 <Slide name="git"/>
 
+<Slide name="packagemanager"/>
+
+<Slide name="docker"/>
+
 ## Themen
 
 ### Technisch
