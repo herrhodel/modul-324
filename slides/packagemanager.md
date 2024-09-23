@@ -10,7 +10,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Woche 6
 
-## Packagemanagers
+## Paketmanagers
 
 ### Modul 324
 
@@ -28,7 +28,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-# Probleme von Abhängingkeits Management
+# Probleme beim Management von Abhängigkeiten
 
 - Aufwand die Bibliotheken von Hand zu kopieren
 
@@ -100,7 +100,7 @@ Alle Programmiersprachen besitzen heute Packagemanager!
 
 ::: split
 
-## Scurityscanning
+## Security scanning
 
 - Bekannte Versionsprobleme werden als Warning beim installieren ausgegeben!
 

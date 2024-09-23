@@ -153,17 +153,43 @@ git merge fix#1
 
 ---
 
+<!-- _class: big -->
+
+# Merke
+
+### Git Flow und GitHub Flow haben gemeinsam dass
+
+- für **jedes Feature** wird **ein Feature-Branch** erstellt wird
+
+- für jeden Feature-Branch wird einen Pull-Request erstellt wird
+
+---
+
+<!-- _class: emoji-list -->
+
+# Wichtiger `main` Branch!
+
+- ⚡ Der `main`-Branch muss **immer eine funktionierende Version** des Produkts
+  beinhalten.
+
+- ⚡ Angefangene Features sollten im main Branch nicht dazu führen, dass die
+  Applikation Fehlerhaft ist.
+- :bulb: Es kann auf GitHub eingestellt werden, dass nicht direkt auf den main
+  branch "gepushed" werden kann.
+
+---
+
 <!-- _class: big center -->
 
 # Semantic Versioning
 
-![inline](./images/semvers.png)
+![width:900px](./images/semvers.png)
 
 ---
 
 # Semantic Versioning
 
-- Vereinfacht Management von Abhängingkeiten
+- Vereinfacht Management von Abhängigkeiten
 - Kann Fehler durch upgrades verhindern
 - Wichtig für Bibliotheken!
 
@@ -220,9 +246,8 @@ git merge fix#1
 
 # Conventional Commits / _Vorteile_
 
-- Einheinlichkeit -> Übersichtlichkeit!
+- Einheitlichkeit -> Übersichtlichkeit!
 
-- Führt zu kleineren, spezifischeren Commits
+- Führt zu kleineren, spezifischen Commits
 - Automatisch generierte Changelogs: 😱
 - Automatisches erkennen von Semantischer-Versionierung
-

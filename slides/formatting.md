@@ -128,7 +128,7 @@ trim_trailing_whitespace = true
 
 Garantiert die **funktionale Korrektheit** durch das Identifizieren von
 
-- **potenziellen Fehlern**
+- **funktionelle Fehlern**
 
 - **stilistischen Problemen**
 - **unsicheren Praktiken**
@@ -168,26 +168,26 @@ Kollektion von Linters, welche direkt in GitHub Actions verwendet werden können
 
 ```yaml
 steps:
-- name: Super-Linter
-  uses: super-linter/super-linter@v7.0.0
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    # Set your fix mode variables to true
-    FIX_GOOGLE_JAVA_FORMAT: true
-    VALIDATE_HTML_PRETTIER: true
-- name: Commit and push linting fixes
-  # Run only on:
-  # - Pull requests
-  # - Not on the default branch
-  if: >
-    github.event_name == 'pull_request' && github.ref_name !=
-    github.event.repository.default_branch
-  uses: stefanzweifel/git-auto-commit-action@v5
-  with:
-    branch: ${{ github.event.pull_request.head.ref }}
-    commit_message: "chore: fix linting issues"
-    commit_user_name: super-linter
-    commit_user_email: super-linter@super-linter.dev
+  - name: Super-Linter
+    uses: super-linter/super-linter@v7.0.0
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Set your fix mode variables to true
+      FIX_GOOGLE_JAVA_FORMAT: true
+      VALIDATE_HTML_PRETTIER: true
+  - name: Commit and push linting fixes
+    # Run only on:
+    # - Pull requests
+    # - Not on the default branch
+    if: >
+      github.event_name == 'pull_request' && github.ref_name !=
+      github.event.repository.default_branch
+    uses: stefanzweifel/git-auto-commit-action@v5
+    with:
+      branch: ${{ github.event.pull_request.head.ref }}
+      commit_message: "chore: fix linting issues"
+      commit_user_name: super-linter
+      commit_user_email: super-linter@super-linter.dev
 ```
 
 :::

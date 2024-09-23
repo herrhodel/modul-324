@@ -18,7 +18,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Warentransport früher
 
-![bg right fit](./images/alamy-rheinländer-handelswagen.jpg)
+![bg right fit](./images/alamy-rheinlaender-handelswagen.jpg)
 
 - Verschiedene Dinge
 - Verschiedene Grössen
@@ -30,7 +30,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 # Warentransport heute
 
 - Container standardisieren den Transport!
-- Vierschiedene Dinge, verpackt in eine Einheitsgrösse 🤯 🚢 🚚
+- Verschiedene Dinge, verpackt in eine Einheitsgrösse 🤯 🚢 🚚
 
 ::: columns
 

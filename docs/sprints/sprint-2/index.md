@@ -14,6 +14,8 @@ Dockerimage der Applikation gebaut wird.
 
 <Slide name="docker"/>
 
+<Slide name="sprint2-ende"/>
+
 ## Themen
 
 ### Technisch
