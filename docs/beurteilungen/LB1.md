@@ -17,11 +17,13 @@ ersichtlich.
 
 :::
 
-| Sozialform               | Form                       | Abgabe          | Gewicht  |
-| :----------------------- | :------------------------- | :-------------- | :------- |
-| :smile: **Einzelarbeit** | 🗣️ Fachgespräch pro Sprint | Woche 4 / 7 / 9 | 3 \* 10% |
+## Sprint 1 und 2
 
-## Bewertung
+| Sozialform               | Form                       | Abgabe      | Gewicht  |
+| :----------------------- | :------------------------- | :---------- | :------- |
+| :smile: **Einzelarbeit** | 🗣️ Fachgespräch pro Sprint | Woche 4 / 7 | 2 \* 10% |
+
+### Bewertung
 
 | Was           | Wie                                                       | Punkte |
 | ------------- | --------------------------------------------------------- | ------ |
@@ -31,3 +33,21 @@ ersichtlich.
 | Kommunikation | Die Antworten erfolgen deutlich, zügig und klar           | 2      |
 | ...           |                                                           |        |
 | **Total**     |                                                           | **10** |
+
+## Sprint 3
+
+Jede Gruppe Stellt Ihr Projekt kurz vor.
+
+| Sozialform           | Form            | Abgabe  | Gewicht  |
+| :------------------- | :-------------- | :------ | :------- |
+| 👬 **Gruppenarbeit** | 🗣️ Präsentation | Woche 9 | 1 \* 10% |
+
+### Bewertung
+
+Alle diese Punkte werden in der Präsentation beachtet:
+
+- Die Applikation wird auf dem Beamer gezeigt und durchgeführt.
+- Wieso haben wir dieses Projekt gewählt?
+- Was waren unsere Schwierigkeiten?
+- Wie haben wir Sie gemeistert?
+- Jede Person einzeln: Was ist das wichtigste dass ich von dem Modul mitnehme?

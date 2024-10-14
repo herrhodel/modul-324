@@ -7,14 +7,16 @@ wobei der aktuellste Stand immer automatisch als Dockerimage vorhanden ist.
 Dieses Dockerimage soll am Ende automatisch nach AWS deployt werden, sodass
 jeder "gemerged" PR automatisch ausgeliefert wird.
 
+## Präsentationen
+
+<Slide name="ci-cd"/>
+
 ## Themen
 
 ### Technisch
 
 - CI: GitHub Actions verstehen
-- CI: Eigene GitHub Actions erstellen
-- `aws-cli` lokal verbinden können
-- vorhandenes Terraform verstehen
+- CI: AWS GitHub Actions erweitern
 
 ### Produkt
 
@@ -24,5 +26,3 @@ jeder "gemerged" PR automatisch ausgeliefert wird.
 ## Inputs
 
 - GitHub Actions erklären
-- Überblick über AWS zeigen
-- Terraform vorstellen
