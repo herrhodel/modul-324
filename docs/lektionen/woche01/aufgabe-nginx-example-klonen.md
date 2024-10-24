@@ -4,7 +4,7 @@ keywords:
   - pdf
 ---
 
-# Nginx Beispiel App
+# Web-Applikation Template Repository
 
 Das Modul verfolgt das Prinzip, **_make-it-work_, _then-make-it-yours_**. Dies
 heisst es existiert ein funktionsfähiges, minimales Beispielprogramm. In diesem
@@ -50,13 +50,15 @@ angepasst wird.
   - AWS_ACCOUNT_ID
     ![GitHub AWS Secrets Account](../../img/github_ceate_secrets_account_id.png)
 
-### GitHub Action neu starten
+### Amazon AWS Infrastruktur aufsetzten
 
-Es wird automatisch, bei einer Änderung auf dem Branch `main` eine
-[GitHub Action](https://docs.github.com/en/actions) gestartet. Diese ist
-garantiert rot, da die Secrets gefehlt haben.
+Es existiert eine GitHub Action
+[Setup Infrastructure on Amazon AWS](https://github.com/codingluke/bbzbl-modul-324-template/blob/main/.github/workflows/aws-infrastructure.yml)
 
-Nun, da diese übertragen wurden, können wir die Action neu starten.
+Diese kann manuell gestartet werden. Da die Action sich mit Amazon verbindet,
+müssen zuerst die Credentials übertragen sein.
+
+Danach die Action folgendermassen gestartet werden:
 
 - Nach **"Actions"** navigieren
 - Die fehlgeschlagene Action **"Inital commit"** auswählen
@@ -106,4 +108,3 @@ deployed werden!
   ![Commit](../../img/github_edit_index_html_commit.png)
 - Warten bis die GitHub Actions fertig sind
   ![Commit Action](../../img/github_edit_index_html_action.png)
-

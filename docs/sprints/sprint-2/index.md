@@ -14,18 +14,24 @@ Dockerimage der Applikation gebaut wird.
 
 <Slide name="docker"/>
 
+<Slide name="ci-cd"/>
+
 <Slide name="sprint2-ende"/>
 
 ## Themen
 
 ### Technisch
 
-- Git: GitHub flow vs Git flow
-- Git: Conventional Commits
-- Git: Semantic Versioning verwenden und Tags
 - Package Manager: npm / gradle und co. verwenden
-- CI: Testautomation aufbauen
+- CI: AWS GitHub Actions erweitern
+  - CI: GitHub Actions verstehen
+  - CI: Testautomation aufbauen
 - docker: Produktives Dockerfile erstellen
+
+### Produkt
+
+- Weitere "Features" umsetzen
+- Issues an Pull-Requests verknüpfen
 
 ### Produkt
 

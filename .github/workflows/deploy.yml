@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - v2
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
@@ -20,6 +21,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+      - uses: c-hive/gha-yarn-cache@v2
       - uses: browser-actions/setup-chrome@latest
       - name: Install dependencies
         run: yarn install --frozen-lockfile
