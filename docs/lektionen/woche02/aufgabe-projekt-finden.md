@@ -17,7 +17,7 @@ keywords:
   - :bulb: Ihr dürft auch zuerste in GoogleDocs die Beschreibung ausarbeiten.
   - Am Ende sollte sie jedoch im Readme.md stehen.
 - Die Beschreibung _commiten_
-  - **Zu verwendende Commit-Beschreibung: `docs: Projektbeschreibung`**
+  - :boom: **Zu verwendende Commit-Beschreibung: `docs: Projektbeschreibung`**
   - :bulb: Diese Commit-Beschreibung entspricht den conventional-commits, welche
     später noch genauer erläutert werden.
 - Einen **Pull-Request** erstellen

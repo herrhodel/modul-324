@@ -20,14 +20,10 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: columns
 
-1. Gemeinsam mein PR mergen
-
-2. Lokales Entwickeln bei allen ermöglichen
-
 ## :speaking_head: Fachgespräche
 
-- Ihr arbeitet an der Beschreibung der Issues, [**die werden Bewertet**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB3#bewertung-f%C3%BCr-sprint-1)!
-- [**Reflexion schreiben!**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2)
+- Ihr arbeitet an der Beschreibung der Issues, [**die werden Bewertet**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-arbeitsvorgang)!
+- [**Reflexion schreiben!**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-schriftliche-reflexion)
 
 :::split s2
 
@@ -36,5 +32,3 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - nur im Unterricht ersichtlich
 
 :::
-
----

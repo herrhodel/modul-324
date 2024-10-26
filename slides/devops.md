@@ -52,9 +52,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ### Oder auch
 
-- :ear: Den Kunden verstehen wollen
-- :label: Post-its voll malen
-- :construction_worker: Delegieren!
+* :ear: Den Kunden verstehen wollen
+* :label: Post-its voll malen
+* :construction_worker: Delegieren!
 
 <!-- https://www.pexels.com/de-de/foto/marketing-mann-person-geschaft-7710088/ -->
 
@@ -71,9 +71,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ### Oder auch
 
-- :zany_face: Spass haben
-- :upside_down_face: Kreativ sein!
-- 🫣 Coding Themes ausprobieren
+* :zany_face: Spass haben
+* :upside_down_face: Kreativ sein!
+* 🫣 Coding Themes ausprobieren
 
 ---
 
@@ -87,8 +87,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ### Oder auch
 
-- :tooth: auf den Zahn fühlen
-- :cop: pingelig sein
+* :tooth: auf den Zahn fühlen
+* :cop: pingelig sein
 
 <!-- https://www.pexels.com/de-de/foto/kind-zahne-zahnpflege-uberprufung-6502552/ -->
 
@@ -106,8 +106,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ### Oder auch
 
-- :seedling: Ein Samen setzen
-- :shamrock: Software ist im stetigen Wandel
+* :seedling: Ein Samen setzen
+* :shamrock: Software ist im stetigen Wandel
 
 <!-- https://www.pexels.com/de-de/foto/man-planting-plant-169523/ -->
 

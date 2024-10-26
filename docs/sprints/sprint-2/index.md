@@ -6,11 +6,9 @@ Dockerimage der Applikation gebaut wird.
 
 ## Präsentationen
 
-<Slide name="formatting"/>
-
-<Slide name="git"/>
-
 <Slide name="packagemanager"/>
+
+<Slide name="formatting"/>
 
 <Slide name="docker"/>
 

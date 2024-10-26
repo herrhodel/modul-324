@@ -8,7 +8,11 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# CI / CD - Pipeline
+# Woche 7
+
+## CI / CD - Pipeline
+
+### Modul 324
 
 ---
 
