@@ -24,7 +24,7 @@ angepasst wird.
 ### Das Template `bbzbl-modul-324-nginx` klonen
 
 - In den GitHub Account einloggen
-- [https://github.com/codingluke/bbzbl-modul-324-nginx](https://github.com/codingluke/bbzbl-modul-324-nginx)
+- [https://github.com/codingluke/bbzbl-modul-324-template](https://github.com/codingluke/bbzbl-modul-324-template)
   aufrufen
 - "Use this Template" -> "Create a new repository" wählen
   ![github_create_repository_from_template](../../img/github_create_repository_from_template.png)
@@ -55,34 +55,61 @@ angepasst wird.
 Es existiert eine GitHub Action
 [Setup Infrastructure on Amazon AWS](https://github.com/codingluke/bbzbl-modul-324-template/blob/main/.github/workflows/aws-infrastructure.yml)
 
-Diese kann manuell gestartet werden. Da die Action sich mit Amazon verbindet,
-müssen zuerst die Credentials übertragen sein.
+:::caution
+
+- Diese kann manuell gestartet werden.
+- Da die Action sich mit Amazon verbindet, müssen **zuerst die Credentials
+  übertragen** sein.
+
+:::
 
 Danach die Action folgendermassen gestartet werden:
 
-- Nach **"Actions"** navigieren
-- Die fehlgeschlagene Action **"Inital commit"** auswählen
-  ![GitHub Action initial commit](../../img/github_restart_initial_commit_action.png)
-- **"Re-run jobs"** starten
-  ![GitHub Action re-run](../../img/github_rerun_jobs.png)
-- **Warten, und warten** bis...
-  ![GitHub Action success](../../img/github_success_action.png)
+1. Nach **"Actions"** navigieren
+2. **"Setup Infrastructure on Amazon AWS"** auswählen
+3. **"Run workflow"** auswählen
+
+![GitHub Action initial commit](../../img/github_restart_initial_commit_action_v2.jpg)
+
+Nun wird ein Workflow mit zwei Steps gestartet:
+
+- der Erste "Create AWS Resourcen" erstellt alle AWS Resourcen, d.H. die Ubuntu
+  VM und co.
+- der Zweite "Bootstrap Kamal on AWS EC2 instance" installiert die nötigen tools
+  in der Ubuntu VM
+
+![github_start_aws_infrastructure](images/github_start_aws_infrastructure.png)
+
+- Wenn alles grün ist (hoffentlich :sweat_smile:) sollte die Umgebung parat
+  sein, dass Docker-Images deployed werden können.
+
+### Nginx Image bauen und ausliefern (deployen)
+
+Ist die AWS Umgebung aufgesetzt, kann die Action "Deploy to Amazon AWS" analog
+gestartet werden.
+
+1. **"Deploy to Amazon AWS"** auswählen
+2. **"Run workflow"** auswählen
+
+![github_action_deploy_to_amazon](images/github_action_deploy_to_amazon.png)
+
+3. Warten bis das Deployment geklappt hat
+4. Nun sollte einen Link "Visit me on http://public-ip :rocket:" sichtbar sein
+
+![github_action_deploy_to_amazon_success](images/github_action_deploy_to_amazon_success.png)
 
 ### Webseite in Browser öffnen
 
 Nun ist die Web-App auf AWS ausgeliefert und öffentlich verfügbar.
 
-- Kopiert die Public-IP ganz am Ende vom "output".
-  ![GitHub Action success](../../img/github_success_action.png)
-- öffnet in einem Browser "http://eure-ip"
-  ![Public Website](../../img/nginx_webseite_public.png)
+:::caution HTTP ist unsicher...
 
-:::info HTTP ist unsicher...
-
-- Es handelt sich um **http** und nicht httpswenn
+- Es handelt sich um **http** und nicht https!
 - Wenn euer Browser motzt, evt. Firefox verwenden.
 
 :::
+
+![Public Website](../../img/nginx_webseite_public.png)
 
 ### HTML bearbeiten
 
