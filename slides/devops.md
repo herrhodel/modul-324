@@ -207,4 +207,3 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 - Kundenzufriedenheit
 - Mitarbeiterzufriedenheit
 
----

@@ -1,22 +1,38 @@
 # Beurteilungen
 
-**Jeder Sprint** wird mit einer Note pro Person beurteilt. Die Note ist in 3 LBs
-unterteilt, wobei jeder LB mit 10 Punkte gleichwertig gewichtet ist. Die
+<!-- **Jeder Sprint** wird mit einer Note pro Person beurteilt. Die Note ist in 3 LBs -->
+<!-- unterteilt, wobei jeder LB mit 10 Punkte gleichwertig gewichtet ist. Die -->
+<!---->
+<!-- - Die LB 1 und 2 sind Einzelbenotungen. -->
+<!-- - Der LB 3, der Arbeitsvorgang, wird als Gruppe bewertet, da hier die -->
+<!--   Zusammenarbeit sichtbar wird. -->
+<!---->
+<!-- Modulnote besteht somit, wie folgt abgebildet, aus einer Matrix mit 3 -->
+<!-- Sprint-Noten, welche wiederum jeweils aus 3 LBs bestehen: -->
 
-- Die LB 1 und 2 sind Einzelbenotungen.
-- Der LB 3, der Arbeitsvorgang, wird als Gruppe bewertet, da hier die
-  Zusammenarbeit sichtbar wird.
+Im Modul 324 gibt es 3 LBs:
 
-Modulnote besteht somit, wie folgt abgebildet, aus einer Matrix mit 3
-Sprint-Noten, welche wiederum jeweils aus 3 LBs bestehen:
+| Thema                                        | Abgabe  | Gewicht               |
+| :------------------------------------------- | :------ | :-------------------- |
+| 🏅 [**LB1: Sprintnote**](./LB1.md)           | Woche 4 | **1/3 der Modulnote** |
+| 🏅 [**LB2: Sprintnote**](./LB2.md)           | Woche 8 | **1/3 der Modulnote** |
+| 📝 [**LB3: Schriftliche Prüfung**](./LB3.md) | Woche 9 | **1/3 der Modulnote** |
 
-| Abgabe | Sprint                                                        | [🗣️ LB 1](/docs/beurteilungen/LB1.md) | [🪩 LB 2](/docs/beurteilungen/LB2.md) | [👬 LB 3](/docs/beurteilungen/LB3.md) | Punkte | Note      |
-| :----- | ------------------------------------------------------------- | :-----------------------------------: | :-----------------------------------: | :-----------------------------------: | -----: | --------- |
-| W4     | [:foot: Kickoff](/docs/sprints/sprint-1.md)                   |                  10                   |                  10                   |                  10                   |     30 | Sprint 1  |
-| W7     | [:building_construction: Build it](/docs/sprints/sprint-2.md) |                  10                   |                  10                   |                  10                   |     30 | Sprint 2  |
-| W9     | [:ship: Ship it](/docs/sprints/sprint-3.md)                   |                  10                   |                  10                   |                  10                   |     30 | Sprint 3  |
-|        |                                                               |                                       |                                       |                                       |     90 | Modulnote |
+Die ersten zwei LBs bestehen je aus drei gleichwertigen Bewertungen:
 
-## Themen
+| Sozialform               | Form                      | Abgabe  | Gewicht    |
+| :----------------------- | :------------------------ | :------ | :--------- |
+| :smile: **Einzelarbeit** | 🗣️ Fachgespräch           | Woche 4 | 1/3 vom LB |
+| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 4 | 1/3 vom LB |
+| 👬 **Gruppenarbeit**     | 👷 Arbeitsvorgang         | Woche 4 | 1/3 vom LB |
+
+:::caution
+
+Die Leitfragen zur schriftlichen Reflexion sind nicht exakt die gleichen. Schaut
+euch also die Beschreibung jeder LBs einzeln an.
+
+:::
+
+## Leistungsbeurteilungen
 
 <DocCardList />

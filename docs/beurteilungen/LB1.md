@@ -10,9 +10,9 @@ keywords:
 
 | Sozialform               | Form                                                          | Abgabe  | Gewicht               |
 | :----------------------- | :------------------------------------------------------------ | :------ | :-------------------- |
-| :smile: **Einzelarbeit** | [🗣️ Fachgespräch](#teilnote-fachgespräch)                     | Woche 4 | 30% vom LB1           |
-| :smile: **Einzelarbeit** | [🖋️ Schriftliche Reflexion](#teilnote-schriftliche-reflexion) | Woche 4 | 30% vom LB1           |
-| 👬 **Gruppenarbeit**     | [👷 Arbeitsvorgang](#teilnote-arbeitsvorgang)                 | Woche 4 | 40% vom LB1           |
+| :smile: **Einzelarbeit** | [🗣️ Fachgespräch](#teilnote-fachgespräch)                     | Woche 4 | 1/3 vom LB1           |
+| :smile: **Einzelarbeit** | [🖋️ Schriftliche Reflexion](#teilnote-schriftliche-reflexion) | Woche 4 | 1/3 vom LB1           |
+| 👬 **Gruppenarbeit**     | [👷 Arbeitsvorgang](#teilnote-arbeitsvorgang)                 | Woche 4 | 1/3 vom LB1           |
 | ...                      |                                                               |         |                       |
 |                          | 🏅 **LB1: Sprintnote**                                        | Woche 4 | **1/3 der Modulnote** |
 

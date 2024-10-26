@@ -21,7 +21,7 @@ angepasst wird.
 
 ## Aufgaben
 
-### Das Template `bbzbl-modul-324-nginx` klonen
+### Das Template `bbzbl-modul-324-template` klonen
 
 - In den GitHub Account einloggen
 - [https://github.com/codingluke/bbzbl-modul-324-template](https://github.com/codingluke/bbzbl-modul-324-template)
@@ -131,7 +131,17 @@ deployed werden!
 
   :::
 
-- Änderungen "commiten". Die Nachricht ist noch nicht wichtig.
+- Änderungen **"commiten"**.
+
+  :::caution
+
+  Verwendet bitte die commit message `feat(nginx): show some magic`
+
+  :::
+
   ![Commit](../../img/github_edit_index_html_commit.png)
-- Warten bis die GitHub Actions fertig sind
+- Nun wird automatisch die GitHub Action **"Deploy to Amazon AWS"** gestartet.
+- Warten bis die GitHub Action fertig ist
   ![Commit Action](../../img/github_edit_index_html_action.png)
+
+- **:boom: Nun die Webseite refreshen**

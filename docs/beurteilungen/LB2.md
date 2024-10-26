@@ -10,9 +10,9 @@ keywords:
 
 | Sozialform               | Form                      | Abgabe  | Gewicht               |
 | :----------------------- | :------------------------ | :------ | :-------------------- |
-| :smile: **Einzelarbeit** | 🗣️ Fachgespräch           | Woche 8 | 30% vom LB2           |
-| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 8 | 30% vom LB2           |
-| 👬 **Gruppenarbeit**     | 👷 Arbeitsvorgang         | Woche 8 | 40% vom LB2           |
+| :smile: **Einzelarbeit** | 🗣️ Fachgespräch           | Woche 8 | 1/3 vom LB2           |
+| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 8 | 1/3 vom LB2           |
+| 👬 **Gruppenarbeit**     | 👷 Arbeitsvorgang         | Woche 8 | 1/3 vom LB2           |
 | ...                      |                           |         |                       |
 |                          | 🏅 **LB2: Sprintnote**    | Woche 8 | **1/3 der Modulnote** |
 
