@@ -6,6 +6,7 @@ umzusetzen.
 
 ## Ziele
 
+- :dart: GitHub kennenlernen
 - :dart: Gruppen kennenlernen
 - :dart: Projekt finden
 - :dart: Arbeitsgrundlage schaffen
@@ -20,30 +21,30 @@ umzusetzen.
    - Kennt Vorgehensweisen zur **Verwaltung von Anforderungen**
    - Kennt Vorgehensweisen zur **nachvollziehbaren Entwicklung im Team**
 
+### Inhalt
+
+- GitHub
+  - Repository aufsetzen
+  - Projekt aufsetzen
+- Programmiersprache bestimmen
+  - IDE konfigurieren
+  - lokales Entwickeln ermöglichen
+- Git
+  - GitHub flow vs Git flow
+  - Conventional Commits
+  - Semantic Versioning verwenden und Tags
+
 ## Präsentationen
 
 <Slide name="projektmanagement"/>
 
-<Slide name="local-development"/>
+<Slide name="git"/>
 
-<Slide name="formatting"/>
+<Slide name="local-development"/>
 
 <Slide name="sprint1-ende"/>
 
 ## Themen
-
-### Technisch
-
-- Programmiersprache bestimmen
-  - IDE konfigurieren
-  - linting / formatting
-
-## Inputs
-
-- Kurz GitHub vorstellen
-  - Project / Issues / PR vorstellen
-- Unterschied von linting und formatting
-  - Tools vorstellen (sonarlint, eslint)
 
 ## Aufgaben
 

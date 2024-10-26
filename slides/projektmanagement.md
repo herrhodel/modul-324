@@ -8,7 +8,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Woche 1
+# Woche 2
 
 ## Projektmanagement / Sprint 1
 
@@ -233,7 +233,7 @@ Zusammen werden die Gruppen zusammengestellt:
 - Erste [test-Issues](https://github.com/features/issues) erstellen und damit
   spielen
   - Verknüpfen, Taggen
-  - Erstellt Tasks in Markdown <br>
+  - Erstellt Tasks in Markdown <br/>
     ```markdown
     - [ ] Task 1
     ```

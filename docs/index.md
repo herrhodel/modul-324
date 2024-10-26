@@ -7,18 +7,18 @@ sidebar_label: 🏠 Modul 324
 
 ## :calendar: Quartalsübersicht
 
-|      Woche       |            Datum            | Thema                          | Leistungsbewertung                           |
-| :--------------: | :-------------------------: | :----------------------------- | :------------------------------------------- |
-|   Woche&nbsp;1   |         12.08.2024          | DevOps / Umgebung aufbauen     |                                              |
-|   Woche&nbsp;2   |         19.08.2024          | eduScrum mit GitHub / Sprint 1 |                                              |
-|   Woche&nbsp;3   |         26.08.2024          | Sprint 1                       |                                              |
-| **Woche&nbsp;4** |         02.09.2024          | Sprint 1                       | [**Sprint 1**](/docs/beurteilungen/index.md) |
-|   Woche&nbsp;5   |         09.09.2024          | Sprint 2                       |                                              |
-|   Woche&nbsp;6   |         16.09.2024          | Sprint 2                       |                                              |
-| **Woche&nbsp;7** |         23.09.2024          | Sprint 2                       | [**Sprint 2**](/docs/beurteilungen/index.md) |
-|                  | 30.09.2024 <br/> 07.10.2024 | _:star2: Herbstferien :star2:_ |                                              |
-|   Woche&nbsp;8   |         14.10.2024          | Sprint 3                       |                                              |
-| **Woche&nbsp;9** |         21.10.2024          | Sprint 3                       | [**Sprint 3**](/docs/beurteilungen/index.md) |
+|      Woche       |            Datum            | Thema                                                  | Leistungsbewertung                                            |
+| :--------------: | :-------------------------: | :----------------------------------------------------- | :------------------------------------------------------------ |
+|   Woche&nbsp;1   |         28.10.2024          | DevOps <br/> AWS / GitHub Umgebung aufbauen            |                                                               |
+|   Woche&nbsp;2   |         04.11.2024          | eduScrum mit GitHub <br/> Sprint 1 Start               |                                                               |
+|   Woche&nbsp;3   |         11.11.2024          | Sprint 1                                               |                                                               |
+| **Woche&nbsp;4** |         18.11.2024          | **Sprint 1 Ende**                                      | [**LB1 : Lektion 1 / Sprint 1**](/docs/beurteilungen/LB1.md)  |
+|   Woche&nbsp;5   |         25.11.2024          | Sprint 2 Start                                         |                                                               |
+|   Woche&nbsp;6   |         02.12.2024          | Sprint 2                                               |                                                               |
+|   Woche&nbsp;7   |         09.12.2024          | Sprint 2                                               |                                                               |
+| **Woche&nbsp;8** |         16.12.2024          | **Sprint 2 Ende**                                      | [**LB2 : Sprint 2**](/docs/beurteilungen/LB2.md)              |
+|                  | 23.12.2024 <br/> 30.12.2024 | _:star2: Weihnachtsferien :star2:_                     |                                                               |
+| **Woche&nbsp;9** |         06.01.2024          | **Modulabschlussprüfung** <br/> Projekt-Präsentationen | [**LB3 - Modulabschlussprüfung**](/docs/beurteilungen/LB3.md) |
 
 ## DevOps-Prozese mit Tools unterstützen
 
