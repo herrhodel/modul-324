@@ -16,7 +16,7 @@ keywords:
 | ...                      |                                                               |         |                       |
 |                          | 🏅 **LB1: Sprintnote**                                        | Woche 4 | **1/3 der Modulnote** |
 
-## Teilnote: Fachgespräch 
+## Teilnote: Fachgespräch
 
 Am **Ende des Sprints** findet ein Sprint-Review, in Form eines
 **Fachgespräches** statt. Jedes Gruppenmitglied wird zur **Lektion 1** sowie zum
@@ -72,17 +72,16 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 ### Wo wird die Reflexion geschrieben?
 
 - Für jede Reflexion pro Person soll ein `GitHub Issue` erstellt werden.
-- Die Reflexion soll als `markdown`-Datei unter Ihrem Nachnamen im Ordner
-  `/docs` geschrieben werden.
-- Für jede Reflexion wird ein Branch `docs/reflexion-ihr-nachname` erstellt.
+- Die Reflexion soll als `markdown`-Datei unter folgendem Pfad
+  `/docs/reflections/ihr-nachname/reflexion-sprint1.md` geschrieben werden.
+- Für jede Reflexion pro Person wird ein Branch erstellt.
 - Es wird ein Pull-Request erstellt und mir `@codingluke` als Reviewer
   zugewiesen.
-- Nach dem mergen, soll der Branch `docs/reflexion-ihr-nachname` wieder gelöscht
-  werden.
-- Die Commit-Message soll folgendermassen heissen.
+- Nach dem mergen, soll der Branch wieder gelöscht werden.
+- :boom: Die Commit-Message soll folgendermassen heissen.
   - `docs(ihr-nachname): Reflexion Sprint 1`
 
-:::tip Beispieldatei: `/docs/hodel/reflexion-sprint1.md`
+:::tip Beispieldatei: `/docs/reflections/hodel/reflexion-sprint1.md`
 
 ```markdown
 # Hodel - Reflexion Sprint 1
@@ -98,12 +97,15 @@ lorem ipsum...
 ...
 ```
 
+Commit-Message: `docs(hodel): Reflexion Sprint 1`
+
 :::
 
 :::info Wieso so kompliziert?
 
 1. Ihr wendet direkt Prinzipien von Git und GitHub an
 2. Ich habe dich Möglichkeit im Pull-Request einzelne Zeilen zu kommentieren
+3. Ihr verwendet mit conventional-commits direkt das Autorelease Feature
 
 :::
 
@@ -152,12 +154,15 @@ bewertet.
 
 ### Bewertung
 
-| Thema                                         | Punkte |
-| :-------------------------------------------- | :----: |
-| Der Projektberschierb ist aussagekräftig      |   3    |
-| Epics verweisen auf Issues die ihn umsetzen   |   2    |
-
-| Issues sind klar und verständlich beschrieben |   3    |
-| Ein Issue beschreibt nur eine Aufgabe         |   2    |
-|                                               |        |
-| **TOTAL**                                     | **10** |
+| Thema                                                                                     | Punkte |
+| :---------------------------------------------------------------------------------------- | :----: |
+| Der Projektberschierb ist aussagekräftig                                                  |   2    |
+| Der Projektberschierb befindet sich am gewünschten Ort                                    |   1    |
+| Epics verweisen auf Issues die ihn umsetzen                                               |   1    |
+| Issues/Epics sind klar und verständlich beschrieben                                       |   2    |
+| Issues beinhalten eine Definition of Done                                                 |   1    |
+| Issues beschreiben immer nur eine Aufgabe                                                 |   1    |
+| Alle Reflexionen befinden sich am gewünschten Ort und wurden als Pull-Request eingereicht |   1    |
+| Alle Commit-Messages wurden wie gewünscht geschrieben                                     |   1    |
+| ...                                                                                       |        |
+| **TOTAL**                                                                                 | **10** |

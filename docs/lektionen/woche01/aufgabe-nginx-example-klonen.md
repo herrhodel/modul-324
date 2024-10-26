@@ -50,6 +50,23 @@ angepasst wird.
   - AWS_ACCOUNT_ID
     ![GitHub AWS Secrets Account](../../img/github_ceate_secrets_account_id.png)
 
+### Berechtigungen setzen
+
+1. Im neu erstellten Repository auf **"Settings" -> "Actions" -> "General"**
+   navigieren
+2. Ganz nach unten scrollen
+3. **"Allow GitHub Actions to create and approve pull requests"** erlauben
+
+![github_action_pull_request_permissions](images/github_action_pull_request_permissions.png)
+
+:::info
+
+- Diese Berechtigung ist wichtig, dass automatisch Pull-Request erstellt werden
+  können, was die Automatisierung von Releases ermöglicht.
+- Mehr dazu nächste Woche.
+
+:::
+
 ### Amazon AWS Infrastruktur aufsetzten
 
 Es existiert eine GitHub Action
@@ -116,30 +133,25 @@ Nun ist die Web-App auf AWS ausgeliefert und öffentlich verfügbar.
 Nun ist es möglich Änderungen an der App vorzunehmen, welche automatisch auf AWS
 deployed werden!
 
-- Navigiert zu **"Code -> src -> index.html"** und klickt auf **"Edit"**
-  ![Edit index.html](../../img/github_edit_index_html.png)
-- Ändere die Seite nach belieben ab
-  ![Magic](../../img/github_edit_index_magic.png)
-
-  :::tip Beispiel Änderung
+- Navigiert zu **"Code -> nginx -> src -> index.html"** und klickt auf **"Edit"**
+  <!-- ![Edit index.html](../../img/github_edit_index_html.png) -->
+  ![github_edit_index_html](images/github_edit_index_html.png)
+- Fügt folgenden Tag in den Body ein
 
   ```html
-  <img
-    src="https://media1.tenor.com/images/b5c0aaca498dd84fa218239572165129/tenor.gif?itemid=5025891"
-  />
+  <img src="https://media1.tenor.com/images/b5c0aaca498dd84fa218239572165129/tenor.gif?itemid=5025891" />
   ```
 
-  :::
-
-- Änderungen **"commiten"**.
+- **"Commit changes"**.
 
   :::caution
 
-  Verwendet bitte die commit message `feat(nginx): show some magic`
+  - :boom: Verwendet bitte die Commit-Message `feat(nginx): show some magic`!
 
   :::
 
   ![Commit](../../img/github_edit_index_html_commit.png)
+
 - Nun wird automatisch die GitHub Action **"Deploy to Amazon AWS"** gestartet.
 - Warten bis die GitHub Action fertig ist
   ![Commit Action](../../img/github_edit_index_html_action.png)

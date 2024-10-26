@@ -44,32 +44,72 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Projektmanagement
 
+![bg right](https://images.pexels.com/photos/7710088/pexels-photo-7710088.jpeg)
+
 - Anforderungsanalyse
-- Prozesssteuerung
 - Arbeitspakete
+- Prozesssteuerung
+
+### Oder auch
+
+- :ear: Den Kunden verstehen wollen
+- :label: Post-its voll malen
+- :construction_worker: Delegieren!
+
+<!-- https://www.pexels.com/de-de/foto/marketing-mann-person-geschaft-7710088/ -->
 
 ---
 
 # Programmieren
 
+<!-- ![bg right fit](images/luki-code.png) -->
+
+![bg right fit](images/luki-code-wider.png)
+
 - Neue Software erschaffen
 - Bestehende Software verbessern/erweitern
+
+### Oder auch
+
+- :zany_face: Spass haben
+- :upside_down_face: Kreativ sein!
+- 🫣 Coding Themes ausprobieren
 
 ---
 
 # Qualitätsmanagement
 
+![bg right](https://images.pexels.com/photos/6502552/pexels-photo-6502552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+
 - Automatische Tests
 - Nomenklatur (Formatierung)
 - Codequalität garantieren (Linting)
+
+### Oder auch
+
+- :tooth: auf den Zahn fühlen
+- :cop: pingelig sein
+
+<!-- https://www.pexels.com/de-de/foto/kind-zahne-zahnpflege-uberprufung-6502552/ -->
 
 ---
 
 # Ausliefern
 
+<!-- ![bg right](./images/pexels-container-shiff.jpg) -->
+
+![bg right](https://images.pexels.com/photos/169523/pexels-photo-169523.jpeg)
+
 - Software bauen
 - Images erstellen (Containerisieren)
-- "In Betrieb nehmen" ?
+- In Betrieb nehme
+
+### Oder auch
+
+- :seedling: Ein Samen setzen
+- :shamrock: Software ist im stetigen Wandel
+
+<!-- https://www.pexels.com/de-de/foto/man-planting-plant-169523/ -->
 
 ---
 
@@ -83,25 +123,35 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Infrastruktur
 
+![bg right](https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg)
+
 - Hardware
 - Virtuelle Maschinen
 - Cloud
+
+<!-- https://www.pexels.com/de-de/foto/nahaufnahme-foto-von-mining-rig-1148820/ -->
 
 ---
 
 # Service
 
+![bg right](https://images.pexels.com/photos/266403/pexels-photo-266403.jpeg)
+
 - Picketdienst
 - Monitoring
 - Backup / Failure recovery
 
+<!-- https://www.pexels.com/de-de/foto/graustufenfoto-von-feuerwehrleuten-266403/ -->
+
 ---
 
-# Applikationen betreiben
+# Apps betreiben
+
+![bg right](https://images.pexels.com/photos/5846114/pexels-photo-5846114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
 ## Konventionell
 
-- Artefakte (.jar / .war / sourcecode)
+- Artefakte (.jar / .war / Quellcode)
 - Manuelle Konfiguration der Servers
 
 ## Container
@@ -109,6 +159,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - Docker / Images
 - Docker Compose / Swarm
 - Kubernetes / OpenShift
+
+<!-- https://www.pexels.com/de-de/foto/mann-person-metall-pflanze-5846114/ -->
 
 ---
 
@@ -206,4 +258,3 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 - Risikominimierung
 - Kundenzufriedenheit
 - Mitarbeiterzufriedenheit
-

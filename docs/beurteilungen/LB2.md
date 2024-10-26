@@ -75,7 +75,7 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
   zugewiesen.
 - Nach dem mergen, soll der Branch `docs/reflexion-ihr-nachname` wieder gelöscht
   werden.
-- Die Commit-Message soll folgendermassen heissen.
+- :boom: Die Commit-Message soll folgendermassen heissen.
   - `docs(ihr-nachname): Reflexion Sprint 2`
 
 :::tip Beispieldatei: `/docs/hodel/reflexion-sprint2.md`
@@ -100,6 +100,46 @@ lorem ipsum...
 
 1. Ihr wendet direkt Prinzipien von Git und GitHub an
 2. Ich habe dich Möglichkeit im Pull-Request einzelne Zeilen zu kommentieren
+
+:::
+
+### Wo wird die Reflexion geschrieben?
+
+- Für jede Reflexion pro Person soll ein `GitHub Issue` erstellt werden.
+- Die Reflexion soll als `markdown`-Datei unter folgendem Pfad
+  `/docs/reflections/ihr-nachname/reflexion-sprint2.md` geschrieben werden.
+- Für jede Reflexion pro Person wird ein Branch erstellt.
+- Es wird ein Pull-Request erstellt und mir `@codingluke` als Reviewer
+  zugewiesen.
+- Nach dem mergen, soll der Branch wieder gelöscht werden.
+- :boom: Die Commit-Message soll folgendermassen heissen.
+  - `docs(ihr-nachname): Reflexion Sprint 2`
+
+:::tip Beispieldatei: `/docs/reflections/hodel/reflexion-sprint1.md`
+
+```markdown
+# Hodel - Reflexion Sprint 2
+
+## Welche verschiedenen Themen beinhaltete der Sprint?
+
+lorem ipsum...
+
+## Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
+
+lorem ipsum...
+
+...
+```
+
+Commit-Message: `docs(hodel): Reflexion Sprint 1`
+
+:::
+
+:::info Wieso so kompliziert?
+
+1. Ihr wendet direkt Prinzipien von Git und GitHub an
+2. Ich habe dich Möglichkeit im Pull-Request einzelne Zeilen zu kommentieren
+3. Ihr verwendet mit conventional-commits direkt das Autorelease Feature
 
 :::
 
