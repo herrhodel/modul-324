@@ -102,7 +102,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 - Software bauen
 - Images erstellen (Containerisieren)
-- In Betrieb nehme
+- In Betrieb nehmen
 
 ### Oder auch
 

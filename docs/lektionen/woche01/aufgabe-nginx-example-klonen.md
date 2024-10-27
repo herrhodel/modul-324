@@ -133,13 +133,16 @@ Nun ist die Web-App auf AWS ausgeliefert und öffentlich verfügbar.
 Nun ist es möglich Änderungen an der App vorzunehmen, welche automatisch auf AWS
 deployed werden!
 
-- Navigiert zu **"Code -> nginx -> src -> index.html"** und klickt auf **"Edit"**
+- Navigiert zu **"Code -> nginx -> src -> index.html"** und klickt auf
+  **"Edit"**
   <!-- ![Edit index.html](../../img/github_edit_index_html.png) -->
   ![github_edit_index_html](images/github_edit_index_html.png)
 - Fügt folgenden Tag in den Body ein
 
   ```html
-  <img src="https://media1.tenor.com/images/b5c0aaca498dd84fa218239572165129/tenor.gif?itemid=5025891" />
+  <img
+    src="https://media1.tenor.com/images/b5c0aaca498dd84fa218239572165129/tenor.gif?itemid=5025891"
+  />
   ```
 
 - **"Commit changes"**.
@@ -147,12 +150,15 @@ deployed werden!
   :::caution
 
   - :boom: Verwendet bitte die Commit-Message `feat(nginx): show some magic`!
+  - :boom: Create a new branch for this commit and start a pull request
 
   :::
 
-  ![Commit](../../img/github_edit_index_html_commit.png)
+  ![Commit](../../img/github_edit_index_html_commit_pr.png)
 
-- Nun wird automatisch die GitHub Action **"Deploy to Amazon AWS"** gestartet.
+- In einem Pull-Request, könnte man nun den Code-Change kommentieren
+- Nach dem mergen wird automatisch die GitHub Action **"Deploy to Amazon AWS"**
+  gestartet.
 - Warten bis die GitHub Action fertig ist
   ![Commit Action](../../img/github_edit_index_html_action.png)
 
