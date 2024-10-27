@@ -90,7 +90,7 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 
 lorem ipsum...
 
-## Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
+## Was wurde in diesem Sprint erreicht?
 
 lorem ipsum...
 
@@ -114,14 +114,14 @@ Commit-Message: `docs(hodel): Reflexion Sprint 1`
 #### Inhalt (Auch Lektion 1!)
 
 - [x] Welche verschiedenen Themen behandelten wir bis jetzt?
-- [x] Sind diese Themen zum Zeitpunkt gut gewählt?
+- [x] Waren Themen bereits bekannt? Wenn ja, woher?
 - [x] Was wurde in diesem Sprint erreicht?
 - [x] Was wurde in diesem Sprint nicht erreicht?
 
 #### Gruppendynamik
 
 - [x] Wie war die Zusammenarbeit im Team?
-- [x] Auf was achtet Ihr bei der Kommunikation, damit diese Konstruktiv ist?
+- [x] Auf was achtet Ihr bei der Kommunikation, damit diese konstruktiv ist?
 - [x] Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
 
 #### Lernzuwachs
