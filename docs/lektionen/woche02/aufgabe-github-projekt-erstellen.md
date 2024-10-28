@@ -8,27 +8,87 @@ keywords:
 
 **:dart: Arbeitsgrundlage schaffen | :dna: Gruppenarbeit | :clock1: 20 Min |**
 
+Das Projektmanagement fürs Projekt wird komplett in GitHub durch mehrere Issues
+und einem GitHub Projekt realisiert.
+
+:::note
+
+Ein GitHub Projekt ist nicht auf ein Repository gebunden. Das kann zu Verwirrung
+führen.
+
+- Es gibt auch einen offiziellen Thread dafür
+  [Projects Beta Support adding default repo for project](https://github.com/orgs/community/discussions/8251)
+
+:::
+
 ## 📝 Auftrag
 
-1. Im erstellten Repository ein
-   [📜 GitHub Projekt](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-   erstellen.
+### Erstellt ein GitHub Projekt im Projekt Repository
 
+[📜 GitHub Projekt](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 ![github-create-kanban-project](images/github-create-kanban-project.png)
 
-2. Erste [test-Issues](https://github.com/features/issues) erstellen und damit
-   spielen
+### Öffnet die **Project details** und fügt als Beschreibung einen Link zum Repository rein.
 
-   - Verknüpfen, Taggen
-   - Erstellt Tasks in Markdown (dieser kann man toggeln)
-     ```markdown
-     - [ ] Task 1
-     ```
-   - Erstellt Eine Referenz zu einem Issue (hier #1) in Markdown
-     ```markdown
-     - [ ] #1
-     ```
+- :bulb: Dies ermöglicht das einfache Navigieren vom Projekt zum Repository
 
-:::tip Schliesst die test-issues, nicht löschen! Sie dienen als Doku.
+### Erstellt erste [📜 GitHub Issues](https://github.com/features/issues) und spielt damit
+
+- mit `#` kann das Repository ausgewählt werden, in welchem der Issue erstellt
+  werden soll (siehe gif)
+- Wird einfach nur ein "Item" erstellt, ist es ein "draft" im Projekt und noch
+  nicht an einen Issue gebunden.
+  ![create](./images/github-project-create-issue.gif)
+- Verknüpfen, Taggen
+- Erstellt Tasks in Markdown (dieser kann man toggeln)
+  ```markdown
+  - [ ] Task 1
+  ```
+- Erstellt Eine Referenz zu einem Issue (hier #1) in Markdown
+  ```markdown
+  - [ ] #1
+  ```
+
+![create](./images/github-project-create-issue-2.gif)
+
+### Erstellt einen Branch direkt aus dem Issue
+
+![github-project-create-branch-from-issue](./images/github-project-create-branch-from-issue.jpg)
+
+:::tip
+
+- Erstellt ihr die Branches auf diesem Weg, sind sie automatisch an den Issue
+  geknüpft.
+- Keine Angst es ist auf gleiche weise möglich einen Branch zu Verknüpfen
+- Wichtig is
+
+:::
+
+### Erstellt einen Pull-Request vom Branch und linkt ihn zum Issue
+
+- Öffnet den Branch im Repository
+- Macht durch das GUI eine Änderung, am besten wieder die Datei
+  `/nginx/src/index.html`
+  - :exclamation: Dabei müsst ihr nicht nochmals einen Subbranch erstellen!
+
+![aufgabe-github-pull-request-erstellen](./images/github-pullrequest-erstellen.jpg)
+
+- Linkt den Issue zum Pull-Request!
+
+![aufgabe-github-pull-request-erstellen](./images/aufgabe-github-pull-request-erstellen.jpg)
+
+:::danger Notenrelevant
+
+Es wird Bewertet, dass alle Issues welche geschlossen sind einen Pull-Request
+referenzieren.
+
+- Ausnahmen: Issue welche keinen Code geneireren wie z.B. Mockub erstellen und
+  co.
+- Die Ausnahmen müssen aber als Definition of Done beweisen, wieso der Issue
+  "done" ist.
+  - Link zu eine externen Resource, wie z.B. ein Google Folder mit Bilder oder
+    so.
+  - Link zu erstellten Tickets resultiert von diesem
+  - usw.
 
 :::

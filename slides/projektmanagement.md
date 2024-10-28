@@ -55,15 +55,15 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## Start
 
-- [**GitHub Issues**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB3):
+- [**GitHub Issues**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#bewertung-2):
   Aufgaben beschreiben und ausarbeiten
 
 ## Ende
 
-- [**Fachgespräch**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1):
+- [**Fachgespräch**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-fachgespräch):
   Sprint-Review
 
-- [**Persönliche Reflexion**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2):
+- [**Persönliche Reflexion**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-schriftliche-reflexion):
   Retrospektive auf den Sprint
 
 ::: split
@@ -72,7 +72,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 - **10' Stand-up**:<br> Planen, austauschen, Aufgaben verteilen
 
-- [**Pull-Requests / Commits:**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB3)<br>
+- [**Pull-Requests / Commits:**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-arbeitsvorgang)<br>
   Aufgaben ausführen
 
 :::
@@ -80,6 +80,10 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 ---
 
 # Sprint 1 - Kickoff
+
+Der Sprint 1 hat zum Ziel, dass sich die Gruppe kennenlernt, zusammen ein
+Projekt definiert wird und die Grundlage gesetzt wird, um das Projekt
+umzusetzen.
 
 - :dart: Gruppen kennenlernen
 - :dart: Projekt finden
@@ -106,8 +110,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - Beschrieben ein grösseres Feature
 - **Zeigen auf Arbeitspakete** welche den Epic umsetzen.
 - Dienen als **Gruppierung** von Arbeitspaketen
-- **Löst selbst die Aufgabe nicht**, sondern Verlinkt nur zu Arbeitspakete
-  (Issues)
+- **Löst selbst die Aufgabe nicht**, sondern verlinkt zu Issues
 
 ![bg right fit](images/github-issue-direct.png)
 
@@ -118,17 +121,23 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - Tool um Arbeitspakete (GitHub Issues) zu strukturieren
 - GitHub Issues brauchen kein Projekt, es macht es aber übersichtlicher
 
+> :bulb: Sind nicht einem Repository untergeordnet (leider!)
+
 ![bg right fit](images/github-kanban-board.png)
 
 ---
 
 # GitHub Issue in Projekt
 
+Issues im Projekt sehen ein wenig anders aus als im Repo :scream:
+
 1. Status im Projekt
 2. Link zu einem Pull-Request
 3. Link zu anderen Issues
 
-> ## <!-- fit --> :bulb: Der Text `#1` generiert einen <br> Link zum Issue mit Nummer `1`
+Ein "Item" im Projekt, dass kein Issue repräsentiert ist mit "draft" markiert.
+
+- Ein "Draft" kann zu einem Issue umgewandelt werden.
 
 ![bg right fit](images/issue-referenzen.png)
 
