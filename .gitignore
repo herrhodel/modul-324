@@ -26,3 +26,4 @@ yarn-error.log*
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
+slides/me.md
