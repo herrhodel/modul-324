@@ -76,7 +76,3 @@ sollen.
 ### [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
 Wird vom Plugin "Dev Containers" benötigt.
-
-## Projekt Repository lokal klonen
-
-
