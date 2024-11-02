@@ -37,12 +37,24 @@ Wir arbeiten im Modul mit VS Code. Sofern Ihr ein Java Projekt erstellt dürft
 Ihr auch IntelliJ verwenden. Ihr seit aber selber verantwortlich dass es
 funktioniert.
 
-- [VS Code](https://code.visualstudio.com/) Java Guys dürfen auch
-  [IntelliJ](https://www.jetbrains.com/idea/) verwenden.
+- [VS Code](https://code.visualstudio.com/)
+- Java Guys dürfen auch [IntelliJ](https://www.jetbrains.com/idea/) verwenden.
+- :exclamation: Aber Achtung, devcontainer sind in VS Code besser unterstützt!
 
 ## VS Code must have Plugins
 
 Bitte Installiert all diese Plugins!
+
+:::tip lest die dokus!
+
+- Die Plugins erklären sich selbst am besten ;)
+
+:::
+
+### [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+
+Dieses Plugin "versteht" Conventional Commits und hilft dabei diese korrekt zu
+schreiben _(sofern man in VS Code die Git-Commits erstellt)_
 
 ### [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 

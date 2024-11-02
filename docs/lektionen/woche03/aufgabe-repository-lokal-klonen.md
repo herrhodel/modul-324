@@ -34,7 +34,22 @@ git clone {kopierte-ssh-url-zum-repo}
 
 :::
 
-## In VS Code klonen
+### In VS Code öffnen
+
+<div className="grid"><div>
+
+1. `File -> Open folder`
+2. Das frisch geklonte repository auswählen
+3. Es sollte ungefähr wie rechts aussehen
+
+</div><div>
+
+![bg right fit](images/vscode-open-folder.png)
+
+</div></div>
+
+## Direkt in VS Code klonen
+
 Alternativ könnt Ihr auch in VS Code das Repository klonen.
 
 - [How to Clone a Github Repository with VS Code (Example)](https://www.jcchouinard.com/git-clone-github-repository-vscode/)

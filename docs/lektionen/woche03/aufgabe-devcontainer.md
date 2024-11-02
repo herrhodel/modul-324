@@ -6,33 +6,39 @@ keywords:
 
 # Devcontainer einrichten
 
-Der DevContainer wird durch das Dockerfile unter `.devcontainer/Dockerfile`
+Der Devcontainer wird durch das Dockerfile unter `.devcontainer/Dockerfile`
 beschrieben. In dem `Dockerfile` können Tools installiert und konfiguriert
-werden, die fürs Projekt nötig sind. Dies erleichtert "in Zukunft" den Einstieg
-für neue Projektmitglieder und garantiert dass alle die gleiche Umgebung haben
+werden, die fürs Projekt nötig sind. Dies erleichtert den Einstieg für neue
+Projektmitglieder und **garantiert dass alle die gleiche Umgebung haben**.
+
+:::note Kein must!
 
 Theoretisch könnte auch jeder Projektmitarbeiter alle Tools `nodejs`, `java` und
-co. selber installieren. Dabei muss aber immer darauf geachtet werden, dass alle
-dieselben Versionen verwenden.
+co. selbst installieren. Hat ja früher auch funktioniert :wink:
 
-:::caution Der devcontainer und das produktive Image sind zwei separate Schuhe
+- :exclamation: **Es muss darauf geachtet werden, dass alle dieselben Versionen
+  verwenden**.
 
-- Der DevContainer (.devcontainer/Dockerfile) dient zum entwickeln. Darin wird
+:::
+
+:::info Devcontainer vs produktives Docker-Image
+
+- Der Devcontainer (`.devcontainer/Dockerfile`) dient zum entwickeln. Darin wird
   gearbeitet.
-  - :bulb: Der DevContainer wird **lokal gestartet**.
-- Das produktive Image (nginx/Dockerfile, oder später ihr-projekt/Dockerfile)
-  ist optimiert. Dieses sollte so klein wie möglich sein und nur das nötigste
-  beinhalten. Meisten z.B. die gebaute Applikation (ohne node_moduls und co.)
-  und nicht der dev Build.
-  - :bulb: Das produktive Image wird als Container auf **AWS gestartet**.
+  - :bulb: **Der Devcontainer wird lokal gestartet**.
+- Das produktive Image (`nginx/Dockerfile`, oder später
+  `ihr-projekt/Dockerfile`) ist optimiert. Dieses sollte so klein wie möglich
+  sein und nur das nötigste beinhalten. Meisten z.B. die gebaute Applikation
+  (ohne node_moduls und co.) und nicht der dev Build.
+  - :bulb: **Das produktive Image wird als Container auf AWS gestartet**.
 
 :::
 
 ## Aufgaben
 
-## Mit `docker compose` den devcontainer starten und prüfen
+### Mit `docker compose` den Devcontainer starten und prüfen
 
-- Den devcontainer starten
+- Den Devcontainer starten
   ```bash
   docker compose up devcontainer -d
   ```
@@ -59,37 +65,95 @@ Naütlich kann man auch via Browser den Webserver testen. Dafür muss
 
 :::
 
-## In VS Code devcontainer starten und prüfen
+### In VS Code Devcontainer starten und prüfen
 
 :::tip
 
-- Bitte startet den devcontainer zuerst mit `docker compose`.
+- Bitte startet den Devcontainer zuerst mit `docker compose`.
 - VS Code hat nicht so tolle Fehlermeldungen wenn was nicht klappt 🙄
 
 :::
 
 :::caution
 
-- Bitte zuerst [alle benötigten VS Code Plugins installieren](/docs/lektionen/woche03/aufgabe-install-tools.md#vs-code-must-have-plugins)
+- Bitte zuerst
+  [alle benötigten VS Code Plugins installieren](/docs/lektionen/woche03/aufgabe-install-tools.md#vs-code-must-have-plugins)
 
 :::
 
-...
+<div className="grid"><div>
 
-## Produktives Dockerfile testen
+VS Code fragt automatisch nach, ob das Projekt im Container geöffnet werden soll
+sofern das Plugin "Dev Containers" installiert wurde.
 
-```bash
-docker compose up production -d
-```
+- **"Reopen in Container"** klicken und warten
+- Nun wird der Container gebaut und gestartet. **Das kann einige Minuten
+  dauern!**
 
-In der shell oder im Browser:
+</div><div>
 
-```bash
-curl http://localhost:3001
-```
+![bg right fit](images/vscode-open-in-devcontainer.png)
 
-:::info warum ein eigenes Dockerfile für Dev und Production?
+</div></div>
 
-TODO: Antwort folgt
+#### Unterdessen...
+
+<div className="grid"><div>
+
+1. Wen auf "Connecting to Dev Container (Show Logs)" geklickt wird
+2. erscheint folgender Log. Es zeigt wie das "Image" gebaut wird
+3. Unten rechts ist ersichtlich ob VS Code in einem Container geöffnet
+   wird/wurde.
+
+</div><div>
+
+![bg right fit](images/vscode-open-devcontainer-logs.png)
+
+</div></div>
+
+#### Terminal öffnen und nginx starten
+
+<div className="grid"><div>
+
+1. Mit `+` kann ein neues Terminal geöffnet werden, _(z.B. zsh oder bash)_
+2. Nun existiert ein ubuntu Terminal im Container. <br/> _(selbst unter Windows
+   :exploding_head:)_
+3. Die Dateien sind verfügbar unter `/workspaces/[repository-name]`
+
+</div><div>
+
+![bg right fit](images/vscode-devcontainer-open-terminal.png)
+
+</div></div>
+
+4. Nginx starten (wie ohne VS Code)
+   ```bash
+   chmod -x nginx/scripts/start-nginx # evt. nicht nötig, schadet aber nicht
+   sh nginx/scripts/start-nginx
+   ```
+5. Prüfen ob der Webserver läuft.
+   ```bash
+   curl http://localhost:3000
+   ```
+
+### Produktives Dockerfile testen
+
+1. Mit `docker compose` der productive service starten
+   ```bash
+   docker compose up production -d
+   ```
+2. In der shell oder im Browser prüfen
+   ```bash
+   curl http://localhost:3001
+   ```
+
+:::info VS Code Devcontainer kann "docker in docker"
+
+- Wenn Ihr ein Terminal im VS Code Devcontainer gestartet habt ist es möglich
+  direkt darin mit `docker compose up production -d` zu starten. :exploding_head:
+- Wenn Ihr den Devcontainer via `docker compose` selbst gestartet habt ist kein
+  `docker` verfügbar
+  - kein Problem! Ihr könnt auch auf der Machine, in einer zweiten Shell den
+    Befehl ausführen
 
 :::
