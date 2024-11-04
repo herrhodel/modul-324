@@ -75,7 +75,9 @@ und mir pitchen.
 ```markdown title="/README.md"
 # Unser tolles Projekt
 
-Eine supergenaue und einfach zu verstehende Beschreibung des Projekts
+Eine einfach zu verstehende Beschreibung des Projekts. Es darf ruhig ein Pitch
+sein, wieso macht Ihr das, was ist die Inspiration und weshalb braucht die Welt
+dies.
 
 ## BBZBL Modul 324: Web-Applikation Template
 
