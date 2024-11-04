@@ -68,7 +68,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: split
 
-## Pro Nachmittag
+## Pro Modultag
 
 - **10' Stand-up**:<br> Planen, austauschen, Aufgaben verteilen
 

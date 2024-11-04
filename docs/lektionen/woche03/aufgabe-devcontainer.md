@@ -36,6 +36,16 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
 
 ## Aufgaben
 
+### Branch `mise-test` erstellen
+
+Die folgende Aufgabe soll jeder für sich machen und ist nur bedingt Projektbezogen.
+Um  Mergekonflikte zu vermeiden, sollen diese in einem eigenen Branch geschehen.
+Dieser Branch  müsst ihr nicht pushen. Einen Branch erstellt ihr mit folgendem Befehl:
+
+```git
+git checkout -b mise-test
+```
+
 ### Mit `docker compose` den Devcontainer starten und prüfen
 
 - Den Devcontainer starten
