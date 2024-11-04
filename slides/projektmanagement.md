@@ -97,7 +97,7 @@ umzusetzen.
 - haben **Abhängigkeiten** zu anderen Arbeitspakete.
 - müssen eine **klare "Definition of Done"** besitzen.
 - sollten nur **ein Feature** beschreiben.
-- müssen nach fertigstellung an einen **Pull-Requests** geknüpft sein
+- müssen nach Fertigstellung an einen **Pull-Requests** geknüpft sein
 
 > ## <!-- fit --> :bulb: Wenn ein "und" im Titel steht, kann es meistens Aufgesplittet werden.
 
