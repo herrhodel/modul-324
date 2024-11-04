@@ -78,8 +78,13 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 - Es wird ein Pull-Request erstellt und mir `@codingluke` als Reviewer
   zugewiesen.
 - Nach dem mergen, soll der Branch wieder gelöscht werden.
+
+:::caution
+
 - :boom: Die Commit-Message soll folgendermassen heissen.
   - `docs(ihr-nachname): Reflexion Sprint 1`
+
+:::
 
 :::tip Beispieldatei: `/docs/reflections/hodel/reflexion-sprint1.md`
 
