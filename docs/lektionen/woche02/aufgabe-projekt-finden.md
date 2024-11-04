@@ -63,6 +63,13 @@ und mir pitchen.
       `# Unser tolles Projekt`
     - Darunter die Beschreibung einfügen.
 
+:::tip
+
+- Wenn Sie das Repository noch nicht lokal geklont haben, können Sie direkt auf
+  GitHub das `README.md` bearbeiten.
+
+:::
+
 :::note Beispieldatei
 
 ```markdown title="/README.md"
