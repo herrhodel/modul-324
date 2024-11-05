@@ -14,25 +14,15 @@
 
 :::caution Hausaufgaben
 
-Bitte alle lokal einmal folgenden Befehle ausführen:
+Bitte alle lokal einmal folgende Befehle ausführen:
 
-- `docker run -d ubuntu:24.04`
-- `docker run -d nginx`
-- :bulb: wehr das Repository lokal schon geklont hat, kann **alternativ**
-  folgende Befehle ausführen.
-  - `docker compose up -d`
-  - `docker compose down`
+- `docker pull ubuntu:24.04`
+- `docker pull ubuntu:24.10`
+- `docker pull nginx`
 
-Zum Stoppen der Container, müssen zuerst die Containernamen durch `docker ps`
-ausfindig gemacht werden:
-
-- `docker ps` -> Namen der container kopieren
-- `docker stop {name_ubuntu}`
-- `docker stop {name_nginx}`
-
-:bulb: Nächste Woche werden wir lokal entwickeln und diese zwei Befehle stellen
-sicher, dass im Unterricht die Ubuntu Images bei allen schon gecached sind und
-das Schulnetz weniger belastet wird.
+:bulb: Nächste Woche werden wir lokal entwickeln und diese Befehle stellen
+sicher, dass im Unterricht die Ubuntu Images bei allen bereits lokal gecached
+sind, was das Schulnetz weniger belastet wird.
 
 :::
 
