@@ -129,7 +129,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["java"],
+        additionalLanguages: ["java", "bash", "docker"],
         magicComments: [
           // Remember to extend the default highlight class name as well!
           {

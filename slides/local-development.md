@@ -80,20 +80,16 @@ Commiten.
 - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-
-### Linters
-
-- [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
-- [HtmlHint](https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint)
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 ![bg right](images/vscode-plugins.png)
 
 ---
 
-# Öffnen in DevContainer
+# Öffnen in Devcontainer
 
 VS Code fragt automatisch nach, ob das Projekt im Container geöffnet werden soll
-sofern "Dev Container" installiert wurde.
+sofern "Devcontainer" installiert wurde.
 
 - **"Reopen in Container"** klicken und warten
 
@@ -104,7 +100,7 @@ sofern "Dev Container" installiert wurde.
 
 ---
 
-# DevContainer start
+# Devcontainer start
 
 1. Wen auf "Connecting to Dev Container (Show Logs)" geklickt wird
 2. erscheint folgender Log. Es zeigt wie das "Image" gebaut wird
@@ -116,13 +112,14 @@ sofern "Dev Container" installiert wurde.
 
 ---
 
-# DevContainer Terminal
+# Devcontainer Terminal
 
 1. Mit `+` kann ein neues Terminal geöffnet werden, _(z.B. zsh)_
 
-2. Nun existiert ein ubuntu Terminal im Container. <br> _(selbst unter Windows)_
+2. Nun existiert ein ubuntu Terminal im Container. <br/> _(selbst unter
+   Windows)_
 
-3. Die Dateien sind "gemountet" unter `/workspaces/[repository-name]`
+3. Die Dateien sind "gemountet" unter `/workspace`
 
 ![bg right fit](images/vscode-devcontainer-open-terminal.png)
 
@@ -135,10 +132,10 @@ sofern "Dev Container" installiert wurde.
 Infos unter
 [Docker Compose](https://docs.docker.com/compose/intro/features-uses/)
 
-- Es verwendet das `dev.Dockerfile`
+- Es verwendet das `.devcontainer/Dockerfile`
 - Momentan wird `./src` zum Nginx gemountet
 - `./local/.env` Environment Variablen werden auch im Container hinzugefügt
-- Nginx wird auf port 3000 exposed. Öffnet http://localhost:3000
+- Der Port 3000 wird exposed.
 
 ::: split
 
@@ -148,13 +145,14 @@ services:
   nginx:
     build:
       context: .
-      dockerfile: dev.Dockerfile
-    container_name: nginx
+      dockerfile: .devcontainer/Dockerfile
+    container_name: devcontainer
     ports:
       - "3000:3000"
     env_file: ./local/.env
     volumes:
-      - ./src/:/usr/share/nginx/html
+      # sync workspace
+      - .:/workspace:cached
       ...
 ```
 
@@ -162,29 +160,17 @@ services:
 
 ---
 
-# dev.Dockerfile
+# Installierte Tools im Container
 
-Es existiert zusätzlich zum `Dockerfile` ein `dev.Dockerfile`.
+Im Container sind folgendes Tool vorhanden
 
-- im docker-compose wird dieses referenziert
-- es ermöglicht es lokal zusätzliche tools im container zu installieren.
-- es sollte so nahe am `Dockerfile` wie möglich sein
+- **[`mise`](https://mise.jdx.dev/)**
 
-<br><br>
-
-> 💡Weitere Inputs zum `Dockerfile` folgen in der Woche 5
-
----
-
-# Installierte tools im Container
-
-Im container sind alle tools vorhanden.
+Optional (Auskommentiert):
 
 - AWS Cli um nach AWS zu connecten
 - Terraform um in AWS die Infrastruktur hochzufahren
 - Kamal um ein Dockerfile zu deployen
-
-- und ein Schweizer Sackmesser Tool - [`mise`](https://mise.jdx.dev/)
 
 ![bg right fit](images/vscode-devcontainer-tools.png)
 
@@ -195,7 +181,7 @@ Im container sind alle tools vorhanden.
 ### Java
 
 ```bash
-mise use java
+mise use java@lts -g
 openjdk version "24-loom" 2025-03-18
 OpenJDK Runtime Environment (build 24-loom+4-42)
 OpenJDK 64-Bit Server VM (build 24-loom+4-42, mixed mode, sharing)
@@ -206,28 +192,30 @@ mise /workspaces/bbzbl-modul-324-nginx/.mise.toml tools: java@24.0.0-loom+4-42
 ### NodeJs
 
 ```bash
-mise use node
+mise use node@lts -g
 mise node@22.7.0 ✓ installed
 mise /workspaces/bbzbl-modul-324-nginx/.mise.toml tools: node@22.7.0
 ```
 
 ---
 
-# Installiere Programmiersprachen im `dev.Dockerfile`
+# Installiere Programmiersprachen im `Dockerfile`
 
 Wir ein Container neu gestartet, müssen die Programmiersprachen neu installiert
 werden.
 
 ::: columns
 
-- Durch das `dev.Dockerfile` können sprachen beim erstellen vom image
+- Durch das `.devcontainer/Dockerfile` können Sprachen beim erstellen vom Image
   installiert werden.
-- Links ein Beispiel für Java
+- So wird ermöglicht, dass alle Teammitglieder die gleiche Umgebung besitzen.
 
 ::: split
 
-```bash
-~/.local/bin/mise use --global java
+- Hier ein Beispiel für nodejs
+
+```dockerfile
+RUN mise use node@lts -g
 ```
 
 :::

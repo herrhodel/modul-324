@@ -7,18 +7,18 @@ sidebar_label: 🏠 Modul 324
 
 ## :calendar: Quartalsübersicht
 
-|      Woche       |            Datum            | Thema                                                  | Leistungsbewertung                                            |
-| :--------------: | :-------------------------: | :----------------------------------------------------- | :------------------------------------------------------------ |
-|   Woche&nbsp;1   |         28.10.2024          | DevOps <br/> AWS / GitHub Umgebung aufbauen            |                                                               |
-|   Woche&nbsp;2   |         04.11.2024          | eduScrum mit GitHub <br/> Sprint 1 Start               |                                                               |
-|   Woche&nbsp;3   |         11.11.2024          | Sprint 1                                               |                                                               |
-| **Woche&nbsp;4** |         18.11.2024          | **Sprint 1 Ende**                                      | [**LB1 : Lektion 1 / Sprint 1**](/docs/beurteilungen/LB1.md)  |
-|   Woche&nbsp;5   |         25.11.2024          | Sprint 2 Start                                         |                                                               |
-|   Woche&nbsp;6   |         02.12.2024          | Sprint 2                                               |                                                               |
-|   Woche&nbsp;7   |         09.12.2024          | Sprint 2                                               |                                                               |
-| **Woche&nbsp;8** |         16.12.2024          | **Sprint 2 Ende**                                      | [**LB2 : Sprint 2**](/docs/beurteilungen/LB2.md)              |
-|                  | 23.12.2024 <br/> 30.12.2024 | _:star2: Weihnachtsferien :star2:_                     |                                                               |
-| **Woche&nbsp;9** |         06.01.2024          | **Modulabschlussprüfung** <br/> Projekt-Präsentationen | [**LB3 - Modulabschlussprüfung**](/docs/beurteilungen/LB3.md) |
+|                      Woche                       |            Datum            | Thema                                                  | Leistungsbewertung                                            |
+| :----------------------------------------------: | :-------------------------: | :----------------------------------------------------- | :------------------------------------------------------------ |
+|   [Woche&nbsp;1](./lektionen/woche01/index.md)   |         28.10.2024          | DevOps <br/> AWS / GitHub Umgebung aufbauen            |                                                               |
+|   [Woche&nbsp;2](./lektionen/woche02/index.md)   |         04.11.2024          | eduScrum mit GitHub <br/> Sprint 1 Start               |                                                               |
+|   [Woche&nbsp;3](./lektionen/woche03/index.md)   |         11.11.2024          | Sprint 1 <br/> Git Best Practices / Locales Entwickeln |                                                               |
+| [**Woche&nbsp;4**](./lektionen/woche04/index.md) |         18.11.2024          | **Sprint 1 Ende**                                      | [**LB1 : Lektion 1 / Sprint 1**](/docs/beurteilungen/LB1.md)  |
+|   [Woche&nbsp;5](./lektionen/woche05/index.md)   |         25.11.2024          | Sprint 2 Start                                         |                                                               |
+|   [Woche&nbsp;6](./lektionen/woche06/index.md)   |         02.12.2024          | Sprint 2                                               |                                                               |
+|   [Woche&nbsp;7](./lektionen/woche07/index.md)   |         09.12.2024          | Sprint 2                                               |                                                               |
+| [**Woche&nbsp;8**](./lektionen/woche08/index.md) |         16.12.2024          | **Sprint 2 Ende**                                      | [**LB2 : Sprint 2**](/docs/beurteilungen/LB2.md)              |
+|                                                  | 23.12.2024 <br/> 30.12.2024 | _:star2: Weihnachtsferien :star2:_                     |                                                               |
+| [**Woche&nbsp;9**](./lektionen/woche09/index.md) |         06.01.2024          | **Modulabschlussprüfung** <br/> Projekt-Präsentationen | [**LB3 - Modulabschlussprüfung**](/docs/beurteilungen/LB3.md) |
 
 ## DevOps-Prozese mit Tools unterstützen
 

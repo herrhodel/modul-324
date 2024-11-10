@@ -16,17 +16,34 @@ welchem sehr einfach beliebige Sprachen installiert werden können.
 aber auch andere Tools.
 
 <details>
-<summary>Mise Demo (gif)</summary>
+<summary>:tv: Video der Aufgabe</summary>
 
-![mise demo](./images/mise-demo.gif)
+<YouTube id="V_Ky1xibL_M" />
 
-Quelle: [https://mise.jdx.dev/demo.html](https://mise.jdx.dev/demo.html)
+<br/>
+:::caution
+
+- Im Video verwende ich noch den Befehl `~/.local/bin/mise use`
+- Neu könnt Ihr auch im Dockerfile `mise use` verwenden!
+
+:::
 
 </details>
 
 ## Aufgaben
 
-### Mit mise node installieren
+### Branch `mise-test` erstellen
+
+Die folgende Aufgabe soll jeder für sich machen und ist nur bedingt
+Projektbezogen. Um Mergekonflikte zu vermeiden, sollen diese in einem eigenen
+Branch geschehen. Dieser Branch müsst ihr nicht pushen. Einen Branch erstellt
+ihr mit folgendem Befehl:
+
+```bash
+git checkout -b mise-test
+```
+
+### Node installieren
 
 Startet **ein Terminal im devcontainer** und führt folgende Befehle aus
 
@@ -35,7 +52,9 @@ Startet **ein Terminal im devcontainer** und führt folgende Befehle aus
   node
   > bash: command not found: node
   ```
-- Dann installieren wir node lts (longterm supported) global (-g)
+- Dann installieren wir node lts
+  ([long-term supported](https://nodejs.org/en/about/previous-releases)) global
+  (-g)
   ```bash
   mise use node@lts -g
   ```
@@ -47,7 +66,7 @@ Startet **ein Terminal im devcontainer** und führt folgende Befehle aus
   >
   ```
 
-### Mit mise java installieren
+### Java installieren
 
 Startet **ein Terminal im devcontainer** und führt folgende Befehle aus
 
@@ -56,7 +75,7 @@ Startet **ein Terminal im devcontainer** und führt folgende Befehle aus
   java
   > bash: command not found: java
   ```
-- Dann installieren wir node lts (longterm supported) global (-g)
+- Dann installieren wir java lts (long-term supported) global (-g)
   ```bash
   mise use java@lts -g
   ```
@@ -68,38 +87,76 @@ Startet **ein Terminal im devcontainer** und führt folgende Befehle aus
   OpenJDK 64-Bit Server VM (build 21.0.2+13-58, mixed mode, sharing)
   ```
 
-:::tip
+:::note
 
-So könnt ihr ziemlich jede noch so exotische Sprache installieren!
+So könnt ihr ziemlich jede noch so exotische Sprache installieren
+
+- wie [rust](https://www.rust-lang.org/) (`mise use rust@stable -g`) oder
+  [zig](https://ziglang.org/): (`mise use zig@0.13.0 -g`)
 
 :::
 
-### Mit `mise` für alle im `.devcontainer/Dockerfile` Programmiersprachen installieren
+### Herausfinden was es für Versionen gibt
 
-Wenn ihr die Sprachen wie oben direkt im Container installiert, ist nicht
-garantiert, dass andere auch die selben Versionen verwenden. **Damit alle im
-Team die gleichen Umgebung haben, muss das
-[`.devcontainer/Dockerfile`](https://github.com/codingluke/bbzbl-modul-324-template/blob/main/.devcontainer/Dockerfile)
-angepasst werden.** Dabei ist folgendes zu beachten:
+Mit dem Befehl `mise list-all [sprache] [prefix]` ist es möglich alle
+verfügbaren Versionen aufzulisten
 
-- Auf den
-  [Linien 27-28 wir mise installiert](https://github.com/codingluke/bbzbl-modul-324-template/blob/main/.devcontainer/Dockerfile#L27-L28).
-- Um nun damit Programmiersprachen direkt im Image zu installieren muss dies
-  **danach** passieren.
-- Zude muss `mise` im Dockerfile mit dem Pfad `~/.local/bin/mise` referenziert
-  werden.
+#### Zeige alle node Versionen an
 
-Node wird zum Beispiel folgendermassen installiert.
-
-```dockerfile
-RUN  ~/.local/bin/mise use node@lts -g
+```bash
+mise list-all node
+0.1.14
+0.1.15
+...
+22.10.0
+23.0.0
+23.1.0
 ```
 
-Weitere Programmiersprachen können gleich installiert werden.
+#### Zeige alle Java "openjdk" Versionen an
+
+```bash
+mise list-all java openjdk
+openjdk-9.0.0
+openjdk-9.0.1
+...
+openjdk-23.0.0
+openjdk-23.0.1
+```
+
+### Für alle Programmiersprachen bereitstellen
+
+Um zu garantieren, dass alle im Team die selbe Umgebung haben, müssen die
+Sprachen, nicht wie oben im Container, **sondern im
+[`.devcontainer/Dockerfile`](https://github.com/codingluke/bbzbl-modul-324-template/blob/main/.devcontainer/Dockerfile)**
+installiert werden.
+
+Dabei ist folgendes zu beachten:
+
+- Öffne das Projekt im Devcontainer mit **"Reopen in Container"**
+- Öffne die Datei
+  [`.devcontainer/Dockerfile`](https://github.com/codingluke/bbzbl-modul-324-template/blob/main/.devcontainer/Dockerfile)
+- Suche folgenden Befehl
+  ```dockerfile
+  RUN curl https://mise.run | sh \
+  ```
+  - Damit wird das cli tool "mise" installiert.
+- Um nun damit Programmiersprachen direkt im Image zu installieren, muss dies
+  **danach** passieren.
+- Füge nun den folgenden **Befehl danach ins `Dockerfile`** ein. (Er sollte
+  bereits als Kommentar existieren)
+  ```dockerfile
+  RUN  mise use node@lts -g
+  ```
+  - Damit wird die "long-term supported" Version von Nodejs installiert
+- Wenn das `.devcontainer/Dockerfile` geändert wurde, muss der Devcontainer neu
+  gebaut werden. **"Rebuild Container"**
 
 :::tip
 
-Es macht durchaus Sinn zuerst im Devcontainer zu prüfen was so möglich ist und
-erst danach den Code ins Dockerfile zu kopieren.
+- Es macht durchaus Sinn zuerst im Devcontainer zu prüfen was möglich ist und
+  erst danach den Code ins `Dockerfile` zu kopieren.
+- Auch macht es Sinn den devcontainer mit `docker compose build devcontainer`
+  zuerst zu bauen, da VS Code nicht so schöne Fehlermeldungen generiert.
 
 :::
