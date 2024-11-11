@@ -58,6 +58,47 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
   - :bulb: Mit `curl` kann man beliebige HTTP Request absetzen. `curl` wird
     daher oft fürs testen verwendet
 
+:::caution Port 3000 muss frei sein
+
+Wenn auf dem Port 3000 bereits ein Prozess läuft, muss dieser gekillt werden
+
+<details>
+<summary>Windows</summary>
+
+```powershell
+$ netstat -ano | findstr :3000
+>TCP     0.0.0.0:3000    0.0.0.0:0   LISTENING   2660
+>TCP     [::]:3000       [::]:0      LISTENING   2660
+$ taskkill /PID 2660 /F
+```
+
+</details>
+
+<details>
+<summary>Linux</summary>
+
+```bash
+kill $(lsof -t -i:3000)
+```
+
+</details>
+
+<details>
+<summary>Docker Container</summary>
+
+Wenn der Port 3000 von einem anderen Docker Container belegt ist muss dieser gestoppt werden.
+
+```bash
+$ docker ps
+> CONTAINER ID   IMAGE    COMMAND                 CREATED         STATUS          PORTS                                       NAMES
+> 95a55d07e361   a-image   "/bin/sh -c 'while s…"   2 seconds ago   Up 2 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp  container-name
+$ docker stop container-name
+```
+
+</details>
+
+:::
+
 :::tip
 
 Natürlich kann man auch via Browser den Webserver testen. Dafür muss
