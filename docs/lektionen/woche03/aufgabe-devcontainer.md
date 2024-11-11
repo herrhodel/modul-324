@@ -48,8 +48,8 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
   ```
 - Im Container den `nginx` starten:
   ```bash
-  chmod -x nginx/scripts/start-nginx # evt. nicht nötig, schadet aber nicht
-  sh nginx/scripts/start-nginx
+  chmod +x nginx/scripts/start-nginx.sh # evt. nicht nötig, schadet aber nicht
+  sh nginx/scripts/start-nginx.sh
   ```
 - Prüfen ob der Webserver läuft.
   ```bash
@@ -60,7 +60,7 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
 
 :::tip
 
-Naütlich kann man auch via Browser den Webserver testen. Dafür muss
+Natürlich kann man auch via Browser den Webserver testen. Dafür muss
 `http://localhost:3000` im Browser geöffnet werden.
 
 :::
@@ -118,7 +118,7 @@ sofern das Plugin "Dev Containers" installiert wurde.
 1. Mit `+` kann ein neues Terminal geöffnet werden, _(z.B. zsh oder bash)_
 2. Nun existiert ein ubuntu Terminal im Container. <br/> _(selbst unter Windows
    :exploding_head:)_
-3. Die Dateien sind verfügbar unter `/workspaces/[repository-name]`
+3. Die Dateien sind verfügbar unter `/workspace`
 
 </div><div>
 
@@ -150,7 +150,8 @@ sofern das Plugin "Dev Containers" installiert wurde.
 :::info VS Code Devcontainer kann "docker in docker"
 
 - Wenn Ihr ein Terminal im VS Code Devcontainer gestartet habt ist es möglich
-  direkt darin mit `docker compose up production -d` zu starten. :exploding_head:
+  direkt darin mit `docker compose up production -d` zu starten.
+  :exploding_head:
 - Wenn Ihr den Devcontainer via `docker compose` selbst gestartet habt ist kein
   `docker` verfügbar
   - kein Problem! Ihr könnt auch auf der Machine, in einer zweiten Shell den
