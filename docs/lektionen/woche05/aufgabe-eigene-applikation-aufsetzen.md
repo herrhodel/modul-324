@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+keywords:
+  - pdf
+---
+
 # Eigene Applikation aufsetzen
 
 Das Fundament, damit Ihr alle zusammen arbeiten könnt, ist das Aufsetzen, oder
@@ -162,7 +168,7 @@ Ihr dürft das Projekt in jeder Beliebigen Technologie erstellen.
 
 :::
 
-### Eine eine kleine Anleitung was dabei zu beachten ist:
+### Eine kleine Anleitung was dabei zu beachten ist:
 
 1. Die Programmiersprache sollte per `mise use` direkt im `Dockerfile`
    installiert werden

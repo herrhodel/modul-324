@@ -8,6 +8,8 @@
 
 <Slide name="packagemanager" />
 
+<Slide name="docker" />
+
 ## Aufgaben
 
 <DocCardList />
