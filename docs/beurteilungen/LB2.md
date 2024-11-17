@@ -18,6 +18,10 @@ keywords:
 
 ## Teilnote: Fachgespräch
 
+| Sozialform               | Form                                      | Abgabe  | Gewicht     |
+| :----------------------- | :---------------------------------------- | :------ | :---------- |
+| :smile: **Einzelarbeit** | [🗣️ Fachgespräch](#teilnote-fachgespräch) | Woche 8 | 1/3 vom LB2 |
+
 Am **Ende des Sprints** findet ein Sprint-Review, in Form eines
 **Fachgespräches** statt. Jedes Gruppenmitglied wird zum **Sprint 2** und den
 dabei relevanten Themen **8 Minuten** befragt.
@@ -41,6 +45,10 @@ ersichtlich.
 | **Total**     |                                                           | **10** |
 
 ## Teilnote: Schriftliche Reflexion
+
+| Sozialform               | Form                                                 | Abgabe  | Gewicht     |
+| :----------------------- | :--------------------------------------------------- | :------ | :---------- |
+| :smile: **Einzelarbeit** | [🖋️ Schriftliche Reflexion](#schriftliche-reflexion) | Woche 8 | 1/3 vom LB2 |
 
 Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 über den Verlauf des Sprint 2 verfasst.
@@ -165,8 +173,8 @@ Commit-Message: `docs(hodel): Reflexion Sprint 1`
 #### Lernzuwachs
 
 - [x] Was kann ich nun mehr als vorher?
-- [x] Dieses Thema vom Sprint ist besonders relevant?, Begründen Sie?
-- [x] Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
+- [x] Dieses Thema vom Sprint ist besonders relevant? Begründen Sie.
+- [x] Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
 
 #### Lerneffekt
 
@@ -180,7 +188,7 @@ bewertet.
 
 | Sozialform           | Form              | Abgabe  |     Gewicht |
 | :------------------- | :---------------- | :-----: | ----------: |
-| 👬 **Gruppenarbeit** | 👷 Arbeitsvorgang | Woche 4 | 40% vom LB1 |
+| 👬 **Gruppenarbeit** | 👷 Arbeitsvorgang | Woche 4 | 1/3 vom LB2 |
 
 :::danger Achtung Kollektivnote!
 
