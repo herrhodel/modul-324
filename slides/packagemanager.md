@@ -16,6 +16,49 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
+# Programme
+
+- Apple App Store
+- Google Play Store
+- Windows Store
+
+![bg right fit](images/appstore.png)
+
+---
+
+# Hilfsprogramme
+
+- Mac: brew, macPorts
+- Windows: winget-cli, chocolatey
+- Linux: apt-get, dnf, ...
+
+---
+
+# Programmiersprachen
+
+::: columns
+
+## Sprachabhängig
+
+> Die Versionen werden global für alle Projekte gleich gesetzt.
+
+- Node: nvm, ...
+- Ruby: rvm, rbenv, ...
+- Java: jvms, jenv,
+
+::: split
+
+## One to rule them all.
+
+> Die Versionen werden global oder auch lokal, **pro Ordner/Projekt** definiert.
+
+- [asdf](https://asdf-vm.com/)
+- :star: [mise](https://mise.jdx.dev/) (basiert auf asdf) </br>
+
+:::
+
+---
+
 # Programmiersprachen
 
 - Besitzen **Standardbibliotheken**

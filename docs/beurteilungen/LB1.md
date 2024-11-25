@@ -175,3 +175,8 @@ bewertet.
 | Alle Commit-Messages wurden wie gewünscht geschrieben                                     |   1    |
 | ...                                                                                       |        |
 | **TOTAL**                                                                                 | **10** |
+
+<!-- 
+- Epics sind vorhanden 
+- Es sind schon mehr als 5 eigene Issues beschrieben
+-->
