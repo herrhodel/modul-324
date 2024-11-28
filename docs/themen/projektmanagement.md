@@ -285,7 +285,3 @@ Projektes sinken die Kosten für gewöhnlich.
     Confluence
 - [Basecamp](https://basecamp.com/)
 
-## :pencil: Aufgaben
-
-- [GitHub Projekt erstellen](../aufgaben/github-projekt-erstellen.md)
-- [GitHub Issues erfassen](../aufgaben/github-issues-erfassen.md)

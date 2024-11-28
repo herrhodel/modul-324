@@ -8,9 +8,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Woche 7
+# Woche 6
 
-## CI / CD - Pipeline
+## CI / CD - Pipeline <br/> Testautomatisierung
 
 ### Modul 324
 
@@ -20,15 +20,15 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ![bg right fit](images/ci-cd-pipeline.jpg)
 
-**build** - des Programmcodes<br> `npm run build`, `mvn build`
+**build** - des Programmcodes<br/> `npm run build`, `mvn build`
 
-**test** - des Programmcodes<br> `npm run test`, `mvn test`
+**test** - des Programmcodes<br/> `npm run test`, `mvn test`
 
-**release** - erstellt das docker images<br> `docker build`
+**release** - erstellt das docker images<br/> `docker build`
 
 ## CD - Continious Delivery
 
-**deploy** - docker images nach AWS<br> `kamal deploy` oder andere
+**deploy** - docker images nach AWS<br/> `kamal deploy` oder andere
 
 ---
 
@@ -55,13 +55,14 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 # GitHub Actions
 
 - Führen anhand von Events, Workflows aus
-- Workflows sind Scripts welche auf GitHub, in Docker-Container ausgeführt
-  werden.
-
+- Workflows sind Scripts welche auf GitHub, in Container ausgeführt werden
 - [GitHub Action Workflows](https://docs.github.com/en/actions/writing-workflows/quickstart)
   befinden sich im Ordner `.github/workflows`
 - Jede Datei mit der Endung `*.yml` wird als Workflow ausgeführt
-- In unserer Applikation ist das die Datei `.github/workflows/aws.yml`
+- In unserer Applikation sind das die Dateien
+  - `.github/workflows/deploy.yml`
+  - `.github/workflows/aws-infrastructure.yml`
+  - `.github/workflows/release-please.yml`
 - Die Workflows folgen
   [dieser Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 
@@ -130,11 +131,11 @@ jobs:
 
 ---
 
-# Die Datei `aws.yml`
+# Die Datei `deploy.yml`
 
 ::: columns
 
-- In eurem Repo existiert bereits die Datei `aws.yml`
+- In eurem Repo existiert bereits die Datei `deploy.yml`
 - Dieser wird beim `push` auf den branch `main` ausgeführt
 
 - Es existiert einen Job `deploy` mit folgenden Steps:
@@ -143,12 +144,13 @@ jobs:
 
 - Checkout
 - Configure AWS credentials
-- Login to Amazon ECR
-- Setup Terraform CLI
-- Terraform plan and apply
+- Get Server Ip
 - Set up Ruby for Kamal
-- Bootstrap Kamal
-- **Build, tag, and push image to Amazon ECR**
+- Login to Amazon Elastic Container Registry
+- Push environment variables
+- Set up Docker Buildx
+- Docker meta
+- Build and push
 - **Kamal deploy image**
 
 :::
@@ -157,7 +159,7 @@ jobs:
 
 <!-- _class: big center -->
 
-# Wo builden und testen wir nun den Code?
+# Wo builden wir nun den Code?
 
 ---
 
@@ -183,16 +185,84 @@ jobs:
 
 ---
 
-# :pencil: Aufgabe 2: Test step einbauen
+<!-- _class: big center -->
 
-- Erstellt **einen** automatisierten Test für euer Framework
+# Testautomatisierung
 
-  - Angular: https://v17.angular.io/guide/testing
-  - Spring Boot: https://www.baeldung.com/spring-boot-testing
+---
 
-- Führt den Test im Dockerfile aus, nachdem die App gebuildet wurde
-- So wird sichergestellt, dass die Tests grün sind, sonst bricht das deployment
-  ab
+# Qualitätssicherung
+
+- Soll sicher stellen, dass das Produkt auch den Erwartungen entspricht
+
+- Die **funktionale Erwartung** soll durch das Einbinden des Kunden und
+  schnellem Feedback der umgesetzten Features gesichert werden
+
+- Die **Fehlerfreiheit** ist zu einem gewissen Grad automatisiert testbar.
+
+---
+
+# Unit-Tests
+
+- Gewährleisten, dass **eine Methode** korrekte Resultate liefert
+
+- Methoden werden mit verschiedensten Argumenten aufgerufen und geprüft ob das
+  Resultat stimmt
+
+## Frameworks (JavaScript)
+
+- Jasimne / Karma
+- Jest
+- MochaJs
+
+---
+
+# Integration-Tests
+
+- Testen das Zusammenspiel von Methoden
+
+- Es wird die **Benutzerinteraktion nachempfunden**
+
+- Dafür werden "Headless Browser" verwendet.
+
+## Frameworks (Sprachunabhängig!)
+
+::: columns
+
+- [Selenium](https://www.selenium.dev/)
+- [Gauge / Taiko](https://gauge.org/)
+
+::: split
+
+- [Cypress](https://www.cypress.io/)
+- [Cucumber](https://cucumber.io/) (die Erfinder...)
+
+:::
+
+---
+
+# Test Driven Development (TDD)
+
+> Make it green, then clean
+
+- Es wird zuerst einen Test geschrieben anhand der Anforderungen
+
+- Es wird programmiert bis dieser Test grün ist
+
+- Die Tests dienen direkt als Dokumentation, welche Features vorhanden sind.
+
+> Viele Tests können aber auch hinderlich sein. "Oh nein, dann muss ich all die
+> wieder anfassen..."
+
+---
+
+# Best Practices
+
+- Test schreiben, wenn ein Fehler auftritt
+
+- Für komplexe Berechnungen immer einen Test schreiben
+
+- Ein Integration-Tests Framework einführen und damit testen
 
 ---
 
@@ -209,3 +279,16 @@ jobs:
 > their absence!
 >
 > -- Dijkstra
+
+---
+
+# :pencil: Aufgabe 2: Test step einbauen
+
+- Erstellt **einen** automatisierten Test für euer Framework
+
+  - Angular: https://angular.dev/guide/testing
+  - Spring Boot: https://www.baeldung.com/spring-boot-testing
+
+- Führt den Test in der GitHub Action aus (siehe Anleitung auf der Webseite)
+- So wird sichergestellt, dass die Tests grün sind, sonst bricht das deployment
+  ab
