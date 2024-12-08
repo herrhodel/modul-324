@@ -115,6 +115,50 @@ trim_trailing_whitespace = true
 
 ---
 
+# Prettier Action
+
+::: columns
+
+- Prettier ist der quasi Standard in der JavaScript Welt
+
+- Es gibt eine Action die direkt den Code mit prettier formatiert **und
+  commitet!**
+
+- :zap: Prettier ist Formatierung und **nicht Linting**!
+
+::: split
+
+```yaml "./github/workflows/deploy.yml"
+jobs:
+  # ...
+  prettier:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
+        with:
+          same_commit: true
+          prettier_options: --write **/*.{js,md}
+          only_changed: true
+  test:
+    # ...
+  deploy:
+    needs: [test, prettier]
+    # ...
+```
+
+:::
+
+---
+
 <!-- _class: big -->
 
 # :bulb: Merken
@@ -129,9 +173,13 @@ trim_trailing_whitespace = true
 Garantiert die **funktionale Korrektheit** durch das Identifizieren von
 
 - **funktionelle Fehlern**
-
 - **stilistischen Problemen**
 - **unsicheren Praktiken**
+
+## Gängige Plugins
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [SonarQube for IDE](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
 
 ![bg right fit](./images/linting-htmlhint.jpg)
 
@@ -154,43 +202,43 @@ Garantiert die **funktionale Korrektheit** durch das Identifizieren von
 
 ---
 
-# SuperLinter
+# ES Lint für Angular installieren
 
-::: columns
+- `ng lint` -> alles mit "yes" akzeptieren
 
-[SuperLinter](https://github.com/marketplace/actions/super-linter) Eine
-Kollektion von Linters, welche direkt in GitHub Actions verwendet werden können.
+  - Es werden alle Dateien zur Konfiguration erstellt
 
-- Kann durch Environment Variablen gesteuert werden
-- Es braucht einen Step, der die changes commited!
+- im `package.json` folgendes Script ergänzen
 
-::: split
+  `"lint:ci": "ng lint --output-file eslint_report.json --format json"`
+
+  - Schreibt das Resultat in eine Datei `eslint_report.json`
+
+- in der Github Action `./github/workflows/deploy.yml` vor dem testen linten
+
+  - Beispiel folgt auf der nächsten Folie
+
+---
+
+# ES Lint für Angular in der Github Action
 
 ```yaml
-steps:
-  - name: Super-Linter
-    uses: super-linter/super-linter@v7.0.0
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Set your fix mode variables to true
-      FIX_GOOGLE_JAVA_FORMAT: true
-      VALIDATE_HTML_PRETTIER: true
-  - name: Commit and push linting fixes
-    # Run only on:
-    # - Pull requests
-    # - Not on the default branch
-    if: >
-      github.event_name == 'pull_request' && github.ref_name !=
-      github.event.repository.default_branch
-    uses: stefanzweifel/git-auto-commit-action@v5
-    with:
-      branch: ${{ github.event.pull_request.head.ref }}
-      commit_message: "chore: fix linting issues"
-      commit_user_name: super-linter
-      commit_user_email: super-linter@super-linter.dev
+# ...
+test:
+  name: Lint & Test
+  runs-on: ubuntu-latest
+  steps:
+    # ...
+    - name: Lint
+      working-directory: neues-projekt
+      run: npm run lint:ci # neues script!
+    - name: Annotate Code
+      uses: DerLev/eslint-annotations@v2 # Action für Anmerkungen am PR
+      with:
+        eslint-report: neues-projekt/eslint_report.json
+      continue-on-error: true
+    # ...
 ```
-
-:::
 
 ---
 
