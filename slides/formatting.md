@@ -8,7 +8,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Woche 5
+# Woche 7
 
 ## Formatierung und Linting
 
