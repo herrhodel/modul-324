@@ -8,11 +8,11 @@ Dockerimage der Applikation gebaut wird.
 
 <Slide name="packagemanager"/>
 
-<Slide name="formatting"/>
-
 <Slide name="docker"/>
 
 <Slide name="ci-cd"/>
+
+<Slide name="formatting"/>
 
 <Slide name="sprint2-ende"/>
 

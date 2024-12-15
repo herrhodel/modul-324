@@ -2,7 +2,7 @@
 marp: true
 theme: bbzbl
 paginate: true
-header: Modul 324 - DevOps
+header: Modul 324 - Sprint 1 Ende
 footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 ---
 

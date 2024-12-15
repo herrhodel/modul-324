@@ -8,13 +8,13 @@ keywords:
 
 ## Überblick
 
-| Sozialform               | Form                      | Abgabe  | Gewicht               |
-| :----------------------- | :------------------------ | :------ | :-------------------- |
-| :smile: **Einzelarbeit** | 🗣️ Fachgespräch           | Woche 8 | 1/3 vom LB2           |
-| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 8 | 1/3 vom LB2           |
-| 👬 **Gruppenarbeit**     | 👷 Arbeitsvorgang         | Woche 8 | 1/3 vom LB2           |
-| ...                      |                           |         |                       |
-|                          | 🏅 **LB2: Sprintnote**    | Woche 8 | **1/3 der Modulnote** |
+| Sozialform               | Form                                                          | Abgabe  | Gewicht               |
+| :----------------------- | :------------------------------------------------------------ | :------ | :-------------------- |
+| :smile: **Einzelarbeit** | 🗣️ [Fachgespräch](#teilnote-fachgespräch)                     | Woche 8 | 1/3 vom LB2           |
+| :smile: **Einzelarbeit** | 🖋️ [Schriftliche Reflexion](#teilnote-schriftliche-reflexion) | Woche 8 | 1/3 vom LB2           |
+| 👬 **Gruppenarbeit**     | 👷 [Arbeitsvorgang](#teilnote-arbeitsvorgang)                 | Woche 8 | 1/3 vom LB2           |
+| ...                      |                                                               |         |                       |
+|                          | 🏅 **LB2: Sprintnote**                                        | Woche 8 | **1/3 der Modulnote** |
 
 ## Teilnote: Fachgespräch
 
@@ -76,54 +76,21 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 ### Wo wird die Reflexion geschrieben?
 
 - Für jede Reflexion pro Person soll ein `GitHub Issue` erstellt werden.
-- Die Reflexion soll als `markdown`-Datei unter Ihrem Nachnamen im Ordner
-  `/docs` geschrieben werden.
-- Für jede Reflexion wird ein Branch `docs/reflexion-ihr-nachname` erstellt.
-- Es wird ein Pull-Request erstellt und mir `@codingluke` als Reviewer
-  zugewiesen.
-- Nach dem mergen, soll der Branch `docs/reflexion-ihr-nachname` wieder gelöscht
-  werden.
-- :boom: Die Commit-Message soll folgendermassen heissen.
-  - `docs(ihr-nachname): Reflexion Sprint 2`
-
-:::tip Beispieldatei: `/docs/hodel/reflexion-sprint2.md`
-
-```markdown
-# Hodel - Reflexion Sprint 2
-
-## Welche verschiedenen Themen beinhaltete der Sprint?
-
-lorem ipsum...
-
-## Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
-
-lorem ipsum...
-
-...
-```
-
-:::
-
-:::info Wieso so kompliziert?
-
-1. Ihr wendet direkt Prinzipien von Git und GitHub an
-2. Ich habe dich Möglichkeit im Pull-Request einzelne Zeilen zu kommentieren
-
-:::
-
-### Wo wird die Reflexion geschrieben?
-
-- Für jede Reflexion pro Person soll ein `GitHub Issue` erstellt werden.
 - Die Reflexion soll als `markdown`-Datei unter folgendem Pfad
   `/docs/reflections/ihr-nachname/reflexion-sprint2.md` geschrieben werden.
 - Für jede Reflexion pro Person wird ein Branch erstellt.
 - Es wird ein Pull-Request erstellt und mir `@codingluke` als Reviewer
   zugewiesen.
 - Nach dem mergen, soll der Branch wieder gelöscht werden.
+
+:::caution
+
 - :boom: Die Commit-Message soll folgendermassen heissen.
   - `docs(ihr-nachname): Reflexion Sprint 2`
 
-:::tip Beispieldatei: `/docs/reflections/hodel/reflexion-sprint1.md`
+:::
+
+:::tip Beispieldatei: `/docs/reflections/hodel/reflexion-sprint2.md`
 
 ```markdown
 # Hodel - Reflexion Sprint 2
@@ -139,7 +106,7 @@ lorem ipsum...
 ...
 ```
 
-Commit-Message: `docs(hodel): Reflexion Sprint 1`
+Commit-Message: `docs(hodel): Reflexion Sprint 2`
 
 :::
 
@@ -206,7 +173,7 @@ bewertet.
 | **Issues** beinhalten eine **Definion of Done**                                                                               |   1    |
 | **Geschlossene Issues** sind an einen **Pull Request geknüpft**                                                               |   1    |
 | **Geschlossene Issues** erfüllen die **Definition of Done**                                                                   |   1    |
-| **Pull Requests** besitzen eine **Berschreibung** (oder eine Referenz in der Beschreibung, auf den Issue den Ihn beschreibt). |   1    |
+| **Pull Requests** besitzen eine **Berschreibung** (oder eine Referenz in der Beschreibung, auf den Issue den ihn beschreibt). |   1    |
 | **Pull Requests** sind **konstruktiv** kommentiert (auch Code!)                                                               |   2    |
 | **Pull Requests** beziehen sich **genau auf einen** Issue                                                                     |   1    |
 | **Commits** sind anhand **conventional-commits** geschrieben                                                                  |   1    |

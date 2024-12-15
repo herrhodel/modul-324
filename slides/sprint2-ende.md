@@ -2,13 +2,13 @@
 marp: true
 theme: bbzbl
 paginate: true
-header: Modul 324 - DevOps
+header: Modul 324 - Sprint2 Ende
 footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 ---
 
 <!-- _class: big center -->
 
-# Woche 7
+# Woche 8
 
 ## Sprint 2 Ende
 
@@ -24,9 +24,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## :speaking_head: Fachgespräche
 
-- Ihr arbeitet an der Beschreibung der Issues,
-  [**die werden Bewertet**](https://codingluke.github.io/bbzbl-modul-324//docs/beurteilungen/LB3.md#bewertung-für-sprint-2-und-3)!
-- [**Reflexion schreiben!**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2)
+- Ihr arbeitet an der Beschreibung der Issues, [**die werden Bewertet**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2#teilnote-arbeitsvorgang)!
+- [**Reflexion schreiben!**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2#teilnote-schriftliche-reflexion)
 
 :::split s2
 
@@ -35,5 +34,3 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - nur im Unterricht ersichtlich
 
 :::
-
----
