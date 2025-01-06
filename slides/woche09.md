@@ -16,15 +16,14 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-<!-- _class: big -->
+<!-- _class: big emoji-list -->
 
 # Programm heute
 
-1. Projekt beenden, letzte Issues lösen, wenn möglich auf AWS deployen!
+- 🚀 Projekt beenden, wenn möglich ==**auf AWS deployen**==!
+- ✏️ Demo des Projekts vorbereiten
 
-   - Commit-Verlauf und PRs **werden benotet**
+### Grosse Pause
 
-2. Schlussreflexion schreiben (**wird benotet**)
-3. Projekt vorstellen (wird nicht benotet)
-
-   - Wenn nicht möglich auf AWS, dann Lokal oder auch Mockups
+- 🏁 Prüfung (45 - 60min)
+- 📽️ Präsentationen
