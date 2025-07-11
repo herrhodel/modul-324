@@ -116,7 +116,7 @@ const config = {
           //   position: "right",
           // },
           {
-            href: `https://gitlab.com/bbzbl-it/${modulConfig.repoName}`,
+            href: `https://github.com/${modulConfig.organizationName}/${modulConfig.repoName}`,
             label: "GitHub",
             position: "right",
           },
