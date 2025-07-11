@@ -26,9 +26,12 @@ jobs:
       - name: Build website
         run: yarn build
       - name: Build slides
-        run: yarn build-marp && yarn run copy-marp-images && yarn run copy-marp-js
+        run: |
+          yarn build:marp && \
+          yarn run build:marp-copy-images && \
+          yarn run build:marp-copy-js
       - name: Build slides PDFs
-        run: yarn build-marp-pdf
+        run: yarn build:marp-pdf
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
