@@ -19,8 +19,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 23
-          # cache: yarn
-      - uses: c-hive/gha-yarn-cache@v2
+          cache: yarn
       - uses: browser-actions/setup-chrome@latest
       - name: Install dependencies
         run: yarn install --frozen-lockfile
