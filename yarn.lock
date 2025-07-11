@@ -2253,6 +2253,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/faster@npm:^3.8.1":
+  version: 3.8.1
+  resolution: "@docusaurus/faster@npm:3.8.1"
+  dependencies:
+    "@docusaurus/types": "npm:3.8.1"
+    "@rspack/core": "npm:^1.3.15"
+    "@swc/core": "npm:^1.7.39"
+    "@swc/html": "npm:^1.7.39"
+    browserslist: "npm:^4.24.2"
+    lightningcss: "npm:^1.27.0"
+    swc-loader: "npm:^0.2.6"
+    tslib: "npm:^2.6.0"
+    webpack: "npm:^5.95.0"
+  peerDependencies:
+    "@docusaurus/types": "*"
+  checksum: 10/4dfd690a410f6a8a2508e6f7391bf56a787163e49da3ed74ac122d6b044f628f88e56d5179454f09ed4a6916cdf1c841de8e96a6d63b4ff477f055de1056f5f4
+  languageName: node
+  linkType: hard
+
 "@docusaurus/logger@npm:3.8.1":
   version: 3.8.1
   resolution: "@docusaurus/logger@npm:3.8.1"
@@ -2726,6 +2745,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emnapi/core@npm:^1.4.3":
+  version: 1.4.4
+  resolution: "@emnapi/core@npm:1.4.4"
+  dependencies:
+    "@emnapi/wasi-threads": "npm:1.0.3"
+    tslib: "npm:^2.4.0"
+  checksum: 10/a6ce2461816a8b3f311350b51512c78b2359cd178dc1734a877341f1a859702d4ca69bd187447e172148977348ffa843adc990d546adac246a9ac10aedabb5b8
+  languageName: node
+  linkType: hard
+
+"@emnapi/runtime@npm:^1.4.3":
+  version: 1.4.4
+  resolution: "@emnapi/runtime@npm:1.4.4"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10/56ebb7f24fd694358af4f5aa585cfae5bf00cc843bac9938f87b70e2d8a3c433cb8a938f6d5e4a20cedcc284abd9420c37f5009bdd5c898084f9b70cbd5827d8
+  languageName: node
+  linkType: hard
+
+"@emnapi/wasi-threads@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@emnapi/wasi-threads@npm:1.0.3"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10/dd92c1464ed7b1f842cb63e2ece9509ccbab1a75015e30d0d802ad7bc34069ba79466fe6ef13b6e30cbe16fddbdb31d3a2774461b2551fe6c4a86a3f88f434f6
+  languageName: node
+  linkType: hard
+
 "@floating-ui/core@npm:^1.7.2":
   version: 1.7.2
   resolution: "@floating-ui/core@npm:1.7.2"
@@ -3133,6 +3180,72 @@ __metadata:
   dependencies:
     langium: "npm:3.3.1"
   checksum: 10/b7e71c16e8c6baab17bbe39f0e4353221a4bc86642b45fadfbd442f859ba0d4606db245dcc82c6b24c5baec193cf9bec59661558699c49df485a28b5eb20d15b
+  languageName: node
+  linkType: hard
+
+"@module-federation/error-codes@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@module-federation/error-codes@npm:0.15.0"
+  checksum: 10/1dace0ecc511c6bf8b4f76db237a28f3f96b2f30a278d758afa70be4daccae1fc89613685fc66d85a74e82244a4cb1acd45cca7005a414d2431950d2035ea585
+  languageName: node
+  linkType: hard
+
+"@module-federation/runtime-core@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@module-federation/runtime-core@npm:0.15.0"
+  dependencies:
+    "@module-federation/error-codes": "npm:0.15.0"
+    "@module-federation/sdk": "npm:0.15.0"
+  checksum: 10/40dc67f8c496352f1883a8a520fd145996dc08cc640f1b337c6168d6e2be05ac5fb04fb3916f94300c9bcd15575a53eeb8fa472214d9d3b14906b24e00a47dd2
+  languageName: node
+  linkType: hard
+
+"@module-federation/runtime-tools@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@module-federation/runtime-tools@npm:0.15.0"
+  dependencies:
+    "@module-federation/runtime": "npm:0.15.0"
+    "@module-federation/webpack-bundler-runtime": "npm:0.15.0"
+  checksum: 10/399a3092090b81c1e08b4a25a34d813b023241fbe5df692d7ff9a4d2365ab487f1974e22bd321ff16fa7df88580e0e403e6f7bf5e38fc679d251dd936c2d8eda
+  languageName: node
+  linkType: hard
+
+"@module-federation/runtime@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@module-federation/runtime@npm:0.15.0"
+  dependencies:
+    "@module-federation/error-codes": "npm:0.15.0"
+    "@module-federation/runtime-core": "npm:0.15.0"
+    "@module-federation/sdk": "npm:0.15.0"
+  checksum: 10/01362d8b2889eaae07b87735ae99d302c256a75f4ec7f7757d70684ab69c9ecbd4abe52736a43d7d2480ca9b42dca9a328356a811c5bdb11c8cf24506fe1dfce
+  languageName: node
+  linkType: hard
+
+"@module-federation/sdk@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@module-federation/sdk@npm:0.15.0"
+  checksum: 10/2d4bdc38d7fadca59f7e73c152e2614ef0228de1fd996c0143e81e68cf046cb20fb8b60df22931c5082b3ec891ce9448378fa38f647bb41d9222c877aa581152
+  languageName: node
+  linkType: hard
+
+"@module-federation/webpack-bundler-runtime@npm:0.15.0":
+  version: 0.15.0
+  resolution: "@module-federation/webpack-bundler-runtime@npm:0.15.0"
+  dependencies:
+    "@module-federation/runtime": "npm:0.15.0"
+    "@module-federation/sdk": "npm:0.15.0"
+  checksum: 10/a5171a591e320da36ad4edc6239faa34039f2996de8479465bcd76cfd5a406000d3040b4247c127e1151aaa80c5846832c6274a3ed8e90ebbd70959bfb18c4af
+  languageName: node
+  linkType: hard
+
+"@napi-rs/wasm-runtime@npm:^0.2.11":
+  version: 0.2.12
+  resolution: "@napi-rs/wasm-runtime@npm:0.2.12"
+  dependencies:
+    "@emnapi/core": "npm:^1.4.3"
+    "@emnapi/runtime": "npm:^1.4.3"
+    "@tybys/wasm-util": "npm:^0.10.0"
+  checksum: 10/5fd518182427980c28bc724adf06c5f32f9a8915763ef560b5f7d73607d30cd15ac86d0cbd2eb80d4cfab23fc80d0876d89ca36a9daadcb864bc00917c94187c
   languageName: node
   linkType: hard
 
@@ -3571,6 +3684,140 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rspack/binding-darwin-arm64@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-darwin-arm64@npm:1.4.6"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-darwin-x64@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-darwin-x64@npm:1.4.6"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-linux-arm64-gnu@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-linux-arm64-gnu@npm:1.4.6"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-linux-arm64-musl@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-linux-arm64-musl@npm:1.4.6"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-linux-x64-gnu@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-linux-x64-gnu@npm:1.4.6"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-linux-x64-musl@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-linux-x64-musl@npm:1.4.6"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-wasm32-wasi@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-wasm32-wasi@npm:1.4.6"
+  dependencies:
+    "@napi-rs/wasm-runtime": "npm:^0.2.11"
+  conditions: cpu=wasm32
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-win32-arm64-msvc@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-win32-arm64-msvc@npm:1.4.6"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-win32-ia32-msvc@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-win32-ia32-msvc@npm:1.4.6"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@rspack/binding-win32-x64-msvc@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding-win32-x64-msvc@npm:1.4.6"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@rspack/binding@npm:1.4.6":
+  version: 1.4.6
+  resolution: "@rspack/binding@npm:1.4.6"
+  dependencies:
+    "@rspack/binding-darwin-arm64": "npm:1.4.6"
+    "@rspack/binding-darwin-x64": "npm:1.4.6"
+    "@rspack/binding-linux-arm64-gnu": "npm:1.4.6"
+    "@rspack/binding-linux-arm64-musl": "npm:1.4.6"
+    "@rspack/binding-linux-x64-gnu": "npm:1.4.6"
+    "@rspack/binding-linux-x64-musl": "npm:1.4.6"
+    "@rspack/binding-wasm32-wasi": "npm:1.4.6"
+    "@rspack/binding-win32-arm64-msvc": "npm:1.4.6"
+    "@rspack/binding-win32-ia32-msvc": "npm:1.4.6"
+    "@rspack/binding-win32-x64-msvc": "npm:1.4.6"
+  dependenciesMeta:
+    "@rspack/binding-darwin-arm64":
+      optional: true
+    "@rspack/binding-darwin-x64":
+      optional: true
+    "@rspack/binding-linux-arm64-gnu":
+      optional: true
+    "@rspack/binding-linux-arm64-musl":
+      optional: true
+    "@rspack/binding-linux-x64-gnu":
+      optional: true
+    "@rspack/binding-linux-x64-musl":
+      optional: true
+    "@rspack/binding-wasm32-wasi":
+      optional: true
+    "@rspack/binding-win32-arm64-msvc":
+      optional: true
+    "@rspack/binding-win32-ia32-msvc":
+      optional: true
+    "@rspack/binding-win32-x64-msvc":
+      optional: true
+  checksum: 10/06a43bb81af44c4be2d8a230d4c06acfb67cb3b93bc145872e2ba1249a926dad38a13c88734a410acbb123c4120a6b4ec0bbf2a6e27b7823600d10d40cf67ab1
+  languageName: node
+  linkType: hard
+
+"@rspack/core@npm:^1.3.15":
+  version: 1.4.6
+  resolution: "@rspack/core@npm:1.4.6"
+  dependencies:
+    "@module-federation/runtime-tools": "npm:0.15.0"
+    "@rspack/binding": "npm:1.4.6"
+    "@rspack/lite-tapable": "npm:1.0.1"
+  peerDependencies:
+    "@swc/helpers": ">=0.5.1"
+  peerDependenciesMeta:
+    "@swc/helpers":
+      optional: true
+  checksum: 10/168654050949cbbd8fd933052b55133cecfba11287ac20e31cc634b00d28d988f809e15574b34933db721d36fee2a81d304c86ef50598818c00a36287da3dd10
+  languageName: node
+  linkType: hard
+
+"@rspack/lite-tapable@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@rspack/lite-tapable@npm:1.0.1"
+  checksum: 10/240b7832965bca5a52d1f03a8539dab5810958ce24b5a670405b2505d81350f10d668f4055648f5918bc18ac033e637bcb7f92189345f0f2f671b546019c2f9e
+  languageName: node
+  linkType: hard
+
 "@shikijs/core@npm:1.29.2":
   version: 1.29.2
   resolution: "@shikijs/core@npm:1.29.2"
@@ -3919,12 +4166,254 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-darwin-arm64@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-darwin-arm64@npm:1.12.11"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-darwin-x64@npm:1.12.11"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm-gnueabihf@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.12.11"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.12.11"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-musl@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-linux-arm64-musl@npm:1.12.11"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-gnu@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-linux-x64-gnu@npm:1.12.11"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-linux-x64-musl@npm:1.12.11"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-arm64-msvc@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.12.11"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-ia32-msvc@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.12.11"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/core-win32-x64-msvc@npm:1.12.11"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.7.39":
+  version: 1.12.11
+  resolution: "@swc/core@npm:1.12.11"
+  dependencies:
+    "@swc/core-darwin-arm64": "npm:1.12.11"
+    "@swc/core-darwin-x64": "npm:1.12.11"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.12.11"
+    "@swc/core-linux-arm64-gnu": "npm:1.12.11"
+    "@swc/core-linux-arm64-musl": "npm:1.12.11"
+    "@swc/core-linux-x64-gnu": "npm:1.12.11"
+    "@swc/core-linux-x64-musl": "npm:1.12.11"
+    "@swc/core-win32-arm64-msvc": "npm:1.12.11"
+    "@swc/core-win32-ia32-msvc": "npm:1.12.11"
+    "@swc/core-win32-x64-msvc": "npm:1.12.11"
+    "@swc/counter": "npm:^0.1.3"
+    "@swc/types": "npm:^0.1.23"
+  peerDependencies:
+    "@swc/helpers": ">=0.5.17"
+  dependenciesMeta:
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@swc/helpers":
+      optional: true
+  checksum: 10/d274fd5f994cf8ea9117e9a7d1c470e8519d9ce193a28d111f4d83ceb8520461894e61d848165140e68123558ee860c579eacdf83a28a152d95c4aaaba85c05d
+  languageName: node
+  linkType: hard
+
+"@swc/counter@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "@swc/counter@npm:0.1.3"
+  checksum: 10/df8f9cfba9904d3d60f511664c70d23bb323b3a0803ec9890f60133954173047ba9bdeabce28cd70ba89ccd3fd6c71c7b0bd58be85f611e1ffbe5d5c18616598
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:^0.5.0":
   version: 0.5.17
   resolution: "@swc/helpers@npm:0.5.17"
   dependencies:
     tslib: "npm:^2.8.0"
   checksum: 10/1fc8312a78f1f99c8ec838585445e99763eeebff2356100738cdfdb8ad47d2d38df678ee6edd93a90fe319ac52da67adc14ac00eb82b606c5fb8ebc5d06ec2a2
+  languageName: node
+  linkType: hard
+
+"@swc/html-darwin-arm64@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-darwin-arm64@npm:1.12.11"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/html-darwin-x64@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-darwin-x64@npm:1.12.11"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/html-linux-arm-gnueabihf@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-linux-arm-gnueabihf@npm:1.12.11"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/html-linux-arm64-gnu@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-linux-arm64-gnu@npm:1.12.11"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/html-linux-arm64-musl@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-linux-arm64-musl@npm:1.12.11"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/html-linux-x64-gnu@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-linux-x64-gnu@npm:1.12.11"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/html-linux-x64-musl@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-linux-x64-musl@npm:1.12.11"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/html-win32-arm64-msvc@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-win32-arm64-msvc@npm:1.12.11"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/html-win32-ia32-msvc@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-win32-ia32-msvc@npm:1.12.11"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@swc/html-win32-x64-msvc@npm:1.12.11":
+  version: 1.12.11
+  resolution: "@swc/html-win32-x64-msvc@npm:1.12.11"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/html@npm:^1.7.39":
+  version: 1.12.11
+  resolution: "@swc/html@npm:1.12.11"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+    "@swc/html-darwin-arm64": "npm:1.12.11"
+    "@swc/html-darwin-x64": "npm:1.12.11"
+    "@swc/html-linux-arm-gnueabihf": "npm:1.12.11"
+    "@swc/html-linux-arm64-gnu": "npm:1.12.11"
+    "@swc/html-linux-arm64-musl": "npm:1.12.11"
+    "@swc/html-linux-x64-gnu": "npm:1.12.11"
+    "@swc/html-linux-x64-musl": "npm:1.12.11"
+    "@swc/html-win32-arm64-msvc": "npm:1.12.11"
+    "@swc/html-win32-ia32-msvc": "npm:1.12.11"
+    "@swc/html-win32-x64-msvc": "npm:1.12.11"
+  dependenciesMeta:
+    "@swc/html-darwin-arm64":
+      optional: true
+    "@swc/html-darwin-x64":
+      optional: true
+    "@swc/html-linux-arm-gnueabihf":
+      optional: true
+    "@swc/html-linux-arm64-gnu":
+      optional: true
+    "@swc/html-linux-arm64-musl":
+      optional: true
+    "@swc/html-linux-x64-gnu":
+      optional: true
+    "@swc/html-linux-x64-musl":
+      optional: true
+    "@swc/html-win32-arm64-msvc":
+      optional: true
+    "@swc/html-win32-ia32-msvc":
+      optional: true
+    "@swc/html-win32-x64-msvc":
+      optional: true
+  checksum: 10/b044755ca173e2f7dfd6bcd8b93f5f1e8157c10c175615c00ece0ed1442421c5ef0736759b02db869898645c1f58a5dc97e63aee9bde01c1f736fb663a036ad4
+  languageName: node
+  linkType: hard
+
+"@swc/types@npm:^0.1.23":
+  version: 0.1.23
+  resolution: "@swc/types@npm:0.1.23"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+  checksum: 10/8d9d73dd1fc9335105105da57595ab913bad6addd4fbcb2eb147300694630232225eb7dc74b733205af33352803e4fcefc18e3a36f8924cf821ef91384767670
   languageName: node
   linkType: hard
 
@@ -3988,6 +4477,15 @@ __metadata:
     mkdirp: "npm:^3.0.1"
     path-browserify: "npm:^1.0.1"
   checksum: 10/05eabbab5a63d71a7dac17202519d23d4d4ec30780364d4dc3096ca86291e19f0284d0592a6ee89ec257204075a985d00f4788d816a89c41d0c1e0c8d281c480
+  languageName: node
+  linkType: hard
+
+"@tybys/wasm-util@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "@tybys/wasm-util@npm:0.10.0"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10/779d047a77e8a619b6e26b6fe556f413316d846e9a35438668a15510a4d6e7294388c998f65911f6f1a13838745575d7793cb1d27182752f6f95991725b15d45
   languageName: node
   linkType: hard
 
@@ -5517,6 +6015,7 @@ __metadata:
   resolution: "bbzbl-modul-324@workspace:."
   dependencies:
     "@docusaurus/core": "npm:^3.8.1"
+    "@docusaurus/faster": "npm:^3.8.1"
     "@docusaurus/module-type-aliases": "npm:^3.8.1"
     "@docusaurus/plugin-content-docs": "npm:^3.8.1"
     "@docusaurus/preset-classic": "npm:^3.8.1"
@@ -5717,7 +6216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.23.0, browserslist@npm:^4.24.0, browserslist@npm:^4.24.4, browserslist@npm:^4.25.0, browserslist@npm:^4.25.1":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.23.0, browserslist@npm:^4.24.0, browserslist@npm:^4.24.2, browserslist@npm:^4.24.4, browserslist@npm:^4.25.0, browserslist@npm:^4.25.1":
   version: 4.25.1
   resolution: "browserslist@npm:4.25.1"
   dependencies:
@@ -7500,6 +7999,13 @@ __metadata:
   version: 1.2.0
   resolution: "destroy@npm:1.2.0"
   checksum: 10/0acb300b7478a08b92d810ab229d5afe0d2f4399272045ab22affa0d99dbaf12637659411530a6fcd597a9bdac718fc94373a61a95b4651bbc7b83684a565e38
+  languageName: node
+  linkType: hard
+
+"detect-libc@npm:^2.0.3":
+  version: 2.0.4
+  resolution: "detect-libc@npm:2.0.4"
+  checksum: 10/136e995f8c5ffbc515955b0175d441b967defd3d5f2268e89fa695e9c7170d8bed17993e31a34b04f0fad33d844a3a598e0fd519a8e9be3cad5f67662d96fee0
   languageName: node
   linkType: hard
 
@@ -10623,6 +11129,116 @@ __metadata:
   version: 3.1.0
   resolution: "leven@npm:3.1.0"
   checksum: 10/638401d534585261b6003db9d99afd244dfe82d75ddb6db5c0df412842d5ab30b2ef18de471aaec70fe69a46f17b4ae3c7f01d8a4e6580ef7adb9f4273ad1e55
+  languageName: node
+  linkType: hard
+
+"lightningcss-darwin-arm64@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-darwin-arm64@npm:1.30.1"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"lightningcss-darwin-x64@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-darwin-x64@npm:1.30.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"lightningcss-freebsd-x64@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-freebsd-x64@npm:1.30.1"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"lightningcss-linux-arm-gnueabihf@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-arm-gnueabihf@npm:1.30.1"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"lightningcss-linux-arm64-gnu@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-arm64-gnu@npm:1.30.1"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"lightningcss-linux-arm64-musl@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-arm64-musl@npm:1.30.1"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"lightningcss-linux-x64-gnu@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-x64-gnu@npm:1.30.1"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"lightningcss-linux-x64-musl@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-x64-musl@npm:1.30.1"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"lightningcss-win32-arm64-msvc@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-win32-arm64-msvc@npm:1.30.1"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"lightningcss-win32-x64-msvc@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-win32-x64-msvc@npm:1.30.1"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"lightningcss@npm:^1.27.0":
+  version: 1.30.1
+  resolution: "lightningcss@npm:1.30.1"
+  dependencies:
+    detect-libc: "npm:^2.0.3"
+    lightningcss-darwin-arm64: "npm:1.30.1"
+    lightningcss-darwin-x64: "npm:1.30.1"
+    lightningcss-freebsd-x64: "npm:1.30.1"
+    lightningcss-linux-arm-gnueabihf: "npm:1.30.1"
+    lightningcss-linux-arm64-gnu: "npm:1.30.1"
+    lightningcss-linux-arm64-musl: "npm:1.30.1"
+    lightningcss-linux-x64-gnu: "npm:1.30.1"
+    lightningcss-linux-x64-musl: "npm:1.30.1"
+    lightningcss-win32-arm64-msvc: "npm:1.30.1"
+    lightningcss-win32-x64-msvc: "npm:1.30.1"
+  dependenciesMeta:
+    lightningcss-darwin-arm64:
+      optional: true
+    lightningcss-darwin-x64:
+      optional: true
+    lightningcss-freebsd-x64:
+      optional: true
+    lightningcss-linux-arm-gnueabihf:
+      optional: true
+    lightningcss-linux-arm64-gnu:
+      optional: true
+    lightningcss-linux-arm64-musl:
+      optional: true
+    lightningcss-linux-x64-gnu:
+      optional: true
+    lightningcss-linux-x64-musl:
+      optional: true
+    lightningcss-win32-arm64-msvc:
+      optional: true
+    lightningcss-win32-x64-msvc:
+      optional: true
+  checksum: 10/6c921135216cc498dfcb87e35dffe8432e99306cbd58009c598b1daf20c81cc14535abbd4c1066e5d1faf4080ed44a2995e8ecc343633db4897a2d041b76fb05
   languageName: node
   linkType: hard
 
@@ -16504,6 +17120,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swc-loader@npm:^0.2.6":
+  version: 0.2.6
+  resolution: "swc-loader@npm:0.2.6"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+  peerDependencies:
+    "@swc/core": ^1.2.147
+    webpack: ">=2"
+  checksum: 10/fe90948c02a51bb8ffcff1ce3590e01dc12860b0bb7c9e22052b14fa846ed437781ae265614a5e14344bea22001108780f00a6e350e28c0b3499bc4cd11335fb
+  languageName: node
+  linkType: hard
+
 "symbol-tree@npm:^3.2.4":
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4"
@@ -16857,7 +17485,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.6.0, tslib@npm:^2.6.2, tslib@npm:^2.8.0":
+"tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.4.0, tslib@npm:^2.6.0, tslib@npm:^2.6.2, tslib@npm:^2.8.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10/3e2e043d5c2316461cb54e5c7fe02c30ef6dccb3384717ca22ae5c6b5bc95232a6241df19c622d9c73b809bea33b187f6dbc73030963e29950c2141bc32a79f7

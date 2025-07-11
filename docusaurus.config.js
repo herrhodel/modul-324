@@ -17,6 +17,11 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
 
+  future: {
+    v4: true,
+    experimental_faster: true,
+  },
+
   markdown: {
     mermaid: true,
   },
