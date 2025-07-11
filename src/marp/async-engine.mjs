@@ -23,7 +23,7 @@ class PostprocessMarpitEngine extends Marp {
   async render(markdown, env = {}) {
     const { html, css, comments } = super.render(markdown, env);
     if (this.postprocess) {
-      return this.postprocess(markdown, env, html, css, comments);
+      return await this.postprocess(markdown, env, html, css, comments);
     } else {
       return { html, css, comments };
     }

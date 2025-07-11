@@ -246,11 +246,9 @@ git merge fix#1
 
 # Conventional Commits / _Vorteile_
 
-- Einheitlichkeit -> **Übersichtlichkeit!** 
+- Einheitlichkeit -> **Übersichtlichkeit!**
 
 - Führt zu kleineren, **spezifischen Commits**
 - Automatisch **generierte Changelogs:** 😱
-- Automatisches erkennen und **taggen mit Semantischer-Versionierung** :exploding_head:
-
-
-
+- Automatisches erkennen und **taggen mit Semantischer-Versionierung**
+  :exploding_head:

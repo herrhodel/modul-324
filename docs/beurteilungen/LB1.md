@@ -176,7 +176,19 @@ bewertet.
 | ...                                                                                       |        |
 | **TOTAL**                                                                                 | **10** |
 
-<!-- 
-- Epics sind vorhanden 
+<!--
+- Epics sind vorhanden
 - Es sind schon mehr als 5 eigene Issues beschrieben
 -->
+
+## Link zur Modulidentifikation
+
+Der LB1 entspricht der
+[LBV-324-1](https://www.modulbaukasten.ch/module/324/1/de-DE?title=DevOps-Prozesse-mit-Tools-unterst%C3%BCtzen&lbv=0)
+wobei das Portfolio dem aktuellen Projekt entspricht.
+
+### Beschreibung
+
+> Die Kandidaten und Kandidatinnen erstellen ein Portfolio über den Teil des
+> Developments (Dev). Dabei werden die Teile der Planung (Plan), Codierung
+> (Code), des Generierens (Build) und des Testen (Test) bewertet.

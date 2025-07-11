@@ -81,7 +81,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: `https://gitlab.com/bbzbl-it/${modulConfig.repoName}/tree/main/`,
+          editUrl: `${modulConfig.url}/${modulConfig.repoName}`,
           remarkPlugins: [],
         },
         theme: {
@@ -110,14 +110,14 @@ const config = {
             position: "left",
             label: "Unterlagen",
           },
-          {
-            to: `${modulConfig.url}/${modulConfig.repoName}/assets/pdf/${modulConfig.pdfs[0].filename}`,
-            label: "PDF Download",
-            position: "right",
-          },
+          // {
+          //   to: `${modulConfig.url}/${modulConfig.repoName}/assets/pdf/${modulConfig.pdfs[0].filename}`,
+          //   label: "PDF Download",
+          //   position: "right",
+          // },
           {
             href: `https://gitlab.com/bbzbl-it/${modulConfig.repoName}`,
-            label: "GitLab",
+            label: "GitHub",
             position: "right",
           },
         ],
