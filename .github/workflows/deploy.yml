@@ -8,7 +8,6 @@ on:
       - v2
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
-
 jobs:
   build:
     name: Build Docusaurus Page
@@ -19,7 +18,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 23
           cache: yarn
       - uses: c-hive/gha-yarn-cache@v2
       - uses: browser-actions/setup-chrome@latest
@@ -28,12 +27,9 @@ jobs:
       - name: Build website
         run: yarn build
       - name: Build slides
-        run:
-          yarn build-marp && yarn run copy-marp-images && yarn run copy-marp-js
+        run: yarn build-marp && yarn run copy-marp-images && yarn run copy-marp-js
       - name: Build slides PDFs
         run: yarn build-marp-pdf
-      - name: Build page PDF
-        run: yarn build:pdf
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:

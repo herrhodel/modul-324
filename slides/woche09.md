@@ -20,7 +20,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Programm heute
 
-- 🚀 Projekt beenden, wenn möglich ==**auf AWS deployen**==!
+- 🚀 Projekt beenden, wenn möglich **auf AWS deployen**!
 - ✏️ Demo des Projekts vorbereiten
 
 ### Grosse Pause

@@ -55,6 +55,7 @@ export default async function marpMermaid(md) {
 export async function postProcessor(_markdown, _env, html, css, comments) {
   const doc = new jsdom.JSDOM(html); // parse html to DOM
   const mermaidDivs = doc.window.document.querySelectorAll("div.__mermaid");
+
   for (const element of mermaidDivs) await processMermaidDivCli(element);
   const processedHtml = doc.window.document.documentElement.outerHTML;
   return { html: processedHtml, css, comments };
