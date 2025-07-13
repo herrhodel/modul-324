@@ -8,43 +8,14 @@ keywords:
 
 ## Überblick
 
-| Sozialform               | Form                                                          | Abgabe  | Gewicht               |
-| :----------------------- | :------------------------------------------------------------ | :------ | :-------------------- |
-| :smile: **Einzelarbeit** | [🗣️ Fachgespräch](#teilnote-fachgespräch)                     | Woche 4 | 1/3 vom LB1           |
-| :smile: **Einzelarbeit** | [🖋️ Schriftliche Reflexion](#teilnote-schriftliche-reflexion) | Woche 4 | 1/3 vom LB1           |
-| 👬 **Gruppenarbeit**     | [👷 Arbeitsvorgang](#teilnote-arbeitsvorgang)                 | Woche 4 | 1/3 vom LB1           |
-| ...                      |                                                               |         |                       |
-|                          | 🏅 **LB1: Sprintnote**                                        | Woche 4 | **1/3 der Modulnote** |
+| Sozialform           | Form                                                          | Abgabe  | Gewicht               |
+| :------------------- | :------------------------------------------------------------ | :------ | :-------------------- |
+| 😄 **Einzelarbeit**  | [🖋️ Schriftliche Reflexion](#teilnote-schriftliche-reflexion) | Woche 4 | 1/2 vom LB1           |
+| 👬 **Gruppenarbeit** | [👷 Arbeitsvorgang](#teilnote-arbeitsvorgang)                 | Woche 4 | 1/2 vom LB1           |
+| ...                  |                                                               |         |                       |
+|                      | 🏅 **LB1: Sprintnote**                                        | Woche 4 | **40% der Modulnote** |
 
-## Teilnote: Fachgespräch
-
-| Sozialform               | Form                                      | Abgabe  | Gewicht     |
-| :----------------------- | :---------------------------------------- | :------ | :---------- |
-| :smile: **Einzelarbeit** | [🗣️ Fachgespräch](#teilnote-fachgespräch) | Woche 4 | 1/3 vom LB1 |
-
-Am **Ende des Sprints** findet ein Sprint-Review, in Form eines
-**Fachgespräches** statt. Jedes Gruppenmitglied wird zur **Lektion 1** sowie zum
-**Sprint 1** und den dabei relevanten Themen **8 Minuten** befragt.
-
-:::caution Achtung!
-
-Die Themen sind auf den jeweiligen [Sprint-Beschreibungen](../sprints/index.md)
-ersichtlich.
-
-:::
-
-### Bewertung
-
-| Was           | Wie                                                       | Punkte |
-| ------------- | --------------------------------------------------------- | ------ |
-| Inhalt        | Ist korrekt und entspricht der Fragen der Diskussion.     | 4      |
-| Wissen        | Brauchte keine Hilfestellungen.                           | 2      |
-| Fachbegriffe  | Werden richtig und an stelle von Umschreibungen verwendet | 2      |
-| Kommunikation | Die Antworten erfolgen deutlich, zügig und klar           | 2      |
-| ...           |                                                           |        |
-| **Total**     |                                                           | **10** |
-
-## Teilnote: Schriftliche Reflexion
+## 1. Teilnote: Schriftliche Reflexion
 
 | Sozialform               | Form                                                 | Abgabe  | Gewicht     |
 | :----------------------- | :--------------------------------------------------- | :------ | :---------- |
@@ -58,9 +29,10 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 | Thema                                                        | Punkte |
 | :----------------------------------------------------------- | -----: |
 | Alle Leitfragen sind beantwortet _(0.5 pro Frage)_           |      6 |
-| Die Antworten sind Tiefgründig und **kritisch** hinterfragt. |      4 |
+| Die Antworten sind Tiefgründig und **kritisch hinterfragt**. |      4 |
+| Die Reflexion wurde wie gewünscht abgegeben                  |      2 |
 | ...                                                          |        |
-| **TOTAL**                                                    | **10** |
+| **TOTAL**                                                    | **12** |
 
 :::caution Achtung!
 
@@ -123,6 +95,7 @@ Commit-Message: `docs(hodel): Reflexion Sprint 1`
 #### Inhalt (Auch Lektion 1!)
 
 - [x] Welche verschiedenen Themen behandelten wir bis jetzt?
+  - Bitte detailliert und nicht nur Stichworte!
 - [x] Waren Themen bereits bekannt? Wenn ja, woher?
 - [x] Was wurde in diesem Sprint erreicht?
 - [x] Was wurde in diesem Sprint nicht erreicht?
@@ -144,9 +117,9 @@ Commit-Message: `docs(hodel): Reflexion Sprint 1`
 - [x] Was sollte beibehalten werden?
 - [x] Was sollte geändert werden?
 
-## Teilnote: Arbeitsvorgang
+## 2. Teilnote: Projektstand
 
-Am **Ende des Sprints** wird der **Arbeitsvorgang der Gruppe** analysiert und
+Am **Ende des Sprints** wird der **Projektstand der Gruppe** analysiert und
 bewertet.
 
 | Sozialform           | Form              | Abgabe  |     Gewicht |
@@ -163,18 +136,20 @@ bewertet.
 
 ### Bewertung
 
-| Thema                                                                                     | Punkte |
-| :---------------------------------------------------------------------------------------- | :----: |
-| Der Projektberschierb ist aussagekräftig                                                  |   2    |
-| Der Projektberschierb befindet sich am gewünschten Ort                                    |   1    |
-| Epics verweisen auf Issues die ihn umsetzen                                               |   1    |
-| Issues/Epics sind klar und verständlich beschrieben                                       |   2    |
-| Issues beinhalten Akzeptanzkriterien                                                 |   1    |
-| Issues beschreiben immer nur eine Aufgabe                                                 |   1    |
-| Alle Reflexionen befinden sich am gewünschten Ort und wurden als Pull-Request eingereicht |   1    |
-| Alle Commit-Messages wurden wie gewünscht geschrieben                                     |   1    |
-| ...                                                                                       |        |
-| **TOTAL**                                                                                 | **10** |
+| Nr.  | Thema                                                                                     | Punkte |
+| :--: | :---------------------------------------------------------------------------------------- | :----: |
+| 2.1  | Der Projektberschierb ist aussagekräftig                                                  |   1    |
+| 2.2  | Der Projektberschierb befindet sich am gewünschten Ort                                    |   1    |
+| 2.3  | Epics verweisen auf Issues die ihn umsetzen                                               |   1    |
+| 2.4  | Issues/Epics sind **klar und verständlich** beschrieben                                   |   1    |
+| 2.5  | Issues/Epics sind **lösungsneutral** beschrieben                                          |   1    |
+| 2.6  | Issues beinhalten **Akzeptanzkriterien**                                                  |   1    |
+| 2.7  | Issues beschreiben **immer nur eine Aufgabe**                                             |   1    |
+| 2.8  | Geschlossene Issues beinhalten ein Protokoll der ausgeführten Akzeptanzkriterien          |   1    |
+| 2.9  | Alle Reflexionen befinden sich am gewünschten Ort und wurden als Pull-Request eingereicht |   1    |
+| 2.10 | Alle Commit-Messages wurden wie gewünscht geschrieben                                     |   1    |
+|      | ...                                                                                       |        |
+|      | **TOTAL**                                                                                 | **10** |
 
 <!--
 - Epics sind vorhanden
@@ -195,19 +170,29 @@ der Modulidentifikation.
 
 #### Bewertungskriterien
 
-- Sie halten Kundenbedürfnisse in Form von fachlichen und technischen
-  Anforderungen nachvollziehbar und lösungsneutral fest. [g1.1]
-- Sie versehen Anforderungen mit einer eindeutigen Bezeichnung. [g1.5]
+- _Sie halten Kundenbedürfnisse in Form von fachlichen und technischen
+  Anforderungen nachvollziehbar und lösungsneutral fest. [g1.1]_
+  - Leitfragen 1.1, 1.3, 1.4, 1.6
 - Sie dokumentieren fachliche und technische Anfoderungen laufend nach. [g1.8]
+  - Leitfragen 1.4, 1.5
 - Sie richten eine geeignete Entwicklungs- und Laufzeitumgebung anhand des
   Realisierungskonzepts sowie Firmenvorgaben ein. [g5.1]
 - Sie überprüfen die Einhaltung von Coderichtlinien. [g5.5]
+  - Leitfragen 1.8
 - Sie legen die Änderungen und Erweiterungen der Implementierung übersichtlich
   und zuverlässig in einem Softwareverwaltungssystem ab. [g5.6]
+  - Leitfragen 1.9
 - Sie beschreiben wiederholbare Testfälle in Bezug auf Aunwendungsfälle und
   Anforderungen nachvollziehbar und definieren die erwarteten Resultate. [g6.3]
+  - Leitfragen 1.5, Akzeptanzkriterien definieren manuelle Testfälle
 - Sie werten den Testlauf aus und protokollieren die Ergebnisse nachvollziehbar.
   [g6.7]
+  - Leitfragen 1.7
+
+**Irrelevant durch Tooling**
+
+- Sie versehen Anforderungen mit einer eindeutigen Bezeichnung. [g1.5]
+  - ✅ sofern GitHub issues verwendet sowieso gegeben.
 
 ### Modifikation
 
