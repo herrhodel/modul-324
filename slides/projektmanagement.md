@@ -95,7 +95,7 @@ umzusetzen.
 # GitHub Issues _(Arbeitspakete)_
 
 - haben **Abhängigkeiten** zu anderen Arbeitspakete.
-- müssen eine **klare "Definition of Done"** besitzen.
+- müssen **klare "Akzeptanzkriterien"** besitzen.
 - sollten nur **ein Feature** beschreiben.
 - müssen nach Fertigstellung an einen **Pull-Requests** geknüpft sein
 

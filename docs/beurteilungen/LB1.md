@@ -169,7 +169,7 @@ bewertet.
 | Der Projektberschierb befindet sich am gewünschten Ort                                    |   1    |
 | Epics verweisen auf Issues die ihn umsetzen                                               |   1    |
 | Issues/Epics sind klar und verständlich beschrieben                                       |   2    |
-| Issues beinhalten eine Definition of Done                                                 |   1    |
+| Issues beinhalten Akzeptanzkriterien                                                 |   1    |
 | Issues beschreiben immer nur eine Aufgabe                                                 |   1    |
 | Alle Reflexionen befinden sich am gewünschten Ort und wurden als Pull-Request eingereicht |   1    |
 | Alle Commit-Messages wurden wie gewünscht geschrieben                                     |   1    |
@@ -181,14 +181,42 @@ bewertet.
 - Es sind schon mehr als 5 eigene Issues beschrieben
 -->
 
-## Link zur Modulidentifikation
+## LB1 der offiziellen Modulidentifikation
 
 Der LB1 entspricht der
 [LBV-324-1](https://www.modulbaukasten.ch/module/324/1/de-DE?title=DevOps-Prozesse-mit-Tools-unterst%C3%BCtzen&lbv=0)
-wobei das Portfolio dem aktuellen Projekt entspricht.
+der Modulidentifikation.
 
-### Beschreibung
+### Offizielle Beschreibung
 
 > Die Kandidaten und Kandidatinnen erstellen ein Portfolio über den Teil des
 > Developments (Dev). Dabei werden die Teile der Planung (Plan), Codierung
 > (Code), des Generierens (Build) und des Testen (Test) bewertet.
+
+#### Bewertungskriterien
+
+- Sie halten Kundenbedürfnisse in Form von fachlichen und technischen
+  Anforderungen nachvollziehbar und lösungsneutral fest. [g1.1]
+- Sie versehen Anforderungen mit einer eindeutigen Bezeichnung. [g1.5]
+- Sie dokumentieren fachliche und technische Anfoderungen laufend nach. [g1.8]
+- Sie richten eine geeignete Entwicklungs- und Laufzeitumgebung anhand des
+  Realisierungskonzepts sowie Firmenvorgaben ein. [g5.1]
+- Sie überprüfen die Einhaltung von Coderichtlinien. [g5.5]
+- Sie legen die Änderungen und Erweiterungen der Implementierung übersichtlich
+  und zuverlässig in einem Softwareverwaltungssystem ab. [g5.6]
+- Sie beschreiben wiederholbare Testfälle in Bezug auf Aunwendungsfälle und
+  Anforderungen nachvollziehbar und definieren die erwarteten Resultate. [g6.3]
+- Sie werten den Testlauf aus und protokollieren die Ergebnisse nachvollziehbar.
+  [g6.7]
+
+### Modifikation
+
+Der Ansatz von diesem Modul ist Praxisbezogen. Daher wird **anstatt ein
+Portfolio direkt das Projekt bewertet**. Es handelt sich nicht nur um Theorie
+sondern um ein lauffähiges System was bewertet wird.
+
+- Dev: Es wird bewertet, dass alle Projektmitglieder mit der gleichen Codebase
+  und Editor-Einstellungen arbeiten.
+- Plan: Die Planung ist in diesem LB am relevantesten, am Anfang eines Projekts
+  diese erfahrungsgemäss die meiste Zeit beansprucht.
+- Code: Es werden die Commit-Messages analysiert.

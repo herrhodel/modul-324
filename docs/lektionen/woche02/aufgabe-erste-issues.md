@@ -53,7 +53,7 @@ Ebenso sollen auch die Epics verlinkt sein!
 
 :::
 
-## Issue Beschreibung und die Definition of Done
+## Issue Beschreibung und Akzeptanzkriterien
 
 Jeder Issue besitzt eine Beschreibung, diese **definiert die Aufgabe**, welche
 anhand vom Issue erstellt werden soll. Die Beschreibung richtet sich an den
@@ -68,17 +68,17 @@ Programmierer.
 :::
 
 Um überprüfen zu können, ob ein Issue erledigt worden ist, benötigt es eine
-Kurzanleitung, wie dies verifiziert werden kann. **Hier sprechen wie von der
-"Definition of Done"**.
+Kurzanleitung, wie dies verifiziert werden kann. **Hier sprechen wie von
+"Akzeptanzkriterien"**.
 
-- :bulb: **Die "Definition of Done" richtet sich an den Kunde!**
+- :bulb: **Die "Akzeptanzkriterien" richteten sich an den Kunde!**
 
 :::danger Notenrelevant
 
 - Alle Issues müssen eine Beschreibung beinhalten, der jeder, auch ohne Insider
   Wissen, entnehmen kann was zu tun ist.
-- Alle Issues müssen eine "Definition of Done" beinhalten mit der der Kunde
-  (also ich), die Umsetzung prüfen kann.
+- Alle Issues müssen ein "Akzeptanzkriterien" beinhalten mit der der Kunde (also
+  ich), die Umsetzung prüfen kann.
 
 :::
 

@@ -82,12 +82,10 @@ führen.
 Es wird Bewertet, dass alle Issues welche geschlossen sind einen Pull-Request
 referenzieren.
 
-- Ausnahmen: Issue welche keinen Code geneireren wie z.B. Mockub erstellen und
-  co.
-- Die Ausnahmen müssen aber als Definition of Done beweisen, wieso der Issue
+- Ausnahmen: Issue welche keinen Code generieren, wie z.B. Mockubs erstellen.
+- Die Ausnahmen müssen aber durch Akzeptanzkriterien beweisen, wieso der Issue
   "done" ist.
-  - Link zu eine externen Resource, wie z.B. ein Google Folder mit Bilder oder
-    so.
+  - Link zu eine externen Resource, wie z.B. einem Google Ordner mit Bilder
   - Link zu erstellten Tickets resultiert von diesem
   - usw.
 

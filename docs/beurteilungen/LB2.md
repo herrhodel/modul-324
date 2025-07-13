@@ -172,7 +172,7 @@ bewertet.
 | **Issues** sind **klar und verständlich** beschrieben                                                                         |   1    |
 | **Issues** beinhalten eine **Definion of Done**                                                                               |   1    |
 | **Geschlossene Issues** sind an einen **Pull Request geknüpft**                                                               |   1    |
-| **Geschlossene Issues** erfüllen die **Definition of Done**                                                                   |   1    |
+| **Geschlossene Issues** erfüllen die **Akzeptanzkriterien**                                                                   |   1    |
 | **Pull Requests** besitzen eine **Berschreibung** (oder eine Referenz in der Beschreibung, auf den Issue den ihn beschreibt). |   1    |
 | **Pull Requests** sind **konstruktiv** kommentiert (auch Code!)                                                               |   2    |
 | **Pull Requests** beziehen sich **genau auf einen** Issue                                                                     |   1    |

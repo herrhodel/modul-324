@@ -97,9 +97,7 @@ Sie werden je nach Software und Vorgehensmodell auch
 [<u>Issues</u>](https://github.com/features/issues), Stories, Cards, Tickets
 usw. genannt und:
 
-- müssen eine **klare
-  ["Definition of Done"](#definition-of-done-akzeptanzkriterien)**
-  (Akzeptanzkriterien) besitzen.
+- müssen ein **klare [Akzeptanzkriterien](#akzeptanzkriterien)** besitzen.
 - dürfen **nur eine Aufgabe** beschreiben.
   - Ein _"und"_ im Titel ist ein Hinweis darauf, dass ein Arbeitspaket
     aufgesplittet werden sollte.
@@ -111,7 +109,7 @@ usw. genannt und:
   - Es gibt auch Arbeitspakete die isoliert, also unabhängig implementiert
     werden können.
 
-### Definition of Done (Akzeptanzkriterien)
+### Akzeptanzkriterien
 
 Die Akzeptanzkriterien geben vor, **wie geprüft werden kann, ob das Arbeitspaket
 korrekt umgesetzt wurde**. Grundsätzlich kann zwischen zwei Arbeitspaket-Typen
@@ -284,4 +282,3 @@ Projektes sinken die Kosten für gewöhnlich.
   - wird von vielen Grossfirmen verwendet in Kombiation mit BitBucket und
     Confluence
 - [Basecamp](https://basecamp.com/)
-

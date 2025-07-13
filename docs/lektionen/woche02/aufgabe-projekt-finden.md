@@ -51,7 +51,7 @@ und mir pitchen.
 
 - Ein GitHub Issue, **Projekt finden**, erstellen.
 - Issue sinngemäss beschreiben **mit
-  [Definition of Done](/docs/lektionen/woche02/aufgabe-erste-issues.md#issue-beschreibung-und-die-definition-of-done)**
+  [Akzeptanzkriterien](/docs/lektionen/woche02/aufgabe-erste-issues.md#issue-beschreibung-und-akzeptanzkriterien)**
 - Ein **neuer Branch** erstellen
 - Im Branch das Projekt im **root /README.md** beschreiben
   - :bulb: Ihr dürft auch zuerst in _Google Docs_ die Beschreibung ausarbeiten.
