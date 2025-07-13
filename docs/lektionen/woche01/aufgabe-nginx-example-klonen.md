@@ -31,7 +31,7 @@ angepasst wird.
 - Formular ausfüllen
   ![Github Create New Repository](../../img/github_create_new_repository.png)
   - Der Name dürft Ihr selber wählen.
-  - Bitte **"Private"** auswählen, später mir (codingluke) berechtigen
+  - Bitte **"Private"** auswählen, später mich (@herrhodel) berechtigen
   - Mit **"Create Repository"** bestätigen
 
 ### AWS Credentials in Repository Environment Variablen übertragen

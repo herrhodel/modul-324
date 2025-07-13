@@ -24,8 +24,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## :speaking_head: Fachgespräche
 
-- Ihr arbeitet an der Beschreibung der Issues, [**die werden Bewertet**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2#teilnote-arbeitsvorgang)!
-- [**Reflexion schreiben!**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB2#teilnote-schriftliche-reflexion)
+- Ihr arbeitet an der Beschreibung der Issues, [**die werden Bewertet**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#teilnote-arbeitsvorgang)!
+- [**Reflexion schreiben!**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#teilnote-schriftliche-reflexion)
 
 :::split s2
 

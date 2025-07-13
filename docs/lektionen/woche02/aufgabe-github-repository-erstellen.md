@@ -30,6 +30,6 @@ keywords:
 
 2. Der **Teamleader** gibt allen Mitgliedern die **Berechtigungen**
 
-   - Bitte auch der Lehrperson `@codingluke`
+   - Bitte auch der Lehrperson `@herrhodel`
 
    ![github-repository-berechtigungen](images/github-repository-berechtigungen.png)

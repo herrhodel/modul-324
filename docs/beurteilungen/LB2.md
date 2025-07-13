@@ -79,7 +79,7 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 - Die Reflexion soll als `markdown`-Datei unter folgendem Pfad
   `/docs/reflections/ihr-nachname/reflexion-sprint2.md` geschrieben werden.
 - Für jede Reflexion pro Person wird ein Branch erstellt.
-- Es wird ein Pull-Request erstellt und mir `@codingluke` als Reviewer
+- Es wird ein Pull-Request erstellt und mir `@herrhodel` als Reviewer
   zugewiesen.
 - Nach dem mergen, soll der Branch wieder gelöscht werden.
 

@@ -55,15 +55,15 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## Start
 
-- [**GitHub Issues**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#bewertung-2):
+- [**GitHub Issues**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#bewertung-2):
   Aufgaben beschreiben und ausarbeiten
 
 ## Ende
 
-- [**Fachgespräch**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-fachgespräch):
+- [**Fachgespräch**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#teilnote-fachgespräch):
   Sprint-Review
 
-- [**Persönliche Reflexion**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-schriftliche-reflexion):
+- [**Persönliche Reflexion**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#teilnote-schriftliche-reflexion):
   Retrospektive auf den Sprint
 
 ::: split
@@ -72,7 +72,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 - **10' Stand-up**:<br> Planen, austauschen, Aufgaben verteilen
 
-- [**Pull-Requests / Commits:**](https://codingluke.github.io/bbzbl-modul-324/docs/beurteilungen/LB1#teilnote-arbeitsvorgang)<br>
+- [**Pull-Requests / Commits:**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#teilnote-arbeitsvorgang)<br>
   Aufgaben ausführen
 
 :::
