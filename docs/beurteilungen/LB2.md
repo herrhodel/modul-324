@@ -8,70 +8,55 @@ keywords:
 
 ## Überblick
 
-| Sozialform               | Form                                                          | Abgabe  | Gewicht               |
-| :----------------------- | :------------------------------------------------------------ | :------ | :-------------------- |
-| :smile: **Einzelarbeit** | 🗣️ [Fachgespräch](#teilnote-fachgespräch)                     | Woche 8 | 1/3 vom LB2           |
-| :smile: **Einzelarbeit** | 🖋️ [Schriftliche Reflexion](#teilnote-schriftliche-reflexion) | Woche 8 | 1/3 vom LB2           |
-| 👬 **Gruppenarbeit**     | 👷 [Arbeitsvorgang](#teilnote-arbeitsvorgang)                 | Woche 8 | 1/3 vom LB2           |
-| ...                      |                                                               |         |                       |
-|                          | 🏅 **LB2: Sprintnote**                                        | Woche 8 | **1/3 der Modulnote** |
+| Sozialform           | Form                                                            | Abgabe  | Gewicht               |
+| :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
+| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 4 | 10                    |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstandktstand)              | Woche 4 | 26                    |
+|                      | **Total**                                                       |         | **36**                |
+| ...                  |                                                                 |         |                       |
+|                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **40% der Modulnote** |
 
-## Teilnote: Fachgespräch
+## 1. Teilnote: Schriftliche Reflexion
 
-| Sozialform               | Form                                      | Abgabe  | Gewicht     |
-| :----------------------- | :---------------------------------------- | :------ | :---------- |
-| :smile: **Einzelarbeit** | [🗣️ Fachgespräch](#teilnote-fachgespräch) | Woche 8 | 1/3 vom LB2 |
+| Sozialform               | Form        |  Zeit  | Abgabe  | Gewicht     |
+| :----------------------- | :---------- | :----: | :------ | :---------- |
+| :smile: **Einzelarbeit** | schriftlich | 45 Min | Woche 4 | 1/3 vom LB1 |
 
-Am **Ende des Sprints** findet ein Sprint-Review, in Form eines
-**Fachgespräches** statt. Jedes Gruppenmitglied wird zum **Sprint 2** und den
-dabei relevanten Themen **8 Minuten** befragt.
+Am **Ende des Sprints** wird in der **zweiten Lektion**, in **Einzelarbeit**
+eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 
 :::caution Achtung!
 
-Die Themen sind auf den jeweiligen [Sprint-Beschreibungen](../sprints/index.md)
-ersichtlich.
+Die schriftliche Reflexion wird **im Unterricht, in 45 Min. geschrieben** und
+direkt im Projekt eingecheckt.
+
+- Die Fragen sind gegeben, **vorbereiten ist erlaubt** rsp. erwünscht.
+- Es werden **Plagiate geprüft**, wenn der verdacht besteht wird die **Note 1**
+  für beide/alle Parteien gegeben.
+- Während den 45 Minuten sind **keine Hilfsmittel** erlaubt!
+  - Wenn Ihr euch schriftlich vorbereitet, macht es ausserhalb vom Repo.
 
 :::
 
 ### Bewertung
 
-| Was           | Wie                                                       | Punkte |
-| ------------- | --------------------------------------------------------- | ------ |
-| Inhalt        | Ist korrekt und entspricht der Fragen der Diskussion.     | 4      |
-| Wissen        | Brauchte keine Hilfestellungen.                           | 2      |
-| Fachbegriffe  | Werden richtig und an stelle von Umschreibungen verwendet | 2      |
-| Kommunikation | Die Antworten erfolgen deutlich, zügig und klar           | 2      |
-| ...           |                                                           |        |
-| **Total**     |                                                           | **10** |
+:::info Punktekriterien
 
-## Teilnote: Schriftliche Reflexion
-
-| Sozialform               | Form                                                 | Abgabe  | Gewicht     |
-| :----------------------- | :--------------------------------------------------- | :------ | :---------- |
-| :smile: **Einzelarbeit** | [🖋️ Schriftliche Reflexion](#schriftliche-reflexion) | Woche 8 | 1/3 vom LB2 |
-
-Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
-über den Verlauf des Sprint 2 verfasst.
-
-### Bewertung
-
-| Thema                                                        | Punkte |
-| :----------------------------------------------------------- | -----: |
-| Alle Leitfragen sind beantwortet _(0.5 pro Frage)_           |      6 |
-| Die Antworten sind Tiefgründig und **kritisch** hinterfragt. |      4 |
-| ...                                                          |        |
-| **TOTAL**                                                    | **10** |
-
-:::caution Achtung!
-
-- Die Reflexionen müssen auf **alle** Leitfragen eingehen.
-- Die Antworten sollen auch **kritisch** hinterfragen!
-  - "Wir waren alle super und die Kommunikation war toll", ist keine wirkliche
-    Reflexion!
-- Die Antworten sollen auf das **wieso** eingehen und nicht einfach behaupten.
-  **Ohne Begründung, kein Punkt für die Frage.**
+- **0-Punkte**: Thema fehlt oder ist sehr mangelhaft vorhanden
+- **1-Punkt**: Thema existiert ist jedoch ausbaufähig
+- **2-Punkte**: Thema ist einwandfrei umgesetzt
 
 :::
+
+| Thema                                                                              | Punkte |
+| :--------------------------------------------------------------------------------- | -----: |
+| Alle Leitfragen sind beantwortet                                                   |      2 |
+| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.                   |      2 |
+| Die Antworten sind Tiefgründig und kritisch hinterfragt.                           |      2 |
+| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Leitfragen 1.7., 1.10)_ |      2 |
+| Die Reflexion wurde in gewünschter Form abgegeben                                  |      2 |
+| ...                                                                                |        |
+| **TOTAL**                                                                          | **10** |
 
 ### Wo wird die Reflexion geschrieben?
 
@@ -86,7 +71,7 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 :::caution
 
 - :boom: Die Commit-Message soll folgendermassen heissen.
-  - `docs(ihr-nachname): Reflexion Sprint 2`
+  - `docs(lb2): Reflexion Sprint 2 ([ihr-nachname])`
 
 :::
 
@@ -95,18 +80,18 @@ Am **Ende des Sprints** wird in **Einzelarbeit** eine **schriftliche Reflexion**
 ```markdown
 # Hodel - Reflexion Sprint 2
 
-## Welche verschiedenen Themen beinhaltete der Sprint?
+## 1.2 Welche verschiedenen Themen beinhaltete der Sprint?
 
 lorem ipsum...
 
-## Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
+## 1.2 Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
 
 lorem ipsum...
 
 ...
 ```
 
-Commit-Message: `docs(hodel): Reflexion Sprint 2`
+Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 
 :::
 
@@ -126,46 +111,50 @@ Commit-Message: `docs(hodel): Reflexion Sprint 2`
 
 #### Inhalt
 
-- [x] Welche verschiedenen Themen beinhaltete der Sprint?
-- [x] Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
-- [x] Was wurde in diesem Sprint erreicht?
-- [x] Was wurde in diesem Sprint nicht erreicht?
+- 1.1. Welche verschiedenen Themen beinhaltete der Sprint?
+  - Bitte detailliert und nicht nur Stichworte!
+- 1.2. Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
+- 1.3. Was wurde in diesem Sprint erreicht?
+- 1.4 Was wurde in diesem Sprint nicht erreicht?
 
 #### Gruppendynamik
 
-- [x] Wie war die Zusammenarbeit im Team?
-- [x] Auf was achtet Ihr bei der Kommunikation, damit diese Konstruktiv ist?
-- [x] Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
+- 1.5. Wie war die Zusammenarbeit im Team?
+- 1.6. Auf was achtet Ihr bei der Kommunikation, damit diese Konstruktiv ist?
+- 1.7. Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
 
 #### Lernzuwachs
 
-- [x] Was kann ich nun mehr als vorher?
-- [x] Dieses Thema vom Sprint ist besonders relevant? Begründen Sie.
-- [x] Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
+- 1.8. Was kann ich nun mehr als vorher?
+- 1.9. Dieses Thema vom Sprint ist besonders relevant? Begründen Sie.
+- 1.10. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
 
 #### Lerneffekt
 
-- [x] Was sollte beibehalten werden?
-- [x] Was sollte geändert werden?
+- 1.11 Was sollte beibehalten werden?
+- 1.12 Was sollte geändert werden?
 
-## Teilnote: Arbeitsvorgang
+## 2. Teilnote: Projektstand
 
 Am **Ende des Sprint 2** wird der **Arbeitsvorgang der Gruppe** analysiert und
 bewertet.
 
-| Sozialform           | Form              | Abgabe  |     Gewicht |
-| :------------------- | :---------------- | :-----: | ----------: |
-| 👬 **Gruppenarbeit** | 👷 Arbeitsvorgang | Woche 4 | 1/3 vom LB2 |
+| Sozialform           | Form         | Abgabe  |     Gewicht |
+| :------------------- | :----------- | :-----: | ----------: |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 1/3 vom LB2 |
 
 :::danger Achtung Kollektivnote!
 
 - 👮 Bitte kontrolliert euch selbst, dass alle sich an die Vorgaben halten.
 - 💡 Diese Note ist bewusst nicht individuell, damit die Gruppe sich
   zusammenrauft.
+- ⏲️ Es wird der **Stand vom Ende des Nachmittags** bewertet.
 
 :::
 
 ### Bewertung
+
+<!-- TODO: An Modulidentifikation angleichen -->
 
 | Thema                                                                                                                         | Punkte |
 | :---------------------------------------------------------------------------------------------------------------------------- | :----: |
@@ -180,3 +169,39 @@ bewertet.
 | **Commits** beschreiben den **Inhalt** kurz (und nicht die Datei die geändert wurde)                                          |   1    |
 | ...                                                                                                                           |        |
 | **TOTAL**                                                                                                                     | **10** |
+
+## LB2 der offiziellen Modulidentifikation
+
+Der LB2 entspricht der
+[:link: LBV-324-1, Element 2](https://www.modulbaukasten.ch/module/324/1/de-DE?title=DevOps-Prozesse-mit-Tools-unterst%C3%BCtzen&lbv=0)
+der Modulidentifikation.
+
+### Offizielle Beschreibung
+
+> Die Kandidaten und Kandidatinnen erstellen ein Portfolio über den Teil des
+> Operations (Ops). Dabei werden die Teile des Freigebens (Release) und der
+> Veröffentlichung (Deploy) bewertet. Die Teile des Betriebs (Operate) und der
+> Überwachung (Monitor) werden nur marginal betrachtet.
+
+Informatikerinnen und Informatiker bestimmen geeignete Massnahmen zur
+Integration und zum Deployment von Applikationen. Dabei bestimmen sie eine
+geeignete Artefakteverwaltung für die effiziente Arbeit im Team.
+
+- Sie richten Services für die Auslieferung ein. [h3.1]
+- Sie stellen Komponenten für die Auslieferung bereit. [h3.3]
+  - Features entwickeln
+- Sie paketieren eine Applikation. [h3.4]
+  - Dockerisieren
+- Sie verwalten und versionieren Artefakte. [h3.5]
+  - release please einsetzen
+- Sie überprüfen den Auslieferungsprozess der Applikation gemäss Vorgaben.
+  [h3.6]
+
+  **Irrelevant durch Vorgabe**
+
+- Sie bestimmen geeignete Integrationspraktiken und halten diese fest. [h2.2]
+  - ✅ Gegeben, dockerisierte Web-Applikation
+- Sie bestimmen geeignete Deployment-Praktiken und halten diese fest. [h2.3]
+  - ✅ kamal-deploy.org nach AWS
+- Sie bestimmen eine geeignete Artefakt-Verwaltung und halten diese fest. [h2.4]
+  - ✅ AWS docker image registry

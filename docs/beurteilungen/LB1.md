@@ -8,13 +8,13 @@ keywords:
 
 ## Überblick
 
-| Sozialform           | Form                                                               | Abgabe  | Punkte                |
-| :------------------- | :----------------------------------------------------------------- | :------ | :-------------------- |
-| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion)    | Woche 4 | 13                    |
-| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-proje2-teilnote-projektstandktstand) | Woche 4 | 26                    |
-|                      | **Total**                                                          |         | **39**                |
-| ...                  |                                                                    |         |                       |
-|                      | 🏅 **LB1: Sprintnote**                                             | Woche 4 | **40% der Modulnote** |
+| Sozialform           | Form                                                            | Abgabe  | Punkte                |
+| :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
+| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 4 | 10                    |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstandktstand)              | Woche 4 | 26                    |
+|                      | **Total**                                                       |         | **36**                |
+| ...                  |                                                                 |         |                       |
+|                      | 🏅 **LB1: Sprintnote**                                          | Woche 4 | **40% der Modulnote** |
 
 ## 1. Teilnote: Schriftliche Reflexion
 
@@ -40,13 +40,23 @@ direkt im Projekt eingecheckt.
 
 ### Bewertung
 
-| Thema                                                        | Punkte |
-| :----------------------------------------------------------- | -----: |
-| Alle Leitfragen sind beantwortet _(0.5 pro Frage)_           |      6 |
-| Die Antworten sind Tiefgründig und **kritisch hinterfragt**. |      5 |
-| Die Reflexion wurde wie gewünscht abgegeben                  |      2 |
-| ...                                                          |        |
-| **TOTAL**                                                    | **13** |
+:::info Punktekriterien
+
+- **0-Punkte**: Thema fehlt oder ist sehr mangelhaft vorhanden
+- **1-Punkt**: Thema existiert ist jedoch ausbaufähig
+- **2-Punkte**: Thema ist einwandfrei umgesetzt
+
+:::
+
+| Thema                                                                              | Punkte |
+| :--------------------------------------------------------------------------------- | -----: |
+| Alle Leitfragen sind beantwortet                                                   |      2 |
+| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.                   |      2 |
+| Die Antworten sind Tiefgründig und kritisch hinterfragt.                           |      2 |
+| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Leitfragen 1.7., 1.10)_ |      2 |
+| Die Reflexion wurde in gewünschter Form abgegeben                                  |      2 |
+| ...                                                                                |        |
+| **TOTAL**                                                                          | **10** |
 
 ### Wo wird die Reflexion geschrieben?
 
@@ -131,9 +141,9 @@ Commit-Message: `docs(lb1): Reflexion Sprint 2 (Hodel)`
 Am **Ende des Sprints**, nach der vierten Lektion, wird der **Projektstand der
 Gruppe** analysiert und bewertet.
 
-| Sozialform           | Form              | Abgabe  |     Gewicht |
-| :------------------- | :---------------- | :-----: | ----------: |
-| 👬 **Gruppenarbeit** | 👷 Arbeitsvorgang | Woche 4 | 2/3 vom LB1 |
+| Sozialform           | Form         | Abgabe  |     Gewicht |
+| :------------------- | :----------- | :-----: | ----------: |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 2/3 vom LB1 |
 
 :::caution Achtung Kollektivnote!
 
@@ -148,7 +158,7 @@ Gruppe** analysiert und bewertet.
 
 :::info Punktekriterien
 
-- **0-Punkte**: Thema fehlt oder ist mangelhaft vorhanden
+- **0-Punkte**: Thema fehlt oder ist sehr mangelhaft vorhanden
 - **1-Punkt**: Thema existiert ist jedoch ausbaufähig
 - **2-Punkte**: Thema ist einwandfrei umgesetzt
 
@@ -180,7 +190,7 @@ Gruppe** analysiert und bewertet.
 ## LB1 der offiziellen Modulidentifikation
 
 Der LB1 entspricht der
- [:link: LBV-324-1](https://www.modulbaukasten.ch/module/324/1/de-DE?title=DevOps-Prozesse-mit-Tools-unterst%C3%BCtzen&lbv=0)
+[:link: LBV-324-1, Element 1](https://www.modulbaukasten.ch/module/324/1/de-DE?title=DevOps-Prozesse-mit-Tools-unterst%C3%BCtzen&lbv=0)
 der Modulidentifikation.
 
 ### Offizielle Beschreibung
