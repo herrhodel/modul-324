@@ -4,7 +4,7 @@ keywords:
   - pdf
 ---
 
-# Web-Applikation Template Repository
+# Web-Applikation Musterlösung
 
 Das Modul verfolgt das Prinzip, **_make-it-work_, _then-make-it-yours_**. Dies
 heisst es existiert ein funktionsfähiges, minimales Beispielprogramm. In diesem

@@ -1,4 +1,4 @@
-# 🏗️ Sprint 2 - Build it
+# 🚢 Sprint 2 - Ship it
 
 Der Sprint 2 hat zum Ziel, dass die CI/Pipeline so automatisiert ist, dass
 Codeänderungen, welche eingecheckt werden, automatisiert getestet und ein

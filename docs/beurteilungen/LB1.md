@@ -170,8 +170,8 @@ Gruppe** analysiert und bewertet.
 
 | Nr.  | Thema                                                                                                      | Max-Punkte |
 | :--: | :--------------------------------------------------------------------------------------------------------- | :--------: |
-| 2.1  | Der Projektberschrieb ist aussagekräftig                                                                   |     2      |
-| 2.2  | Der Projektberschrieb befindet sich am gewünschten Ort                                                     |     2      |
+| 2.1  | Der Projektbeschrieb ist aussagekräftig                                                                    |     2      |
+| 2.2  | Der Projektbeschrieb befindet sich am gewünschten Ort                                                      |     2      |
 | 2.3  | Epics verweisen auf Issues die ihn umsetzen                                                                |     2      |
 | 2.4  | Issues/Epics sind **klar und verständlich** beschrieben                                                    |     2      |
 | 2.5  | Issues/Epics sind **lösungsneutral** beschrieben                                                           |     2      |
@@ -181,7 +181,7 @@ Gruppe** analysiert und bewertet.
 | 2.9  | Es existiert eine "HelloWorld" Applikation in der spezifizierten gewünschten Technologie                   |     2      |
 | 2.10 | Es existiert ein README.md, welches beschreibt, wie das Projekt lokal zum Entwickeln gestartet werden kann |     2      |
 | 2.11 | Es wurde bereits ein Feature umgesetzt                                                                     |     2      |
-| 2.12 | Der Programmcode ist mit prettier formattiert oder folgt einer anderen gängigen Konvention                 |     2      |
+| 2.12 | Der Programmcode ist mit prettier formatiert oder folgt einer anderen gängigen Konvention                  |     2      |
 | 2.13 | Alle Commit-Messages wurden wie gewünscht, als conventional-commits, geschrieben                           |     2      |
 |      | ...                                                                                                        |            |
 |      | **TOTAL**                                                                                                  |   **26**   |

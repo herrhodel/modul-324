@@ -130,6 +130,7 @@ Auf GitHub müsst Ihr nun einen Pull-Request erstellen und diesen vom Team
 reviewen lassen.
 
 ![github-pull-request](images/github-pull-request.png)
+/Users/lhodel/Projects/bbzbl/bbzbl-modul-324/docs/lektionen/woche05/images/github-pull-request.png
 
 ### Von allen Teammitglieder lokal testen lassen
 
