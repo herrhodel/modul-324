@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 keywords:
   - pdf
 ---
@@ -15,12 +15,12 @@ einen `ssh-key` den man auf GitHub registrieren muss.
 
 ## Aufgabe
 
-Bitte folgt den unten stehenden Anleitungen von GitHub um einen `ssh-key` zu erstellen und
-auf GitHub zu registrieren.
+Bitte folgt den unten stehenden Anleitungen von GitHub um einen `ssh-key` zu
+erstellen und auf GitHub zu registrieren.
 
 - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-Alle die bereits einen Key haben können direkt hier vortfahren
+Alle die bereits einen Key haben können direkt hier fortfahren
 
 - [Adding a new SSH key to your account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)
 

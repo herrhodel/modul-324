@@ -1,4 +1,4 @@
-# 🦶 Sprint 1 - Kickoff
+# 🏗️ Sprint 1 - Build it
 
 Der Sprint 1 hat zum Ziel, dass sich die Gruppe kennenlernt, zusammen ein
 Projekt definiert wird und die Grundlage gesetzt wird, um das Projekt
