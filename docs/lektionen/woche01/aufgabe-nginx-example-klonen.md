@@ -42,9 +42,7 @@ angepasst wird.
   ![GitHub Repository Secret](../../img/github_create_secrets.png)
 - Für alle Einträge unter **"AWS Details"** ein Secret erstellen, es sollten **5
   Secrets** existieren
-  - AWS_ACCESS_KEY_ID
-  - AWS_SECRET_ACCESS_KEY
-  - AWS_SESSION_TOKEN
+  - AWS_CREDENTIALS
   - AWS_SSH_PRIVATE_KEY
     ![GitHub AWS Secrets Map](../../img/github_copy_secrets.png)
   - AWS_ACCOUNT_ID

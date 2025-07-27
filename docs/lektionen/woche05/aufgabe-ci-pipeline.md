@@ -146,8 +146,7 @@ Ihre Gruppe besitzt jedoch vier AWS Umgebungen, für jedes Teammitglied eine. Ih
 könntet somit **zusätzliche Credentials mit einem Prefix "TST\_"** für eine
 Testumgebung anlegen. :exploding_head:
 
-- **TST\_**AWS_ACCESS_KEY_ID, **TST\_**AWS_SECRET_ACCESS_KEY,
-  **TST\_**AWS_SESSION_TOKEN, **TST\_**AWS_SSH_PRIVATE_KEY,
+- **TST\_**AWS_CREDENTIALS, **TST\_**AWS_SSH_PRIVATE_KEY,
   **TST\_**AWS_ACCOUNT_ID
 
 Danach die Datei `.github/workflows/deploy.yml` nach
