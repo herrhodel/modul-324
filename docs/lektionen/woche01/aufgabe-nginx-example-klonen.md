@@ -14,17 +14,27 @@ angepasst wird.
 
 :::tip Ziel
 
-- Das Ziel vom Modul ist es, dass jeder mindestens diese Beispiel App verstanden
-  hat 🥳
+- 🎯 Das Ziel vom Modul ist es, dass jeder mindestens diese Beispiel App
+  verstanden hat.
+
+:::
+
+:::info
+
+- Das Template wurde verschoben und umbenannt, die Screenshots noch korrekt,
+  **konzentriert euch nicht auf die Namen** 😉
+- In diesem Repository werdet ihr nicht arbeiten. **Es dient als Muster zum
+  Nachschlagen**.
+- Im Projekt started Ihr mit einem leeren Repository.
 
 :::
 
 ## Aufgaben
 
-### Das Template `bbzbl-modul-324-template` klonen
+### Das Template `modul-324-muster` klonen
 
 - In den GitHub Account einloggen
-- [https://github.com/codingluke/bbzbl-modul-324-template](https://github.com/codingluke/bbzbl-modul-324-template)
+- [https://github.com/herrhodel/modul-324-muster](https://github.com/herrhodel/modul-324-muster)
   aufrufen
 - "Use this Template" -> "Create a new repository" wählen
   ![github_create_repository_from_template](../../img/github_create_repository_from_template.png)
@@ -40,12 +50,11 @@ angepasst wird.
   "Actions"** navigieren
 - Auf **"New Repository secret"** klicken
   ![GitHub Repository Secret](../../img/github_create_secrets.png)
-- Für alle Einträge unter **"AWS Details"** ein Secret erstellen, es sollten **5
+- Für alle Einträge unter **"AWS Details"** ein Secret erstellen, es sollten **3
   Secrets** existieren
   - AWS_CREDENTIALS
   - AWS_SSH_PRIVATE_KEY
-    ![GitHub AWS Secrets Map](../../img/github_copy_secrets.png)
-  - AWS_ACCOUNT_ID
+  - AWS_ACCOUNT_ID ![GitHub AWS Secrets Map](img/github_aws_secrets_map.png)
     ![GitHub AWS Secrets Account](../../img/github_ceate_secrets_account_id.png)
 
 ### Berechtigungen setzen
@@ -96,7 +105,7 @@ Nun wird ein Workflow mit zwei Steps gestartet:
 ![github_start_aws_infrastructure](images/github_start_aws_infrastructure.png)
 
 - Wenn alles grün ist (hoffentlich :sweat_smile:) sollte die Umgebung parat
-  sein, dass Docker-Images deployed werden können.
+  sein, sodass Docker-Images deployed werden können.
 
 ### Nginx Image bauen und ausliefern (deployen)
 
