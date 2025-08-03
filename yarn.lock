@@ -3025,22 +3025,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@marp-team/marp-cli@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@marp-team/marp-cli@npm:4.2.0"
+"@marp-team/marp-cli@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@marp-team/marp-cli@npm:4.2.2"
   dependencies:
     "@marp-team/marp-core": "npm:^4.1.0"
     "@marp-team/marpit": "npm:^3.1.3"
     chokidar: "npm:^4.0.3"
     cosmiconfig: "npm:^9.0.0"
-    puppeteer-core: "npm:^24.10.0"
+    puppeteer-core: "npm:^24.14.0"
     serve-index: "npm:^1.9.1"
     tmp: "npm:^0.2.3"
-    ws: "npm:^8.18.2"
+    ws: "npm:^8.18.3"
     yargs: "npm:^17.7.2"
   bin:
     marp: marp-cli.js
-  checksum: 10/5bf76c018b41bbe437d585f0557764b92aea897f7ec1731142fb08b240bc292bffb5e1bdf467366fbd297b51cb16d4e59ffaffbb624a9b81affdbc4b0e71a141
+  checksum: 10/40b64e9fece1a0f2a80df38967f4eeedd422af4d7256d4072a934cac5ed3c9933d4b8684478488d2b5fb0533e8a5c2c3f60b3b2c4d39b060ee2ac4df9c167226
   languageName: node
   linkType: hard
 
@@ -3146,9 +3146,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mermaid-js/mermaid-cli@npm:^11.6.0":
-  version: 11.6.0
-  resolution: "@mermaid-js/mermaid-cli@npm:11.6.0"
+"@mermaid-js/mermaid-cli@npm:^11.9.0":
+  version: 11.9.0
+  resolution: "@mermaid-js/mermaid-cli@npm:11.9.0"
   dependencies:
     "@mermaid-js/mermaid-zenuml": "npm:^0.2.0"
     chalk: "npm:^5.0.1"
@@ -3159,7 +3159,7 @@ __metadata:
     puppeteer: ^23
   bin:
     mmdc: src/cli.js
-  checksum: 10/9191806d878b75c27d3a7a40906e8dee146234bb5f260033955c28a7954f3034f409338be6a233206d150e1ed9516c9293bae5b6b45bec03d0ea053cd59c2499
+  checksum: 10/6a7550ab3fab0c3a9950da09e4e2902d70dfb4c3e7cacd92816ee5d14f54e2e4db2c19984108e84542249352f1f164272a080ac36e592baa6f0b17c38957e4d4
   languageName: node
   linkType: hard
 
@@ -3333,31 +3333,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@orama/orama@npm:3.1.10, @orama/orama@npm:^3.0.0, @orama/orama@npm:^3.1.4":
+"@orama/orama@npm:3.1.11":
+  version: 3.1.11
+  resolution: "@orama/orama@npm:3.1.11"
+  checksum: 10/69b41f3d0f690a4124931e1a1e901e8c9eaae72910b69c52d907b1878dfd2ed6cea3e10d98e8f75ed96ab05b82df793693ad5f1a99bd35bdc678581026a4f4b2
+  languageName: node
+  linkType: hard
+
+"@orama/orama@npm:^3.0.0, @orama/orama@npm:^3.1.4":
   version: 3.1.10
   resolution: "@orama/orama@npm:3.1.10"
   checksum: 10/d5199167dd4f32e89f1beb13a82c31f6feed695475a055e01023165eaf63355fba82962a3a7f02ca9d1f9637a421fd75df351b626734fa1148eb5dea6ed2805d
   languageName: node
   linkType: hard
 
-"@orama/plugin-analytics@npm:3.1.10":
-  version: 3.1.10
-  resolution: "@orama/plugin-analytics@npm:3.1.10"
+"@orama/plugin-analytics@npm:3.1.11":
+  version: 3.1.11
+  resolution: "@orama/plugin-analytics@npm:3.1.11"
   dependencies:
-    "@orama/orama": "npm:3.1.10"
-  checksum: 10/4463f99bf7a3f04932442e8063b88fa1e5596374cdf38161c7e4866bfa6ea0e703c0608e83f07d23ed7f8fb227e6b5f21763a6a8065803cdb3208ddee3c35294
+    "@orama/orama": "npm:3.1.11"
+  checksum: 10/98c2f7a059ae050b8d9f754f0893fbf9d644e1d2ff7c1c5cb69baf609b6b8a7fcb27205735b4230fcae9ede9c0f48d7047e99574fe73f6d26eb6410c1bfc3946
   languageName: node
   linkType: hard
 
-"@orama/plugin-docusaurus-v3@npm:^3.1.10":
-  version: 3.1.10
-  resolution: "@orama/plugin-docusaurus-v3@npm:3.1.10"
+"@orama/plugin-docusaurus-v3@npm:^3.1.11":
+  version: 3.1.11
+  resolution: "@orama/plugin-docusaurus-v3@npm:3.1.11"
   dependencies:
     "@orama/core": "npm:^0.1.8"
     "@orama/highlight": "npm:^0.1.5"
-    "@orama/orama": "npm:3.1.10"
-    "@orama/plugin-analytics": "npm:3.1.10"
-    "@orama/plugin-parsedoc": "npm:3.1.10"
+    "@orama/orama": "npm:3.1.11"
+    "@orama/plugin-analytics": "npm:3.1.11"
+    "@orama/plugin-parsedoc": "npm:3.1.11"
     "@orama/react-components": "npm:0.8.1"
     "@oramacloud/client": "npm:^2.1.4"
     github-slugger: "npm:^2.0.0"
@@ -3371,15 +3378,15 @@ __metadata:
     "@docusaurus/plugin-content-docs": ^3
     "@docusaurus/theme-common": ^3
     "@docusaurus/utils": ^3
-  checksum: 10/57ead83d52a69ad041314dd9cd9b81c44a9f410d07cc32a1c4d51026388bf18e0380b8c77e4f7513c92b24f9c7d9734d1d247b08d419169e31b2aeb8623e41d0
+  checksum: 10/b1031dcb09c2888a9947c567584f59813bf74b86ac32f652b5d4d6397a9e7a7dacdf22ca0f1d9a80ef15b35faef2bd1d02a0d7844ff13c28214f3b486bc64d05
   languageName: node
   linkType: hard
 
-"@orama/plugin-parsedoc@npm:3.1.10":
-  version: 3.1.10
-  resolution: "@orama/plugin-parsedoc@npm:3.1.10"
+"@orama/plugin-parsedoc@npm:3.1.11":
+  version: 3.1.11
+  resolution: "@orama/plugin-parsedoc@npm:3.1.11"
   dependencies:
-    "@orama/orama": "npm:3.1.10"
+    "@orama/orama": "npm:3.1.11"
     glob: "npm:^8.1.0"
     hast-util-from-html: "npm:^1.0.1"
     hast-util-from-string: "npm:^2.0.0"
@@ -3392,7 +3399,7 @@ __metadata:
     remark-parse: "npm:^10.0.1"
     remark-rehype: "npm:^10.1.0"
     unified: "npm:^10.1.2"
-  checksum: 10/8387170449d95f1072beac0c8d1912e0aaecc630bd8d304e567026afa2bc8ed1e90d53b98085b51ebb8875f8bcdb91084ea2b097b1a90b0f32f3b1a3954faf0f
+  checksum: 10/c918e3aaae9666997091e58052bbc3e2f9ff34e34d4447532759d7f49b043f0326adbdd6b5dced20302151dd0ccc93d28b07699b3b3cab0cfa43975af0a88c2e
   languageName: node
   linkType: hard
 
@@ -3504,20 +3511,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@puppeteer/browsers@npm:2.10.5":
-  version: 2.10.5
-  resolution: "@puppeteer/browsers@npm:2.10.5"
+"@puppeteer/browsers@npm:2.10.6":
+  version: 2.10.6
+  resolution: "@puppeteer/browsers@npm:2.10.6"
   dependencies:
     debug: "npm:^4.4.1"
     extract-zip: "npm:^2.0.1"
     progress: "npm:^2.0.3"
     proxy-agent: "npm:^6.5.0"
     semver: "npm:^7.7.2"
-    tar-fs: "npm:^3.0.8"
+    tar-fs: "npm:^3.1.0"
     yargs: "npm:^17.7.2"
   bin:
     browsers: lib/cjs/main-cli.js
-  checksum: 10/ebc7ed7bdba9de90294c0ff2d672818b3395955a00b25fc5b94f57639c5485306fd192f8b97c8da86603be845cf24dcc0b299dc24833bccc800d761e8ddcba13
+  checksum: 10/f6af7260b9df0bc4af55be139bab64e4a92b2019553eb48e57659cf589e80cc2a2f82fd613fec2fb933eb2de5a096ede53ba8a3471c71f14d170065880155ea3
   languageName: node
   linkType: hard
 
@@ -5161,12 +5168,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^19.1.8":
+"@types/react@npm:*":
   version: 19.1.8
   resolution: "@types/react@npm:19.1.8"
   dependencies:
     csstype: "npm:^3.0.2"
   checksum: 10/a3e6fe0f60f22828ef887f30993aa147b71532d7b1219dd00d246277eb7a9ca01ec533096237fa21ca1bccb3653373b4e8e59e5ae59f9c793058384bbc1f4d5c
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^19.1.9":
+  version: 19.1.9
+  resolution: "@types/react@npm:19.1.9"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10/b1032eae52e3b4f2a8b9ea6aac936385a78b7eff55cad4ff4f0d7e726c6ea87c1f287a1ba0e57a76a8e4456d3fb918b4f97a01e71686fdc11a65b26b8d296be4
   languageName: node
   linkType: hard
 
@@ -6023,13 +6039,13 @@ __metadata:
     "@docusaurus/theme-mermaid": "npm:^3.8.1"
     "@docusaurus/types": "npm:^3.8.1"
     "@docusaurus/utils": "npm:^3.8.1"
-    "@marp-team/marp-cli": "npm:^4.2.0"
+    "@marp-team/marp-cli": "npm:^4.2.2"
     "@marp-team/marp-core": "npm:^4.1.0"
     "@mdit/plugin-mark": "npm:^0.22.1"
     "@mdx-js/react": "npm:^3.1.0"
-    "@mermaid-js/mermaid-cli": "npm:^11.6.0"
-    "@orama/plugin-docusaurus-v3": "npm:^3.1.10"
-    "@types/react": "npm:^19.1.8"
+    "@mermaid-js/mermaid-cli": "npm:^11.9.0"
+    "@orama/plugin-docusaurus-v3": "npm:^3.1.11"
+    "@types/react": "npm:^19.1.9"
     clsx: "npm:^2.1.1"
     devserver-config: "file:plugins/devserver-config"
     fs-extra: "npm:^11.3.0"
@@ -6619,15 +6635,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromium-bidi@npm:5.1.0":
-  version: 5.1.0
-  resolution: "chromium-bidi@npm:5.1.0"
+"chromium-bidi@npm:7.2.0":
+  version: 7.2.0
+  resolution: "chromium-bidi@npm:7.2.0"
   dependencies:
     mitt: "npm:^3.0.1"
     zod: "npm:^3.24.1"
   peerDependencies:
     devtools-protocol: "*"
-  checksum: 10/4e96f07a08eb6907fa9b1814a6c71051e76b237d08d7fa5be2b4c459978caa1e2bf4f4c76673432bbbe69674ab01c32e3263f12ba41383eaa9b0b7de92e9f8f2
+  checksum: 10/edbf60cd24b8d59f35674b414a5d65c52b2d4807aca10dc575702fc3240b826d43a08ef1d21b6e5f6ddc1d6d6998a2b3aeffb639fe083d628d118866d8a0eab5
   languageName: node
   linkType: hard
 
@@ -14943,17 +14959,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"puppeteer-core@npm:^24.10.0":
-  version: 24.12.1
-  resolution: "puppeteer-core@npm:24.12.1"
+"puppeteer-core@npm:^24.14.0":
+  version: 24.15.0
+  resolution: "puppeteer-core@npm:24.15.0"
   dependencies:
-    "@puppeteer/browsers": "npm:2.10.5"
-    chromium-bidi: "npm:5.1.0"
+    "@puppeteer/browsers": "npm:2.10.6"
+    chromium-bidi: "npm:7.2.0"
     debug: "npm:^4.4.1"
     devtools-protocol: "npm:0.0.1464554"
     typed-query-selector: "npm:^2.12.0"
     ws: "npm:^8.18.3"
-  checksum: 10/0642cbf693dbd45c3c1ee610a3f4ae3f94dd757e23244b7ae40a92a5bea9563f5340de22f4bbccfb27d2460665566e5c9f13a82167406e09c198ba32a92a89be
+  checksum: 10/9fe0a7a982289f7dbc42799764a8273c814d00254f61431f3598a38fbdee7b0c6b171bddbe738d8be4f5868a9b4b034ecaa6c105e407452c276ae1046ef2e3b3
   languageName: node
   linkType: hard
 
@@ -17193,7 +17209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar-fs@npm:^3.0.6, tar-fs@npm:^3.0.8":
+"tar-fs@npm:^3.0.6, tar-fs@npm:^3.1.0":
   version: 3.1.0
   resolution: "tar-fs@npm:3.1.0"
   dependencies:
@@ -18490,7 +18506,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.13.0, ws@npm:^8.16.0, ws@npm:^8.18.0, ws@npm:^8.18.2, ws@npm:^8.18.3":
+"ws@npm:^8.13.0, ws@npm:^8.16.0, ws@npm:^8.18.0, ws@npm:^8.18.3":
   version: 8.18.3
   resolution: "ws@npm:8.18.3"
   peerDependencies:
