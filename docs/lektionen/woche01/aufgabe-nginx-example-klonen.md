@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 keywords:
   - pdf
 ---
@@ -56,6 +56,19 @@ angepasst wird.
   - AWS_SSH_PRIVATE_KEY
   - AWS_ACCOUNT_ID ![GitHub AWS Secrets Map](img/github_aws_secrets_map.png)
     ![GitHub AWS Secrets Account](../../img/github_ceate_secrets_account_id.png)
+
+### Personal Access Token (PAT) als Secret setzen.
+
+- Auf **"New Repository secret"** klicken
+- Name: PAT
+- Value: Das gespeicherte PAT der
+  [Aufgabe GitHub PAT erstellen](./aufgabe-github-pat-erstellen.md) einfügen
+
+:::note Es sollten nun 4 Secrets bestehen:
+
+**AWS_CREDENTIALS, AWS_SSH_PRIVATE_KEY, AWS_ACCOUNT_ID, PAT**
+
+:::
 
 ### Berechtigungen setzen
 
@@ -155,7 +168,6 @@ deployed werden!
 - **"Commit changes"**.
 
   :::caution
-
   - :boom: Verwendet bitte die Commit-Message `feat(nginx): show some magic`!
   - :boom: Create a new branch for this commit and start a pull request
 

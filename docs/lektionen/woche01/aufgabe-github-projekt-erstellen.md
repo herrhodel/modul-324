@@ -60,15 +60,13 @@ führen.
 - Erstellt ihr die Branches auf diesem Weg, sind sie automatisch an den Issue
   geknüpft.
 - Keine Angst es ist auf gleiche weise möglich einen Branch zu Verknüpfen
-- Wichtig is
 
 :::
 
 ### Erstellt einen Pull-Request vom Branch und linkt ihn zum Issue
 
 - Öffnet den Branch im Repository
-- Macht durch das GUI eine Änderung, am besten wieder die Datei
-  `/nginx/src/index.html`
+- Macht durch das GUI eine Änderung, am besten an der die Datei `README.md`
   - :exclamation: Dabei müsst ihr nicht nochmals einen Subbranch erstellen!
 
 ![aufgabe-github-pull-request-erstellen](./images/github-pullrequest-erstellen.jpg)
