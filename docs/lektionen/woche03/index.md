@@ -8,7 +8,9 @@
 
 <Slide name="git"/>
 
-<Slide name="local-development"/>
+<Slide name="ci-cd"/>
+
+<!-- <Slide name="local-development"/> -->
 
 ## Aufgaben
 

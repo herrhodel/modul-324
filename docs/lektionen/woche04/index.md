@@ -6,7 +6,8 @@
 
 ## Thema
 
-<Slide name="sprint1-ende" />
+<Slide name="packagemanager" />
+<Slide name="formatting" />
 
 ## Aufgaben
 

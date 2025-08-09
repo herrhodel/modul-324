@@ -53,7 +53,7 @@ const config = {
   ],
 
   plugins: [
-    "@orama/plugin-docusaurus-v3",
+    // "@orama/plugin-docusaurus-v3",
     [
       "devserver-config",
       {

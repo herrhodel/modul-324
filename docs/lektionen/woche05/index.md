@@ -6,9 +6,7 @@
 
 ## Thema
 
-<Slide name="packagemanager" />
-
-<Slide name="docker" />
+<Slide name="testing" />
 
 ## Aufgaben
 

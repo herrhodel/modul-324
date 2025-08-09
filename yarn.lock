@@ -3025,22 +3025,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@marp-team/marp-cli@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "@marp-team/marp-cli@npm:4.2.2"
+"@marp-team/marp-cli@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "@marp-team/marp-cli@npm:4.2.3"
   dependencies:
     "@marp-team/marp-core": "npm:^4.1.0"
     "@marp-team/marpit": "npm:^3.1.3"
     chokidar: "npm:^4.0.3"
     cosmiconfig: "npm:^9.0.0"
-    puppeteer-core: "npm:^24.14.0"
+    puppeteer-core: "npm:^24.16.0"
     serve-index: "npm:^1.9.1"
-    tmp: "npm:^0.2.3"
+    tmp: "npm:^0.2.5"
     ws: "npm:^8.18.3"
     yargs: "npm:^17.7.2"
   bin:
     marp: marp-cli.js
-  checksum: 10/40b64e9fece1a0f2a80df38967f4eeedd422af4d7256d4072a934cac5ed3c9933d4b8684478488d2b5fb0533e8a5c2c3f60b3b2c4d39b060ee2ac4df9c167226
+  checksum: 10/3c0e9180599a27ebcff7c1f191048d3bbb6b914c424433be978e9990409ae4e982b0459b951a1e172b3bc23d850187dbd96a729a80192b21be0adcb1602f955a
   languageName: node
   linkType: hard
 
@@ -6039,7 +6039,7 @@ __metadata:
     "@docusaurus/theme-mermaid": "npm:^3.8.1"
     "@docusaurus/types": "npm:^3.8.1"
     "@docusaurus/utils": "npm:^3.8.1"
-    "@marp-team/marp-cli": "npm:^4.2.2"
+    "@marp-team/marp-cli": "npm:^4.2.3"
     "@marp-team/marp-core": "npm:^4.1.0"
     "@mdit/plugin-mark": "npm:^0.22.1"
     "@mdx-js/react": "npm:^3.1.0"
@@ -8068,10 +8068,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devtools-protocol@npm:0.0.1464554":
-  version: 0.0.1464554
-  resolution: "devtools-protocol@npm:0.0.1464554"
-  checksum: 10/c179c23a27d180d6f2196199babaea3c1e59995515df1b082621930cbff7428c2ca2fc12ef0a8fc82fcb133e08dcddaf80e17a7fe841924d6042c2c54511c431
+"devtools-protocol@npm:0.0.1475386":
+  version: 0.0.1475386
+  resolution: "devtools-protocol@npm:0.0.1475386"
+  checksum: 10/a52656e366fb5c943e2624f601ceddfa90e1e051cf4c11232c8a91ae4f8eb205e28ff9cb136d5ce4eb8810949404d0269273b5570b87ddce4a7a23b72f5a8176
   languageName: node
   linkType: hard
 
@@ -14959,17 +14959,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"puppeteer-core@npm:^24.14.0":
-  version: 24.15.0
-  resolution: "puppeteer-core@npm:24.15.0"
+"puppeteer-core@npm:^24.16.0":
+  version: 24.16.0
+  resolution: "puppeteer-core@npm:24.16.0"
   dependencies:
     "@puppeteer/browsers": "npm:2.10.6"
     chromium-bidi: "npm:7.2.0"
     debug: "npm:^4.4.1"
-    devtools-protocol: "npm:0.0.1464554"
+    devtools-protocol: "npm:0.0.1475386"
     typed-query-selector: "npm:^2.12.0"
     ws: "npm:^8.18.3"
-  checksum: 10/9fe0a7a982289f7dbc42799764a8273c814d00254f61431f3598a38fbdee7b0c6b171bddbe738d8be4f5868a9b4b034ecaa6c105e407452c276ae1046ef2e3b3
+  checksum: 10/9c09cc93ac389b53c427de6683d993246ea3613b23a3c56098e905216ac5cbfb7ba7f9a8442d663252e3785700468ae6dee4fbcbd66ff11258a9261ac8b71af7
   languageName: node
   linkType: hard
 
@@ -17403,10 +17403,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tmp@npm:^0.2.3":
-  version: 0.2.3
-  resolution: "tmp@npm:0.2.3"
-  checksum: 10/7b13696787f159c9754793a83aa79a24f1522d47b87462ddb57c18ee93ff26c74cbb2b8d9138f571d2e0e765c728fb2739863a672b280528512c6d83d511c6fa
+"tmp@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "tmp@npm:0.2.5"
+  checksum: 10/dd4b78b32385eab4899d3ae296007b34482b035b6d73e1201c4a9aede40860e90997a1452c65a2d21aee73d53e93cd167d741c3db4015d90e63b6d568a93d7ec
   languageName: node
   linkType: hard
 

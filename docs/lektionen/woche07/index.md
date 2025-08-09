@@ -6,8 +6,6 @@
 
 ## Thema
 
-<Slide name="formatting" />
-
 ## Aufgaben
 
 <DocCardList />

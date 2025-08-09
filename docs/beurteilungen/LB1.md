@@ -181,7 +181,7 @@ Gruppe** analysiert und bewertet.
 | 2.9  | Es existiert eine "HelloWorld" Applikation in der spezifizierten gewünschten Technologie                   |     2      |
 | 2.10 | Es existiert ein README.md, welches beschreibt, wie das Projekt lokal zum Entwickeln gestartet werden kann |     2      |
 | 2.11 | Es wurde bereits ein Feature umgesetzt                                                                     |     2      |
-| 2.12 | Der Programmcode ist mit prettier formatiert oder folgt einer anderen gängigen Konvention                  |     2      |
+| 2.12 | Der Programmcode ist mit prettier/eslint formatiert oder folgt einer anderen gängigen Konvention           |     2      |
 | 2.13 | Alle Commit-Messages wurden wie gewünscht, als conventional-commits, geschrieben                           |     2      |
 |      | ...                                                                                                        |            |
 |      | **TOTAL**                                                                                                  |   **26**   |

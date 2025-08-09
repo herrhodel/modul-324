@@ -6,7 +6,7 @@
 
 ## Thema
 
-<Slide name="ci-cd" />
+<Slide name="docker" />
 
 ## Aufgaben
 
