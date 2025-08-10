@@ -22,7 +22,7 @@ keywords:
 | :----------------------- | :---------- | :----: | :------ | :---------- |
 | :smile: **Einzelarbeit** | schriftlich | 45 Min | Woche 4 | 1/3 vom LB1 |
 
-Am **Ende des Sprints** wird in der **zweiten Lektion**, in **Einzelarbeit**
+Am **Ende des Sprints** wird in der **letzten Lektion**, in **Einzelarbeit**
 eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 
 :::caution Achtung!
@@ -30,7 +30,7 @@ eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 Die schriftliche Reflexion wird **im Unterricht, in 45 Min. geschrieben** und
 direkt im Projekt eingecheckt.
 
-- Die Fragen sind gegeben, **vorbereiten ist erlaubt** rsp. erwünscht.
+- Die Fragen sind gegeben, **vorbereiten ist erlaubt** resp. erwünscht.
 - Es werden **Plagiate geprüft**, wenn der verdacht besteht wird die **Note 1**
   für beide/alle Parteien gegeben.
 - Während den 45 Minuten sind **keine Hilfsmittel** erlaubt!

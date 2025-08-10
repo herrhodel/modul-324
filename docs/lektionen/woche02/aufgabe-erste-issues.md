@@ -127,7 +127,7 @@ Erstellt nun im GitHub Projekt neue Epics und Issues für euer Projekt.
 - Infrastruktur aufbauen
 - Hello World mit gewählter Technologie
 - Erste Features beschreiben
-- Mockup rsp. Wireframe erstellen
+- Mockup resp. Wireframe erstellen
 
 :::tip Schaut euch Woche 3 an!
 

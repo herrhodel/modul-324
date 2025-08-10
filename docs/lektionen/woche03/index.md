@@ -4,6 +4,12 @@
 
 :::
 
+## Ziel
+
+- :dart: Angular App ist initialisiert und läuft bei allen Teammitglieder lokal
+- :dart: Release Please GitHub Action ist aufgesetzt. Es existiert ein erster
+  Release v1.0.0 mit der Angular Startapp
+
 ## Thema
 
 <Slide name="git"/>

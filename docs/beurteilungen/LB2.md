@@ -22,7 +22,7 @@ keywords:
 | :----------------------- | :---------- | :----: | :------ | :---------- |
 | :smile: **Einzelarbeit** | schriftlich | 45 Min | Woche 8 | 1/3 vom LB2 |
 
-Am **Ende des Sprints** wird in der **zweiten Lektion**, in **Einzelarbeit**
+Am **Ende des Sprints** wird in der **letzten Lektion**, in **Einzelarbeit**
 eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 
 :::caution Achtung!

@@ -8,11 +8,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Woche 5
+# Docker / Dockerfile
 
-## Docker / Dockerfile
-
-### Modul 324
+## Modul 324
 
 ---
 

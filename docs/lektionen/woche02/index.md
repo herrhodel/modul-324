@@ -4,6 +4,12 @@
 
 :::
 
+## Ziel
+
+- :dart: GitHub Repo und Projekt sind initialisiert.
+- :dart: Das Projekt ist gefunden und beschrieben.
+- :dart: Erste Epics und Issues wurden erfasst
+
 ## Thema
 
 <!-- <div className="grid"><div> -->

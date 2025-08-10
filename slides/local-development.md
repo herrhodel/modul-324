@@ -8,11 +8,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Woche 3
+# Lokales Entwickeln
 
-## Lokales Entwickeln
-
-### Modul 324
+## Modul 324
 
 ---
 

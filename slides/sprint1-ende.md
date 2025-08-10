@@ -8,11 +8,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 <!-- _class: big center -->
 
-# Woche 4
+# Sprint 1 Ende
 
-## Sprint 1 Ende
-
-### Modul 324
+## Modul 324
 
 ---
 

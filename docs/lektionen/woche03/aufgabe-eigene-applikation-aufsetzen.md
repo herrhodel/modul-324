@@ -48,53 +48,89 @@ verwenden.
 git checkout -b feature/add-angular-project
 ```
 
-### @angular/cli im Devcontainer installieren
+### NodeJs installieren
 
-Angular braucht das Paket `@angular/cli`, damit der `ng` Befehl verfügbar ist.
-Um diese für alle zur Verfügung zu stellen, sollte sie direkt im
-`.devcontainer/Dockerfile` installiert werden.
+Sofern noch kein NodeJs auf dem Rechner installiert ist, muss dies nun
+nachgeholt werden.
 
-- öffnet dazu `.devcontainer/Dockerfile`
-- und erweitert den Node Install Befehl folgendermassen
+:::note
 
-```dockerfile
-RUN mise use node@lts -g \
-  && mise x -- npm install @angular/cli -g
-```
-
-- nun sollte der Befehl `ng` von Angular global im Devcontainer verfügbar sein.
-
-### Ein Angular Projekt erstellen
-
-- Öffne das Projekt im Devcontainer mit **"Reopen in Container"**
-- Versichert euch, dass Ihr euch im Ordner `/workspace` befindet (`pwd`)
-- Erstellt ein neues Angular Projekt mit folgendem Befehl und befolgt die
-  Anleitung.
-
-```bash
-ng new <euer-projekt-name>
-```
-
-- wechselt in den neuen Projektordner mit `cd <euer-projekt-name>`
-
-:::caution WICHTG
-
-- öffnet die Datei `package.json` und sucht nach `ng serve`
-  - Ersetzt den Befehl mit **`ng serve --host 0.0.0.0`**
-  - :bulb: Dies ist nötig, sonst geht das Port-Forwarding zum Host nicht
-    richtig. _(hat mich 1h gekostet)_
+- Wenn ihr bereits einen eigenen Weg kennt nodejs zu installieren, benutzt den.
+- Schaut, dass Ihr lokal **alle mit der gleichen NodeJs Version** arbeitet!
+- Wenn die Gruppe sich mit `devcontainer` auskennt,
+  [schaut euch den Zusatz](./optional/aufgabe-devcontainer.md) an. Es ist jedoch
+  auf eigene Gefahr. Aus Erfahrung ist die Zeit im Modul knapp.
 
 :::
 
+#### Mac / Linux
+
+Wenn ihr einen Mac oder Linux Rechner habt, empfehle ich
+[`mise`](https://mise.jdx.dev/installing-mise.html) um Versionen zu
+installieren.
+
+- https://mise.jdx.dev/installing-mise.html
+
+```bash
+mise use nodejs@22.18.0
+```
+
+#### Windows
+
+Installiert am besten nodejs mit dem "Windows Installer (.msi)". Sofern Ihr
+Windows Paketmanagers wie ["chocolatey"](https://chocolatey.org/) kennt,
+verwendet den.
+
+- https://nodejs.org/en/download
+
+![nodejs-install](./img/nodejs-install-windows.png)
+
+### @angular/cli installieren
+
+Angular braucht das node Paket `@angular/cli`, damit der `ng` Befehl verfügbar
+ist. Die Person die die Angular "Bootstrapt", also aufsetzt, muss den Befehl
+`ng` global verfügbar haben.
+
+```bash
+npm install @angular/cli -g
+```
+
+### Ein Angular Projekt erstellen
+
+Erstellt ein neues Angular Projekt mit folgendem Befehl **im Root-Verzeichnis**
+und befolgt die Anleitung.
+
+:::note
+
+Die Applikation heisst `app`. Wenn ihr einen anderen Namen wählt, bitte den
+Ordner nach `app` umbenennen, damit die folgenden CI-CD scripts ohne viel
+aufwand funktionieren.
+
+:::
+
+```bash
+ng new app
+```
+
+:::note
+
+- Do you want to create a 'zoneless' application without zone.js (Developer
+  Preview)? (y/N): no
+- Which stylesheet format would you like to use? Eure Wahl!
+- Do you want to enable Server-Side Rendering (SSR) and Static Site Generation
+  (SSG/Prerendering)? no
+
+:::
+
+- wechselt in den neuen Projektordner mit `cd app`
 - Startet den Server mit `npm start`
-- Nun erscheint eine Meldung von VS Code dass ein Prozess auf dem Port 4200
-  gestartet ist.
-- Öffnet **http://localhost:4200** im Browser, :tada:
+- Nun erscheint eine Meldung dass ein Prozess auf dem Port 4200 gestartet ist.
+- Öffnet **[http://localhost:4200](http://localhost:4200)** im Browser, :tada:
 
 ### Commiten, pushen und einen PR erstellen
 
-Wenn die Angular App erstellt wurde, sollte der Stand, ohne grosse Änderungen
-**commited werden**:
+Wenn die Angular App erstellt wurde, sollte der Stand, **ohne Änderungen
+commited werden**:
 
 - Verwendet dafür eine
   [**Conventional-Commit**](https://www.conventionalcommits.org/en/v1.0.0/)
@@ -122,7 +158,9 @@ Nun könnt Ihr den **Branch nach GitHub pushen**:
 git push origin feature/add-angular-project # Pushen
 ```
 
-:::info Natürlich dürft Ihr auch ein GUI verwenden
+:::note
+
+Natürlich dürft Ihr auch ein GUI verwenden
 
 :::
 
@@ -130,62 +168,33 @@ Auf GitHub müsst Ihr nun einen Pull-Request erstellen und diesen vom Team
 reviewen lassen.
 
 ![github-pull-request](images/github-pull-request.png)
-/Users/lhodel/Projects/bbzbl/bbzbl-modul-324/docs/lektionen/woche05/images/github-pull-request.png
 
 ### Von allen Teammitglieder lokal testen lassen
 
-Ist der Pull-Request in `main` gemerged, sollen alle Teammitglieder:
+:::note
 
-1. Den `main` Branch auschecken
+- Wurde der PR bereits gemerged, können die Teammitglieder die app im `main`
+  branch testen.
+- Natürlich müssen alle [NodeJs lokal installiert](#nodejs-installieren) haben!
 
-```bash
-git checkout main
-```
-
-2. Den `main` Branch von GitHub pullen
+:::
 
 ```bash
-git pull origin main
+git fetch # Alle Branches von GitHub herunterladen
+git checkout feature/add-angular-project # Den feature Branch auschecken
+cd app # In den app Ordner wechseln
+npm start # oder ein alternativ Befehl der gewählten Technologie
 ```
-
-3. Den Devcontainer in VS Code starten
-4. Im Devcontainer in den Ordner der App wechseln `
-
-```bash
-cd euer-projekt-name
-```
-
-5. Die App starten `npm start` (oder ein alternativ Befehl der gewählten
-   Technologie)
-6. Beim VS Code Popup, das **Port-Forwarding freigeben**!
 
 ## Eine eigene Technologie?
 
 Ihr dürft das Projekt in jeder Beliebigen Technologie erstellen.
 
-:::danger Einzige Bedingung
+:::danger Bedingungen
 
 - **Alle Teammitglieder müssen mit der Technologie vertraut sein!**
+- Ihr müsst das Testing / Linting selbst aufsetzen
+- Es braucht engagement und Zeit!
+- Ich helfe, werde jedoch allen Teams gerecht werden, meine Zeit ist begrenzt.
 
 :::
-
-### Eine kleine Anleitung was dabei zu beachten ist:
-
-1. Die Programmiersprache sollte per `mise use` direkt im `Dockerfile`
-   installiert werden
-2. Sofern weitere global installierte Pakete benötigt werden, müssen die mit
-   `mise x -- <install befehl>` im `Dockerfile` installiert werden.
-   - Bei Angular ist das z.B. `mise x -- npm i @angular/cli -g`
-
-:::tip npx geht direkt!
-
-- [Nextjs installiert](https://nextjs.org/docs/app/getting-started/installation#automatic-installation)
-  man z.B. durch `npx create-next-app@latest` dafür muss kein globales Paket
-  installiert werden.
-
-:::
-
-4. Das Projekt muss sich in einem eigenen Ordner befinden. z.B. `/coole-app`.
-5. Das `Dockerfile` muss noch nicht angepasst werden. Dies machen wir später.
-6. [Commiten, pushen und einen PR erstellen](#commiten-pushen-und-einen-pr-erstellen)
-7. [Von allen Teammitglieder lokal testen lassen](#von-allen-teammitglieder-lokal-testen-lassen)
