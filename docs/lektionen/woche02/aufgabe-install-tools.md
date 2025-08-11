@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 keywords:
   - pdf
 ---
@@ -45,7 +45,7 @@ funktioniert.
 
 Bitte Installiert all diese Plugins!
 
-:::tip lest die dokus!
+:::tip lest die Dokus!
 
 - Die Plugins erklären sich selbst am besten ;)
 

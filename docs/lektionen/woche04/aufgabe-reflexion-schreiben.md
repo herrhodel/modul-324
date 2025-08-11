@@ -10,7 +10,7 @@ keywords:
 Bitte schreiben sie die **schriftliche Reflexion bis zum Ende der 4. Lektion**.
 
 - :information_source:
-  [LB1: Teilnote schriftliche Reflexion](/docs/beurteilungen/LB1.md#teilnote-schriftliche-reflexion)
+  [LB1: Teilnote schriftliche Reflexion](/docs/beurteilungen/LB1.md#1-teilnote-schriftliche-reflexion)
 
 :::danger
 

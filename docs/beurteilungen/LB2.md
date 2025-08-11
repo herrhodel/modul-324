@@ -11,7 +11,7 @@ keywords:
 | Sozialform           | Form                                                            | Abgabe  | Gewicht               |
 | :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
 | 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 4 | 10                    |
-| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstandktstand)              | Woche 4 | 26                    |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 4 | 26                    |
 |                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
 |                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **40% der Modulnote** |

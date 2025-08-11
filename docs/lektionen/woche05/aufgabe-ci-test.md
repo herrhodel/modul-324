@@ -11,7 +11,7 @@ automatisiert ausgeführt werden. Es gibt nun **zwei Orte** an denen die Tests
 ausgeführt werden können.
 
 Behilflich ist uns nun das script `npm run test:ci` welches in der
-[vorherigen Anleitung](/docs/lektionen/woche06/aufgabe-karma-configurieren.md#script-testci-im-packagejson-definieren)
+[vorherigen Anleitung](/docs/lektionen/woche05/aufgabe-karma-configurieren.md)
 erstellt wurde.
 
 ## Dedizierter Test-Job im `deploy.yml`
@@ -125,7 +125,7 @@ RUN npm ci && npm run test:ci && npm run build
 # ...
 
 # Ab hier beginnt das produktive Image!
-FROM node:lts-slim 
+FROM node:lts-slim
 
 # ...
 ```

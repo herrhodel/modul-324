@@ -55,6 +55,7 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
   ```bash
   curl http://localhost:3000
   ```
+
   - :bulb: Mit `curl` kann man beliebige HTTP Request absetzen. `curl` wird
     daher oft fürs testen verwendet
 
@@ -86,7 +87,8 @@ kill $(lsof -t -i:3000)
 <details>
 <summary>Docker Container</summary>
 
-Wenn der Port 3000 von einem anderen Docker Container belegt ist muss dieser gestoppt werden.
+Wenn der Port 3000 von einem anderen Docker Container belegt ist muss dieser
+gestoppt werden.
 
 ```bash
 $ docker ps
@@ -118,7 +120,7 @@ Natürlich kann man auch via Browser den Webserver testen. Dafür muss
 :::caution
 
 - Bitte zuerst
-  [alle benötigten VS Code Plugins installieren](/docs/lektionen/woche03/aufgabe-install-tools.md#vs-code-must-have-plugins)
+  [alle benötigten VS Code Plugins installieren](/docs/lektionen/woche02/aufgabe-install-tools.md#vs-code-must-have-plugins)
 
 :::
 
