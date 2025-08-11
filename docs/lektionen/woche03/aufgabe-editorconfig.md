@@ -1,4 +1,10 @@
-# Editorconfig
+---
+sidebar_position: 2
+keywords:
+  - pdf
+---
+
+# Editorconfig anpassen
 
 Angular hat für uns automatisch eine Datei `.editorconfig` erstellt. Die Datei
 `.editorconfig` ist ein IDE-übergreifenden Standard der zum Ziel hat, dass egal

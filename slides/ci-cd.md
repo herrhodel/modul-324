@@ -113,7 +113,7 @@ jobs:
   [Kontext-Variablen](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs)
   in GitHub Actions
 
-- Sie werden in doppelt geschweiften Klammen geschrieben<br>
+- Sie werden in doppelt geschweiften Klammen geschrieben <br/>
   `${{ <Context>.<Variable> }}`
 
 ## Wichtigste Kontexte
@@ -125,56 +125,3 @@ jobs:
   beinhalten Environment Variablen die als Secret erstellt wurden.
 - [**env**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#env-context)
   beinhalten Environment Variablen die nicht vertraulich sind.
-
----
-
-# Die Datei `deploy.yml`
-
-::: columns
-
-- In eurem Repo existiert bereits die Datei `deploy.yml`
-- Dieser wird beim `push` auf den branch `main` ausgeführt
-
-- Es existiert einen Job `deploy` mit folgenden Steps:
-
-::: split s1
-
-- Checkout
-- Configure AWS credentials
-- Get Server Ip
-- Set up Ruby for Kamal
-- Login to Amazon Elastic Container Registry
-- Push environment variables
-- Set up Docker Buildx
-- Docker meta
-- Build and push
-- **Kamal deploy image**
-
-:::
-
----
-
-<!-- _class: big center -->
-
-# Wo builden wir nun den Code?
-
----
-
-<!-- _class: big center -->
-
-# Im Dockerfile!
-
----
-
-# :pencil: Aufgabe 1: App auf AWS deployen
-
-- Finalisiert das Dockerfile mit den Anforderungen:
-  - Muss den **TCP Port 3000** exposen
-
-  - Muss auf dem Port 3000 einen **Webserver** serven.
-
-  - Muss auf dem Port 3000 eine Route **/up** besitzen die ein Status 200 OK
-    zurückgibt.
-
-- Kopiere die AWS credentials in GitHub Repository
-- Nun sollte die App auf AWS deployed werden!

@@ -6,15 +6,14 @@ keywords:
 
 # Am Projekt arbeiten
 
-Wenn Ihr die folgenden Aufgaben ausgeführt habt und jetzt wisst, wie Ihr im
-Devcontainer arbeiten könnt arbeitet Ihr selbständig am Projekt weiter.
+Wenn Ihr die folgenden Aufgaben ausgeführt habt und jetzt standardisiert
+arbeiten könnt dürft Ihr frei am Projekt arbeiten:
 
 - Weiter Issues erstellen und definieren
 - Erste Issues lösen
 
 :::tip
 
-Falls ihr bereits so weit seit, dass ihr eure eigene Applikation aufbauen könnt,
-dürft ihr in der [Woche 5](../woche05/index.md) weiter machen.
+Arbeitet auch an Features eurer Applikation!
 
 :::

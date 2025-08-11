@@ -57,6 +57,13 @@ Bitte Installiert all diese Plugins!
 
 :::
 
+### [Prettier Formatter for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+> [Prettier](https://prettier.io) is an opinionated code formatter. It enforces a consistent
+> style by parsing your code and re-printing it with its own rules that take the
+> maximum line length into account, wrapping code when necessary.
+
+
 ### [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
 
 Dieses Plugin "versteht" Conventional Commits und hilft dabei diese korrekt zu

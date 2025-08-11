@@ -53,7 +53,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## Start
 
-- [**GitHub Issues**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#bewertung-2):
+- [**GitHub Issues**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#bewertung-1):
   Aufgaben beschreiben und ausarbeiten
 
 ## Ende
