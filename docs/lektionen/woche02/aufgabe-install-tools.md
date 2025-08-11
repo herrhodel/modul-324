@@ -8,20 +8,26 @@ keywords:
 
 ## Docker
 
-Damit zügig am Projekt gearbeitet werden, wird das Template mit einem
-[DevContainer](https://containers.dev/) ausgeliefert. Dieser benötigt docker.
-Auch ist es am einfachsten weitere Services, wie z.B. eine Datenbank, via Docker
-zu starten als manuell zu installieren.
+Am Ende sollte die Applikation mittels einem Dockerfile als Docker-Image nach
+AWS deployed werden können. Um dieses lokal zu erstellen und testen benötigt ihr
+`docker` lokal.
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Docker Compose](https://docs.docker.com/compose/install/) Sollte mit Docker
   Desktop dabei sein.
 
-:::info kein Docker?
+:::tip Devcontainer
 
-Grundsätzlich ist es möglich auch ohne docker lokal zu entwickeln. Ihr seit
-selber verantwortlich alle Tools zum entwickeln zu installieren und
-konfigurieren.
+Das Muster heinhaltet ein Ordner `.devcontainer/`. Sofern Ihr Team Erfahrung
+damit hat dürft Ihr diesen gerne verwenden. Leider haben wir keine Zeit allen
+Devcontainer zu vermitteln.
+
+:::
+
+:::info gar kein Docker?
+
+Grundsätzlich kann das entwickeln des Dockerfiles ausschliesslich in einer
+GitHub Action passieren. Der Feedback-Loop ist jedoch eher bescheiden.
 
 :::
 
@@ -73,17 +79,11 @@ mit Windows-Lineendigns!
 Standard Plugin um laufende Docker containers in VS Code zu sehen. Geht auch
 ohne, VS Code wird euch sowieso nerven es zu installieren.
 
-### [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+## Optionale devcontainer Plugins
+
+### [devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 Dieses Plugin ermöglicht es direkt in einem lokalen Container zu entwickeln.
-
-:::info Kein bock auf DevContainer?
-
-Ihr dürft auch ohne DevContainer entwickeln. Müsst euch dann einfach absprechen,
-welche Tools (Programmierspachen und co.) in welcher Version verwendet werden
-sollen.
-
-:::
 
 ### [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
