@@ -39,15 +39,10 @@ Auf der Wandtafel gibt es eine Tabelle mit folgenden Kategorien:
 
 ### Rollenbeschreibung
 
-
-  - Erstellt das GitHub Repository und ladet andere eine
-  - übernimmt Admin Aufgaben
-
+- Erstellt das GitHub Repository und ladet andere eine
+- übernimmt Admin Aufgaben
 - Kontrollieren -> **Stakeholder**:
-
-  - Schaut sich die Arbeitspakete besonders gut
+  - Schaut sich die Arbeitspakete besonders gut an
   - prüft die Kriterien
-
 - Programmieren -> **Projektmitarbeiter**:
-
   - Ist besonders fleissig am Programmieren
