@@ -17,7 +17,7 @@ werden direkt alle Konfigurationsdateien erstellt.
 Es wird automatisch ein Task `lint` im `package.json` erstellt. Nun kann via
 `npm run lint` das Projekt gelintet werden.
 
-Nun wäre es aber noch hilfreich, wenn bei einem Pull-Request automatisch
+Jetzt wäre es aber noch hilfreich, wenn bei einem Pull-Request automatisch
 gelintet wird und sogleich auf den jeweiligen Zeilen eine Anmerkung gemacht.
 
 Dafür muss das Linting das Resultat in eine Datei schreiben.
@@ -31,7 +31,7 @@ Der Task `npm run lint` schreibt nun das Resultat in eine Ausgabedatei
 
 ## Der Test Job in der Github Action erweitern
 
-- in der Github Action `./github/workflows/deploy.yml` vor dem testen linten
+- in der Github Action `./github/workflows/deploy.yml` vor dem Testen linten
 
 ```yaml title=".github/workflows/deploy.yml"
 # ...

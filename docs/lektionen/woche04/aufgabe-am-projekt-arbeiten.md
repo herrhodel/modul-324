@@ -14,7 +14,7 @@ bewertet.
 :::caution
 
 Achten Sie darauf, dass alle
-[Bewertungskriterien](/docs/beurteilungen/LB1.md#bewertung) eingehalten
+[Bewertungskriterien](/docs/beurteilungen/LB1.md#bewertung-1) eingehalten
 wurden.
 
 :::
