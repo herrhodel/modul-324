@@ -17,9 +17,9 @@ können, da man das Projekt noch nicht genau kennt.
 Hier kommen die Epics ins Spiel. Epics beschreiben nicht eine Aufgabe, sondern
 ein Bereich. z.B. könnte man sich in einem Web-Shop einen Epic "Warenkorb"
 vorstellen. Ein "Warenkorb" kann man nicht in einem Guss programmieren. Der Epic
-dient nun dazu zu beschreiben was man sich darin vorstellt. Dann kann man Issues
-erstellen die Teilbereiche abdecken wie z.B. Mockup erstellen, Produkt
-hinzufügen, Produkt löschen, Warenkorb anzeigen, Warenkorb bestellen, ...
+dient nun dazu zu beschreiben, was man sich darin vorstellt. Dann kann man
+Issues erstellen die Teilbereiche abdecken wie z.B. Mockup, Produkt hinzufügen,
+Produkt löschen, Warenkorb anzeigen, Warenkorb bestellen, ...
 
 :::tip bleibt Agil
 
@@ -61,7 +61,7 @@ Programmierer.
 
 :::info
 
-- Die Beschreibung muss nicht einer Konvention wie "As a user a want to..."
+- Die Beschreibung muss nicht einer Konvention wie "As a user a want to …"
   folgen, darf dies aber.
 - Sie muss immer verständlich machen, was umgesetzt werden soll.
 
@@ -71,26 +71,26 @@ Um überprüfen zu können, ob ein Issue erledigt worden ist, benötigt es eine
 Kurzanleitung, wie dies verifiziert werden kann. **Hier sprechen wie von
 "Akzeptanzkriterien"**.
 
-- :bulb: **Die "Akzeptanzkriterien" richteten sich an den Kunde!**
+- :bulb: **Die "Akzeptanzkriterien" richteten sich an den Kunden!**
 
 :::danger Notenrelevant
 
 - Alle Issues müssen eine Beschreibung beinhalten, der jeder, auch ohne Insider
   Wissen, entnehmen kann was zu tun ist.
-- Alle Issues müssen ein "Akzeptanzkriterien" beinhalten mit der der Kunde (also
-  ich), die Umsetzung prüfen kann.
+- Alle Issues müssen ein "Akzeptanzkriterien" beinhalten mit welcher der Kunde
+  (also ich), die Umsetzung prüfen kann.
 
 :::
 
 ## Sprint-Reflexionen
 
-[Die Reflexionen sollen auch als Pull-Request geschehen](/docs/beurteilungen/LB1.md#wo-wird-die-reflexion-geschrieben)
-. Daher bietet es sich an für diese ein Epic mit Issues für jede Reflexion **pro
+[Die Reflexionen sollen auch als Pull-Request geschehen](/docs/beurteilungen/LB1.md#wo-wird-die-reflexion-geschrieben).
+Daher bietet es sich an für diese ein Epic mit Issues für jede Reflexion **pro
 Projektmitglied** zu erstellen.
 
 :::tip
 
-- Einen Epic "Sprint-Reflexionen" erstellen
+- Ein Epic "Sprint-Reflexionen" erstellen
 - Für alle ein Issue für die Reflexion zum Sprint 1 und 2 erstellen
 
 :::
@@ -111,7 +111,7 @@ Projektmitglied** zu erstellen.
 
 :::note
 
-- :bulb: Ab und zu muss man einfach kreativ sein und die Tools passend machen...
+- :bulb: Ab und zu muss man einfach kreativ sein und die Tools passend machen …
 
 :::
 
@@ -132,14 +132,14 @@ Erstellt nun im GitHub Projekt neue Epics und Issues für euer Projekt.
 :::tip Schaut euch Woche 3 an!
 
 In der Woche 3 setzen wir zusammen auf, dass Ihr lokal entwickeln könnt. Das
-wäre doch ein paar Issues wert oder?
+wäre doch ein paar Issues wert, oder?
 
 :::
 
 :::tip Mockups (Wireframes)
 
 Am Anfang kann es gut möglich sein, dass noch nicht alle Code Schreiben können,
-da die Applikation noch nicht Lauffähig ist. Daher macht es Sinn auch **Issues
+da die Applikation noch nicht lauffähig ist. Daher macht es Sinn auch **Issues
 für das "Mockup", also ein grafischer Preview** von Features zu erstellen.
 
 - :bulb: Hat man bereits ein Mockup, kann man auch besser über Features sprechen

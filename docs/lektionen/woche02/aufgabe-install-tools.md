@@ -8,8 +8,8 @@ keywords:
 
 ## Docker
 
-Am Ende sollte die Applikation mittels einem Dockerfile als Docker-Image nach
-AWS deployed werden können. Um dieses lokal zu erstellen und testen benötigt ihr
+Am Ende sollte die Applikation mittels Dockerfile als Docker-Image nach AWS
+deployt werden können. Um dieses lokal zu erstellen und testen benötigt ihr
 `docker` lokal.
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
@@ -18,15 +18,15 @@ AWS deployed werden können. Um dieses lokal zu erstellen und testen benötigt i
 
 :::tip Devcontainer
 
-Das Muster heinhaltet ein Ordner `.devcontainer/`. Sofern Ihr Team Erfahrung
-damit hat dürft Ihr diesen gerne verwenden. Leider haben wir keine Zeit allen
+Das Muster beinhaltet ein Ordner `.devcontainer/`. Sofern Ihr Team Erfahrung
+damit hat, dürft Ihr diesen gerne verwenden. Leider haben wir keine Zeit allen
 Devcontainer zu vermitteln.
 
 :::
 
 :::info gar kein Docker?
 
-Grundsätzlich kann das entwickeln des Dockerfiles ausschliesslich in einer
+Grundsätzlich kann das Entwickeln des Dockerfiles ausschliesslich in einer
 GitHub Action passieren. Der Feedback-Loop ist jedoch eher bescheiden.
 
 :::
@@ -40,16 +40,16 @@ GitHub Action passieren. Der Feedback-Loop ist jedoch eher bescheiden.
 ## VS Code
 
 Wir arbeiten im Modul mit VS Code. Sofern Ihr ein Java Projekt erstellt dürft
-Ihr auch IntelliJ verwenden. Ihr seit aber selber verantwortlich dass es
+Ihr auch IntelliJ verwenden. Ihr seid aber selber verantwortlich, dass es
 funktioniert.
 
 - [VS Code](https://code.visualstudio.com/)
 - Java Guys dürfen auch [IntelliJ](https://www.jetbrains.com/idea/) verwenden.
 - :exclamation: Aber Achtung, devcontainer sind in VS Code besser unterstützt!
 
-## VS Code must have Plugins
+## VS Code Must-Have Plugins
 
-Bitte Installiert all diese Plugins!
+Bitte installiert all diese Plugins!
 
 :::tip lest die Dokus!
 
@@ -59,10 +59,9 @@ Bitte Installiert all diese Plugins!
 
 ### [Prettier Formatter for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-> [Prettier](https://prettier.io) is an opinionated code formatter. It enforces a consistent
-> style by parsing your code and re-printing it with its own rules that take the
-> maximum line length into account, wrapping code when necessary.
-
+> [Prettier](https://prettier.io) is an opinionated code formatter. It enforces
+> a consistent style by parsing your code and re-printing it with its own rules
+> that take the maximum line length into account, wrapping code when necessary.
 
 ### [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
 

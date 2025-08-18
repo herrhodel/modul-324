@@ -44,7 +44,7 @@ führen.
   ```markdown
   - [ ] Task 1
   ```
-- Erstellt Eine Referenz zu einem Issue (hier #1) in Markdown
+- Erstellt eine Referenz zu einem Issue (hier #1) in Markdown
   ```markdown
   - [ ] #1
   ```
@@ -77,13 +77,13 @@ führen.
 
 :::danger Notenrelevant
 
-Es wird Bewertet, dass alle Issues welche geschlossen sind einen Pull-Request
+Es wird bewertet, dass alle Issues welche geschlossen sind einen Pull-Request
 referenzieren.
 
 - Ausnahmen: Issue welche keinen Code generieren, wie z.B. Mockubs erstellen.
 - Die Ausnahmen müssen aber durch Akzeptanzkriterien beweisen, wieso der Issue
   "done" ist.
-  - Link zu eine externen Resource, wie z.B. einem Google Ordner mit Bilder
+  - Link zu einer externen Ressource, wie z.B. einem Google Ordner mit Bilder
   - Link zu erstellten Tickets resultiert von diesem
   - usw.
 

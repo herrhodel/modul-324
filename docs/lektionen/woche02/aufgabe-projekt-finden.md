@@ -8,7 +8,7 @@ keywords:
 
 :dart: Arbeitsgrundlage schaffen | :dna: Gruppenarbeit | :clock1: 30 Min
 
-Ab jetzt arbeitet Ihr an eurem eigenen Projekt 🥳 Das Projekt könnt Ihr euch
+Ab jetzt arbeitet Ihr an eurem eigenen Projekt 🥳. Das Projekt könnt Ihr Euch
 selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
 
 ## Rahmenbedingungen
@@ -17,11 +17,11 @@ selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
   - Desktop Apps lassen sich schlecht nach AWS deployen :wink:
 - Es sollte ein **neues Projekt** sein
   - Bestehenden Code anzupassen ist erfahrungsgemäss schwer für alle
-    Mitarbeitenden die den Code noch nicht kennen.
+    Mitarbeitenden, die den Code noch nicht kennen.
 
 :::tip Projekt Ideen?
 
-- :bulb: Statische HTML-Seite, ToDo App oder was grösseres?
+- :bulb: Statische HTML-Seite, To-do App oder was Grösseres?
 - :muscle: Seit mutig und kreativ!
 
 :::
@@ -36,7 +36,7 @@ selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
 Ambitionierte Teammitglieder dürfen gerne parallel dazu ihr eigenes Setup bauen
 und mir pitchen.
 
-- 🙇 Ich bin sicher ich kann viel von euch lernen.
+- 🙇 Ich bin sicher, ich kann viel von euch lernen.
 - 🦸 Gut möglich, dass ich sogar das Template erweitere.
 
 :::
@@ -50,7 +50,7 @@ und mir pitchen.
 - Im Branch das Projekt im **root /README.md** beschreiben
   - :bulb: Ihr dürft auch zuerst in _Google Docs_ die Beschreibung ausarbeiten.
   - Am Ende sollte sie jedoch im README.md stehen.
-    - **Bitte die bestehende Info nicht löschen.**
+    - **Bitte die bestehende Information nicht löschen.**
     - Den Titel _BBZBL Modul 324: Web-Applikation Template_ zu einem Heading 2
       ändern `##`
     - Einen eigenen Heading 1 Title, mit dem Projektnamen, einfügen
@@ -90,5 +90,5 @@ alles hier bleibt gleich...
 
 :::
 
-- Einen **Pull-Request** erstellen
-- Der Pull-Request mergen, wenn er **von allen Approved** wurde.
+- Einen **Pull Request** erstellen
+- Der Pull Request mergen, wenn er **von allen Approved** wurde.
