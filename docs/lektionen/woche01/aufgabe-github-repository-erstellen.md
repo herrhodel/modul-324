@@ -14,11 +14,11 @@ keywords:
 
 ### 📝 Auftrag
 
-1. Der **Teamleader erstellt** ein GitHub Repository
+1. Der **Teamleader erstellt** ein GitHub Repository.
    - Verwendet dafür das Template
-     [`modul-324-starter`](https://github.com/herrhodel/modul-324-starter)
-   - Die AWS Credentials und PAT könnt Ihr später noch einfügen
-2. Der **Teamleader** gibt allen Mitgliedern die **Berechtigungen**
+     [`modul-324-starter`](https://github.com/herrhodel/modul-324-starter).
+   - Die AWS Credentials und PAT könnt Ihr später noch einfügen.
+2. Der **Teamleader** gibt allen Mitgliedern die **Berechtigungen**.
    - Bitte auch der Lehrperson `@herrhodel`
 
 ![github-repository-berechtigungen](images/github-repository-berechtigungen.png)

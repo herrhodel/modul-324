@@ -12,7 +12,7 @@ GitHub Account besitzt.
 ## :pen: Aufgaben
 
 - [x] [GitHub - Signup](https://github.com/signup) öffnen
-- [x] Einen Account mit der `ihr-name@bbzbl-it.ch` Email-Adresse erstellen.
+- [x] Einen Account mit der `ihr-name@bbzbl-it.ch` E-Mail-Adresse erstellen.
 
 ![GitHub signup](../../img/github_signup.png)
 
@@ -33,7 +33,7 @@ dieser Schritt erst nötig, wenn ein Repository lokal geklont wird.
 :::
 
 Um lokal nach GitHub Änderungen "pushen" zu können (`git push`), muss lokal
-einen SSH key erstellt werden und dieser auf GitHub registiert werden.
+einen SSH key erstellt werden und dieser auf GitHub registriert werden.
 
 Hier gibt es eine Anleitung von GitHub wie dies genau funktioniert.
 

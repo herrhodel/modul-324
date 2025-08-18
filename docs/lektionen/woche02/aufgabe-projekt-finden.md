@@ -30,12 +30,6 @@ selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
   - Es darf Ambitioniert sein, sollte aber klein anfangen, damit auch alle
     arbeiten können.
   - Das Projekt darf später gerne weiterverfolgt werden
-- Es soll auf dem
-  **[Modul Template](https://github.com/codingluke/bbzbl-modul-324-template)**
-  aufbauen
-  - Ich weis, einige von euch würden gerne von Scratch anfangen. Wir arbeiten
-    hier aber im Team und **ich will verhindern, dass das Setup zu lange von
-    einer Person abhängt**.
 
 :::tip AWS Management Konsole bis im Januar offen
 
