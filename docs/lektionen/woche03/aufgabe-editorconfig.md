@@ -7,7 +7,7 @@ keywords:
 # Editorconfig anpassen
 
 Angular hat für uns automatisch eine Datei `.editorconfig` erstellt. Die Datei
-`.editorconfig` ist ein IDE-übergreifenden Standard der zum Ziel hat, dass egal
+`.editorconfig` ist ein IDE-übergreifenden Standard, der zum Ziel hat, dass egal
 wo der Code geschrieben wird, gewisse basics eingehalten werden.
 
 :::note
@@ -43,7 +43,7 @@ trim_trailing_whitespace = false
 
 Das generierte `.editorconfig` definiert leider nicht die `end_of_line = lf`. Da
 wir Windows und Linux Rechner haben,
-[und diese unterschiedliche Metazeichen für Zeilenumbrüche besitzen](https://www.qftest.com/doc/manual/de/tech_linebreaks.html),
+[und diese unterschiedlichen Metazeichen für Zeilenumbrüche besitzen](https://www.qftest.com/doc/manual/de/tech_linebreaks.html),
 ergänzen wir das `.editorconfig` noch mit `end_of_line = lf`. Damit verwendet
 auch Windows LineFeed und nicht CarriageReturn/LineFeed.
 

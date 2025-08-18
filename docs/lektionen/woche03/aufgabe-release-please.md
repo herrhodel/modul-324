@@ -12,10 +12,10 @@ von Google.
 
 - Alle GitHub Actions befinden sich im Ordner `.github/workflows`.
 - Kopiert nun folgenden Inhalt in eine Datei
-  `.github/workflows/release-please.yml`
-- Sobald dieser Code im branch `main` auf GitHub existiert, erstellt oder
+  `.github/workflows/release-please.yml`.
+- Sobald dieser Code im Branch `main` auf GitHub existiert, erstellt oder
   erweitert er bei jedem weiteren commit auf main einen Release Pull-Request
-  einen Release Pull-Request.
+  einen Release Pull Request.
 
 ```yaml title=".github/workflows/release-please.yml"
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
@@ -59,9 +59,9 @@ Dann Folgt der Name. Dieser wird im GUI auf GitHub angezeigt.
 name: Release Please
 ```
 
-Nun wird definiert, wann diese Action ausgeführt werden soll. Sie wird immer bei
-einem `push` in den branch `main` ausgeführt. Hier könnt hier theoretisch auch
-noch andere branches angeben. Dann muss der Wert als Array
+Jetzt wird definiert, wann diese Action ausgeführt werden soll. Sie wird immer
+bei einem `push` in den branch `main` ausgeführt. Hier könnt hier theoretisch
+auch noch andere branches angeben. Dann muss der Wert als Array
 `[main, branch2, ...]` definiert werden.
 
 ```yaml
@@ -81,7 +81,7 @@ permissions:
   issues: write
 ```
 
-Schlussendlich folgt unter `jobs` die Action. Wir verwenden eine vorgegeben
+Schlussendlich folgt unter `jobs` die Action. Wir verwenden eine vorgegebene
 [Action "Release Please" von Google](https://github.com/googleapis/release-please-action).
 Mit den Attributen `token` und `release-type` wird diese konfiguriert. Das
 `token`

@@ -13,10 +13,10 @@ Projekt passt.
 
 - :dart: Eine `hello-world` App in der gewählten Technologie ist vorhanden
 - :dart: Alle Teammitglieder haben diese lokal gestartet
-- :dart: Die Grundlage ist gelegt, dass Tickets von allen Teammitglieder
+- :dart: Die Grundlage ist gelegt, dass Tickets von allen Teammitgliedern
   bearbeitet werden können.
 
-:::tip Setzt als erstes das Frontend um!
+:::tip Setzt als Erstes das Frontend um!
 
 - 📣 **Full-Stack mit Backend und DB ist zu Zeitaufwändig für dieses Modul.**
 
@@ -88,8 +88,8 @@ verwendet den.
 ### @angular/cli installieren
 
 Angular braucht das node Paket `@angular/cli`, damit der `ng` Befehl verfügbar
-ist. Die Person die die Angular "Bootstrapt", also aufsetzt, muss den Befehl
-`ng` global verfügbar haben.
+ist. Die Person die Angular "Bootstrapt", also aufsetzt, muss den Befehl `ng`
+global verfügbar haben.
 
 ```bash
 npm install @angular/cli -g
@@ -103,8 +103,8 @@ und befolgt die Anleitung.
 :::note
 
 Die Applikation heisst `app`. Wenn ihr einen anderen Namen wählt, bitte den
-Ordner nach `app` umbenennen, damit die folgenden CI-CD scripts ohne viel
-aufwand funktionieren.
+Ordner nach `app` umbenennen, damit die folgenden CI-CD-Scripts ohne viel
+Aufwand funktionieren.
 
 :::
 
@@ -122,9 +122,9 @@ ng new app
 
 :::
 
-- wechselt in den neuen Projektordner mit `cd app`
-- Startet den Server mit `npm start`
-- Nun erscheint eine Meldung dass ein Prozess auf dem Port 4200 gestartet ist.
+- Wechselt in den neuen Projektordner mit `cd app`.
+- Startet den Server mit `npm start`.
+- Nun erscheint eine Meldung, dass ein Prozess auf dem Port 4200 gestartet ist.
 - Öffnet **[http://localhost:4200](http://localhost:4200)** im Browser, :tada:
 
 ### Commiten, pushen und einen PR erstellen
@@ -134,8 +134,8 @@ commited werden**:
 
 - Verwendet dafür eine
   [**Conventional-Commit**](https://www.conventionalcommits.org/en/v1.0.0/)
-  Nachricht vom type **`feat`**
-- Schaut dass ihr am eine der Nachricht mit (#issueId) den Issue verlinkt!
+  Nachricht vom Typ **`feat`**
+- Schaut, dass ihr am Ende der Nachricht mit (#issueId) den Issue verlinkt!
   - :boom: Natürlich ist `#iissueId` am Ende eine Nummer! Genau, die vom Issue
     wie z.B. `#1`
 
@@ -147,8 +147,8 @@ git commit -m "feat: was auch immer (#issueId)" # Commiten und Issue verlinken
 :::tip kleine commits
 
 - Es ist besser mehrere kleine commits zu machen.
-- Dies ist auch einfacher zum reviewen.
-- Es dürfen mehrere commits auf einen Issue zeigen
+- Diese sind einfacher zum reviewen.
+- Es dürfen mehrere Commits auf einen Issue zeigen.
 
 :::
 
@@ -169,7 +169,7 @@ reviewen lassen.
 
 ![github-pull-request](images/github-pull-request.png)
 
-### Von allen Teammitglieder lokal testen lassen
+### Von allen Teammitgliedern lokal testen lassen
 
 :::note
 
@@ -188,13 +188,13 @@ npm start # oder ein alternativ Befehl der gewählten Technologie
 
 ## Eine eigene Technologie?
 
-Ihr dürft das Projekt in jeder Beliebigen Technologie erstellen.
+Ihr dürft das Projekt in jeder beliebigen Technologie erstellen.
 
 :::danger Bedingungen
 
 - **Alle Teammitglieder müssen mit der Technologie vertraut sein!**
-- Ihr müsst das Testing / Linting selbst aufsetzen
-- Es braucht engagement und Zeit!
+- Ihr müsst das Testing / Linting selbst aufsetzen.
+- Es braucht Engagement und Zeit!
 - Ich helfe, werde jedoch allen Teams gerecht werden, meine Zeit ist begrenzt.
 
 :::

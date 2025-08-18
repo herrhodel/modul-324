@@ -3,9 +3,10 @@ sidebar_position: 3
 keywords:
   - pdf
 ---
+
 # Prettier verwenden
 
-Ihr habt bereit das VS-Code Plugin
+Ihr habt bereits das VS-Code-Plugin
 [Prettier Formatter for Visual Studio Code](/docs/lektionen/woche02/aufgabe-install-tools.md#prettier-formatter-for-visual-studio-code)
 installiert.
 
