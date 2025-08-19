@@ -6,6 +6,14 @@ keywords:
 
 # Karma Konfiguration
 
+:::info
+
+- Falls Sie [Vitest](https://vitest.dev/)
+  [mit Angular verwenden](https://angular.dev/guide/testing/unit-tests), ist
+  dies nicht nötig!
+
+:::
+
 Um Karma Browser Tests im Dockerfile laufen zu lassen, braucht es die Option
 einen sogenannten "Headless Browser" zu verwenden. Am gängigsten ist der
 ChromeHeadless. Damit dieser von Karma verwendet wird, muss folgende

@@ -6,8 +6,7 @@
 
 ## Thema
 
-<Slide name="packagemanager" />
-<Slide name="formatting" />
+<Slide name="linting" />
 
 ## Aufgaben
 

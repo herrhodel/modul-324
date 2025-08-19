@@ -125,3 +125,50 @@ jobs:
   beinhalten Environment Variablen die als Secret erstellt wurden.
 - [**env**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#env-context)
   beinhalten Environment Variablen die nicht vertraulich sind.
+
+---
+
+<!-- _class: big center -->
+
+# Beispiele
+
+---
+
+# Prettier als GitHub Action Job
+
+::: columns
+
+- Es gibt eine Action, die direkt den Code mit prettier formatiert **und
+  commitet!**
+
+- Garantiert formatierten Code.
+- Nicht immer will man das, es **überschreibt den Commit**.
+- 🚨 **keine Pflicht!**
+
+::: split
+
+```yaml "./github/workflows/deploy.yml"
+jobs:
+  prettier:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
+        with:
+          same_commit: true
+          prettier_options: --write **/*.{js,md}
+          only_changed: true
+  deploy:
+    needs: [prettier]
+    # ...
+```
+
+:::

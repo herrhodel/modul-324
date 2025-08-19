@@ -6,6 +6,8 @@
 
 ## Thema
 
+<Slide name="packagemanager" />
+
 <Slide name="testing" />
 
 ## Aufgaben

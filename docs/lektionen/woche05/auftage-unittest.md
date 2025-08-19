@@ -16,13 +16,13 @@ Feedback der umgesetzten Features gesichert werden. Dies kann schlecht
 automatisiert geschehen. Die Fehlerfreiheit jedoch ist zu einem gewissen Grad
 automatisiert testbar.
 
-Arten von automatisierten Tests sind *Unit Tests* und *Integration Tests*
+Arten von automatisierten Tests sind _Unit Tests_ und _Integration Tests_
 
 ## Unit-Test
 
 Unit Tests beziehen sich auf einzelne Methoden. Mit Ihnen soll gewährleistet
-werden, dass eine Methode korrekte Resultate liefert. Dafür wird **die Methode mit
-verschiedensten Argumenten aufgerufen und geprüft ob das Resultat stimmt**.
+werden, dass eine Methode korrekte Resultate liefert. Dafür wird **die Methode
+mit verschiedensten Argumenten aufgerufen und geprüft ob das Resultat stimmt**.
 
 Gängige Unit-Test Frameworks sind:
 
@@ -93,8 +93,8 @@ getesteter Code, fehlerhaft sein kann.
   Methode. Man Reflektiert somit auch das eigene Schaffen.
 - Beim Refactoring kann sichergestellt werden, dass die Methode sich noch gleich
   verhaltet!
-- Test dienen als Beschreibung und sind somit direkt **lebende Dokumentation** auf
-  Englisch
+- Test dienen als Beschreibung und sind somit direkt **lebende Dokumentation**
+  auf Englisch
   "[living documentaion](https://cucumber.io/blog/podcast/living-documentation/)".
   - Dazu dienen vor allem Integration Tests, geschrieben in
     [Gherkin](https://cucumber.io/docs/gherkin/reference/) wie Cucumber es
@@ -107,23 +107,22 @@ automatisch "jasmin" mit "karma" verwendet und verweise auf **die
 [offizielle Anleitung](https://angular.dev/guide/testing)**.
 
 - Versucht nun nach der Anleitung einige Tests für euer Projekt zu erstellen.
-- In diesem Modul werden **nur Unit Tests** geschrieben. Ich lade Sie jedoch dazu
-  ein sich mit Integration Tests auseinander zu setzen.
+- In diesem Modul werden **nur Unit Tests** geschrieben. Ich lade Sie jedoch
+  dazu ein sich mit Integration Tests auseinander zu setzen.
 
 :::info Jasime/Karma sind veraltet
 
-Angular selbst will in Zukunft auf Jest mit Web-Test-Runner wechseln. Dies, da
-Karma und Jasmin doch langsam in die Jahre gekommen sind. Wer also lust hat,
-darf das Projekt so anpassen, dass Jest und Web-Test-Runner verwendet wird.
+Angular selbst will in Zukunft auf **[Vitest](https://vitest.dev/)** wechseln.
+Dies, da Karma und Jasmin doch langsam in die Jahre gekommen sind. Wer also lust
+hat, darf das Projekt so anpassen, dass vitest verwendet wird.
 
-Ich habe dazu zwei Anleitungen gefunden:
+Die Anleitung dazu hier:
 
-- https://alfredo-perez.dev/setup-jest-in-angular-18
-- https://danywalls.com/testing-in-angular-replace-karma-to-web-test-runner
+- https://angular.dev/guide/testing/unit-tests
 
 :::
 
-:::info angular.io -> angular.dev
+:::info angular.io → angular.dev
 
 Mir ist aufgefallen, dass die alte Domain [angular.io](https://angular.io) nur
 bis Version 17 abdeckt.
