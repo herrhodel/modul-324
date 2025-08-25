@@ -7,10 +7,10 @@ keywords:
 # Testen in der GitHub Action
 
 Besitzt die Applikation Unit-Test, macht es nur Sinn, dass diese auch
-automatisiert ausgeführt werden. Es gibt nun **zwei Orte** an denen die Tests
+automatisiert ausgeführt werden. Es gibt nun **zwei Orte**, an denen die Tests
 ausgeführt werden können.
 
-Behilflich ist uns nun das script `npm run test:ci` welches in der
+Behilflich ist uns das Script `npm run test:ci` welches in der
 [vorherigen Anleitung](/docs/lektionen/woche05/aufgabe-karma-configurieren.md)
 erstellt wurde.
 
@@ -68,9 +68,9 @@ Dies alles hat zur Folge, dass die Action nicht mehr so schnell ist.
 1. Der Test-Job wird vor dem Deploy-Job ausgeführt. Dadurch muss nicht nach AWS
    eingelogged werden und kein Dockerfile gebaut werden, sofern der Test
    fehlschlägt.
-2. Es ist klar ersichtlich, ob der Build wegen einem Test fehlgeschlagen ist
+2. Es ist klar ersichtlich, ob der Build wegen eines Testes fehlgeschlagen ist
    oder doch einem anderen Problem.
-3. Die Testresultate können als Artefakte an den Job Angeheftet werden.
+3. Die Testresultate können als Artefakte an den Job angeheftet werden.
    (optional)
    - https://www.npmjs.com/package/karma-jasmine-html-reporter
    - https://github.com/actions/upload-artifact

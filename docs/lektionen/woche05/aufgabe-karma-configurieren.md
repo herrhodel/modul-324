@@ -28,7 +28,7 @@ Branch geschehen.
 
 ## Karma config generieren
 
-Als erstes muss die Karma configuration generiert werden, damit diese angepasst
+Als Erstes muss die Karma configuration generiert werden, damit diese angepasst
 werden kann. Ohne diesen Schritt wird automatisch immer die
 Standardkonfiguration verwendet. Nach dem folgenden Befehl sollte die Datei
 `./karma.conf.js` zur Verfügung stehen.
@@ -39,7 +39,7 @@ ng generate config karma
 
 ## ChromeHeadlessNoSandbox launcher hinzufügen
 
-Als nächstes muss ein neuer `customLaunchers` erstellt werden. Damit wird Karma
+Als Nächstes muss ein neuer `customLaunchers` erstellt werden. Damit wird Karma
 gesagt, wie genau der Browser gestartet werden soll. Es gibt bereits den
 "ChromeHeadless", welcher kein GUI Browser öffnet, sondern ein Browser als CLI
 Befehl verwendet.
@@ -67,13 +67,13 @@ genau ist nicht so wichtig, kopiert einfach den grünen Teil in der Datei
 
 ## Script `test:ci` im package.json definieren
 
-Als letztes muss in der Datei `package.json`, unter `scripts` ein neues script
+Als Letztes muss in der Datei `package.json`, unter `scripts` ein neues script
 namens `test:ci` hinzugefügt werden. Dieses startet die tests mit dem oben
 erstellten "Laucher" `ChromeHeadlessNoSandbox`. Auch wird mitgeteilt, dass kein
 Ladebalken ausgegeben werden soll und auch nicht auf Dateiänderungen gehört
 werden soll.
 
-Der Befehl `npm run test:ci` wird später verwendet um die Tests in der CI
+Der Befehl `npm run test:ci` wird später verwendet, um die Tests in der CI
 Pipeline laufen zu lassen.
 
 ```json title="package.json"

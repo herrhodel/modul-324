@@ -25,7 +25,7 @@ werden direkt alle Konfigurationsdateien erstellt.**
 - `ng lint` ausführen
 - alles mit "yes" akzeptieren
 
-Ab nun kann mit "ng run lint" das Projekt gelintet werden.
+Ab nun kann mit `ng run lint` das Projekt gelintet werden.
 
 ## Applikation in der Github Action linten
 
@@ -81,7 +81,7 @@ jobs:
           node-version: 22 # lts
           cache: "npm"
           cache-dependency-path: app/package-lock.json
-      - name: Install Dependencies # neu eigener step
+      - name: Install Dependencies
         working-directory: app
         run: npm ci
       - name: Lint
@@ -155,7 +155,7 @@ Ist NodeJs installiert werden die Pakete installiert. `npm ci` ist ein
 definiert sind.
 
 ```yaml
-- name: Install Dependencies # neu eigener step
+- name: Install Dependencies
   working-directory: app
   run: npm ci
 ```
@@ -164,7 +164,7 @@ Jetzt, da NodeJs existiert und die Pakete installiert wurden, kann mit dem
 Befehl `npm run lint:ci` das linting gestartet werden. Der Befehl schreibt die
 Datei "app/eslint_report.json".
 
-Zu beachten ist der Punkt `continue-on-error: true`. Die garantiert, dass die
+Zu beachten ist der Punkt `continue-on-error: true`. Er garantiert, dass die
 Action nicht abgebrochen wird, wenn eslint einen Error findet. Dies ist wichtig,
 damit der nächste Schritt überhaupt ausgeführt wird, welcher den Code dem Pull
 Request hinzufügt.
@@ -178,8 +178,8 @@ Request hinzufügt.
 
 Schlussendlich wird durch die Action
 [`DerLev/eslint-annotations@v2`](https://github.com/DerLev/eslint-annotations)
-die geschriebene eslint_report.json ausgewertet und direkt im Pull Request
-vermerkt.
+die geschriebene Datei _eslint_report.json_ ausgewertet und direkt im Pull
+Request vermerkt.
 
 ```yaml
 - name: Annotate Code

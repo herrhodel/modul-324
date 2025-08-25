@@ -7,8 +7,8 @@ keywords:
 # Automatisiert Testen
 
 Ein Punkt im DevOps Modell ist die _Qualitätssicherung_. Qualitätssicherung soll
-sicher stellen, dass das Produkt auch den Erwartungen entspricht. Dies kann
-funktional sein: "Tut das Programm was es soll", aber auch qualitativ: "tut es
+sicherstellen, dass das Produkt auch den Erwartungen entspricht. Dies kann
+funktional sein: "Tut das Programm, was es soll", aber auch qualitativ: "tut es
 dies robust und fehlerfrei?".
 
 Die funktionale Erwartung soll durch das Einbinden des Kunden und schnellem
@@ -16,28 +16,27 @@ Feedback der umgesetzten Features gesichert werden. Dies kann schlecht
 automatisiert geschehen. Die Fehlerfreiheit jedoch ist zu einem gewissen Grad
 automatisiert testbar.
 
-Arten von automatisierten Tests sind _Unit Tests_ und _Integration Tests_
+Arten von automatisierten Tests sind _Unit-Tests_ und _Integration-Tests_
 
 ## Unit-Test
 
-Unit Tests beziehen sich auf einzelne Methoden. Mit Ihnen soll gewährleistet
+Unit-Tests beziehen sich auf einzelne Methoden. Mit Ihnen soll gewährleistet
 werden, dass eine Methode korrekte Resultate liefert. Dafür wird **die Methode
-mit verschiedensten Argumenten aufgerufen und geprüft ob das Resultat stimmt**.
+mit verschiedensten Argumenten aufgerufen und geprüft, ob das Resultat stimmt**.
 
 Gängige Unit-Test Frameworks sind:
 
 - Java: JUnit
-- Node:
-  - Jasmine (out-of-the-box von Angular verwendet, trotzdem deprecated)
-    - Karma (out-of-the-box von Angular verwendet, trotzdem deprecated)
-    - Karma führt die Unit-Tests im Browser aus, ist aber kein Integration
+- NodeJs:
+  - Jasmine _(out-of-the-box von Angular verwendet, trotzdem deprecated)_
+    - Karma _(out-of-the-box von Angular verwendet, trotzdem deprecated)_
+    - Karma führt die Unit-Tests im Browser aus, ist aber keine Integration
       Testing framework.
-  - Jest (wird
-    [neu von Angular empfohlen](https://blog.angular.dev/moving-angular-cli-to-jest-and-web-test-runner-ef85ef69ceca))
-    - [Web-test-Runner](https://modern-web.dev/docs/test-runner/overview/) (wird
-      [neu von Angular empfohlen](https://blog.angular.dev/moving-angular-cli-to-jest-and-web-test-runner-ef85ef69ceca))
-    - Web-test-Runner führt die Unit-Tests im Browser aus, ist aber kein
-      Integration Testing framework.
+  - Vitest (wird
+    [neu von Angular empfohlen](https://angular.dev/guide/testing/unit-tests))
+    - Kann Unit und Integration Tests
+      ([Browser-Mode](https://vitest.dev/guide/browser/))
+    - Integration Tests sind in aktiver Entwicklung.
   - MochaJS
 
 ## Integration-Test
@@ -50,10 +49,12 @@ weitergeleitet wird.
 
 Gängige Integration Testing Frameworks sind:
 
-- Selenium
-- Gauge / Taiko
+- Cucumber (die Erfinder!)
+- Selenium (sehr verbreitet)
+- [Gauge](https://gauge.org/) / [Taiko](https://taiko.dev/) (sehr gut, leider
+  nicht mehr aktiv weiterentwickelt)
 - Cypress
-- Cucumber (die Erfinder...)
+- Vitest (Limitiert)
 
 :::tip
 
@@ -62,8 +63,8 @@ Integration Tests sind meiner Meinung nach Unit-Tests in vielen Bereichen
 
 - Sie testen Benutzerinteraktion und sind daher nicht so theoretisch.
 - Sie sind Grobmaschiger, was ein Refactoring nicht behindert.
-  - Viele Unit-Tests können das Refactoring hindern, da viele Test angefasst
-    werden müssen, was Arbeit bedeutet ;)
+  - Viele Unit-Tests können das Refactoring hindern, da zusätzlich viele Tests
+    angefasst werden müssen, was Arbeit bedeutet ;)
 
 :::
 
@@ -82,8 +83,8 @@ Applikation programmiert wurde.
 >
 > -- Edsger Dijkstra
 
-Das bedeutet soviel wie: man kann gar nicht immer Wissen ob ein Programm
-Fehlerfrei ist, wenn man dem Fehler noch nicht begegnet ist. Dies ist kein Grund
+Das bedeutet soviel wie: Man kann gar nicht immer Wissen, ob ein Programm
+fehlerfrei ist, wenn man dem Fehler noch nicht begegnet ist. Dies ist kein Grund
 nicht zu testen, sondern eine Mahnung sich bewusst zu sein, dass auch 100%
 getesteter Code, fehlerhaft sein kann.
 
