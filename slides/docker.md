@@ -69,9 +69,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: columns l60 s2
 
-- `FROM`: Erbt immer von einem Basis Image
-- `ARG`: Environment Variablen während der build Zeit
-- `ENV`: Environment Variablen während build und run Zeit
+- `FROM`: Erbt immer von einem Basisimage
+- `ARG`: Environment Variablen während der Buildzeit
+- `ENV`: Environment Variablen während Build- und Laufzeit
 - `COPY`: Kopiert Dateien ins Image
 - `SHELL`: Befehl, für die Standard-Shell.
   - Standard ist `sh` und nicht `bash`!
@@ -81,7 +81,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: split
 
-Beispieldatei für einen Nginx
+Beispieldatei für einen Nginx, sofern manuell installiert
 
 ```Dockerfile
 FROM ubuntu:24.10 # Definiert die Basis
@@ -92,12 +92,12 @@ RUN apt-get -y update && apt-get -y install nginx git curl
 
 # Kopieren von lokalen Dateien
 # Die Nginx Konfigurationsdatei
-COPY default /etc/nginx/sites-available/default
+COPY nginx.conf /etc/nginx/sites-available/default
 # Das HTML dass ausgeliefert werden soll
 COPY src/* /usr/share/nginx/html
 
 # Definieren, welche Ports geöffnet sind
-EXPOSE 3000/tcp
+EXPOSE 80/tcp
 
 # Befehl, der beim Ausführen ausgeführt werden soll
 # Hier, starten vom Nginx
@@ -121,8 +121,8 @@ Referenz: https://docs.docker.com/reference/dockerfile/
 - Es beinhaltet die Applikation sowie das Betriebssystem
 - Es ist unveränderlich (immutable)
 - Es kann in eine Registry hochgeladen werden
-  - z.B. die Container Registry die wir auf AWS installiert haben
-  - Oder auch auf hub.docker.com, die standard docker Registry
+  - z.B. die Container Registry, die wir auf AWS installiert haben.
+  - Oder auch auf hub.docker.com, die Standard-Docker-Registry
   - `docker push myimage:1.0.0`
 
 ::: footnotes
@@ -137,7 +137,6 @@ Referenz: https://docs.docker.com/reference/dockerfile/
 # Docker Container
 
 - Wird ein Docker Image ausgeführt, wird es zu einem Container
-
   - `docker run myimage:1.0.0`
   - `docker run --name myimage -d myimage:1.0.0`
 
@@ -156,8 +155,7 @@ https://docs.docker.com/reference/cli/docker/container/run/
 
 ::: columns s2
 
-- Eine Datei um Container zu Konfigurieren und das **Starten zu vereinfachen**.
-
+- Eine Datei um Container zu konfigurieren und das **Starten zu vereinfachen**.
   - `docker compose up` <br>startet alle definierten Container
   - `docker compose down` <br>beendet alle wieder
 
@@ -168,23 +166,15 @@ https://docs.docker.com/reference/cli/docker/container/run/
 
 ```yaml
 services:
-  myservice: # name des service
+  myservice: # name des Service
     # Definiert welches Dockerfile dem Service gehört
     build:
       context: . # Muss zum Ordner mit einem Dockerfile zeigen
       dockerfile: Dockerfile
-
-    # Name des Containers
     container_name: myservice
-
-    # Forwarden von einem Container Port nach localhost
     ports:
-      - "3000:3000" # host-port:container-port
-
-    # Synchronisiert Dateien local:container
-    volumes:
-      # alle Dateien werden im Container unter /app synchronisiert
-      .:/app/
+      - "8080:80" # host-port:container-port
+    volumes: .:/app/ # Synchronisiert Ordner in den Container
   mysql:
     container_name: mysql
     image: "mysql:latest" # Image von hub.docker.com
@@ -196,12 +186,10 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - mysql-data:/var/lib/mysql # mounten vom persistenten volumen
-      # - ./local:/local
+      - mysql-data:/var/lib/mysql # dauerhaftem Speicher
 
 volumes:
   # INFO: Ohne dieses Volumen löscht es die DB bei jedem Neustart
-  #       Löschen: `docker volume rm projekt-m324-gruppe-ncooep_mysql-data`
   mysql-data:
 ```
 
@@ -217,22 +205,20 @@ https://docs.docker.com/compose/compose-application-model/
 
 # Dockerfile für die AWS Umgebung
 
-- Muss den **TCP Port 3000** exposen
+- Muss den **TCP Port 80** exposen
 
-- Muss auf dem Port 3000 einen **Webserver** serven.
-
+- Muss auf dem Port 80 einen **Webserver** serven.
   - `Nginx` oder auch `node` oder `sprint-boot/tomcat`
 
-- Muss auf dem Port 3000 eine Route **/up** besitzen die ein Status 200 OK
+- Muss auf dem Port 80 eine Route **/up** besitzen die ein Status 200 OK
   zurückgibt.
-
   - Dies muss die App machen.
   - `curl http://localhost:3000/up` muss Status **200** zurückgeben
-  - :zap: **Fehlt diese Route wird das Deployment fehlschlagen**
+  - :zap: **Fehlt diese Route, wird das Deployment fehlschlagen**
 
 ---
 
-# Multistage Dockerfile für Angular
+# Multistage Dockerfile für Angular mit Nginx
 
 ::: columns s2
 
@@ -243,37 +229,30 @@ ist (keine node_modules).
 - Abhängigkeiten installieren und builden `RUN` <br>
   `npm install && npm run build`
 - App in neues Image Kopieren
-- App Starten `CMD` <br> `node server/server.mjs`
-- TCP Port 3000 als öffnen `EXPOSE`
 
 :zap: **Diese Datei muss noch individuell angepasst werden!**
 
 ::: split
 
 ```Dockerfile
-# Build Image definieren (siehe 'AS build')
-FROM node AS build
-## Ab hier wird im Folder /app gearbeitet
+# Mit AS builder geben wir dem Image einen
+# Namen um darauf zuzugreifen
+FROM node:lts-slim AS builder
 WORKDIR /app
-## Kopieren der App-Dateien
-COPY /appname .
-## Installieren der Dependencies und Builden der App
-RUN npm install && npm run build
+COPY . .
+RUN npm ci && npm run build
 
-# -------------
-
-# Produktion Image definieren
-FROM node
-## die Standardshell nach bash ändern (kompatibler)
-SHELL ["/bin/bash", "-c"]
-## Ab hier wird im Folder /app gearbeitet
-WORKDIR /app
-## App vom Build Image kopieren (siehe `--from=build`)
-COPY --from=build /app/dist/appname/ ./
-## Starten des Servers wenn der Container gestartet wird
-CMD ["node", "server/server.mjs"]
-## Expose port 3000
-EXPOSE 3000/tcp
+# Ab hier beginnt das Produktive Image!
+FROM nginx:1.29-bookworm
+LABEL service="myapp"
+# Hier kopieren wir nur den gebauten Code
+# für den Browser vom builder Image
+COPY --from=builder \
+     /app/dist/angular-app-name/browser \
+     /usr/share/nginx/html
+# Hier kopieren wir die nginx.conf Konfigurationsdatei
+# (siehe weiter unten)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 ```
 
 :::
@@ -288,7 +267,7 @@ docker compose up -d # -d startet die services im hintergrund (keine logs)
 docker compose down  # stop alle services
 ```
 
-## Ohne devcontainer eine bash in einem container starten
+## Eine Bash in einem Container starten
 
 ```bash
 docker ps                               # zeigt alle gestarteten container an

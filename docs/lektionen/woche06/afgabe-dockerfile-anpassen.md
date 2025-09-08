@@ -4,69 +4,163 @@ keywords:
   - pdf
 ---
 
-# Produktives Dockerfile
+# Dockerfile
 
-Sofern Ihr noch keine Anpassungen an der CI/CD Pipeline vorgenommen habt, wird
-immer noch das `nginx` Image gebuildet und nach AWS deployed. Bis jetzt haben
-wir nur das `.devcontainer/Dockerfile` angepasst. Dieses dient dazu damit alle
-lokal eine einheitliche Entwicklungsumgebung haben.
+Nun geht es darum ein `Dockerfile` für die eigene Applikation zu erstellen,
+damit diese nach AWS deployed werden kann.
 
-**Nun geht es darum ein Dockerfile für die eigene Applikation zu erstellen,
-damit diese nach AWS deployed werden kann.**
+Dazu wird in folgende Schritten vorgegangen:
 
-## Datei `docker-compose.yml` anpassen
+- Datei `docker-compose.yml` erstellen
+- Datei `.dockerignore` erstellen
+- Datei `Dockerfile` erstellen
 
-In der Datei `docker-compose.yml` gibt es unter `service` den Eintrag
-`production`.
+## Datei `docker-compose.yml` erstellen
+
+Gundsätzlich wäre `docker compse` nicht nötig. Da es jedoch das Bauen, Starten
+und Stoppen von Containern vereinfacht, ist es empfohlen. So kann gewährleistet
+werden, dass alle den Container lokal gleich starten. Daher dient es zugleich
+als Dokumentation.
+
+Erstellt dafür die Datei `docker-compose.yml` wie folgt beschrieben im
+Hauptverzeichnis vom Repository.
 
 ```yml title="docker-compose.yml"
 services:
-  production:
+  myapp:
     build:
-      // highlight-next-line
-      context: ./nginx/
+      context: ./app
       dockerfile: Dockerfile
     ports:
-      - "3001:3000"
+      - "8080:80"
 ```
 
-Wie zu sehen ist ist der `services.production.build.context: ./nginx/` gesetzt.
-Dies bedeutet, dass beim starten des Containers mit dem Befehl
-`docker compose up production -d` im Ordner `./nginx` nach einem `Dockerfile`
-gesucht wird. Dieses wird gebaut und gestartet. Dabei wir der Port 3000 nach
-3001 umgeleitet, da der Devcontainer bereits den Port 3000 exposed.
+<details>
+  <summary>Detailbeschreibung</summary>
 
-### Eigene App als context setzten
+Jedes `docker-compose.yml` beschreibt `services`, welche gebaut, gestartet und
+gestoppt werden könne. Services sind nichts anderes als Apps in Container.
 
-Um nun die eigene Applikation zu bauen und starten, muss hier den Kontext neu
-gesetzt werden.
-
-```yml title="docker-compose.yml"
+```yml
 services:
-  production:
-    build:
-      // highlight-next-line
-      context: ./neues-ssg-projekt/
-      dockerfile: Dockerfile
-    ports:
-      - "3001:3000"
+```
+
+Unter `services` wird die `myapp` definiert. Grundsätzlich könnt Ihr einen
+eigenen Namen dafür angeben. Er sollte keine Leerzeichen und Umlaute beinhalten.
+
+```yml
+myapp:
+```
+
+Unter der `myapp` wird der `build` definiert. Mit dem `context` wird angegeben,
+wo sich die App befindet. Die App wird wiederum über das `Dockerfile`
+beschrieben.
+
+```yml
+build:
+  context: ./app
+  dockerfile: Dockerfile
+```
+
+Schlussendlich wird durch `ports` definiert, welcher Port vom Host auf welchen
+Port im Container-Context zeigen soll. Hier wird also der port 8080 vom HOST,
+also eurem Rechner auf den Port 80 im Container geleitet. Dies bedeutet, dass
+die Applikation im Container auf dem Port 80 hören muss. Der Port 80 ist der
+Standardport für HTTP Services.
+
+```yml
+ports:
+  - "8080:80"
+```
+
+ </details>
+
+### Befehle
+
+Mit folgenden Befehlen kann die Applikation gebaut und getestet werden.
+
+:::info
+
+- Da noch kein `Dockerfile` existiert, werden die Befehle noch nicht
+  funktionieren.
+- Sie funktionieren erst, nach dem Punkt
+  [Dockerfile erstellen](#dockerfile-erstellen)
+
+:::
+
+#### Docker Compose
+
+Aus dem `Dockerfile` ein **Image bauen**.
+
+```bash
+docker compose build myapp
+```
+
+App **starten**. <br/> ❗**\*Achtung!** Wurden Änderungen vorgenommen, muss die
+App zuerst neu gebaut werden!\*
+
+```bash
+docker compose up myapp # Startet mit logs, blockiert das Terminal
+docker compose up myapp -d # Ohne logs im Hintergrund, blockiert nix
+```
+
+App **stoppen**.
+
+```bash
+docker compose down myapp
+```
+
+#### Docker standalone
+
+:::info
+
+Diese Befehle müssen im gleichen Oder, in dem sich das `Dockerfile` befindet
+ausgeführt werden.
+
+:::
+
+Aus dem `Dockerfile` ein **Image bauen**.
+
+```bash
+docker build -t myapp:local .
+docker build -t myapp:local --progress plain . # mit Logs!
+```
+
+App **starten**. <br/> ❗**\*Achtung!** Wurden Änderungen vorgenommen, muss die
+App zuerst neu gebaut werden!\*
+
+```bash
+docker run -it myall:local --name myapp
+```
+
+App **stoppen**.
+
+```bash
+docker stop myapp
+```
+
+Terminal im Container öffnen
+
+```bash
+docker exec -it myapp /bin/bash
 ```
 
 :::tip regelmässig builden
 
-- Während Ihr die folgenden Befehle ins `Dockerfile` schreibt, könnt ihr mit
-  `docker compose build production` regelmässig prüfen ob alles klappt.
-- Wenn ihr fertig seit und den Container starten möchtet, geht die mit
-  `docker compose up production`. Dann sollte auf `http://localhost:3001` die
-  eigene App erscheinen.
+- Es empfiehlt sich beim Dockerfile schreiben häufig neu zu builden um zu
+  gewährleisten, ob alles klappt.
 
 :::
 
-:::caution
+:::tip keine build Logs?
 
-Natürlich geht `docker compose build production` nun noch nicht, da zuerst das
-Dockerfile erstellt werden muss. Mit dieser Einstellung, können wir nun aber
-bequem das Dockerfile Schrittweise, während dem erstellen builden und testen.
+Docker build schreibt nicht mehr alles in Terminal. Dies erschwert das Debuggen
+bei Fehlern. Mit diesem Befehl kann der build Befehl manuell gestartet werden,
+inklusive log. Leider geht das nicht via docker-compose, wird jedoch diskutiert
+
+```bash
+docker build -t myapp:local --progress plain ./app
+```
 
 :::
 
@@ -79,7 +173,8 @@ beinhaltet Pfade, die ignoriert werden sollen. Alle Pfade, die in der Datei
 Projekt erstellen, wollen Sie bestimmt nicht, dass der Ordner `node_modules`
 kopiert wird. Dies kann vor allem auf Windows Systemen zu Probleme führen.
 
-- Erstelle eine Datei `.dockerignore` im Projektordner
+- Erstelle eine Datei `.dockerignore` im Projektordner, also da wo sich auch die
+  Datei `package.json` befindet.
 - Füge mindestens `node_modules` und `Dockerfile` ein
 
 :::note ein Beispiel für ein Angular Projekt
@@ -96,114 +191,52 @@ Dockerfile
 ## Dockerfile erstellen
 
 Nun soll ein Dockerfile erstellt werden, welches die Applikation baut und
-startet. Dabei soll beachtet werden, dass der Server auf dem Port 3000 gestartet
+startet. Dabei soll beachtet werden, dass der Server auf dem Port 80 gestartet
 werden soll.
 
-:::caution
+Es werden zwei Möglichkeiten vorgestellt die beide auf Angular aufbauen.
 
-- Diese Anleitung basiert auf einem Angular SSG Projekt mit dem Namen
-  "neues-ssg-projekt", **dieser muss mit euren Namen ersetzt werden**.
-- Ein Angular app ohne SSG benötigt einen nginx,
-  [mehr dazu hier](#beispiel-für-eine-angular-spa-app-ohne-ssg-mit-nginx-geserved).
+- Eine mit Angular und SSG (Server Side Generation). Auf diese Weise wir Angular
+  über einen eigenen Node Webserver gestartet.
+- Eine mit Angular ohne SSG. Dafür muss Angular über einen dediziert Webserver
+  (z.B. Nginx) ausgeliefert werden.
 
-:::
+:::note Multistage Image
 
-- Als erstes erstellt Ihr eine **neue Datei namens "Dockerfile" innerhalb vom
-  Projektordner**.
-  - Also nicht im Root vom Repository!
-- Nun muss mit dem **Befehl `FROM`** definiert werden, von welchem Base-Image
-  geerbt werden soll.
-  - Es gibt für die meisten Programmiersprachen eines.
-  - Für node: `FROM node:lts-slim`
-
-:::note mise nicht nötig
-
-- Da nun direkt ein Base image einer Sprache verwendet wird, muss diese nicht
-  noch installiert werden.
+Die Dockerfiles beinhalten zwei `FORM` Befehle. Es handelt sich um sogenannte
+Multistage Images. Ein Multistage-Image ermöglicht es zusätzlichen Balast, der
+beim Builden benötigt wird (z.B. node_modules, etc.) im resultierten Image zu
+entfernen damit das gebaute Image so klein wie möglich ist.
 
 :::
 
-- Der vom Projekt verwendete deployment Mechanismus **verlangt, dass das Image
-  ein `LABEL` "service" besitzt**.
-  - `LABEL service="neues-ssg-projekt"`
-  - Diese LABEL ist später noch wichtig.
-- Nun **definieren wir mit `WORKDIR` einen Arbeitsordner** innerhalb vom Image.
-  - `WORKDIR /app`
-- Als nächstes muss der **Projektcode mit `COPY` ins Image kopiert** werden.
-  - Da sich das Dockerfile innerhalb vom Projektordner befindet, bedeutet
-    folgender Befehl, dass alles vom aktuellen Ordner ins Image kopiert wird.
-    Ausser Pfade im `.dockerignore`.
-  - `COPY . .`
-- Sind die Dateien verfügbar, müssen **mit dem `RUN` Befehlt die Pakete
-  installiert und die App gebaut werden**. Für Angular (und andere node apps)
-  geht es folgendermassen.
-  - `RUN npm ci && npm run build`
+:::caution App-Name kann anders sein
 
-<details>
-<summary>npm ci error?</summary>
+- Überall wo `angular-app-name` steht, müsst Ihr den Namen von eurem Projekt
+  angeben.
+- Am besten mal `npm build` **ausserhalb vom Dockerfile** ausführen und schauen
+  wie die Pfade heissen, die unter `dist` generiert werden.
 
-Wenn folgender Error erscheint, müssen Sie zuerst mit `npm install` im
-Devcontainer die Packages installieren und das `package-lock.json` commiten!
+:::
+
+:::caution npm ci error?
+
+Wenn folgender Error erscheint, müssen Sie zuerst mit `npm install`,
+**ausserhalb vom Dockerfile**, die Packages installieren und das
+`package-lock.json` commiten!
 
 > npm error `npm ci` can only install packages when your package.json and
 > package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock
 > file with `npm install` before continuing.
 
-</details>
-
-- Da die App auf dem Port 3000 laufen muss, müssen wir dies definieren. Unter
-  node geht dies durch die Umgebungsvariable `PORT` die per `ENV` Befehl gesetzt
-  werden kann.
-  - `ENV PORT=3000`
-- Zudem muss dem Image der Port 3000 auf freigegeben werden. Dies geschieht
-  - `EXPOSE 3000/tcp` durch den `EXPOSE` Befehl.
-- Wurde die App gebaut und der PORT 3000 ist parat, kann nun **mit dem `CMD`
-  Befehl der Server auf PORT 3000 gestartet werden**
-  - `CMD [ "node", "/app/dist/neues-ssg-projekt/server/server.mjs" ]`
-
-### Beispiel für eine Angular App mit SSG
-
-```dockerfile title="Beispiel Angular Dockerile (unoptimized)"
-FROM node:lts-slim
-
-LABEL service="neues-ssg-projekt"
-
-WORKDIR /app
-
-COPY . .
-
-RUN npm ci && npm run build
-
-ENV PORT=3000
-EXPOSE 3000/tcp
-
-CMD [ "node", "/app/dist/neues-ssg-projekt/server/server.mjs" ]
-```
-
-:::caution noch nicht ready zum deployen auf AWS
-
-- Die App wird zwar auf port 3000 geserved. Die angular app braucht aber noch
-  eine route `/up` die ein HTTP code 200 zurück gibt!
-- Auch sollte das Dockerfile wie folgt erläutert noch optimiert werden.
-
 :::
 
-## Dockerfile optimieren mit Multistage
-
-Grundsätzlich ist das obere Dockerfile funktionsfähig. Da jedoch die Node App
-darin gebaut wurde und die Pakete installiert wurden, beinhaltet das Image
-unnötigen balast. Grundsätzlich sollte ein Dockerimage so klein wie möglich
-sein.
-
-Um dies zu erreichen, gibt es
-[**Multistage Dockerfiles**](https://docs.docker.com/build/building/multi-stage/).
-Ein Multistage Dockerfile besitzt zwei Dockerfile Definitionen untereinander,
-wobei die erste der "builder" ist und nach dem build "weggeworfen" wird. Es wird
-nur das zweite Image verwendet.
-
 ### Beispiel für eine Angular App mit SSG
 
-```dockerfile title="Multistage Image"
+Erstellt eine Datei `Dockerfile` im Projektordner, also da wo sich die
+`package.json` Datei befindet, mit folgendem Inhalt.
+
+```dockerfile title="Beispiel Angular SSG Dockerile"
 # Mit AS builder geben wir dem Image eine Namen um darauf zuzugreifen
 FROM node:lts-slim AS builder
 
@@ -217,36 +250,138 @@ RUN npm ci && npm run build
 FROM node:lts-slim
 
 # Das LABEL muss hier gesetzt sein!
-LABEL service="neues-ssg-projekt" 
+LABEL service="myapp"
 
 WORKDIR /app
 
 # Hier kopieren wir nur den gebauten Code vom builder Image
-COPY --from=builder /app/dist/neues-ssg-projekt/ .
+COPY --from=builder /app/dist/angular-app-name/ .
 
-ENV PORT=3000
-EXPOSE 3000/tcp
+ENV PORT=80
+EXPOSE 80/tcp
 
 CMD [ "node", "/app/server/server.mjs" ]
 ```
 
-:::caution noch nicht ready zum Deployen auf AWS
+<details>
+<summary>Detailbeschreibung</summary>
 
-- Nun ist das Dockerfile zwar optimiert. Die Route `/up` fehlt jedoch immer
-  noch!
+Es muss mit dem **Befehl `FROM`** definiert werden, von welchem Base-Image
+geerbt werden soll. Es gibt für die meisten Programmiersprachen eines. Für
+NodeJs wäre das: `FROM node:lts-slim`. Mit `AS builder` wird dem ersten Image
+einen Namen gegeben, damit darauf zugegriffen werden kann. Dieses wird am Ende
+"weggeworfen".
+
+```Dockerfile
+FROM node:lts-slim AS builder
+```
+
+Nun definieren wir mit `WORKDIR` einen Arbeitsordner **innerhalb vom Image**.
+_Dieser Ordner hat nichts mit dem `app` Ordner im Repository zu tun._
+
+```Dockerfile
+WORKDIR /app
+```
+
+Als Nächstes muss der **Projektcode mit `COPY` ins Image kopiert** werden. Da
+sich das `Dockerfile` innerhalb vom Projektordner befindet, bedeutet folgender
+Befehl, dass alles vom aktuellen Ordner ins Image kopiert wird, ausser Pfade,
+die im `.dockerignore` ausgeschlossen werden.
+
+```Dockerfile
+COPY . .
+```
+
+Sind die Dateien verfügbar, müssen **mit dem `RUN` Befehl die Pakete installiert
+und die App gebaut werden**. Für Angular (und andere node apps) geht es
+folgendermassen.
+
+```Dockerfile
+RUN npm ci && npm run build
+```
+
+Damit ist das "builder" Image beschrieben. Darauf folgt die Definition vom
+resultierten Image.
+
+Auch hier wird durch `FROM node:lts-slim` vom offiziellen Node Image geerbt.
+Dies könnte theoretisch auch ein komplett anderes sein.
+
+```Dockerfile
+FROM node:lts-slim
+```
+
+Der vom Projekt verwendete Deployment-Mechanismus **verlangt, dass das Image ein
+`LABEL` "service" besitzt**. Dieses LABEL ist später noch wichtig.
+
+```Dockerfile
+LABEL service="myapp"
+```
+
+Auch hier wird mit `WORKDIR` einen Arbeitsordner **innerhalb vom Image**
+gesetzt. _Dieser Ordner hat ebenfalls nichts mit dem `app` Ordner im Repository
+zu tun._
+
+```Dockerfile
+WORKDIR /app`
+```
+
+Nun wird mit dem `COPY` Befehl, nicht vom Host Dateien kopiert, sondern vom
+vorherigen Image mit dem Namen "builder".
+
+```Dockerfile
+COPY --from=builder /app/dist/angular-app-name/ .
+```
+
+Da die App auf dem Port 80 laufen muss, müssen wir dies definieren. Unter NodeJs
+geht dies durch die Umgebungsvariable `PORT` die per `ENV` Befehl gesetzt werden
+kann.
+
+```Dockerfile
+ENV PORT=80
+```
+
+Auch muss dem Image der Port 80 freigegeben werden. Dies geschieht durch den
+`EXPOSE` Befehl.
+
+```Dockerfile
+EXPOSE 80/tcp
+```
+
+Schlussendlich, kann nun **mit dem `CMD` Befehl der Server auf PORT 80 gestartet
+werden**
+
+```Dockerfile
+CMD [ "node", "/app/dist/angular-app-name/server/server.mjs" ]
+```
+
+</details>
+
+:::caution noch nicht ready zum deployen auf AWS
+
+- Die App wird zwar auf port 80 geserved. Die Angular App braucht aber noch eine
+  Route `/up` die ein HTTP code 200 zurück, gibt!
 
 :::
 
-### Beispiel für eine Angular SPA App, ohne SSG mit nginx geserved
+### Beispiel für eine Angular SPA App ohne SSG, mit nginx geserved
 
-Für alle die eine klassische SPA App entwickeln, welche nicht über einen node
+Für alle die eine klassische SPA App entwickeln, welche nicht über einen NodeJs
 Server verfügen (SSG), müssen mit einem dedizierten Webserver geserved werden.
-In diesem Modul nehmen wir dafür einen Nginx.
+In diesem Modul nehmen wir dafür einen Nginx. Der Builder ist in diesem Falle
+gleich zur SSG app. Das zweite Image ist jedoch einen Nginx.
 
-Der Builder ist in diesem falle gleich. Das zweite Image ist jedoch einen Nginx.
-Auch wird dann die gebaute App zum nginx kopiert.
+:::danger
 
-```dockerfile
+Eine Angular App ohne SSG könnte auch via `ng serve` im `Dockerfile` gestartet
+werden, ohne Nginx. Dies ist jedoch extrem ineffizient, da es sich um den
+Developer Mode handelt. Dieser ist:
+
+1. Nicht sicher
+2. Brauch viel mehr Server-Power und verbraucht AWS Geld ;)
+
+:::
+
+```dockerfile title="Beispiel Angular/Nginx Dockerfile"
 # Mit AS builder geben wir dem Image eine Namen um darauf zuzugreifen
 FROM node:lts-slim AS builder
 
@@ -257,27 +392,96 @@ COPY . .
 RUN npm ci && npm run build
 
 # Ab hier beginnt das Produktive Image!
-FROM nginx
+FROM nginx:1.29-bookworm
 
-LABEL service="neues-spa-projekt"
+LABEL service="myapp"
 
-# Hier kopieren wir nur den gebauten Code vom builder Image
-COPY --from=builder /app/dist/neues-spa-projekt/browser /usr/share/nginx/html
-# Hier kopieren wir die nginx Konfigurationsdatei (Ihr könnt diese vom nginx service kopieren!)
-COPY default /etc/nginx/sites-available/default
-
-EXPOSE 3000/tcp
-
-# Eine standard nginx Konfigurationsdatei um eine SPA auf Port 3000 zu serven
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+# Hier kopieren wir nur den gebauten Code für den Browser vom builder Image
+COPY --from=builder /app/dist/angular-app-name/browser /usr/share/nginx/html
+# Hier kopieren wir die nginx.conf Konfigurationsdatei (siehe weiter unten)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 ```
 
-#### Die dafür passende nginx _default_ Konfigurationsdatei
+<details>
+<summary>Detailbeschreibung</summary>
 
-```nginx title="default"
+Es muss mit dem **Befehl `FROM`** definiert werden, von welchem Base-Image
+geerbt werden soll. Es gibt für die meisten Programmiersprachen eines. Für
+NodeJs wäre das: `FROM node:lts-slim`. Mit `AS builder` wird dem ersten Image
+einen Namen gegeben, damit darauf zugegriffen werden kann. Dieses wird am Ende
+"weggeworfen".
+
+```Dockerfile
+FROM node:lts-slim AS builder
+```
+
+Nun definieren wir mit `WORKDIR` einen Arbeitsordner **innerhalb vom Image**.
+_Dieser Ordner hat nichts mit dem `app` Ordner im Repository zu tun._
+
+```Dockerfile
+WORKDIR /app
+```
+
+Als Nächstes muss der **Projektcode mit `COPY` ins Image kopiert** werden. Da
+sich das `Dockerfile` innerhalb vom Projektordner befindet, bedeutet folgender
+Befehl, dass alles vom aktuellen Ordner ins Image kopiert wird, ausser Pfade,
+die im `.dockerignore` ausgeschlossen werden.
+
+```Dockerfile
+COPY . .
+```
+
+Sind die Dateien verfügbar, müssen **mit dem `RUN` Befehl die Pakete installiert
+und die App gebaut werden**. Für Angular (und andere node apps) geht es
+folgendermassen.
+
+```Dockerfile
+RUN npm ci && npm run build
+```
+
+Damit ist das "builder" Image beschrieben. Darauf folgt die Definition vom
+resultierten Image.
+
+Hier verwenden wir jedoch das offizielle Nginx Image, wie bei der Musterlösung.
+
+```Dockerfile
+FROM nginx:1.29-bookworm
+```
+
+Der vom Projekt verwendete Deployment-Mechanismus **verlangt, dass das Image ein
+`LABEL` "service" besitzt**. Dieses LABEL ist später noch wichtig.
+
+```Dockerfile
+LABEL service="myapp"
+```
+
+Nun wird mit dem `COPY` Befehl, nicht vom Host Dateien kopiert, sondern vom
+vorherigen Image mit dem Namen "builder". Unterschiedlich zum SSG beispiel wird
+nur der Part für den Browser kopiert. Und zwar in den Nginx Html Ordner.
+
+```Dockerfile
+COPY --from=builder /app/dist/angular-app-name/browser /usr/share/nginx/html
+```
+
+Zusätzlich muss noch die Nginx Konfigurationsdatei kopiert werden. Dafür solltet
+ihr eine `nginx.conf` im Projektordner erstellen. Der Inhalt könnt Ihr
+[von unterhalb kopieren](#die-dafür-passende-nginxconf-konfigurationsdatei).
+
+```Dockerfile
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+```
+
+Da das offizielle Image bereits den Port 80 exposed und den Nginx startet,
+entfallen die Befehle `Expose` und `CMD`, die bei der SSG Variante nötig sind.
+
+</details>
+
+#### Die dafür passende `nginx.conf` Konfigurationsdatei
+
+```nginx title="nginx.conf"
 server {
-    listen 3000 default_server;
-    listen [::]:3000 default_server;
+    listen 80 default_server;
+    listen [::]:80 default_server;
 
     root /usr/share/nginx/html;
     index index.html index.htm;
@@ -295,7 +499,27 @@ server {
 
 :::tip bereits ready zum Deployen auf AWS
 
-- Da der nginx mit der oberen "default" Konfigurationsdatei eine `location /up`
-  definiert, kann dieses Image bereits deployed werden.
+- Da der nginx mit der oberen Konfigurationsdatei eine `location /up` definiert,
+  kann dieses Image bereits deployt werden.
+
+:::
+
+## App via Dockerfile lokal starten
+
+Wenn nun das `Dockerfile` erstellt wurde, kann mit dem Befehl die App gestartet
+werden.
+
+```bash
+docker compose up -d
+```
+
+Danach sollte über den Browser via http://localhost:8080 die App zugreifbar
+sein.
+
+:::info Wieso der Aufwand?
+
+Natürlich könnt Ihr auch mit dem development Mode `npm start` den selben Effekt
+generieren. Jedoch nur lokal! Nun mit dem Dockerfile kann die App überall wo
+docker installiert ist gestartet werden 🥳
 
 :::
