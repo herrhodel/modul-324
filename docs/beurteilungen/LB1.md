@@ -11,7 +11,7 @@ keywords:
 | Sozialform           | Form                                                            | Abgabe  | Punkte                |
 | :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
 | 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 4 | 10                    |
-| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)              | Woche 4 | 26                    |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 4 | 26                    |
 |                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
 |                      | 🏅 **LB1: Sprintnote**                                          | Woche 4 | **40% der Modulnote** |
@@ -34,7 +34,7 @@ direkt im Projekt eingecheckt.
 - Es werden **Plagiate geprüft**, wenn der verdacht besteht wird die **Note 1**
   für beide/alle Parteien gegeben.
 - Während den 45 Minuten sind **keine Hilfsmittel** erlaubt!
-  - Wenn Ihr euch schriftlich vorbereitet, macht es ausserhalb vom Repo.
+  - Wenn Ihr Euch schriftlich vorbereitet, macht es ausserhalb vom Repo.
 
 :::
 
@@ -48,15 +48,15 @@ direkt im Projekt eingecheckt.
 
 :::
 
-| Thema                                                                              | Punkte |
-| :--------------------------------------------------------------------------------- | -----: |
-| Alle Leitfragen sind beantwortet                                                   |      2 |
-| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.                   |      2 |
-| Die Antworten sind Tiefgründig und kritisch hinterfragt.                           |      2 |
-| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Leitfragen 1.7., 1.10)_ |      2 |
-| Die Reflexion wurde in gewünschter Form abgegeben                                  |      2 |
-| ...                                                                                |        |
-| **TOTAL**                                                                          | **10** |
+| Thema                                                                         | Punkte |
+| :---------------------------------------------------------------------------- | -----: |
+| Alle Fragen sind beantwortet                                                  |      2 |
+| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.              |      2 |
+| Die Antworten sind tiefgründig und kritisch hinterfragt.                      |      2 |
+| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.4., 1.7)_ |      2 |
+| Die Reflexion wurde in gewünschter Form abgegeben                             |      2 |
+| ...                                                                           |        |
+| **TOTAL**                                                                     | **10** |
 
 ### Wo wird die Reflexion geschrieben?
 
@@ -70,7 +70,7 @@ direkt im Projekt eingecheckt.
 
 :::caution Achtung!
 
-- Die Reflexionen müssen auf **alle** Leitfragen eingehen.
+- Die Reflexionen müssen auf **alle** Fragen eingehen.
 - Die Antworten sollen auch **kritisch** hinterfragen!
   - "Wir waren alle super und die Kommunikation war toll", ist keine wirkliche
     Reflexion!
@@ -109,36 +109,29 @@ Commit-Message: `docs(lb1): Reflexion Sprint 2 (Hodel)`
 
 :::
 
-### Leitfragen
+### Fragen
 
 #### Inhalt (Auch Lektion 1!)
 
 - 1.1. Welche verschiedenen Themen behandelten wir bis jetzt?
   - Bitte detailliert und nicht nur Stichworte!
-- 1.2. Waren Themen bereits bekannt?
-  - Wenn ja, woher?
-- 1.3. Was wurde in diesem Sprint erreicht?
-- 1.4. Was wurde in diesem Sprint nicht erreicht?
+- 1.2. Was haben die Themen mit dem Begriff DevOps zu tun?
 
 #### Gruppendynamik
 
-- 1.5. Wie war die Zusammenarbeit im Team?
-- 1.6. Auf was achtet Ihr bei der Kommunikation, damit diese konstruktiv ist?
-- 1.7. Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
+- 1.3. Wie war die Zusammenarbeit im Team?
+- 1.4. Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
 
 #### Lernzuwachs
 
-- 1.8. Was kann ich nun mehr als vorher?
-- 1.9. Welches Thema hat Sie am meisten interessiert?
-  - Bitte mit Begründung!
-- 1.10. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
+- 1.5. Was kann ich mehr als vorher?
+- 1.6. Welche Schwierigkeiten gab es?
+- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
 
-#### Lerneffekt (Ihr Projekt)
+#### Lerneffekt (auf Ihr Projekt bezogen)
 
-- 1.11 Was sollte beibehalten werden?
-  - Bezogen auf Ihr Projekt!
-- 1.12 Was sollte geändert werden?
-  - Bezogen auf Ihr Projekt!
+- 1.8 Was sollte beibehalten werden?
+- 1.9 Was sollte geändert werden?
 
 ## 2. Teilnote: Projektstand
 
@@ -151,7 +144,7 @@ Gruppe** analysiert und bewertet.
 
 :::caution Achtung Kollektivnote!
 
-- 👮 Bitte kontrolliert euch selbst, dass alle sich an die Vorgaben halten.
+- 👮 Bitte kontrolliert Euch selbst, dass alle sich an die Vorgaben halten.
 - 💡 Diese Note ist bewusst **nicht individuell**, damit die Gruppe sich
   zusammenrauft.
 - ⏲️ Es wird der **Stand vom Ende des Nachmittags** bewertet.
@@ -168,23 +161,23 @@ Gruppe** analysiert und bewertet.
 
 :::
 
-| Nr.  | Thema                                                                                                      | Max-Punkte |
-| :--: | :--------------------------------------------------------------------------------------------------------- | :--------: |
-| 2.1  | Der Projektbeschrieb ist aussagekräftig                                                                    |     2      |
-| 2.2  | Der Projektbeschrieb befindet sich am gewünschten Ort                                                      |     2      |
-| 2.3  | Epics verweisen auf Issues die ihn umsetzen                                                                |     2      |
-| 2.4  | Issues/Epics sind **klar und verständlich** beschrieben                                                    |     2      |
-| 2.5  | Issues/Epics sind **lösungsneutral** beschrieben                                                           |     2      |
-| 2.6  | Issues beinhalten **Akzeptanzkriterien**                                                                   |     2      |
-| 2.7  | Issues beschreiben **immer nur eine Aufgabe**                                                              |     2      |
-| 2.8  | Geschlossene Issues beinhalten ein **Protokoll/Beweis der ausgeführten Akzeptanzkriterien**                |     2      |
-| 2.9  | Es existiert eine "HelloWorld" Applikation in der spezifizierten gewünschten Technologie                   |     2      |
-| 2.10 | Es existiert ein README.md, welches beschreibt, wie das Projekt lokal zum Entwickeln gestartet werden kann |     2      |
-| 2.11 | Es wurde bereits ein Feature umgesetzt                                                                     |     2      |
-| 2.12 | Der Programmcode ist mit prettier/eslint formatiert oder folgt einer anderen gängigen Konvention           |     2      |
-| 2.13 | Alle Commit-Messages wurden wie gewünscht, als conventional-commits, geschrieben                           |     2      |
-|      | ...                                                                                                        |            |
-|      | **TOTAL**                                                                                                  |   **26**   |
+| Nr.  | Thema                                                                                                          | Max-Punkte |
+| :--: | :------------------------------------------------------------------------------------------------------------- | :--------: |
+| 2.1  | Der Projektbeschrieb ist aussagekräftig                                                                        |     2      |
+| 2.2  | Der Projektbeschrieb befindet sich am gewünschten Ort                                                          |     2      |
+| 2.3  | Epics verweisen auf Issues die ihn umsetzen                                                                    |     2      |
+| 2.4  | Issues/Epics sind **klar und verständlich** beschrieben                                                        |     2      |
+| 2.5  | Issues/Epics sind **lösungsneutral** beschrieben                                                               |     2      |
+| 2.6  | Issues beinhalten **Akzeptanzkriterien**                                                                       |     2      |
+| 2.7  | Issues beschreiben **immer nur eine Aufgabe**                                                                  |     2      |
+| 2.8  | Geschlossene Issues beinhalten ein **Protokoll/Beweis der ausgeführten Akzeptanzkriterien**                    |     2      |
+| 2.9  | Es existiert eine "HelloWorld" Applikation in der spezifizierten gewünschten Technologie                       |     2      |
+| 2.10 | Es existiert im Haupt-README.md, eine Beschreibung, wie das Projekt lokal zum Entwickeln gestartet werden kann |     2      |
+| 2.11 | Es wurde bereits ein **eigenes** Projekt-Feature umgesetzt                                                     |     2      |
+| 2.12 | Der Programmcode ist mit prettier/eslint formatiert oder folgt einer anderen gängigen Konvention               |     2      |
+| 2.13 | Alle Commit-Messages wurden wie gewünscht, als Conventional-Commits, geschrieben                               |     2      |
+|      | ...                                                                                                            |            |
+|      | **TOTAL**                                                                                                      |   **26**   |
 
 <!--
 - Epics sind vorhanden

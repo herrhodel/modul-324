@@ -50,10 +50,10 @@ direkt im Projekt eingecheckt.
 
 | Thema                                                                              | Punkte |
 | :--------------------------------------------------------------------------------- | -----: |
-| Alle Leitfragen sind beantwortet                                                   |      2 |
+| Alle Fragen sind beantwortet                                                   |      2 |
 | Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.                   |      2 |
 | Die Antworten sind tiefgründig und kritisch hinterfragt.                           |      2 |
-| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Leitfragen 1.7., 1.10)_ |      2 |
+| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.7., 1.10)_ |      2 |
 | Die Reflexion wurde in gewünschter Form abgegeben                                  |      2 |
 | ...                                                                                |        |
 | **TOTAL**                                                                          | **10** |
@@ -103,7 +103,7 @@ Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 
 :::
 
-### Leitfragen
+### Fragen
 
 :::danger nicht ganz gleich zum LB1!
 
@@ -113,32 +113,25 @@ Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 
 - 1.1. Welche verschiedenen Themen beinhaltete der Sprint?
   - Bitte detailliert und nicht nur Stichworte!
-- 1.2. Sind diese Themen zum Zeitpunkt im Projekt gut gewählt?
-  - Bitte mit Begründung!
-- 1.3. Was wurde in diesem Sprint erreicht?
-- 1.4 Was wurde in diesem Sprint nicht erreicht?
+- 1.2. Was haben die Themen mit dem Begriff DevOps zu tun?
 
 #### Gruppendynamik
 
-- 1.5. Wie war die Zusammenarbeit im Team?
-- 1.6. Hat sich die Kommunikation im Team verbessert seit dem ersten Sprint?
+- 1.3. Hat sich die Kommunikation im Team verändert seit dem ersten Sprint?
   - Erläutern Sie was sie geändert haben und welche positiven/negativen
     Auswirkungen es hatte.
-- 1.7. Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
+- 1.4. Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
 
 #### Lernzuwachs
 
-- 1.8. Was kann ich nun mehr als vorher?
-- 1.9. Welches neue Thema war überraschend einfach oder schwierig.
-  - Bitte mit Begründung!
-- 1.10. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
+- 1.5. Was kann ich nun mehr als vorher?
+- 1.6. Welche Schwierigkeiten gab es?
+- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
 
-#### Lerneffekt (Das Modul)
+#### Lerneffekt (bezogen auf das Modul)
 
-- 1.11 Was sollte beibehalten werden?
-  - Bezogen auf das Modul
-- 1.12 Was würden Sie anders machen?
-  - Bezogen auf das Modul
+- 1.8. Was sollte beibehalten werden?
+- 1.9. Was würden Sie anders machen?
 
 ## 2. Teilnote: Projektstand
 

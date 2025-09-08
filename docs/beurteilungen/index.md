@@ -14,21 +14,20 @@ Im Modul 324 gibt es 3 LBs:
 
 | Thema                                        | Abgabe  | Gewicht               |
 | :------------------------------------------- | :------ | :-------------------- |
-| 🏅 [**LB1: Sprintnote**](./LB1.md)           | Woche 4 | **1/3 der Modulnote** |
-| 🏅 [**LB2: Sprintnote**](./LB2.md)           | Woche 8 | **1/3 der Modulnote** |
-| 📝 [**LB3: Schriftliche Prüfung**](./LB3.md) | Woche 9 | **1/3 der Modulnote** |
+| 🏅 [**LB1: Sprintnote**](./LB1.md)           | Woche 4 | **40% der Modulnote** |
+| 🏅 [**LB2: Sprintnote**](./LB2.md)           | Woche 8 | **40% der Modulnote** |
+| 📝 [**LB3: Schriftliche Prüfung**](./LB3.md) | Woche 9 | **20% der Modulnote** |
 
 Die ersten zwei LBs bestehen je aus drei gleichwertigen Bewertungen:
 
 | Sozialform               | Form                      | Abgabe  | Gewicht    |
 | :----------------------- | :------------------------ | :------ | :--------- |
-| :smile: **Einzelarbeit** | 🗣️ Fachgespräch           | Woche 4 | 1/3 vom LB |
 | :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 4 | 1/3 vom LB |
-| 👬 **Gruppenarbeit**     | 👷 Arbeitsvorgang         | Woche 4 | 1/3 vom LB |
+| 👬 **Gruppenarbeit**     | 👷 Projektstand           | Woche 4 | 2/3 vom LB |
 
 :::caution
 
-Die Leitfragen zur schriftlichen Reflexion sind nicht exakt die gleichen. Schaut
+Die Fragen zur schriftlichen Reflexion sind nicht exakt die gleichen. Schaut
 euch also die Beschreibung jeder LBs einzeln an.
 
 :::
