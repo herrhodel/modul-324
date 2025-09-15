@@ -118,7 +118,7 @@ Nun wird ein Workflow mit zwei Steps gestartet:
 ![github_start_aws_infrastructure](images/github_start_aws_infrastructure.png)
 
 - Wenn alles grün ist (hoffentlich :sweat_smile:) sollte die Umgebung parat
-  sein, sodass Docker-Images deployed werden können.
+  sein, sodass Docker-Images deployt werden können.
 
 ### Nginx Image bauen und ausliefern (deployen)
 
