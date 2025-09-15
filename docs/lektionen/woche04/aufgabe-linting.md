@@ -69,6 +69,9 @@ name: Lint
 on:
   push:
     paths: app/**
+permissions:
+  checks: write
+  pull-requests: read
 jobs:
   lint:
     name: Lint
