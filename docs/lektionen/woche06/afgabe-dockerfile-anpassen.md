@@ -7,7 +7,7 @@ keywords:
 # Dockerfile
 
 Nun geht es darum ein `Dockerfile` für die eigene Applikation zu erstellen,
-damit diese nach AWS deployed werden kann.
+damit diese nach AWS deployt werden kann.
 
 Dazu wird in folgende Schritten vorgegangen:
 
@@ -356,7 +356,7 @@ CMD [ "node", "/app/dist/angular-app-name/server/server.mjs" ]
 
 </details>
 
-:::caution noch nicht ready zum deployen auf AWS
+:::caution noch nicht ready zum Deployen auf AWS
 
 - Die App wird zwar auf port 80 geserved. Die Angular App braucht aber noch eine
   Route `/up` die ein HTTP code 200 zurück, gibt!
@@ -456,7 +456,7 @@ LABEL service="myapp"
 ```
 
 Nun wird mit dem `COPY` Befehl, nicht vom Host Dateien kopiert, sondern vom
-vorherigen Image mit dem Namen "builder". Unterschiedlich zum SSG beispiel wird
+vorherigen Image mit dem Namen "builder". Unterschiedlich zum SSG Beispiel wird
 nur der Part für den Browser kopiert. Und zwar in den Nginx Html Ordner.
 
 ```Dockerfile
@@ -518,7 +518,7 @@ sein.
 
 :::info Wieso der Aufwand?
 
-Natürlich könnt Ihr auch mit dem development Mode `npm start` den selben Effekt
+Natürlich könnt Ihr auch mit dem development Mode `npm start` denselben Effekt
 generieren. Jedoch nur lokal! Nun mit dem Dockerfile kann die App überall wo
 docker installiert ist gestartet werden 🥳
 
