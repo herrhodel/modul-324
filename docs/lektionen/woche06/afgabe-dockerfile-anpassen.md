@@ -203,7 +203,7 @@ Es werden zwei Möglichkeiten vorgestellt die beide auf Angular aufbauen.
 
 :::note Multistage Image
 
-Die Dockerfiles beinhalten zwei `FORM` Befehle. Es handelt sich um sogenannte
+Die Dockerfiles beinhalten zwei `FROM` Befehle. Es handelt sich um sogenannte
 Multistage Images. Ein Multistage-Image ermöglicht es zusätzlichen Balast, der
 beim Builden benötigt wird (z.B. node_modules, etc.) im resultierten Image zu
 entfernen damit das gebaute Image so klein wie möglich ist.
