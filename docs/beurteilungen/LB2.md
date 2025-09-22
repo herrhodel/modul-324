@@ -10,8 +10,8 @@ keywords:
 
 | Sozialform           | Form                                                            | Abgabe  | Gewicht               |
 | :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
-| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 4 | 10                    |
-| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 4 | 26                    |
+| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 8 | 10                    |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 8 | 26                    |
 |                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
 |                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **40% der Modulnote** |
@@ -48,15 +48,15 @@ direkt im Projekt eingecheckt.
 
 :::
 
-| Thema                                                                              | Punkte |
-| :--------------------------------------------------------------------------------- | -----: |
+| Thema                                                                          | Punkte |
+| :----------------------------------------------------------------------------- | -----: |
 | Alle Fragen sind beantwortet                                                   |      2 |
-| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.                   |      2 |
-| Die Antworten sind tiefgründig und kritisch hinterfragt.                           |      2 |
+| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.               |      2 |
+| Die Antworten sind tiefgründig und kritisch hinterfragt.                       |      2 |
 | Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.7., 1.10)_ |      2 |
-| Die Reflexion wurde in gewünschter Form abgegeben                                  |      2 |
-| ...                                                                                |        |
-| **TOTAL**                                                                          | **10** |
+| Die Reflexion wurde in gewünschter Form abgegeben                              |      2 |
+| ...                                                                            |        |
+| **TOTAL**                                                                      | **10** |
 
 ### Wo wird die Reflexion geschrieben?
 
