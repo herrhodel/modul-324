@@ -30,7 +30,7 @@ erwünscht im Projektverlauf neue Epics und Issues zu erstellen.
 
 ## Issues und ihre Freunde
 
-Wenn Arbeitspakete erstellt werden, sollten die so isoliert wie möglich sein,
+Wenn Arbeitspakete erstellt werden, sollten sie so isoliert wie möglich sein,
 damit Sie unabhängig abgearbeitet werden können. Um dies zu ermöglichen ist es
 wichtig, dass die Issues nicht zu gross sind. Daher die Regel, dass ein Issue
 nur eine Aufgabe beinhalten soll.
@@ -90,14 +90,14 @@ Projektmitglied** zu erstellen.
 
 :::tip
 
-- Ein Epic "Sprint-Reflexionen" erstellen
-- Für alle ein Issue für die Reflexion zum Sprint 1 und 2 erstellen
+- Ein Epic "Sprint-Reflexionen" erstellen.
+- Für alle ein Issue für die Reflexion zum Sprint 1 und 2 erstellen.
 
 :::
 
 :::danger Notenrelevant
 
-- Achtet pingelig genau an die Anweisung unter Beurteilungen
+- Achtet pingelig genau an die Anweisung unter Beurteilungen.
 
 :::
 
@@ -121,13 +121,13 @@ Erstellt nun im GitHub Projekt neue Epics und Issues für euer Projekt.
 
 ### Hier ein Beispiel von Themen:
 
-- Administrative Issues wie z.B. Sprint-Reflexionen
-- Technologiewahl treffen
+- Administrative Issues wie z.B. Sprint-Reflexionen.
+- Technologiewahl treffen.
   - Die Programmiersprache ist **frei wählbar**
-- Infrastruktur aufbauen
-- Hello World mit gewählter Technologie
-- Erste Features beschreiben
-- Mockup resp. Wireframe erstellen
+- Infrastruktur aufbauen.
+- Hello World mit gewählter Technologie.
+- Erste Features beschreiben.
+- Mockup resp. Wireframe erstellen.
 
 :::tip Schaut euch Woche 3 an!
 

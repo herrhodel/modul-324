@@ -14,8 +14,8 @@ keywords:
 
 ## Inhalt
 
-- Alle Themen vom Unterricht
-- Alle Informationen sind auf der Modulwebseite vorhanden
+- Alle Themen vom Unterricht.
+- Alle Informationen sind auf der Modulwebseite vorhanden.
 
 ## Art
 

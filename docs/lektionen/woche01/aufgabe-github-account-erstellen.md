@@ -11,7 +11,7 @@ GitHub Account besitzt.
 
 ## :pen: Aufgaben
 
-- [x] [GitHub - Signup](https://github.com/signup) öffnen
+- [x] [GitHub - Signup](https://github.com/signup) öffnen.
 - [x] Einen Account mit der `ihr-name@bbzbl-it.ch` E-Mail-Adresse erstellen.
 
 ![GitHub signup](../../img/github_signup.png)

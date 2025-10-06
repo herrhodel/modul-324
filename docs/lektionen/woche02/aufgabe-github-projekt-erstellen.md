@@ -34,8 +34,8 @@ führen.
 
 ### Erstellt erste [📜 GitHub Issues](https://github.com/features/issues) und spielt damit
 
-- mit `#` kann das Repository ausgewählt werden, in welchem der Issue erstellt
-  werden soll (siehe gif)
+- Mit `#` kann das Repository ausgewählt werden, in welchem der Issue erstellt
+  werden soll (siehe gif).
 - Wird einfach nur ein "Item" erstellt, ist es ein "draft" im Projekt und noch
   nicht an einen Issue gebunden.
   ![create](./images/github-project-create-issue.gif)

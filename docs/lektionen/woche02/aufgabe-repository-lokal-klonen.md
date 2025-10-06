@@ -11,10 +11,10 @@ möglich sein, euer Repository lokal zu klonen.
 
 <div className="grid"><div>
 
-1. Unter Code Das grüne Dropdown `<> Code` öffnen
-2. Die **SSH Url** kopieren
-3. oder, sofern [GitHub Desktop](https://desktop.github.com/download/)
-   installiert, **Open with GitHub Desktop** wählen.
+1. Unter Code Das grüne Dropdown `<> Code` öffnen.
+2. Die **SSH Url** kopieren.
+3. oder, sofern [GitHub Desktop](https://desktop.github.com/download/).
+   installiert, **Open with GitHub Desktop** wählen
 
 </div><div>
 
@@ -38,9 +38,9 @@ git clone {kopierte-ssh-url-zum-repo}
 
 <div className="grid"><div>
 
-1. `File -> Open folder`
-2. Das frisch geklonte Repository auswählen
-3. Es sollte ungefähr wie rechts aussehen
+1. `File -> Open folder`.
+2. Das frisch geklonte Repository auswählen.
+3. Es sollte ungefähr wie rechts aussehen.
 
 </div><div>
 
@@ -59,4 +59,4 @@ In Kürze:
 - Die Kommando-Pallete öffnen mit `Ctrl+Shift+P` (Windows) oder
   `Command+Shift+P` (mac).
 - Nach **"Git: clone"** suchen
-- Bestätigen, die kopierte ssh-URL einfügen und dem Wizzard folgen.
+- Bestätigen, die kopierte SSH-URL einfügen und dem Wizard folgen.

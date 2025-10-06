@@ -23,10 +23,10 @@ AWS-Lerner-Lab zu starten.
 
 ### 3. Formular ausfüllen
 
-- Ein Passwort wählen
-- Die **Zeitzone auf Bern** stellen
-- AGB akzeptieren
-- Mit **"Register"** abschicken
+- Ein Passwort wählen.
+- Die **Zeitzone auf Bern** stellen.
+- AGB akzeptieren.
+- Mit **"Register"** abschicken.
 
 ![Amazon Registrieren](../../img/03_register.png)
 

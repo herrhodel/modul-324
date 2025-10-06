@@ -4,7 +4,7 @@ keywords:
   - pdf
 ---
 
-# LB 2 : Sprint 2
+# LB 2: Sprint 2
 
 ## Überblick
 
@@ -34,7 +34,7 @@ direkt im Projekt eingecheckt.
 - Es werden **Plagiate geprüft**, wenn der verdacht besteht wird die **Note 1**
   für beide/alle Parteien gegeben.
 - Während den 45 Minuten sind **keine Hilfsmittel** erlaubt!
-  - Wenn Ihr euch schriftlich vorbereitet, macht es ausserhalb vom Repo.
+  - Wenn Ihr Euch schriftlich vorbereitet, macht es ausserhalb vom Repo.
 
 :::
 
@@ -50,11 +50,11 @@ direkt im Projekt eingecheckt.
 
 | Thema                                                                          | Punkte |
 | :----------------------------------------------------------------------------- | -----: |
-| Alle Fragen sind beantwortet                                                   |      2 |
+| Alle Fragen sind beantwortet.                                                  |      2 |
 | Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.               |      2 |
 | Die Antworten sind tiefgründig und kritisch hinterfragt.                       |      2 |
-| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.7., 1.10)_ |      2 |
-| Die Reflexion wurde in gewünschter Form abgegeben                              |      2 |
+| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.4., 1.7)_. |      2 |
+| Die Reflexion wurde in gewünschter Form abgegeben.                             |      2 |
 | ...                                                                            |        |
 | **TOTAL**                                                                      | **10** |
 
@@ -80,11 +80,11 @@ direkt im Projekt eingecheckt.
 ```markdown
 # Hodel - Reflexion Sprint 2
 
-## 1.2 Welche verschiedenen Themen beinhaltete der Sprint?
+## 1.1. Welche verschiedenen Themen beinhaltete der Sprint?
 
 lorem ipsum...
 
-## 1.2 Sind diese Themen zum Zeitpunkt im Projekt gut gewählt, wenn ja, wieso?
+## 1.2. Was haben die Themen mit dem Begriff DevOps zu tun?
 
 lorem ipsum...
 
@@ -98,7 +98,7 @@ Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 :::info Wieso so kompliziert?
 
 1. Ihr wendet direkt Prinzipien von Git und GitHub an
-2. Ich habe dich Möglichkeit im Pull-Request einzelne Zeilen zu kommentieren
+2. Ihr habet die Möglichkeit im Pull Request einzelne Zeilen zu kommentieren
 3. Ihr verwendet mit conventional-commits direkt das Autorelease Feature
 
 :::
@@ -126,7 +126,7 @@ Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 
 - 1.5. Was kann ich nun mehr als vorher?
 - 1.6. Welche Schwierigkeiten gab es?
-- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
+- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 
 #### Lerneffekt (bezogen auf das Modul)
 
@@ -144,7 +144,7 @@ bewertet.
 
 :::danger Achtung Kollektivnote!
 
-- 👮 Bitte kontrolliert euch selbst, dass alle sich an die Vorgaben halten.
+- 👮 Bitte kontrolliert Euch selbst, dass alle sich an die Vorgaben halten.
 - 💡 Diese Note ist bewusst nicht individuell, damit die Gruppe sich
   zusammenrauft.
 - ⏲️ Es wird der **Stand vom Ende des Nachmittags** bewertet.
@@ -176,7 +176,7 @@ bewertet.
 | 2.10 | Applikation wird **via Semantischer-Versionierung Released** (Release-Please, GH-Action)        |     2      |
 | 2.11 | Ein Release generiert automatisch ein **Docker-Image** (GH-Action)                              |     2      |
 | 2.12 | Die AWS Umgebung wird durch **Terraform** automatisch aufgesetzt (GH-Action)                    |     2      |
-| 2.13 | Das Docker-Image wird **automatisch nach AWS deployed** und ist vom Kunde testbar (GH-Action)   |     2      |
+| 2.13 | Das Docker-Image wird **automatisch nach AWS deployt** und ist vom Kunde testbar (GH-Action)    |     2      |
 |      | ...                                                                                             |            |
 |      | **TOTAL**                                                                                       |   **26**   |
 
@@ -213,4 +213,4 @@ geeignete Artefakteverwaltung für die effiziente Arbeit im Team.
   - ✅ kamal-deploy.org nach AWS
 - Sie bestimmen eine geeignete Artefakt-Verwaltung und halten diese fest. [h2.4]
   (2.12)
-  - ✅ AWS docker image registry
+  - ✅ AWS Docker Image Registry

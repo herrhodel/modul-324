@@ -8,14 +8,14 @@ keywords:
 
 :dart: Arbeitsgrundlage schaffen | :dna: Gruppenarbeit | :clock1: 30 Min
 
-Ab jetzt arbeitet Ihr an eurem eigenen Projekt 🥳. Das Projekt könnt Ihr Euch
+Ab jetzt arbeitet Ihr an Eurem eigenen Projekt 🥳. Das Projekt könnt Ihr Euch
 selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
 
 ## Rahmenbedingungen
 
-- Es muss ein **Web-Projekt** sein
+- Es muss ein **Web-Projekt** sein.
   - Desktop Apps lassen sich schlecht nach AWS deployen :wink:
-- Es sollte ein **neues Projekt** sein
+- Es sollte ein **neues Projekt** sein.
   - Bestehenden Code anzupassen ist erfahrungsgemäss schwer für alle
     Mitarbeitenden, die den Code noch nicht kennen.
 
@@ -36,7 +36,7 @@ selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
 Ambitionierte Teammitglieder dürfen gerne parallel dazu ihr eigenes Setup bauen
 und mir pitchen.
 
-- 🙇 Ich bin sicher, ich kann viel von euch lernen.
+- 🙇 Ich bin sicher, ich kann viel von Euch lernen.
 - 🦸 Gut möglich, dass ich sogar das Template erweitere.
 
 :::
@@ -45,8 +45,8 @@ und mir pitchen.
 
 - Ein GitHub Issue, **Projekt finden**, erstellen.
 - Issue sinngemäss beschreiben **mit
-  [Akzeptanzkriterien](/docs/lektionen/woche02/aufgabe-erste-issues.md#issue-beschreibung-und-akzeptanzkriterien)**
-- Ein **neuer Branch** erstellen
+  [Akzeptanzkriterien](/docs/lektionen/woche02/aufgabe-erste-issues.md#issue-beschreibung-und-akzeptanzkriterien)**.
+- Ein **neuer Branch** erstellen.
 - Im Branch das Projekt im **root /README.md** beschreiben
   - :bulb: Ihr dürft auch zuerst in _Google Docs_ die Beschreibung ausarbeiten.
   - Am Ende sollte sie jedoch im README.md stehen.
@@ -54,7 +54,7 @@ und mir pitchen.
     - Den Titel _BBZBL Modul 324: Web-Applikation Template_ zu einem Heading 2
       ändern `##`
     - Einen eigenen Heading 1 Title, mit dem Projektnamen, einfügen
-      `# Unser tolles Projekt`
+      `# Unser tolles Projekt`.
     - Darunter die Beschreibung einfügen.
 
 :::tip
@@ -91,4 +91,4 @@ alles hier bleibt gleich...
 :::
 
 - Einen **Pull Request** erstellen
-- Der Pull Request mergen, wenn er **von allen Approved** wurde.
+- Der Pull Request mergen, wenn er **von allen "Approved"** wurde.

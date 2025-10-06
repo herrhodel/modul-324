@@ -33,7 +33,7 @@ GitHub Action passieren. Der Feedback-Loop ist jedoch eher bescheiden.
 
 ## Git
 
-- [Git](https://github.com/git-guides/install-git#install-git) <br/> oder
+- [Git](https://github.com/git-guides/install-git#install-git)<br/> oder
   [Github Desktop](https://desktop.github.com/download/) Macht das Clonen
   einfacher auf Windows
 

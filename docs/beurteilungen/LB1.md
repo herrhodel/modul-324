@@ -4,7 +4,7 @@ keywords:
   - pdf
 ---
 
-# LB 1 : Lektion 1 / Sprint 1
+# LB 1: Lektion 1 / Sprint 1
 
 ## Überblick
 
@@ -48,15 +48,15 @@ direkt im Projekt eingecheckt.
 
 :::
 
-| Thema                                                                         | Punkte |
-| :---------------------------------------------------------------------------- | -----: |
-| Alle Fragen sind beantwortet                                                  |      2 |
-| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.              |      2 |
-| Die Antworten sind tiefgründig und kritisch hinterfragt.                      |      2 |
-| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.4., 1.7)_ |      2 |
-| Die Reflexion wurde in gewünschter Form abgegeben                             |      2 |
-| ...                                                                           |        |
-| **TOTAL**                                                                     | **10** |
+| Thema                                                                          | Punkte |
+| :----------------------------------------------------------------------------- | -----: |
+| Alle Fragen sind beantwortet.                                                  |      2 |
+| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.               |      2 |
+| Die Antworten sind tiefgründig und kritisch hinterfragt.                       |      2 |
+| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.4., 1.7)_. |      2 |
+| Die Reflexion wurde in gewünschter Form abgegeben.                             |      2 |
+| ...                                                                            |        |
+| **TOTAL**                                                                      | **10** |
 
 ### Wo wird die Reflexion geschrieben?
 
@@ -104,8 +104,8 @@ Commit-Message: `docs(lb1): Reflexion Sprint 2 (Hodel)`
 :::info Wieso so kompliziert?
 
 1. Ihr wendet direkt Prinzipien von Git und GitHub an
-2. Ich habe dich Möglichkeit im Pull-Request einzelne Zeilen zu kommentieren
-3. Ihr verwendet mit conventional-commits direkt das autorelease Feature
+2. Ihr habt die Möglichkeit im Pull Request einzelne Zeilen zu kommentieren
+3. Ihr verwendet mit Conventional-Commits direkt das Autorelease Feature
 
 :::
 
@@ -126,7 +126,7 @@ Commit-Message: `docs(lb1): Reflexion Sprint 2 (Hodel)`
 
 - 1.5. Was kann ich mehr als vorher?
 - 1.6. Welche Schwierigkeiten gab es?
-- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz.
+- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 
 #### Lerneffekt (auf Ihr Projekt bezogen)
 
@@ -165,7 +165,7 @@ Gruppe** analysiert und bewertet.
 | :--: | :------------------------------------------------------------------------------------------------------------- | :--------: |
 | 2.1  | Der Projektbeschrieb ist aussagekräftig                                                                        |     2      |
 | 2.2  | Der Projektbeschrieb befindet sich am gewünschten Ort                                                          |     2      |
-| 2.3  | Epics verweisen auf Issues die ihn umsetzen                                                                    |     2      |
+| 2.3  | Epics verweisen auf Issues, die ihn umsetzen                                                                   |     2      |
 | 2.4  | Issues/Epics sind **klar und verständlich** beschrieben                                                        |     2      |
 | 2.5  | Issues/Epics sind **lösungsneutral** beschrieben                                                               |     2      |
 | 2.6  | Issues beinhalten **Akzeptanzkriterien**                                                                       |     2      |
@@ -228,7 +228,7 @@ verknüpft.
 **Irrelevant durch Tooling**
 
 - Sie versehen Anforderungen mit einer eindeutigen Bezeichnung. [g1.5]
-  - ✅ sofern GitHub issues verwendet sowieso gegeben.
+  - ✅ sofern GitHub Issues verwendet sowieso gegeben.
 
 ### Modifikation
 

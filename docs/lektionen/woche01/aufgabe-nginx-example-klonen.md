@@ -14,7 +14,7 @@ angepasst wird.
 
 :::tip Ziel
 
-- 🎯 Das Ziel vom Modul ist es, dass jeder mindestens diese Beispiel App
+- 🎯 Das Ziel vom Modul ist es, dass jeder mindestens diese Beispiel-App
   verstanden hat.
 
 :::
@@ -153,9 +153,9 @@ Nun ist die Web-App auf AWS ausgeliefert und öffentlich verfügbar.
 Nun ist es möglich Änderungen an der App vorzunehmen, welche automatisch auf AWS
 deployed werden!
 
-- Navigiert zu **"Code -> app -> src -> index.html"** und klickt auf **"Edit"**
+- Navigiert zu **"Code → app → src → index.html"** und klickt auf **"Edit"**
   <!-- ![Edit index.html](../../img/github_edit_index_html.png) -->
-  ![github_edit_index_html](images/github_edit_index_html.png)
+  ![github_edit_index_html](images/github_edit_index_html.png).
 - Fügt folgenden Tag in den Body ein
 
   ```html
@@ -174,10 +174,10 @@ deployed werden!
 
   ![Commit](../../img/github_edit_index_html_commit_pr.png)
 
-- In einem Pull-Request, könnte man nun den Code-Change kommentieren
+- In einem Pull-Request, könnte man den Code-Change kommentieren.
 - Nach dem mergen wird automatisch die GitHub Action **"Deploy to Amazon AWS"**
   gestartet.
 - Warten bis die GitHub Action fertig ist
   ![Commit Action](../../img/github_edit_index_html_action.png)
 
-- **:boom: Nun die Webseite refreshen**
+- **💥 Jetzt die Webseite aktualisieren**
