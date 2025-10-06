@@ -5,14 +5,6 @@ sidebar_label: 🏠 Modul 324
 
 # Willkommen im Modul 324
 
-:::info Ab Woche 3 in Bearbeitung!
-
-Grundsätzlich ist immer die ganze Modulwebseite von Anfang an für euch sichtbar.
-Ich möchte jedoch betonen, dass das Modul momentan leicht umstrukturiert wird
-und somit wochenweise Änderungen vorgenommen werden.
-
-:::
-
 ## :calendar: Quartalsübersicht
 
 |                      Woche                       |            Datum            | Thema                                                                                | Leistungsbewertung                                            |
