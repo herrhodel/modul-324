@@ -28,7 +28,7 @@ Auf der Wandtafel gibt es eine Tabelle mit folgenden Kategorien:
 | ------------ | ------------- | ------------- |
 | -            | -             | -             |
 
-- Überlegt in welcher Ihr euch am ehsten sieht.
+- Überlegt in welcher Ihr Euch am ehesten sieht.
 - Anhand der Einschätzungen werden nun 3er Gruppen erstellt
 - Am Besten ist es, wenn jede Gruppe je eine Person von jeder Kategorie
   beinhaltet.
