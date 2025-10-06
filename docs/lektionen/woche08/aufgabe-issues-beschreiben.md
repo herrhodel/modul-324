@@ -15,9 +15,9 @@ bewertet.
 :::caution
 
 Achten Sie darauf, dass alle
-[Bewertungskriterien](/docs/beurteilungen/LB2.md#bewertung) eingehalten
+[Bewertungskriterien](/docs/beurteilungen/LB2.md#bewertung-1) eingehalten
 wurden.
 
-- :bulb: **Die sind anders als bei der LB1!**
+- 💡 **Die sind anders als bei der LB1!**
 
 :::
