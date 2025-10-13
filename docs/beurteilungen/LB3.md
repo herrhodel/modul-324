@@ -4,7 +4,7 @@ keywords:
   - pdf
 ---
 
-# LB 3 : Modul-Abschlussprüfung
+# LB 3: Modul-Abschlussprüfung
 
 ## Überblick
 
@@ -14,8 +14,14 @@ keywords:
 
 ## Inhalt
 
-- Alle Themen vom Unterricht.
-- Alle Informationen sind auf der Modulwebseite vorhanden.
+- DevOps
+- CI/CD
+- Projektmanagement, Arbeitspakete, Aufgaben
+- Semantische Versionierung
+- Grundlegende `Dockerfile` Befehle
+- GitHub Actions Basiswissen
+- Formatierung und Linting
+- Testing
 
 ## Art
 
