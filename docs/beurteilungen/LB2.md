@@ -18,9 +18,9 @@ keywords:
 
 ## 1. Teilnote: Schriftliche Reflexion
 
-| Sozialform               | Form        |  Zeit  | Abgabe  | Gewicht     |
-| :----------------------- | :---------- | :----: | :------ | :---------- |
-| :smile: **Einzelarbeit** | schriftlich | 45 Min | Woche 8 | 1/3 vom LB2 |
+| Sozialform               | Form        |  Zeit  | Abgabe  | Gewicht       |
+| :----------------------- | :---------- | :----: | :------ | :------------ |
+| :smile: **Einzelarbeit** | schriftlich | 45 Min | Woche 8 | 10/36 vom LB2 |
 
 Am **Ende des Sprints** wird in der **letzten Lektion**, in **Einzelarbeit**
 eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
@@ -138,9 +138,9 @@ Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 Am **Ende des Sprint 2** wird der **Arbeitsvorgang der Gruppe** analysiert und
 bewertet.
 
-| Sozialform           | Form         | Abgabe  |     Gewicht |
-| :------------------- | :----------- | :-----: | ----------: |
-| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 1/3 vom LB2 |
+| Sozialform           | Form         | Abgabe  |       Gewicht |
+| :------------------- | :----------- | :-----: | ------------: |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 8 | 26/36 vom LB2 |
 
 :::danger Achtung Kollektivnote!
 
