@@ -6,7 +6,7 @@ keywords:
 
 # Am Projekt arbeiten
 
-In diesem Sprint ging es darum am Projekt aktiv zu arbeiten, Dockerfiles zu
+In diesem Sprint ging es darum, am Projekt aktiv zu arbeiten, Dockerfiles zu
 erstellen, Tests zu schreiben und die CI/CD Pipeline nach AWS aufzusetzen. Dies
 wird als
 [LB2: Teilnote Projektstand](/docs/beurteilungen/LB2.md#2-teilnote-projektstand)

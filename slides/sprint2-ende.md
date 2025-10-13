@@ -18,17 +18,17 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: columns
 
-1. Fragen klären um arbeiten zu können
+## 🎯 Projektende
 
-## :speaking_head: Fachgespräche
-
-- Ihr arbeitet an der Beschreibung der Issues, [**die werden Bewertet**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#teilnote-arbeitsvorgang)!
-- [**Reflexion schreiben!**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#teilnote-schriftliche-reflexion)
+- Der Stand vom Projekt am Ende der vierten Lektion wird
+  [bewertet](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#2-teilnote-projektstand)
 
 :::split s2
 
-## Reihenfolge
+## 🪞🖋️ Schriftliche Reflexion
 
-- nur im Unterricht ersichtlich
+- In der vierten Lektion schreibt Ihr wieder eine Reflexion.
+- Diese wird
+  [bewertet](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#1-teilnote-schriftliche-reflexion)
 
 :::
