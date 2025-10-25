@@ -14,7 +14,7 @@ keywords:
 
 ## Inhalt
 
-- DevOps
+- DevOps / Prinzipien vom Modul
 - CI/CD
 - Projektmanagement, Arbeitspakete, Aufgaben
 - Semantische Versionierung
