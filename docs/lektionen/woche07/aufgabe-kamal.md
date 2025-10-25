@@ -6,7 +6,7 @@ keywords:
 
 # Kamal Konfigurieren
 
-Im Musterbeispiel verwenden wir [kamal](https://kamal-deploy.org) um die
+Im Musterbeispiel verwenden wir [Kamal](https://kamal-deploy.org) um die
 Applikation zu einer EC2 Virtuellen Instanz auf AWS zu deployen.
 
 Natürlich hätte AWS viele andere Möglichkeiten eine App zu deployen. Diese sind
@@ -15,7 +15,7 @@ Anspruch, Techniken zu vermitteln, welche Open-Source sind und es Euch
 ermöglicht das Wissen ohne teure Lizenzen auch privat oder im Geschäft
 anzuwenden.
 
-## Was ist kamal?
+## Was ist Kamal?
 
 > [Kamal](https://kamal-deploy.org) offers zero-downtime deploys, rolling
 > restarts, asset bridging, remote builds, accessory service management, and

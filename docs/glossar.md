@@ -1,16 +1,9 @@
-# Woche 7
+---
+sidebar_position: 2
+# sidebar_class_name: warning
+---
 
-:::note **[Sprint 2 - Build it!](/docs/sprints/sprint-2/index.md)**
-
-:::
-
-## Thema
-
-## Aufgaben
-
-<DocCardList />
-
-## Buzzwords
+# 💡 Glossar
 
 - **Angular**: Ein JavaScript Framework von Google.
 
