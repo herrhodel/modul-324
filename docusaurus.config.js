@@ -14,7 +14,6 @@ const config = {
   url: modulConfig.url,
   baseUrl: `/${modulConfig.repoName}/`,
   onBrokenLinks: "log",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
 
   future: {
@@ -24,6 +23,9 @@ const config = {
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
   },
 
   // GitHub pages deployment config.
@@ -39,27 +41,18 @@ const config = {
     locales: ["de"],
   },
 
-  themes: [
-    // [
-    //   require.resolve("@easyops-cn/docusaurus-search-local"),
-    //   {
-    //     hashed: true,
-    //     language: ["de"],
-    //     indexBlog: false,
-    //     indexPages: true,
-    //   },
-    // ],
-    require.resolve("@docusaurus/theme-mermaid"),
-  ],
+  themes: [require.resolve("@docusaurus/theme-mermaid")],
 
   plugins: [
     // "@orama/plugin-docusaurus-v3",
     [
       "devserver-config",
       {
-        proxy: {
-          [`/${modulConfig.repoName}/slides`]: {
+        proxy: [
+          {
+            context: `/${modulConfig.repoName}/slides`,
             target: "http://localhost:4001",
+            secure: false,
             pathRewrite: function (
               /** @type {string} */ path,
               /** @type {any} */ _req,
@@ -72,7 +65,7 @@ const config = {
               );
             },
           },
-        },
+        ],
       },
     ],
   ],
