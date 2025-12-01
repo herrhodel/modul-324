@@ -17,7 +17,7 @@ Dazu wird in folgende Schritten vorgegangen:
 
 ## Datei `docker-compose.yml` erstellen
 
-Gundsätzlich wäre `docker compse` nicht nötig. Da es jedoch das Bauen, Starten
+Gundsätzlich wäre `docker compose` nicht nötig. Da es jedoch das Bauen, Starten
 und Stoppen von Containern vereinfacht, ist es empfohlen. So kann gewährleistet
 werden, dass alle den Container lokal gleich starten. Daher dient es zugleich
 als Dokumentation.

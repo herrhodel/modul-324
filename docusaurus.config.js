@@ -95,6 +95,9 @@ const config = {
       mermaid: {
         theme: { light: "neutral", dark: "forest" },
       },
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: modulConfig.title,
         logo: {
@@ -122,7 +125,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        copyright: `Made with ❤️ in Pratteln`,
+        copyright: `Copyright © ${new Date().getFullYear()} BBZBL, Made with ❤️ in Pratteln`,
       },
       prism: {
         theme: lightCodeTheme,
