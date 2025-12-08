@@ -6,6 +6,7 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 // const oembed = require("@agentofuser/remark-oembed");
 const modulConfig = require("./modul.config");
+const remarkEmbedPlugin = require("./src/plugins/remark-embed");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -80,7 +81,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `${modulConfig.url}/${modulConfig.repoName}`,
-          remarkPlugins: [],
+          // remarkPlugins: [],
+          beforeDefaultRemarkPlugins: [remarkEmbedPlugin],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

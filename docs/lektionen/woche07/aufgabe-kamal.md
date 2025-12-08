@@ -44,6 +44,33 @@ wie davor von Terraform.
 - Kopiert nun den gesamten Ordner
   [`kamal`](https://github.com/herrhodel/modul-324-muster/tree/main/kamal)
 
+:::caution
+
+- Achtet darauf, dass im
+  [**app/Dockerfile**](https://github.com/herrhodel/modul-324-muster/blob/main/app/Dockerfile#L6-L6),
+  nach dem letzten `FROM` ein `LABEL service="myapp"` existieren muss.
+- Das Label entspricht dem
+  [**`service` Name der Kamal Konfiguration**](https://github.com/herrhodel/modul-324-muster/blob/main/kamal/config/deploy.yml#L5-L5).
+
+```dockerfile title="app/Dockerfile"
+...
+# INFO: Das label "service" muss gesetzt damit kamal deploy funktioniert
+#       Der Wert muss gleich sein wie der name `../kamal/config/deploy.yml`
+LABEL service="myapp"
+...
+```
+
+```yaml title="kamal/config/deploy.yml"
+
+...
+# WARNING: muss gleich sein zum Label "service" des zu deployende Dockerfile
+#          siehe: `../../app/Dockerfile`
+service: myapp
+...
+```
+
+:::
+
 ## GitHub Action starten
 
 Nun könnt Ihr die Action "Setup Infrastructure on Amazon AWS" erneut starten.
