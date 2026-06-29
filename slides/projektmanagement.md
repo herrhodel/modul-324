@@ -53,12 +53,12 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## Start
 
-- [**GitHub Issues**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#bewertung-1):
+- [**GitHub Issues**](/docs/beurteilungen/LB1#bewertung-1):
   Aufgaben beschreiben und ausarbeiten
 
 ## Ende
 
-- [**Persönliche Reflexion**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#teilnote-schriftliche-reflexion):
+- [**Persönliche Reflexion**](/docs/beurteilungen/LB1#teilnote-schriftliche-reflexion):
   Retrospektive auf den Sprint
 
 ::: split
@@ -67,7 +67,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 - **10' Stand-up**:<br> Planen, austauschen, Aufgaben verteilen
 
-- [**Pull-Requests / Commits:**](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB1#teilnote-arbeitsvorgang)<br>
+- [**Pull-Requests / Commits:**](/docs/beurteilungen/LB1#teilnote-arbeitsvorgang)<br>
   Aufgaben ausführen
 
 :::

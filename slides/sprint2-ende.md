@@ -21,7 +21,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 ## 🎯 Projektende
 
 - Der Stand vom Projekt am Ende der vierten Lektion wird
-  [bewertet](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#2-teilnote-projektstand)
+  [bewertet](/docs/beurteilungen/LB2#2-teilnote-projektstand)
 
 :::split s2
 
@@ -29,6 +29,6 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 - In der vierten Lektion schreibt Ihr wieder eine Reflexion.
 - Diese wird
-  [bewertet](https://herrhodel.github.io/modul-324/docs/beurteilungen/LB2#1-teilnote-schriftliche-reflexion)
+  [bewertet](/docs/beurteilungen/LB2#1-teilnote-schriftliche-reflexion)
 
 :::

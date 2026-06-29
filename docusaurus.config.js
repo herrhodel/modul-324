@@ -44,32 +44,7 @@ const config = {
 
   themes: [require.resolve("@docusaurus/theme-mermaid")],
 
-  plugins: [
-    // "@orama/plugin-docusaurus-v3",
-    [
-      "devserver-config",
-      {
-        proxy: [
-          {
-            context: `/${modulConfig.repoName}/slides`,
-            target: "http://localhost:4001",
-            secure: false,
-            pathRewrite: function (
-              /** @type {string} */ path,
-              /** @type {any} */ _req,
-            ) {
-              if (path.match(/.*\..*$/)) {
-                return path.replace(`/${modulConfig.repoName}/slides`, "");
-              }
-              return (
-                path.replace(`/${modulConfig.repoName}/slides`, "") + ".md"
-              );
-            },
-          },
-        ],
-      },
-    ],
-  ],
+  plugins: ["@orama/plugin-docusaurus-v3"],
 
   presets: [
     [
