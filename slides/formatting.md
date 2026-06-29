@@ -23,7 +23,7 @@ Definition der **Darstellung des Codes** durch
 - **Einzüge**
 - **Zeilenumbrüche**
 
-![bg right fit](./images/formating-html.gif)
+![bg right fit](./img/formating-html.gif)
 
 ---
 
@@ -77,7 +77,7 @@ Definition der **Darstellung des Codes** durch
 Wenn `Format On Save` aktiviert ist, wird automatisch formatiert, sobald die
 Datei gespeichert wird.
 
-![bg right fit](images/vscode-settings-format-on-save.jpg)
+![bg right fit](img/vscode-settings-format-on-save.jpg)
 
 ---
 

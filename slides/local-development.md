@@ -33,7 +33,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - [Git](https://github.com/git-guides/install-git#install-git) oder
   [Github Desktop](https://desktop.github.com/download/)
 
-![bg right](images/local-tools.png)
+![bg right](img/local-tools.png)
 
 ---
 
@@ -45,7 +45,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 3. oder Sofern [GitHub Desktop](https://desktop.github.com/download/)
    installiert wurde **Open with GitHub Desktop** wählen.
 
-![bg right fit](./images/github-repository-clone.png)
+![bg right fit](./img/github-repository-clone.png)
 
 ---
 
@@ -55,7 +55,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 um git repositories zu verwalten. In Github Desktop kann man mit einem GUI
 Commiten.
 
-![bg right fit](images/github-desktop-overview.png)
+![bg right fit](img/github-desktop-overview.png)
 
 ---
 
@@ -67,7 +67,7 @@ Commiten.
 
 3. Es sollte ungefähr wie rechts aussehen
 
-![bg right fit](images/vscode-open-folder.png)
+![bg right fit](img/vscode-open-folder.png)
 
 ---
 
@@ -80,7 +80,7 @@ Commiten.
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-![bg right](images/vscode-plugins.png)
+![bg right](img/vscode-plugins.png)
 
 ---
 
@@ -94,7 +94,7 @@ sofern "Devcontainer" installiert wurde.
 - Nun wird der Container gebaut und gestartet. **Das kann einige Minuten
   dauern!**
 
-![bg right fit](images/vscode-open-in-devcontainer.png)
+![bg right fit](img/vscode-open-in-devcontainer.png)
 
 ---
 
@@ -106,7 +106,7 @@ sofern "Devcontainer" installiert wurde.
 3. Unten rechts ist ersichtlich ob VS Code in einem Container geöffnet
    wird/wurde.
 
-![bg right fit](images/vscode-open-devcontainer-logs.png)
+![bg right fit](img/vscode-open-devcontainer-logs.png)
 
 ---
 
@@ -119,7 +119,7 @@ sofern "Devcontainer" installiert wurde.
 
 3. Die Dateien sind "gemountet" unter `/workspace`
 
-![bg right fit](images/vscode-devcontainer-open-terminal.png)
+![bg right fit](img/vscode-devcontainer-open-terminal.png)
 
 ---
 
@@ -170,7 +170,7 @@ Optional (Auskommentiert):
 - Terraform um in AWS die Infrastruktur hochzufahren
 - Kamal um ein Dockerfile zu deployen
 
-![bg right fit](images/vscode-devcontainer-tools.png)
+![bg right fit](img/vscode-devcontainer-tools.png)
 
 ---
 

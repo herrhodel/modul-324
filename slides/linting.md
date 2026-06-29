@@ -27,7 +27,7 @@ Garantiert die **funktionale Korrektheit** durch das Identifizieren von:
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [SonarQube for IDE](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
 
-![bg right fit](./images/linting-htmlhint.jpg)
+![bg right fit](./img/linting-htmlhint.jpg)
 
 ---
 

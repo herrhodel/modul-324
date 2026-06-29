@@ -20,7 +20,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - Google Play Store
 - Windows Store
 
-![bg right fit](images/appstore.png)
+![bg right fit](img/appstore.png)
 
 ---
 

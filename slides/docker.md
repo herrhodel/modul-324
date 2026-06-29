@@ -16,7 +16,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Warentransport früher
 
-![bg right fit](./images/alamy-rheinlaender-handelswagen.jpg)
+![bg right fit](./img/alamy-rheinlaender-handelswagen.jpg)
 
 - Verschiedene Dinge
 - Verschiedene Grössen
@@ -32,11 +32,11 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: columns
 
-![inline fit](./images/pexels-container-shiff.jpg)
+![inline fit](./img/pexels-container-shiff.jpg)
 
 :::split
 
-![inline fit](./images/pexels-container-lkw.jpg)
+![inline fit](./img/pexels-container-lkw.jpg)
 
 :::
 
@@ -44,7 +44,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Software ausliefern
 
-![inline](images/software-delivery-berfore-after-docker.png)
+![inline](img/software-delivery-berfore-after-docker.png)
 
 ::: columns
 
@@ -61,7 +61,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Docker Prinzip
 
-![inline](./images/docker-file-image-container.png)
+![inline](./img/docker-file-image-container.png)
 
 ---
 

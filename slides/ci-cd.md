@@ -16,7 +16,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## CI - Continious Integration
 
-![bg right fit](images/ci-cd-pipeline.jpg)
+![bg right fit](img/ci-cd-pipeline.jpg)
 
 **build** - des Programmcodes<br/> `npm run build`, `mvn build`
 

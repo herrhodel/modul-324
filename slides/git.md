@@ -181,7 +181,7 @@ git merge fix#1
 
 # Semantic Versioning
 
-![width:900px](./images/semvers.png)
+![width:900px](./img/semvers.png)
 
 ---
 

@@ -62,9 +62,9 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Programmieren
 
-<!-- ![bg right fit](images/luki-code.png) -->
+<!-- ![bg right fit](img/luki-code.png) -->
 
-![bg right fit](images/luki-code-wider.png)
+![bg right fit](img/luki-code-wider.png)
 
 - Neue Software erschaffen
 - Bestehende Software verbessern/erweitern
@@ -96,7 +96,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 # Ausliefern
 
-<!-- ![bg right](./images/pexels-container-shiff.jpg) -->
+<!-- ![bg right](./img/pexels-container-shiff.jpg) -->
 
 ![bg right](https://images.pexels.com/photos/169523/pexels-photo-169523.jpeg)
 
@@ -246,7 +246,7 @@ DevOps verbindet den **IT-Betrieb** mit der **Software Entwicklung** durch
 
 ---
 
-![bg w:65%](./images/devops-loop.png)
+![bg w:65%](./img/devops-loop.png)
 
 ---
 

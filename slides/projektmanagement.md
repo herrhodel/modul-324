@@ -43,7 +43,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-![bg w:60%](./images/how_eduScrum_works.png)
+![bg w:60%](./img/how_eduScrum_works.png)
 
 ---
 
@@ -96,7 +96,7 @@ umzusetzen.
 
 > ## <!-- fit --> :bulb: Wenn ein "und" im Titel steht, kann es meistens Aufgesplittet werden.
 
-![bg right fit](images/github-issue-direct.png)
+![bg right fit](img/github-issue-direct.png)
 
 ---
 
@@ -107,7 +107,7 @@ umzusetzen.
 - Dienen als **Gruppierung** von Arbeitspaketen
 - **Löst selbst die Aufgabe nicht**, sondern verlinkt zu Issues
 
-![bg right fit](images/github-issue-direct.png)
+![bg right fit](img/github-issue-direct.png)
 
 ---
 
@@ -118,7 +118,7 @@ umzusetzen.
 
 > :bulb: Sind nicht einem Repository untergeordnet (leider!)
 
-![bg right fit](images/github-kanban-board.png)
+![bg right fit](img/github-kanban-board.png)
 
 ---
 
@@ -134,4 +134,4 @@ Ein "Item" im Projekt, dass kein Issue repräsentiert ist mit "draft" markiert.
 
 - Ein "Draft" kann zu einem Issue umgewandelt werden.
 
-![bg right fit](images/issue-referenzen.png)
+![bg right fit](img/issue-referenzen.png)
