@@ -10,7 +10,7 @@ keywords:
 
 | Sozialform          | Form                    | Abgabe  | Gewicht               |
 | :------------------ | :---------------------- | :------ | :-------------------- |
-| 😅 **Einzelarbeit** | 📝 Schriftliche Prüfung | Woche 9 | **20% der Modulnote** |
+| 😅 **Einzelarbeit** | 📝 Schriftliche Prüfung | Woche 9 | **50% der Modulnote** |
 
 ## Inhalt
 

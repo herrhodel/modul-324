@@ -14,7 +14,7 @@ keywords:
 | 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 4 | 26                    |
 |                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
-|                      | 🏅 **LB1: Sprintnote**                                          | Woche 4 | **40% der Modulnote** |
+|                      | 🏅 **LB1: Sprintnote**                                          | Woche 4 | **25% der Modulnote** |
 
 ## 1. Teilnote: Schriftliche Reflexion
 
@@ -124,14 +124,13 @@ Commit-Message: `docs(lb1): Reflexion Sprint 2 (Hodel)`
 
 #### Lernzuwachs
 
-- 1.5. Was kann ich mehr als vorher?
+- 1.5. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 - 1.6. Welche Schwierigkeiten gab es?
-- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 
 #### Lerneffekt (auf Ihr Projekt bezogen)
 
-- 1.8 Was sollte beibehalten werden?
-- 1.9 Was sollte geändert werden?
+- 1.7 Was sollte beibehalten werden?
+- 1.8 Was sollte geändert werden?
 
 ## 2. Teilnote: Projektstand
 
@@ -179,10 +178,12 @@ Gruppe** analysiert und bewertet.
 |      | ...                                                                                                            |            |
 |      | **TOTAL**                                                                                                      |   **26**   |
 
-<!--
+{/*
+
 - Epics sind vorhanden
 - Es sind schon mehr als 5 eigene Issues beschrieben
--->
+
+*/}
 
 ## LB1 der offiziellen Modulidentifikation
 

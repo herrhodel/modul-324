@@ -1,10 +1,10 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-const { themes } = require("prism-react-renderer");
-const lightCodeTheme = themes.github;
-const darkCodeTheme = themes.dracula;
-// const oembed = require("@agentofuser/remark-oembed");
+import { themes as prismThemes } from "prism-react-renderer";
 const modulConfig = require("./modul.config");
 const remarkEmbedPlugin = require("./src/plugins/remark-embed");
 
@@ -19,7 +19,7 @@ const config = {
 
   future: {
     v4: true,
-    experimental_faster: true,
+    faster: true,
   },
 
   markdown: {
@@ -73,7 +73,7 @@ const config = {
 
   presets: [
     [
-      "@docusaurus/preset-classic",
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
@@ -81,7 +81,6 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `${modulConfig.url}/${modulConfig.repoName}`,
-          // remarkPlugins: [],
           beforeDefaultRemarkPlugins: [remarkEmbedPlugin],
         },
         theme: {
@@ -130,9 +129,16 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} BBZBL, Made with ❤️ in Pratteln`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ["java", "bash", "docker"],
+        theme: prismThemes.oneLight,
+        darkTheme: prismThemes.oneDark,
+        additionalLanguages: [
+          "java",
+          "bash",
+          "docker",
+          "python",
+          "yaml",
+          "markdown",
+        ],
         magicComments: [
           // Remember to extend the default highlight class name as well!
           {
@@ -178,4 +184,4 @@ const config = {
       },
     }),
 };
-module.exports = config;
+export default config;

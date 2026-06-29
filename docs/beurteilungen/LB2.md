@@ -14,7 +14,7 @@ keywords:
 | 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 8 | 26                    |
 |                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
-|                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **40% der Modulnote** |
+|                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **25% der Modulnote** |
 
 ## 1. Teilnote: Schriftliche Reflexion
 
@@ -112,26 +112,22 @@ Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
 #### Inhalt
 
 - 1.1. Welche verschiedenen Themen beinhaltete der Sprint?
-  - Bitte detailliert und nicht nur Stichworte!
 - 1.2. Was haben die Themen mit dem Begriff DevOps zu tun?
 
 #### Gruppendynamik
 
 - 1.3. Hat sich die Kommunikation im Team verändert seit dem ersten Sprint?
-  - Erläutern Sie was sie geändert haben und welche positiven/negativen
-    Auswirkungen es hatte.
 - 1.4. Was ist **uns** besonders gut gelungen, worauf sind alle richtig stolz?
 
 #### Lernzuwachs
 
-- 1.5. Was kann ich nun mehr als vorher?
+- 1.5. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 - 1.6. Welche Schwierigkeiten gab es?
-- 1.7. Was ist **mir** besonders gut gelungen, worauf bin ich richtig stolz?
 
 #### Lerneffekt (bezogen auf das Modul)
 
-- 1.8. Was sollte beibehalten werden?
-- 1.9. Was würden Sie anders machen?
+- 1.7. Was sollte beibehalten werden?
+- 1.8. Was würden Sie anders machen?
 
 ## 2. Teilnote: Projektstand
 

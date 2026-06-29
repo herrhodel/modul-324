@@ -1,10 +1,10 @@
-import React from "react";
 // Import the original mapper
 import MDXComponents from "@theme-original/MDXComponents";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import DocCardList from "@theme/DocCardList";
 import DocCard from "@theme/DocCard";
 import Slide from "../components/Slide";
+import Comment from "../components/Comment";
 
 export default {
   // Re-use the default mapping
@@ -15,4 +15,5 @@ export default {
   DocCardList: DocCardList,
   DocCard: DocCard,
   Slide: Slide,
+  Comment: Comment,
 };

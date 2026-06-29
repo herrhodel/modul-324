@@ -154,7 +154,7 @@ Nun ist es möglich Änderungen an der App vorzunehmen, welche automatisch auf A
 deployed werden!
 
 - Navigiert zu **"Code → app → src → index.html"** und klickt auf **"Edit"**
-  <!-- ![Edit index.html](../../img/github_edit_index_html.png) -->
+  {/* ![Edit index.html](../../img/github_edit_index_html.png) */}
   ![github_edit_index_html](images/github_edit_index_html.png).
 - Fügt folgenden Tag in den Body ein
 

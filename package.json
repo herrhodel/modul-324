@@ -3,14 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
+    "docusaurus": "docusaurus start --no-open --port 4000",
     "start": "wireit",
-    "start-poll": "docusaurus start --poll 1 --host 0.0.0.0",
     "start:marp": "wireit",
-    "build": "docusaurus build",
+    "build": "cross-env DOCUSAURUS_IGNORE_SSG_WARNINGS=true docusaurus build",
     "build:marp": "marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css -I slides --output build/slides",
     "build:marp-pdf": "marp --engine ./src/marp/async-engine.mjs --html --allow-local-files --theme slides/theme.css -I slides --output build/slides --pdf --pdf-outlines --pdf-outlines.pages=false",
-    "build:marp-copy-images": "cp -r slides/images build/slides/images",
+    "build:marp-copy-images": "cp -r slides/img build/slides/img",
     "build:marp-copy-js": "cp -r slides/js build/slides/js",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -30,8 +29,9 @@
       }
     },
     "dev": {
+      "command": "cross-env DOCUSAURUS_IGNORE_SSG_WARNINGS=true docusaurus start --no-open --port 4000",
+      "service": true,
       "dependencies": [
-        "start",
         "start:marp"
       ]
     },
@@ -41,13 +41,13 @@
     }
   },
   "dependencies": {
-    "@docusaurus/core": "^3.9.2",
-    "@docusaurus/faster": "^3.9.2",
-    "@docusaurus/plugin-content-docs": "^3.9.2",
-    "@docusaurus/preset-classic": "^3.9.2",
-    "@docusaurus/theme-common": "^3.9.2",
-    "@docusaurus/theme-mermaid": "^3.9.2",
-    "@docusaurus/utils": "^3.9.2",
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/faster": "^3.10.1",
+    "@docusaurus/plugin-content-docs": "^3.10.1",
+    "@docusaurus/preset-classic": "^3.10.1",
+    "@docusaurus/theme-common": "^3.10.1",
+    "@docusaurus/theme-mermaid": "^3.10.1",
+    "@docusaurus/utils": "^3.10.1",
     "@marp-team/marp-cli": "^4.2.3",
     "@mdx-js/react": "^3.0.0",
     "@mermaid-js/mermaid-cli": "^11.12.0",
@@ -70,8 +70,8 @@
     "wireit": "^0.14.12"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.9.2",
-    "@docusaurus/types": "^3.9.2",
+    "@docusaurus/module-type-aliases": "^3.10.1",
+    "@docusaurus/types": "^3.10.1",
     "@marp-team/marp-core": "^4.1.0",
     "@mdit/plugin-mark": "^0.22.1",
     "fs-extra": "^11.3.1",

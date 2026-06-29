@@ -19,7 +19,7 @@
 
 <Slide name="ci-cd"/>
 
-<!-- <Slide name="local-development"/> -->
+{/* <Slide name="local-development"/> */}
 
 ## Aufgaben
 

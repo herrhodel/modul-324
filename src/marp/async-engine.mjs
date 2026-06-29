@@ -1,8 +1,10 @@
 import { Marp } from "@marp-team/marp-core";
 import markdownItMark from "markdown-it-mark";
 import markdownItContainer from "markdown-it-container";
+import markdownItReplaceLink from "markdown-it-replace-link";
 import link from "markdown-it-external-links";
 import marpMermaid, { postProcessor } from "./marp-mermaid-plugin.mjs";
+import modulConfig from "../../modul.config.js";
 
 /*
  * Custom Marp engine with async post-processing
@@ -58,6 +60,14 @@ export default async (constructorOptions) => {
         if (tokens[idx].nesting === 1)
           return `</div><div class="${className[1]}">\n`;
         return "</div></div>\n";
+      },
+    })
+    .use(markdownItReplaceLink, {
+      replaceLink: function (link, env, token, htmlToken) {
+        const url = process.env.CI
+          ? `${modulConfig.url}/${modulConfig.repoName}/docs`
+          : `http://localhost:4000/${modulConfig.repoName}/docs`;
+        return link.replace(/\/docs|\.\.\/docs/, url);
       },
     })
     .use(link, {
