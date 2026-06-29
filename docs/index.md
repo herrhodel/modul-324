@@ -9,16 +9,16 @@ sidebar_label: 🏠 Modul 324
 
 |                      Woche                       |            Datum            | Thema                                                                                | Leistungsbewertung                                            |
 | :----------------------------------------------: | :-------------------------: | :----------------------------------------------------------------------------------- | :------------------------------------------------------------ |
-|   [Woche&nbsp;1](./lektionen/woche01/index.md)   |         27.10.2025          | DevOps<br/> AWS / GitHub Umgebung aufbauen                                           |                                                               |
-|   [Woche&nbsp;2](./lektionen/woche02/index.md)   |         03.11.2025          | eduScrum mit GitHub<br/> Sprint 1 Start / Projekt finden / Aufsetzen                 |                                                               |
-|   [Woche&nbsp;3](./lektionen/woche03/index.md)   |         10.11.2025          | Sprint 1<br/> Git Best Practices / Eigene Applikation aufsetzen / CI: Release Please |                                                               |
-| [**Woche&nbsp;4**](./lektionen/woche04/index.md) |       **17.11.2025**        | Paketmanagers / Formatierung und Linting / CI: Lint<br/> **Sprint 1 Ende**           | [**LB1 : Lektion 1 / Sprint 1**](/docs/beurteilungen/LB1.md)  |
-|   [Woche&nbsp;5](./lektionen/woche05/index.md)   |         24.11.2025          | Sprint 2 Start<br/> Automatisiert Testen / CI: Test                                  |                                                               |
-|   [Woche&nbsp;6](./lektionen/woche06/index.md)   |         01.12.2025          | Sprint 2<br/> Dockerfile / Docker-Compose                                            |                                                               |
-|   [Woche&nbsp;7](./lektionen/woche07/index.md)   |         08.12.2025          | Sprint 2<br/> CI: AWS Infra / Build / Push / Deploy                                  |                                                               |
-| [**Woche&nbsp;8**](./lektionen/woche08/index.md) |       **15.12.2025**        | Arbeiten am Projekt<br/> **Sprint 2 Ende**                                           | [**LB2 : Sprint 2**](/docs/beurteilungen/LB2.md)              |
-|                                                  | 22.12.2025 <br/> 29.12.2026 | 🎄 _Weihnachtsferien_ ✨                                                             |                                                               |
-| [**Woche&nbsp;9**](./lektionen/woche09/index.md) |       **05.01.2026**        | **Modulabschlussprüfung**<br/> Projekt-Präsentationen                                | [**LB3 - Modulabschlussprüfung**](/docs/beurteilungen/LB3.md) |
+|   [Woche&nbsp;1](./lektionen/woche01/index.md)   |         10.08.2026          | DevOps<br/> AWS / GitHub Umgebung aufbauen                                           |                                                               |
+|   [Woche&nbsp;2](./lektionen/woche02/index.md)   |         17.08.2026          | eduScrum mit GitHub<br/> Sprint 1 Start / Projekt finden / Aufsetzen                 |                                                               |
+|   [Woche&nbsp;3](./lektionen/woche03/index.md)   |         24.08.2026          | Sprint 1<br/> Git Best Practices / Eigene Applikation aufsetzen / CI: Release Please |                                                               |
+| [**Woche&nbsp;4**](./lektionen/woche04/index.md) |       **31.08.2026**        | Paketmanagers / Formatierung und Linting / CI: Lint<br/> **Sprint 1 Ende**           | [**LB1 : Lektion 1 / Sprint 1**](/docs/beurteilungen/LB1.md)  |
+|   [Woche&nbsp;5](./lektionen/woche05/index.md)   |         07.09.2026          | Sprint 2 Start<br/> Automatisiert Testen / CI: Test                                  |                                                               |
+|   [Woche&nbsp;6](./lektionen/woche06/index.md)   |         14.09.2026          | Sprint 2<br/> Dockerfile / Docker-Compose                                            |                                                               |
+|   [Woche&nbsp;7](./lektionen/woche07/index.md)   |         21.09.2026          | Sprint 2<br/> CI: AWS Infra / Build / Push / Deploy                                  |                                                               |
+|                                                  | 28.09.2025 <br/> 05.10.2026 | 🎄 _Herbstferien_ ✨                                                                 |                                                               |
+| [**Woche&nbsp;8**](./lektionen/woche08/index.md) |       **12.10.2026**        | Arbeiten am Projekt<br/> **Sprint 2 Ende**                                           | [**LB2 : Sprint 2**](/docs/beurteilungen/LB2.md)              |
+| [**Woche&nbsp;9**](./lektionen/woche09/index.md) |       **19.10.2026**        | **Modulabschlussprüfung**<br/> Projekt-Präsentationen                                | [**LB3 - Modulabschlussprüfung**](/docs/beurteilungen/LB3.md) |
 
 ## DevOps-Prozesse mit Tools unterstützen
 
