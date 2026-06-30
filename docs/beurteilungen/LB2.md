@@ -22,8 +22,8 @@ keywords:
 | :----------------------- | :--------------------------------------------------- | :----: | :------ | :----------- |
 | :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 8 | 8/34 vom LB2 |
 
-Am **Ende des Sprints** wird in der **letzten Lektion**, in **Einzelarbeit**
-eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
+Am **Ende des Sprints** wird in der **ersten Lektion**, in **Einzelarbeit** eine
+**schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 
 :::caution[Achtung!]
 

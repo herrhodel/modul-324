@@ -18,12 +18,12 @@ keywords:
 
 ## 1. Teilnote: Schriftliche Reflexion
 
-| Sozialform               | Form                                                 |  Zeit  | Abgabe  | Gewicht       |
-| :----------------------- | :--------------------------------------------------- | :----: | :------ | :------------ |
+| Sozialform               | Form                                                 |  Zeit  | Abgabe  | Gewicht      |
+| :----------------------- | :--------------------------------------------------- | :----: | :------ | :----------- |
 | :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 4 | 8/34 vom LB1 |
 
-Am **Ende des Sprints** wird in der **letzten Lektion**, in **Einzelarbeit**
-eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
+Am **Ende des Sprints** wird in der **ersten Lektion**, in **Einzelarbeit** eine
+**schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 
 :::caution[Achtung!]
 
@@ -42,7 +42,6 @@ Die schriftliche Reflexion wird **im Unterricht, in 45 Min. auf
 
 :::info[Punktekriterien pro Frage]
 
-- **0-Punkte**: Frage ist mangelhaft beantwortet
 - **0-Punkte**: Frage ist nicht resp. sehr mangelhaft beantwortet
 - **0.5-Punkt**: Frage ist beantwortet
 - **1-Punkt**: Frage ist tiefgründig beantwortet
