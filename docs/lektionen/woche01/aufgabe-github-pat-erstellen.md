@@ -26,7 +26,7 @@ Dies kann mit diesen Schritten erstellt werden.
 7. Das Token wird [später im Modul](/docs/lektionen/woche01/aufgabe-nginx-example-klonen.md#personal-access-token-pat-als-secret-setzen) verwendet. Bitte lokal sicher aufbewahren. Am
    besten in einem Passwortmanager.
 
-:::note What is it good for?
+:::note[What is it good for?]
 
 Wir werden in unserer CI-CD Pipeline auch automatisierte weitere Workflows
 starten. Dies geht nur mit deinem Privaten Access Token.

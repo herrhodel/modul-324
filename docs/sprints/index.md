@@ -4,7 +4,7 @@ Im Unterricht werden **3 Sprints** durchgeführt. Am Ende sollte es möglich sei
 dass Ihr produktiv zusammen an eurem Projekt arbeiten könnt, ohne dass viel
 Koordinationsaufgaben entstehen. Der gesamte Prozess sollte automatisiert sein.
 
-:::caution Der Weg ist das Ziel!
+:::caution[Der Weg ist das Ziel!]
 
 - Es ist nicht das Ziel, dass euer Projekt 100% fertig wird, das wird es
   wahrscheinlich nicht.
@@ -13,7 +13,7 @@ Koordinationsaufgaben entstehen. Der gesamte Prozess sollte automatisiert sein.
 
 :::
 
-:::tip Traut euch was!
+:::tip[Traut euch was!]
 
 Im optimalen Fall, startet ihr nun etwas, was ihr als _Open-Source_ auf GitHub
 veröffentlichen könnt und ihr zusammen mit anderen Programmierer, auch nach dem

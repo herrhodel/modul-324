@@ -12,7 +12,7 @@ Fall ist es ein einfachen [nginx](https://nginx.org/en/) Webserver, welcher übe
 ein GitHub Template Repository von jedem Lernenden geklont und dann individuell
 angepasst wird.
 
-:::tip Ziel
+:::tip[Ziel]
 
 - 🎯 Das Ziel vom Modul ist es, dass jeder mindestens diese Beispiel-App
   verstanden hat.
@@ -64,7 +64,7 @@ angepasst wird.
 - Value: Das gespeicherte PAT der
   [Aufgabe GitHub PAT erstellen](./aufgabe-github-pat-erstellen.md) einfügen
 
-:::note Es sollten nun 4 Secrets bestehen:
+:::note[Es sollten nun 4 Secrets bestehen:]
 
 **AWS_CREDENTIALS, AWS_SSH_PRIVATE_KEY, AWS_ACCOUNT_ID, PAT**
 
@@ -139,7 +139,7 @@ gestartet werden.
 
 Nun ist die Web-App auf AWS ausgeliefert und öffentlich verfügbar.
 
-:::caution HTTP ist unsicher...
+:::caution[HTTP ist unsicher...]
 
 - Es handelt sich um **http** und nicht https!
 - Wenn euer Browser motzt, evt. Firefox verwenden.
@@ -167,6 +167,7 @@ deployed werden!
 - **"Commit changes"**.
 
   :::caution
+
   - :boom: Verwendet bitte die Commit-Message `feat(nginx): show some magic`!
   - :boom: Create a new branch for this commit and start a pull request
 

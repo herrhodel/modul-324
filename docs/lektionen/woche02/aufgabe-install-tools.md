@@ -16,7 +16,7 @@ deployt werden können. Um dieses lokal zu erstellen und testen benötigt ihr
 - [Docker Compose](https://docs.docker.com/compose/install/) Sollte mit Docker
   Desktop dabei sein.
 
-:::tip Devcontainer
+:::tip[Devcontainer]
 
 Das Muster beinhaltet ein Ordner `.devcontainer/`. Sofern Ihr Team Erfahrung
 damit hat, dürft Ihr diesen gerne verwenden. Leider haben wir keine Zeit allen
@@ -24,7 +24,7 @@ Devcontainer zu vermitteln.
 
 :::
 
-:::info gar kein Docker?
+:::info[gar kein Docker?]
 
 Grundsätzlich kann das Entwickeln des Dockerfiles ausschliesslich in einer
 GitHub Action passieren. Der Feedback-Loop ist jedoch eher bescheiden.
@@ -51,7 +51,7 @@ funktioniert.
 
 Bitte installiert all diese Plugins!
 
-:::tip lest die Dokus!
+:::tip[lest die Dokus!]
 
 - Die Plugins erklären sich selbst am besten ;)
 

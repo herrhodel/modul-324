@@ -145,14 +145,14 @@ Terminal im Container öffnen
 docker exec -it myapp /bin/bash
 ```
 
-:::tip regelmässig builden
+:::tip[regelmässig builden]
 
 - Es empfiehlt sich beim Dockerfile schreiben häufig neu zu builden um zu
   gewährleisten, ob alles klappt.
 
 :::
 
-:::tip keine build Logs?
+:::tip[keine build Logs?]
 
 Docker build schreibt nicht mehr alles in Terminal. Dies erschwert das Debuggen
 bei Fehlern. Mit diesem Befehl kann der build Befehl manuell gestartet werden,
@@ -177,7 +177,7 @@ kopiert wird. Dies kann vor allem auf Windows Systemen zu Probleme führen.
   Datei `package.json` befindet.
 - Füge mindestens `node_modules` und `Dockerfile` ein
 
-:::note ein Beispiel für ein Angular Projekt
+:::note[ein Beispiel für ein Angular Projekt]
 
 ```bash title=".dockerignore"
 node_modules
@@ -201,7 +201,7 @@ Es werden zwei Möglichkeiten vorgestellt die beide auf Angular aufbauen.
 - Eine mit Angular ohne SSG. Dafür muss Angular über einen dediziert Webserver
   (z.B. Nginx) ausgeliefert werden.
 
-:::note Multistage Image
+:::note[Multistage Image]
 
 Die Dockerfiles beinhalten zwei `FROM` Befehle. Es handelt sich um sogenannte
 Multistage Images. Ein Multistage-Image ermöglicht es zusätzlichen Balast, der
@@ -210,7 +210,7 @@ entfernen damit das gebaute Image so klein wie möglich ist.
 
 :::
 
-:::caution App-Name kann anders sein
+:::caution[App-Name kann anders sein]
 
 - Überall wo `angular-app-name` steht, müsst Ihr den Namen von eurem Projekt
   angeben.
@@ -219,7 +219,7 @@ entfernen damit das gebaute Image so klein wie möglich ist.
 
 :::
 
-:::caution npm ci error?
+:::caution[npm ci error?]
 
 Wenn folgender Error erscheint, müssen Sie zuerst mit `npm install`,
 **ausserhalb vom Dockerfile**, die Packages installieren und das
@@ -356,7 +356,7 @@ CMD [ "node", "/app/dist/angular-app-name/server/server.mjs" ]
 
 </details>
 
-:::caution noch nicht ready zum Deployen auf AWS
+:::caution[noch nicht ready zum Deployen auf AWS]
 
 - Die App wird zwar auf port 80 geserved. Die Angular App braucht aber noch eine
   Route `/up` die ein HTTP code 200 zurück, gibt!
@@ -497,7 +497,7 @@ server {
 }
 ```
 
-:::tip bereits ready zum Deployen auf AWS
+:::tip[bereits ready zum Deployen auf AWS]
 
 - Da der nginx mit der oberen Konfigurationsdatei eine `location /up` definiert,
   kann dieses Image bereits deployt werden.
@@ -516,7 +516,7 @@ docker compose up -d
 Danach sollte über den Browser via http://localhost:8080 die App zugreifbar
 sein.
 
-:::info Wieso der Aufwand?
+:::info[Wieso der Aufwand?]
 
 Natürlich könnt Ihr auch mit dem development Mode `npm start` denselben Effekt
 generieren. Jedoch nur lokal! Nun mit dem Dockerfile kann die App überall wo

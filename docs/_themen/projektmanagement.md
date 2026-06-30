@@ -69,7 +69,7 @@ Standardmässig heissen diese:
 Da das Modul 324 nicht Projektmanagement im Fokus hat, werden wir für das
 Projekt Kanban verwenden.
 
-:::tip Protip
+:::tip[Protip]
 
 _Kanban_ eignet sich auch für kleine Privatprojekte, oder sogar zum Planen vom
 eigenen Tagesablauf.
@@ -138,14 +138,14 @@ kann**:
 - Alles was in Code resultiert
 - ...
 
-:::danger wichtig
+:::danger[wichtig]
 
 Ein Arbeitspaket ist erst dann **"Done"** wenn die **Akzeptanzkriterien** <u>auf
 dem **Testsystem** erfolgreich durchgeführt</u> wurden.
 
 :::
 
-:::tip Schnelles Kundenfeedback
+:::tip[Schnelles Kundenfeedback]
 
 Wenn das Projekt im _DevOps_ Model mit einer [CI/CD Pipeline](./ci-cd.md)
 umgesetzt wird, können die abgeschlossenen Arbeitspakete direkt im Testsystem
@@ -156,7 +156,7 @@ _(deployed)_ werden.
 
 :::
 
-:::tip Automatisierte Integrations-Tests
+:::tip[Automatisierte Integrations-Tests]
 
 Automatisierter **Integrations Test** durch ein Testing Framework wie
 [Puperteer](https://pptr.dev/), [Playwright](https://playwright.dev/),

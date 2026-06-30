@@ -8,7 +8,7 @@ keywords:
 
 **:dart: Arbeitsgrundlage schaffen | :dna: Gruppenarbeit | :clock1: 10 Min**
 
-:::caution Im Projekt arbeitet Ihr alle im gleichen Repository!
+:::caution[Im Projekt arbeitet Ihr alle im gleichen Repository!]
 
 :::
 

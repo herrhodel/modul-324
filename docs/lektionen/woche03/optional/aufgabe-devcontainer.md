@@ -11,7 +11,7 @@ beschrieben. In dem `Dockerfile` können Tools installiert und konfiguriert
 werden, die fürs Projekt nötig sind. Dies erleichtert den Einstieg für neue
 Projektmitglieder und **garantiert dass alle die gleiche Umgebung haben**.
 
-:::note Kein must!
+:::note[Kein must!]
 
 Theoretisch könnte auch jeder Projektmitarbeiter alle Tools `nodejs`, `java` und
 co. selbst installieren. Hat ja früher auch funktioniert :wink:
@@ -21,7 +21,7 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
 
 :::
 
-:::info Devcontainer vs produktives Docker-Image
+:::info[Devcontainer vs produktives Docker-Image]
 
 - Der Devcontainer (`.devcontainer/Dockerfile`) dient zum entwickeln. Darin wird
   gearbeitet.
@@ -59,7 +59,7 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
   - :bulb: Mit `curl` kann man beliebige HTTP Request absetzen. `curl` wird
     daher oft fürs testen verwendet
 
-:::caution Port 3000 muss frei sein
+:::caution[Port 3000 muss frei sein]
 
 Wenn auf dem Port 3000 bereits ein Prozess läuft, muss dieser gekillt werden
 
@@ -190,7 +190,7 @@ sofern das Plugin "Dev Containers" installiert wurde.
    curl http://localhost:3001
    ```
 
-:::info VS Code Devcontainer kann "docker in docker"
+:::info[VS Code Devcontainer kann "docker in docker"]
 
 - Wenn Ihr ein Terminal im VS Code Devcontainer gestartet habt ist es möglich
   direkt darin mit `docker compose up production -d` zu starten.

@@ -68,7 +68,7 @@ Integration Tests sind meiner Meinung nach Unit-Tests in vielen Bereichen
 
 :::
 
-:::note Sprachunabhängige Integration-Tests
+:::note[Sprachunabhängige Integration-Tests]
 
 Da Integration-Tests einen user in einem Browser simulieren, müssen
 Integration-Tests nicht in der Sprache geschrieben werden, in der auch die
@@ -111,7 +111,7 @@ automatisch "jasmin" mit "karma" verwendet und verweise auf **die
 - In diesem Modul werden **nur Unit Tests** geschrieben. Ich lade Sie jedoch
   dazu ein sich mit Integration Tests auseinander zu setzen.
 
-:::info Jasime/Karma sind veraltet
+:::info[Jasime/Karma sind veraltet]
 
 Angular selbst will in Zukunft auf **[Vitest](https://vitest.dev/)** wechseln.
 Dies, da Karma und Jasmin doch langsam in die Jahre gekommen sind. Wer also lust
@@ -123,7 +123,7 @@ Die Anleitung dazu hier:
 
 :::
 
-:::info angular.io → angular.dev
+:::info[angular.io → angular.dev]
 
 Mir ist aufgefallen, dass die alte Domain [angular.io](https://angular.io) nur
 bis Version 17 abdeckt.

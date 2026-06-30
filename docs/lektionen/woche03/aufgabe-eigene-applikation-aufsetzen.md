@@ -16,7 +16,7 @@ Projekt passt.
 - :dart: Die Grundlage ist gelegt, dass Tickets von allen Teammitgliedern
   bearbeitet werden können.
 
-:::tip Setzt als Erstes das Frontend um!
+:::tip[Setzt als Erstes das Frontend um!]
 
 - 📣 **Full-Stack mit Backend und DB ist zu Zeitaufwändig für dieses Modul.**
 
@@ -28,7 +28,7 @@ Projekt passt.
 <YouTube id="4IzeMwVlf7A"></YouTube>
 
 <br/>
-:::info bei den Installiervorgängen ruhig vorspulen ;)
+:::info[bei den Installiervorgängen ruhig vorspulen ;)]
 
 :::
 
@@ -144,7 +144,7 @@ git add . # alle Dateien hinzufügen
 git commit -m "feat: was auch immer (#issueId)" # Commiten und Issue verlinken
 ```
 
-:::tip kleine commits
+:::tip[kleine commits]
 
 - Es ist besser mehrere kleine commits zu machen.
 - Diese sind einfacher zum reviewen.
@@ -190,7 +190,7 @@ npm start # oder ein alternativ Befehl der gewählten Technologie
 
 Ihr dürft das Projekt in jeder beliebigen Technologie erstellen.
 
-:::danger Bedingungen
+:::danger[Bedingungen]
 
 - **Alle Teammitglieder müssen mit der Technologie vertraut sein!**
 - Ihr müsst das Testing / Linting selbst aufsetzen.

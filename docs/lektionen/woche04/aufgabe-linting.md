@@ -97,7 +97,7 @@ jobs:
           eslint-report: app/eslint_report.json
 ```
 
-:::tip GitHub Action eslint-annotations
+:::tip[GitHub Action eslint-annotations]
 
 Die verwendete GitHub Action _`DerLev/eslint-annotations@v2_` liest die eslint
 Ausgabedatei und macht direkt im Pull-Request Bemerkungen an die Linien! 🤯

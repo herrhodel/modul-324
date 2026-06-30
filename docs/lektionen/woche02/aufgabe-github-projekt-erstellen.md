@@ -75,7 +75,7 @@ führen.
 
 ![aufgabe-github-pull-request-erstellen](./images/aufgabe-github-pull-request-erstellen.jpg)
 
-:::danger Notenrelevant
+:::danger[Notenrelevant]
 
 Es wird bewertet, dass alle Issues welche geschlossen sind einen Pull-Request
 referenzieren.

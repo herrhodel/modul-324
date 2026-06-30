@@ -46,7 +46,7 @@ Das Ziel ist es, den Code lesbar und konsistent zu gestalten.
 - Windows / Linux: `Ctrl` + `Shift` + `F`
 - Mac: `⌘` + `⇧` + `F`
 
-:::tip Autoformat beim Speichern
+:::tip[Autoformat beim Speichern]
 
 `Window -> Preferences -> Java -> Editor -> SaveActions` das Häkchen **Source
 Code Formatierungen** setzen. Nun sollte der Source Code automatisch formatiert
@@ -61,7 +61,7 @@ werden, sobald die Datei gespeichert wird.
 - Windows / Linux: `Ctrl` + `Alt` + `L`
 - Mac: `⌥` + `⌘` + `L`
 
-:::tip Autoformat beim Speichern `Preferences -> Tools -> Actions On Save` die
+:::tip[Autoformat beim Speichern `Preferences -> Tools -> Actions On Save` die]
 
 Häkchen **Reformat Code** und **Optimize imports** setzen. Jetzt sollte der
 Source Code automatisch formatiert werden, sobald die Datei gespeichert wird.

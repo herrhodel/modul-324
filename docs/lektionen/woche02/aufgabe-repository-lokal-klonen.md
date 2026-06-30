@@ -30,7 +30,7 @@ Danach könnt ihr lokal folgender `git` Befehl ausführen.
 git clone {kopierte-ssh-url-zum-repo}
 ```
 
-:::tip ich würde es so machen, dann lernt ihr gerade die git Befehle.
+:::tip[ich würde es so machen, dann lernt ihr gerade die git Befehle.]
 
 :::
 

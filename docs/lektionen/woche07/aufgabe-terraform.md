@@ -70,7 +70,7 @@ Nun kann
 [wie beim Musterbeispiel](/docs/lektionen/woche01/aufgabe-nginx-example-klonen.md#amazon-aws-infrastruktur-aufsetzten)
 die Action "Setup Infrastructure on Amazon AWS" gestartet werden.
 
-:::caution job "Bootstrap Kamal on AWS EC2 instance" funktioniert noch nicht
+:::caution[job "Bootstrap Kamal on AWS EC2 instance" funktioniert noch nicht]
 
 Der Workflow besitzt nicht nur den Job "Create AWS ressources" sondern
 zusätzlich den Job "Bootstrap Kamal on AWS EC2 instance". Dieser wird erst nach

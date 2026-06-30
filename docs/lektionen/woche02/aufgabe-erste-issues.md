@@ -21,7 +21,7 @@ dient nun dazu zu beschreiben, was man sich darin vorstellt. Dann kann man
 Issues erstellen die Teilbereiche abdecken wie z.B. Mockup, Produkt hinzufügen,
 Produkt löschen, Warenkorb anzeigen, Warenkorb bestellen, ...
 
-:::tip bleibt Agil
+:::tip[bleibt Agil]
 
 Es müssen noch nicht alle Epics und Issues erstellt werden. Es ist erlaubt und
 erwünscht im Projektverlauf neue Epics und Issues zu erstellen.
@@ -46,7 +46,7 @@ Beschreibung abgebildet werden.
 
 Ebenso sollen auch die Epics verlinkt sein!
 
-:::danger Notenrelevant
+:::danger[Notenrelevant]
 
 - Alle Issues sollten immer auf den zugehörigen "Epic" zeigen.
 - Alle Issues sollen auf andere Issues verweisen, von welchem er abhängig ist.
@@ -73,7 +73,7 @@ Kurzanleitung, wie dies verifiziert werden kann. **Hier sprechen wie von
 
 - :bulb: **Die "Akzeptanzkriterien" richteten sich an den Kunden!**
 
-:::danger Notenrelevant
+:::danger[Notenrelevant]
 
 - Alle Issues müssen eine Beschreibung beinhalten, der jeder, auch ohne Insider
   Wissen, entnehmen kann was zu tun ist.
@@ -95,7 +95,7 @@ Projektmitglied** zu erstellen.
 
 :::
 
-:::danger Notenrelevant
+:::danger[Notenrelevant]
 
 - Achtet pingelig genau an die Anweisung unter Beurteilungen.
 
@@ -129,14 +129,14 @@ Erstellt nun im GitHub Projekt neue Epics und Issues für euer Projekt.
 - Erste Features beschreiben.
 - Mockup resp. Wireframe erstellen.
 
-:::tip Schaut euch Woche 3 an!
+:::tip[Schaut euch Woche 3 an!]
 
 In der Woche 3 setzen wir zusammen auf, dass Ihr lokal entwickeln könnt. Das
 wäre doch ein paar Issues wert, oder?
 
 :::
 
-:::tip Mockups (Wireframes)
+:::tip[Mockups (Wireframes)]
 
 Am Anfang kann es gut möglich sein, dass noch nicht alle Code Schreiben können,
 da die Applikation noch nicht lauffähig ist. Daher macht es Sinn auch **Issues

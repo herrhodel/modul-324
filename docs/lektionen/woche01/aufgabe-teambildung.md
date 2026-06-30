@@ -33,7 +33,7 @@ Auf der Wandtafel gibt es eine Tabelle mit folgenden Kategorien:
 - Am besten ist es, wenn jede Gruppe je eine Person von jeder Kategorie
   beinhaltet.
 
-:::tip Traut Euch mit Neuen zusammenzuarbeiten!
+:::tip[Traut Euch mit Neuen zusammenzuarbeiten!]
 
 :::
 

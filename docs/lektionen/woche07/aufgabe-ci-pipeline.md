@@ -278,7 +278,7 @@ Am Ende wird dem `$GITHUB_STEP_SUMMARY` mitgegeben wo die App deployt wurde.
 
 ## Helthcheck Route `/up` erstellen
 
-:::info SPA Apps die mit NGINX geserved werden könnend diesen Schritt auslassen
+:::info[SPA Apps die mit NGINX geserved werden könnend diesen Schritt auslassen]
 
 :::
 
@@ -326,7 +326,7 @@ Die Route `/up` muss vor der Wildcard Route `**` gesetzt werden!
 
 ## Auf AWS deployen
 
-:::caution Credentials!
+:::caution[Credentials!]
 
 Achtet darauf, dass die Credentials immer wieder übertragen werden müssen!
 

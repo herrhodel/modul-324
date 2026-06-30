@@ -10,25 +10,25 @@ keywords:
 
 | Sozialform           | Form                                                            | Abgabe  | Gewicht               |
 | :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
-| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 8 | 10                    |
+| 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 8 | 8                     |
 | 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 8 | 26                    |
-|                      | **Total**                                                       |         | **36**                |
+|                      | **Total**                                                       |         | **34**                |
 | ...                  |                                                                 |         |                       |
-|                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **25% der Modulnote** |
+|                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **30% der Modulnote** |
 
 ## 1. Teilnote: Schriftliche Reflexion
 
-| Sozialform               | Form        |  Zeit  | Abgabe  | Gewicht       |
-| :----------------------- | :---------- | :----: | :------ | :------------ |
-| :smile: **Einzelarbeit** | schriftlich | 45 Min | Woche 8 | 10/36 vom LB2 |
+| Sozialform               | Form                                                 |  Zeit  | Abgabe  | Gewicht      |
+| :----------------------- | :--------------------------------------------------- | :----: | :------ | :----------- |
+| :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 8 | 8/34 vom LB2 |
 
 Am **Ende des Sprints** wird in der **letzten Lektion**, in **Einzelarbeit**
 eine **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
 
-:::caution Achtung!
+:::caution[Achtung!]
 
-Die schriftliche Reflexion wird **im Unterricht, in 45 Min. geschrieben** und
-direkt im Projekt eingecheckt.
+Die schriftliche Reflexion wird **im Unterricht, in 45 Min. auf
+[Classtime](https://www.classtime.com) geschrieben**.
 
 - Die Fragen sind gegeben, **vorbereiten ist erlaubt** resp. erwünscht.
 - Es werden **Plagiate geprüft**, wenn der verdacht besteht wird die **Note 1**
@@ -40,72 +40,17 @@ direkt im Projekt eingecheckt.
 
 ### Bewertung
 
-:::info Punktekriterien
+:::info[Punktekriterien]
 
-- **0-Punkte**: Thema fehlt oder ist sehr mangelhaft vorhanden
-- **1-Punkt**: Thema existiert ist jedoch ausbaufähig
-- **2-Punkte**: Thema ist einwandfrei umgesetzt
-
-:::
-
-| Thema                                                                          | Punkte |
-| :----------------------------------------------------------------------------- | -----: |
-| Alle Fragen sind beantwortet.                                                  |      2 |
-| Die Themen wurden detailliert beschrieben _(keine Stichpunkte)_.               |      2 |
-| Die Antworten sind tiefgründig und kritisch hinterfragt.                       |      2 |
-| Gruppen- und Eigenerfolg sind voneinander unterscheidbar _(Fragen 1.4., 1.7)_. |      2 |
-| Die Reflexion wurde in gewünschter Form abgegeben.                             |      2 |
-| ...                                                                            |        |
-| **TOTAL**                                                                      | **10** |
-
-### Wo wird die Reflexion geschrieben?
-
-- Für jede Reflexion pro Person soll ein `GitHub Issue` erstellt werden.
-- Die Reflexion soll als `markdown`-Datei unter folgendem Pfad
-  `/docs/reflections/ihr-nachname/reflexion-sprint2.md` geschrieben werden.
-- Für jede Reflexion pro Person wird ein Branch erstellt.
-- Es wird ein Pull-Request erstellt und mir `@herrhodel` als Reviewer
-  zugewiesen.
-- Nach dem _mergen_, soll der Branch wieder gelöscht werden.
-
-:::caution
-
-- :boom: Die Commit-Message soll folgendermassen heissen.
-  - `docs(lb2): Reflexion Sprint 2 ([ihr-nachname])`
-
-:::
-
-:::tip Beispieldatei: `/docs/reflections/hodel/reflexion-sprint2.md`
-
-```markdown
-# Hodel - Reflexion Sprint 2
-
-## 1.1. Welche verschiedenen Themen beinhaltete der Sprint?
-
-lorem ipsum...
-
-## 1.2. Was haben die Themen mit dem Begriff DevOps zu tun?
-
-lorem ipsum...
-
-...
-```
-
-Commit-Message: `docs(lb2): Reflexion Sprint 2 (Hodel)`
-
-:::
-
-:::info Wieso so kompliziert?
-
-1. Ihr wendet direkt Prinzipien von Git und GitHub an
-2. Ihr habet die Möglichkeit im Pull Request einzelne Zeilen zu kommentieren
-3. Ihr verwendet mit conventional-commits direkt das Autorelease Feature
+- **0-Punkte**: Frage ist nicht resp. sehr mangelhaft beantwortet
+- **0.5-Punkt**: Frage ist beantwortet
+- **1-Punkt**: Frage ist tiefgründig beantwortet
 
 :::
 
 ### Fragen
 
-:::danger nicht ganz gleich zum LB1!
+:::danger[nicht ganz gleich zum LB1!]
 
 :::
 
@@ -138,7 +83,7 @@ bewertet.
 | :------------------- | :----------- | :-----: | ------------: |
 | 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 8 | 26/36 vom LB2 |
 
-:::danger Achtung Kollektivnote!
+:::danger[Achtung Kollektivnote!]
 
 - 👮 Bitte kontrolliert Euch selbst, dass alle sich an die Vorgaben halten.
 - 💡 Diese Note ist bewusst nicht individuell, damit die Gruppe sich
@@ -149,7 +94,7 @@ bewertet.
 
 ### Bewertung
 
-:::info Punktekriterien
+:::info[Punktekriterien]
 
 - **0-Punkte**: Thema fehlt oder ist sehr mangelhaft vorhanden
 - **1-Punkt**: Thema existiert ist jedoch ausbaufähig

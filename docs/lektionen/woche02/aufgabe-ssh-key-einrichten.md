@@ -24,7 +24,7 @@ Alle die bereits einen Key haben können direkt hier fortfahren
 
 - [Adding a new SSH key to your account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)
 
-:::tip Es gibt einen Windows-Tab auf den Webseiten 😉
+:::tip[Es gibt einen Windows-Tab auf den Webseiten 😉]
 
 ![generate-ssh-key-windows](images/generate-ssh-key-windows.png)
 

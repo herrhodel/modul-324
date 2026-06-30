@@ -20,7 +20,7 @@
 
 </div><div>
 
-:::caution Hausaufgaben
+:::caution[Hausaufgaben]
 
 Bitte alle lokal einmal folgende Befehle ausführen:
 
@@ -32,7 +32,7 @@ Bitte alle lokal einmal folgende Befehle ausführen:
 sicher, dass im Unterricht die Ubuntu Images bei allen bereits lokal gecached
 sind, was das Schulnetz weniger belastet wird.
 
-::
+:::
 
 </div></div>
 

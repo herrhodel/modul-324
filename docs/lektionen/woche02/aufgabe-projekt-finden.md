@@ -19,7 +19,7 @@ selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
   - Bestehenden Code anzupassen ist erfahrungsgemäss schwer für alle
     Mitarbeitenden, die den Code noch nicht kennen.
 
-:::tip Projekt Ideen?
+:::tip[Projekt Ideen?]
 
 - :bulb: Statische HTML-Seite, To-do App oder was Grösseres?
 - :muscle: Seit mutig und kreativ!
@@ -31,7 +31,7 @@ selbst aussuchen. Dabei sollt ihr jedoch ein paar Rahmenbedingungen beachten.
     arbeiten können.
   - Das Projekt darf später gerne weiterverfolgt werden
 
-:::tip AWS Management Konsole bis im Januar offen
+:::tip[AWS Management Konsole bis im Januar offen]
 
 Ambitionierte Teammitglieder dürfen gerne parallel dazu ihr eigenes Setup bauen
 und mir pitchen.
@@ -64,7 +64,7 @@ und mir pitchen.
 
 :::
 
-:::note Beispieldatei
+:::note[Beispieldatei]
 
 ```markdown title="/README.md"
 # Unser tolles Projekt
