@@ -97,7 +97,7 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }}"
       - run: echo "🔎 The branch ${{ github.ref }} in ${{ github.repository }}."
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - run: echo "💡 clone the repository ${{ github.repository }}"
       - run:
           echo "🖥️ The workflow is now ready to test your code on the runner."
@@ -156,7 +156,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0

@@ -1,4 +1,4 @@
-# Woche 5
+# W5 - Sprint 2
 
 :::note[**[Sprint 2 - Build it!](/docs/sprints/sprint-2/index.md)**]
 

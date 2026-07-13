@@ -1,4 +1,4 @@
-# Woche 8
+# W8 - Projektabschluss
 
 ## Thema
 

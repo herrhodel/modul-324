@@ -23,7 +23,7 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
 
 :::info[Devcontainer vs produktives Docker-Image]
 
-- Der Devcontainer (`.devcontainer/Dockerfile`) dient zum entwickeln. Darin wird
+- Der Devcontainer (`.devcontainer/Dockerfile`) dient zum Entwickeln. Darin wird
   gearbeitet.
   - :bulb: **Der Devcontainer wird lokal gestartet**.
 - Das produktive Image (`nginx/Dockerfile`, oder später

@@ -83,7 +83,7 @@ Der Checkout Step macht den Code in der Pipeline verfügbar.
 
 ```yaml
 - name: Checkout
-  uses: actions/checkout@v4
+  uses: actions/checkout@v7
 ```
 
 Nun wird ein Job ausgeführt, denn Ihr vorhin einfach kopiert habt.

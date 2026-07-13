@@ -6,13 +6,6 @@ keywords:
 
 # ESLint konfigurieren
 
-:::info
-
-Diese Action **existiert nicht im Muster**, da das Muster nur aus einem nginx
-besteht und somit keinen Code zum Linten beinhaltet.
-
-:::
-
 ## Neuer Branch erstellen
 
 `git checkout -b feat/eslint`
@@ -26,6 +19,79 @@ werden direkt alle Konfigurationsdateien erstellt.**
 - alles mit "yes" akzeptieren
 
 Ab nun kann mit `ng run lint` das Projekt gelintet werden.
+
+## Kompatibilität mit Prettier erhöhen
+
+Es kann sein, dass sich Prettier und eslint in die Quere kommen. Dafür gibt es
+folgende zwei Pakete.
+
+```bash
+npm install -D eslint-config-prettier eslint-plugin-prettier
+```
+
+- `eslint-config-prettier`: Deaktivieren eslint Regeln, die bereits von Prettier
+  übernommen werden.
+- `eslint-plugin-prettier`: Führt automatisch auf Prettier aus und leitet
+  Formatierungsfehler als Notification weiter.
+
+### Eslint für Prettier Konfigurieren
+
+Der Befehl `ng lint` hat automatisch eine Datei `app/eslint.config.js` erstellt.
+Diese muss nun noch erweitert werden, damit `eslint` auch
+`eslint-config-prettier` anwendet.
+
+```javascript title="app/eslint.config.js"
+// @ts-check
+const eslint = require("@eslint/js");
+const { defineConfig } = require("eslint/config");
+const tseslint = require("typescript-eslint");
+const angular = require("angular-eslint");
+// highlight-green-next-line
+const eslintConfigPrettier = require("eslint-config-prettier");
+
+module.exports = defineConfig([
+  {
+    // highlight-green-next-line
+    ignores: [".angular/**", ".nx/**", "coverage/**", "dist/**"],
+    files: ["**/*.ts"],
+    extends: [
+      eslint.configs.recommended,
+      tseslint.configs.recommended,
+      tseslint.configs.stylistic,
+      angular.configs.tsRecommended,
+      // highlight-green-next-line
+      eslintConfigPrettier,
+    ],
+    processor: angular.processInlineTemplates,
+    rules: {
+      "@angular-eslint/directive-selector": [
+        "error",
+        {
+          type: "attribute",
+          prefix: "app",
+          style: "camelCase",
+        },
+      ],
+      "@angular-eslint/component-selector": [
+        "error",
+        {
+          type: "element",
+          prefix: "app",
+          style: "kebab-case",
+        },
+      ],
+    },
+  },
+  {
+    files: ["**/*.html"],
+    extends: [
+      angular.configs.templateRecommended,
+      angular.configs.templateAccessibility,
+    ],
+    rules: {},
+  },
+]);
+```
 
 ## Applikation in der Github Action linten
 
@@ -57,11 +123,16 @@ Ausgabedatei `eslint_report.json`
 
 ### GitHub Action Workflow
 
-Damit automatisch auf GitHub das Projekt gelintet wird benötigen wir einen
-GitHub Action Workflow.
+:::info
 
-Dafür erstellen wir eine GitHub Action Datei `.github/workflows/lint.yml` mit
-folgendem Inhalt.
+Diese Github Action **existiert nicht im Muster**, da das Muster nur aus einem
+nginx besteht und somit keinen Code zum Linten beinhaltet.
+
+:::
+
+Damit automatisch auf GitHub das Projekt gelintet wird benötigen wir einen
+GitHub Action Workflow. Dafür erstellen wir eine GitHub Action Datei
+`.github/workflows/lint.yml` mit folgendem Inhalt.
 
 ```yaml title=".github/workflows/lint.yml"
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
@@ -77,11 +148,11 @@ jobs:
       checks: write
       pull-requests: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22 # lts
+          node-version: 24 # lts
           cache: "npm"
           cache-dependency-path: app/package-lock.json
       - name: Install Dependencies
@@ -138,7 +209,7 @@ Jede Action, welche auf den Code vom Repository zugreifen möchte, benötigt
 diesen Schritt. Dies ladet den Code vom Repo in den Container.
 
 ```yaml
-- uses: actions/checkout@v4
+- uses: actions/checkout@v7
 ```
 
 Da wir NodeJs verwenden wird es mit diesem Schritt im Container installiert.
@@ -146,9 +217,9 @@ Wichtig hier der Cache, sodass es schneller geht!
 
 ```yaml
 - name: Install node
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v6
   with:
-    node-version: 22 # lts
+    node-version: 24 # lts
     cache: "npm"
     cache-dependency-path: app/package-lock.json
 ```

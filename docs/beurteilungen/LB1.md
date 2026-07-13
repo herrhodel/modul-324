@@ -78,7 +78,7 @@ Gruppe** analysiert und bewertet.
 
 | Sozialform           | Form         | Abgabe  |       Gewicht |
 | :------------------- | :----------- | :-----: | ------------: |
-| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 26/36 vom LB1 |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 26/34 vom LB1 |
 
 :::caution[Achtung Kollektivnote!]
 

@@ -1,4 +1,4 @@
-# Woche 1
+# W1 - DevOps
 
 ## Ziel
 
@@ -12,6 +12,8 @@
 ## Thema
 
 <Slide name="devops" />
+
+<Slide name="vibe-coding" />
 
 ## Aufgaben
 

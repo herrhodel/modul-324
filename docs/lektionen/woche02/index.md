@@ -1,4 +1,4 @@
-# Woche 2
+# W2 - Sprint 1
 
 :::note[Heute startet der **[Sprint 1](/docs/sprints/sprint-1/index.md)**]
 

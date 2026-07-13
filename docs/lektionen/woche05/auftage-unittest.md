@@ -28,16 +28,9 @@ Gängige Unit-Test Frameworks sind:
 
 - Java: JUnit
 - NodeJs:
-  - Jasmine _(out-of-the-box von Angular verwendet, trotzdem deprecated)_
-    - Karma _(out-of-the-box von Angular verwendet, trotzdem deprecated)_
-    - Karma führt die Unit-Tests im Browser aus, ist aber keine Integration
-      Testing framework.
-  - Vitest (wird
-    [neu von Angular empfohlen](https://angular.dev/guide/testing/unit-tests))
-    - Kann Unit und Integration Tests
-      ([Browser-Mode](https://vitest.dev/guide/browser/))
-    - Integration Tests sind in aktiver Entwicklung.
-  - MochaJS
+  - [Vitest](https://vitest.dev/) (neuer Standard in Angular)
+  - [Jest](https://jestjs.io/)
+  - [MochaJs](https://mochajs.org/)
 
 ## Integration-Test
 
@@ -49,16 +42,18 @@ weitergeleitet wird.
 
 Gängige Integration Testing Frameworks sind:
 
-- Cucumber (die Erfinder!)
-- Selenium (sehr verbreitet)
-- [Gauge](https://gauge.org/) / [Taiko](https://taiko.dev/) (sehr gut, leider
-  nicht mehr aktiv weiterentwickelt)
-- Cypress
-- Vitest (Limitiert)
+- [Playwright](https://playwright.dev/docs/writing-tests) (Empfohlen, da mit
+  Vitest kompatibel)
+- [Cucumber](https://cucumber.io/) (die Erfinder!)
+- [Selenium](https://www.selenium.dev/) (sehr verbreitet)
+- [Cypress](https://www.cypress.io) (sehr verbreitet)
+- [Gauge](https://gauge.org/) / [Taiko](https://taiko.dev/)
+- [Vitest Browser Mode](https://vitest.dev/guide/browser/why.html) (Limitiert,
+  kein richtiges e2e Testing)
 
 :::tip
 
-Integration Tests sind meiner Meinung nach Unit-Tests in vielen Bereichen
+Integration Tests sind _meiner Meinung nach_ Unit-Tests in vielen Bereichen
 überlegen:
 
 - Sie testen Benutzerinteraktion und sind daher nicht so theoretisch.
@@ -70,7 +65,7 @@ Integration Tests sind meiner Meinung nach Unit-Tests in vielen Bereichen
 
 :::note[Sprachunabhängige Integration-Tests]
 
-Da Integration-Tests einen user in einem Browser simulieren, müssen
+Da Integration-Tests einen Benutzer in einem Browser simulieren, müssen
 Integration-Tests nicht in der Sprache geschrieben werden, in der auch die
 Applikation programmiert wurde.
 
@@ -101,33 +96,18 @@ getesteter Code, fehlerhaft sein kann.
     [Gherkin](https://cucumber.io/docs/gherkin/reference/) wie Cucumber es
     definiert hat und viele sich davon inspirieren liessen. (optional)
 
-## Testen mit Angular
+## Test mit KI schreiben lassen?
 
-Angular besitzt den command `ng test`. Sofern nichts anderes definiert, wird
-automatisch "jasmin" mit "karma" verwendet und verweise auf **die
-[offizielle Anleitung](https://angular.dev/guide/testing)**.
+:::caution
 
-- Versucht nun nach der Anleitung einige Tests für euer Projekt zu erstellen.
-- In diesem Modul werden **nur Unit Tests** geschrieben. Ich lade Sie jedoch
-  dazu ein sich mit Integration Tests auseinander zu setzen.
+Viele meiner Berufskollegen vertreten die Ansicht, man kann die Tests ja einfach
+von der KI schreiben lassen. Ich persönlich denke, viel eher sollte man die
+Tests selber schreiben und das Programm von der KI schreiben lassen. Am Ende
+sollte der Programmiere die Kontrolle und Übersicht behalten, was er erwartet
+und nicht einfach akzeptieren, dass alles grün ist. Da kann man theoretisch auch
+`true == true` testen, ist auch grün.
 
-:::info[Jasime/Karma sind veraltet]
-
-Angular selbst will in Zukunft auf **[Vitest](https://vitest.dev/)** wechseln.
-Dies, da Karma und Jasmin doch langsam in die Jahre gekommen sind. Wer also lust
-hat, darf das Projekt so anpassen, dass vitest verwendet wird.
-
-Die Anleitung dazu hier:
-
-- https://angular.dev/guide/testing/unit-tests
-
-:::
-
-:::info[angular.io → angular.dev]
-
-Mir ist aufgefallen, dass die alte Domain [angular.io](https://angular.io) nur
-bis Version 17 abdeckt.
-
-- **Neuere Angular Versionen verwenden [angular.dev](https://angular.dev)**!
+Ja, KI kann als initialstart nützlich sein, sobald aber Code neu angefasst wird,
+sollte nicht die KI einfach die Tests anpassen.
 
 :::

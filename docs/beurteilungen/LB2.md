@@ -81,7 +81,7 @@ bewertet.
 
 | Sozialform           | Form         | Abgabe  |       Gewicht |
 | :------------------- | :----------- | :-----: | ------------: |
-| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 8 | 26/36 vom LB2 |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 8 | 26/34 vom LB2 |
 
 :::danger[Achtung Kollektivnote!]
 

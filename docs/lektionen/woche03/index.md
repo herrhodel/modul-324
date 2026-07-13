@@ -1,4 +1,4 @@
-# Woche 3
+# W3 - Git / CI
 
 :::note[**[Sprint 1](/docs/sprints/sprint-1/index.md)**]
 

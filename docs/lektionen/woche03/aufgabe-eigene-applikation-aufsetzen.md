@@ -72,7 +72,7 @@ installieren.
 - https://mise.jdx.dev/installing-mise.html
 
 ```bash
-mise use nodejs@22.18.0
+mise use nodejs@24.18.0
 ```
 
 #### Windows
@@ -100,7 +100,7 @@ npm install @angular/cli -g
 Erstellt ein neues Angular Projekt mit folgendem Befehl **im Root-Verzeichnis**
 und befolgt die Anleitung.
 
-:::note
+:::info
 
 Die Applikation heisst `app`. Wenn ihr einen anderen Namen wählt, bitte den
 Ordner nach `app` umbenennen, damit die folgenden CI-CD-Scripts ohne viel
@@ -111,17 +111,6 @@ Aufwand funktionieren.
 ```bash
 ng new app
 ```
-
-:::note
-
-- Do you want to create a 'zoneless' application without zone.js (Developer
-  Preview)? (y/N): no
-- Which stylesheet format would you like to use? Eure Wahl!
-- Do you want to enable Server-Side Rendering (SSR) and Static Site Generation
-  (SSG/Prerendering)? no
-
-:::
-
 - Wechselt in den neuen Projektordner mit `cd app`.
 - Startet den Server mit `npm start`.
 - Nun erscheint eine Meldung, dass ein Prozess auf dem Port 4200 gestartet ist.
