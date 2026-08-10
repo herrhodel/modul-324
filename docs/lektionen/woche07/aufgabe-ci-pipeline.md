@@ -12,16 +12,60 @@ deployt werden.
 
 ## GitHub Deploy Action `.github/workflows/deploy.yml`
 
-Das Deployment passiert in der Datei
-[.github/workflows/deploy.yml](https://github.com/herrhodel/modul-324-muster/blob/main/.github/workflows/deploy.yml).
-Diese kann auch vom Musterbeispiel kopiert werden.
+Das Deployment passiert in der Datei `.github/workflows/deploy.yml`. Diese kann
+auch vom Musterbeispiel kopiert werden.
 
-:::caution
+- **Pfad zur Musterdatei**:
+  [modul-m324-muster/.github/workflows/deploy.yml](https://github.com/herrhodel/modul-324-muster/blob/main/.github/workflows/deploy.yml)
 
-Alle die die App, das Dockerfile, nicht unter dem Ordner `app` haben, müssen
-garantiert die Pfade anpassen.
+:::caution[Kontext der Applikation prüfen!]
+
+Alle, die die App, **resp. das Dockerfile**, nicht unter dem Ordner `app` haben,
+**müssen die Pfade anpassen**.
 
 :::
+
+:::caution[Credentials!]
+
+Achtet darauf, dass die Credentials immer wieder übertragen werden müssen!
+
+:::
+
+### Übersicht
+
+```mermaid
+flowchart TD
+
+    subgraph GitHubAction - deploy.yml
+      DOCKER@{ shape: rounded, label: "docker build" }
+      KAMAL@{ shape: rounded, label: "kamal deploy" }
+    end
+
+    subgraph AWS
+      VM[aws_instance - ubuntu2404]
+      APP([Application Container])
+      PROXY([KAMAL PROXY Container])
+      REG[(aws_ecr_repository - myecr)]
+    end
+
+    DOCKER -.-> KAMAL
+
+    DOCKER -->|SSH push image| REG
+    KAMAL -->|SSH deploy| VM
+    VM -->|docker run| APP
+    VM -->|docker pull image| REG
+
+    Users[Users] -->|HTTPS| PROXY
+    PROXY -->|HTTP| APP
+
+  %% SSH Tunnel Verbindungen grün färben
+    linkStyle 2 stroke:#00aa00,stroke-width:3px,color:#00aa00
+    linkStyle 1 stroke:#00aa00,stroke-width:3px,color:#00aa00
+
+    %% Legende
+    L1>"SSH Tunnel"]
+    style L1 fill:#eaffea,stroke:#00aa00,stroke-width:2px,color:#000
+```
 
 ### Detailbeschreibung
 
@@ -323,12 +367,3 @@ server.get(
 Die Route `/up` muss vor der Wildcard Route `**` gesetzt werden!
 
 :::
-
-## Auf AWS deployen
-
-:::caution[Credentials!]
-
-Achtet darauf, dass die Credentials immer wieder übertragen werden müssen!
-
-:::
-

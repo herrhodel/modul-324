@@ -26,8 +26,8 @@ Die ersten zwei LBs bestehen je aus zwei Teilnoten:
 
 | Sozialform               | Form                      | Abgabe      | Gewicht      |
 | :----------------------- | :------------------------ | :---------- | :----------- |
-| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 4 / 8 | 8/34 vom LB  |
-| 👬 **Gruppenarbeit**     | 👷 Projektstand           | Woche 4 / 8 | 26/34 vom LB |
+| :smile: **Einzelarbeit** | 🖋️ Schriftliche Reflexion | Woche 4 / 8 | 8/36 vom LB  |
+| 👬 **Gruppenarbeit**     | 👷 Projektstand           | Woche 4 / 8 | 28/36 vom LB |
 
 :::caution
 

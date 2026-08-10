@@ -11,8 +11,8 @@ keywords:
 | Sozialform           | Form                                                            | Abgabe  | Punkte                |
 | :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
 | 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 4 | 8                     |
-| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 4 | 26                    |
-|                      | **Total**                                                       |         | **34**                |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 4 | 28                    |
+|                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
 |                      | 🏅 **LB1: Sprintnote**                                          | Woche 4 | **30% der Modulnote** |
 
@@ -20,7 +20,7 @@ keywords:
 
 | Sozialform               | Form                                                 |  Zeit  | Abgabe  | Gewicht      |
 | :----------------------- | :--------------------------------------------------- | :----: | :------ | :----------- |
-| :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 4 | 8/34 vom LB1 |
+| :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 4 | 8/36 vom LB1 |
 
 Am **Ende des Sprints** wird in der **ersten Lektion**, in **Einzelarbeit** eine
 **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
@@ -78,7 +78,7 @@ Gruppe** analysiert und bewertet.
 
 | Sozialform           | Form         | Abgabe  |       Gewicht |
 | :------------------- | :----------- | :-----: | ------------: |
-| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 26/34 vom LB1 |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 4 | 28/36 vom LB1 |
 
 :::caution[Achtung Kollektivnote!]
 
@@ -99,6 +99,13 @@ Gruppe** analysiert und bewertet.
 
 :::
 
+:::danger[Abzug nach Ermessen möglich]
+
+- Sofern offensichtlich KI zur Texterstellung verwendet wurde.
+- Arbeitsmoral ungenügend
+
+:::
+
 | Nr.  | Thema                                                                                                          | Max-Punkte |
 | :--: | :------------------------------------------------------------------------------------------------------------- | :--------: |
 | 2.1  | Der Projektbeschrieb ist aussagekräftig                                                                        |     2      |
@@ -114,8 +121,10 @@ Gruppe** analysiert und bewertet.
 | 2.11 | Es wurde bereits ein **eigenes** Projekt-Feature umgesetzt                                                     |     2      |
 | 2.12 | Der Programmcode ist mit prettier/eslint formatiert oder folgt einer anderen gängigen Konvention               |     2      |
 | 2.13 | Alle Commit-Messages wurden wie gewünscht, als Conventional-Commits, geschrieben                               |     2      |
+| 2.14 | Teamübergreifendes Verständnis (Zwei Fragen an zufälliges Teammitglied)                                        |     2      |
+|      | **Abzug**: Arbeitsmoral, Falsches nutzen von KI, ...                                                           |            |
 |      | ...                                                                                                            |            |
-|      | **TOTAL**                                                                                                      |   **26**   |
+|      | **TOTAL**                                                                                                      |   **28**   |
 
 <Comment>
 

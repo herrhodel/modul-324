@@ -11,8 +11,8 @@ keywords:
 | Sozialform           | Form                                                            | Abgabe  | Gewicht               |
 | :------------------- | :-------------------------------------------------------------- | :------ | :-------------------- |
 | 😄 **Einzelarbeit**  | [🪞 Schriftliche Reflexion](#1-teilnote-schriftliche-reflexion) | Woche 8 | 8                     |
-| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 8 | 26                    |
-|                      | **Total**                                                       |         | **34**                |
+| 👬 **Gruppenarbeit** | [📐 Projektstand](#2-teilnote-projektstand)                     | Woche 8 | 28                    |
+|                      | **Total**                                                       |         | **36**                |
 | ...                  |                                                                 |         |                       |
 |                      | 🏅 **LB2: Sprintnote**                                          | Woche 8 | **30% der Modulnote** |
 
@@ -20,7 +20,7 @@ keywords:
 
 | Sozialform               | Form                                                 |  Zeit  | Abgabe  | Gewicht      |
 | :----------------------- | :--------------------------------------------------- | :----: | :------ | :----------- |
-| :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 8 | 8/34 vom LB2 |
+| :smile: **Einzelarbeit** | schriftlich / [Classtime](https://www.classtime.com) | 45 Min | Woche 8 | 8/36 vom LB2 |
 
 Am **Ende des Sprints** wird in der **ersten Lektion**, in **Einzelarbeit** eine
 **schriftliche Reflexion** über den Verlauf des Sprints verfasst.
@@ -81,9 +81,9 @@ bewertet.
 
 | Sozialform           | Form         | Abgabe  |       Gewicht |
 | :------------------- | :----------- | :-----: | ------------: |
-| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 8 | 26/34 vom LB2 |
+| 👬 **Gruppenarbeit** | 👷 Am Objekt | Woche 8 | 28/36 vom LB2 |
 
-:::danger[Achtung Kollektivnote!]
+:::caution[Achtung Kollektivnote!]
 
 - 👮 Bitte kontrolliert Euch selbst, dass alle sich an die Vorgaben halten.
 - 💡 Diese Note ist bewusst nicht individuell, damit die Gruppe sich
@@ -99,6 +99,14 @@ bewertet.
 - **0-Punkte**: Thema fehlt oder ist sehr mangelhaft vorhanden
 - **1-Punkt**: Thema existiert ist jedoch ausbaufähig
 - **2-Punkte**: Thema ist einwandfrei umgesetzt
+
+:::
+
+:::danger[Abzug nach Ermessen möglich]
+
+- Sofern offensichtlich KI zur Texterstellung verwendet wurde.
+- Arbeitsmoral ungenügend
+- Pseudokommentare an Pull Requests
 
 :::
 
@@ -118,6 +126,8 @@ bewertet.
 | 2.11 | Ein Release generiert automatisch ein **Docker-Image** (GH-Action)                              |     2      |
 | 2.12 | Die AWS Umgebung wird durch **Terraform** automatisch aufgesetzt (GH-Action)                    |     2      |
 | 2.13 | Das Docker-Image wird **automatisch nach AWS deployt** und ist vom Kunde testbar (GH-Action)    |     2      |
+| 2.14 | Teamübergreifendes Verständnis (Zwei Fragen an zufälliges Teammitglied)                         |     2      |
+|      | **Abzug**: Arbeitsmoral, Falsches nutzen von KI, Pseudokommentare …                             |            |
 |      | ...                                                                                             |            |
 |      | **TOTAL**                                                                                       |   **26**   |
 

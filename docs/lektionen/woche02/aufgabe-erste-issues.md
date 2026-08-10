@@ -82,25 +82,6 @@ Kurzanleitung, wie dies verifiziert werden kann. **Hier sprechen wie von
 
 :::
 
-## Sprint-Reflexionen
-
-[Die Reflexionen sollen auch als Pull-Request geschehen](/docs/beurteilungen/LB1.md#wo-wird-die-reflexion-geschrieben).
-Daher bietet es sich an für diese ein Epic mit Issues für jede Reflexion **pro
-Projektmitglied** zu erstellen.
-
-:::tip
-
-- Ein Epic "Sprint-Reflexionen" erstellen.
-- Für alle ein Issue für die Reflexion zum Sprint 1 und 2 erstellen.
-
-:::
-
-:::danger[Notenrelevant]
-
-- Achtet pingelig genau an die Anweisung unter Beurteilungen.
-
-:::
-
 ## Epics im Projekt
 
 - **Es gibt keine Epics in GitHub Projects** :scream:
