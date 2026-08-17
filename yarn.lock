@@ -6422,7 +6422,7 @@ __metadata:
     puppeteer: "npm:^24.43.1"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-    react-lite-youtube-embed: "npm:^3.6.0"
+    react-lite-youtube-embed: "npm:^3.6.2"
     remark-docusaurus-tabs: "npm:^0.2.0"
     remark-html: "npm:^16.0.1"
     remark-oembed: "npm:^1.2.2"
@@ -15806,13 +15806,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-lite-youtube-embed@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "react-lite-youtube-embed@npm:3.6.0"
+"react-lite-youtube-embed@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "react-lite-youtube-embed@npm:3.6.2"
   peerDependencies:
     react: ">=18.2.0"
     react-dom: ">=18.2.0"
-  checksum: 10/13a056c85806c75ec7846faa1cb667867bd3720210f7522397297efb126c9fac3c59785055cb65f95b8df7a67604f65142dc3a1e0303b7418e2839d2d1a9e9e6
+  checksum: 10/847e5096a870cbbef8e9b820ad478fdb54dd43e0acf34e7aca404b092425cd37ae193f7aabd35352b88e5b3f2337bc620ad2c7509211a80892c1d9db2a456b74
   languageName: node
   linkType: hard
 

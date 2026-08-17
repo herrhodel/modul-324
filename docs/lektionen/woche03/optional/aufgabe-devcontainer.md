@@ -26,10 +26,9 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
 - Der Devcontainer (`.devcontainer/Dockerfile`) dient zum Entwickeln. Darin wird
   gearbeitet.
   - :bulb: **Der Devcontainer wird lokal gestartet**.
-- Das produktive Image (`nginx/Dockerfile`, oder später
-  `ihr-projekt/Dockerfile`) ist optimiert. Dieses sollte so klein wie möglich
-  sein und nur das nötigste beinhalten. Meisten z.B. die gebaute Applikation
-  (ohne node_moduls und co.) und nicht der dev Build.
+- Das produktive Image, `app/Dockerfile`, ist optimiert. Dieses sollte so klein
+  wie möglich sein und nur das Nötigste beinhalten. Meisten z.B. die gebaute
+  Applikation (ohne `node_moduls` und Co.) und nicht der dev Build.
   - :bulb: **Das produktive Image wird als Container auf AWS gestartet**.
 
 :::
@@ -46,30 +45,34 @@ co. selbst installieren. Hat ja früher auch funktioniert :wink:
   ```bash
   docker exec -it devcontainer /bin/bash
   ```
-- Im Container den `nginx` starten:
+- Im Container die `app` starten:
   ```bash
-  chmod +x nginx/scripts/start-nginx.sh # evt. nicht nötig, schadet aber nicht
-  sh nginx/scripts/start-nginx.sh
+  cd app
+  # nodejs packete installieren (parcel, ein kleiner webserver)
+  npm i
+  # server starten
+  npm run start
   ```
 - Prüfen ob der Webserver läuft.
+
   ```bash
-  curl http://localhost:3000
+  curl http://localhost:1234
   ```
 
   - :bulb: Mit `curl` kann man beliebige HTTP Request absetzen. `curl` wird
-    daher oft fürs testen verwendet
+    daher oft fürs Testen verwendet
 
-:::caution[Port 3000 muss frei sein]
+:::caution[Port 1234 muss frei sein]
 
-Wenn auf dem Port 3000 bereits ein Prozess läuft, muss dieser gekillt werden
+Wenn auf dem Port 1234 bereits ein Prozess läuft, muss dieser gekillt werden
 
 <details>
 <summary>Windows</summary>
 
 ```powershell
-$ netstat -ano | findstr :3000
->TCP     0.0.0.0:3000    0.0.0.0:0   LISTENING   2660
->TCP     [::]:3000       [::]:0      LISTENING   2660
+$ netstat -ano | findstr :1234
+>TCP     0.0.0.0:1234    0.0.0.0:0   LISTENING   2660
+>TCP     [::]:1234       [::]:0      LISTENING   2660
 $ taskkill /PID 2660 /F
 ```
 
@@ -79,7 +82,7 @@ $ taskkill /PID 2660 /F
 <summary>Linux</summary>
 
 ```bash
-kill $(lsof -t -i:3000)
+kill $(lsof -t -i:1234)
 ```
 
 </details>
@@ -87,13 +90,13 @@ kill $(lsof -t -i:3000)
 <details>
 <summary>Docker Container</summary>
 
-Wenn der Port 3000 von einem anderen Docker Container belegt ist muss dieser
+Wenn der Port 1234 von einem anderen Docker Container belegt ist muss dieser
 gestoppt werden.
 
 ```bash
 $ docker ps
 > CONTAINER ID   IMAGE    COMMAND                 CREATED         STATUS          PORTS                                       NAMES
-> 95a55d07e361   a-image   "/bin/sh -c 'while s…"   2 seconds ago   Up 2 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp  container-name
+> 95a55d07e361   a-image   "/bin/sh -c 'while s…"   2 seconds ago   Up 2 seconds   0.0.0.0:1234->1234/tcp, :::1234->1234/tcp  container-name
 $ docker stop container-name
 ```
 
@@ -104,7 +107,7 @@ $ docker stop container-name
 :::tip
 
 Natürlich kann man auch via Browser den Webserver testen. Dafür muss
-`http://localhost:3000` im Browser geöffnet werden.
+`http://localhost:1234` im Browser geöffnet werden.
 
 :::
 
@@ -113,7 +116,7 @@ Natürlich kann man auch via Browser den Webserver testen. Dafür muss
 :::tip
 
 - Bitte startet den Devcontainer zuerst mit `docker compose`.
-- VS Code hat nicht so tolle Fehlermeldungen wenn was nicht klappt 🙄
+- VS Code hat nicht so tolle Fehlermeldungen, wenn was nicht klappt 🙄
 
 :::
 
@@ -126,8 +129,8 @@ Natürlich kann man auch via Browser den Webserver testen. Dafür muss
 
 <div className="grid"><div>
 
-VS Code fragt automatisch nach, ob das Projekt im Container geöffnet werden soll
-sofern das Plugin "Dev Containers" installiert wurde.
+VS Code fragt automatisch nach, ob das Projekt im Container geöffnet werden
+soll, sofern das Plugin "Dev Containers" installiert wurde.
 
 - **"Reopen in Container"** klicken und warten
 - Nun wird der Container gebaut und gestartet. **Das kann einige Minuten
@@ -143,7 +146,7 @@ sofern das Plugin "Dev Containers" installiert wurde.
 
 <div className="grid"><div>
 
-1. Wen auf "Connecting to Dev Container (Show Logs)" geklickt wird
+1. Wenn auf "Connecting to Dev Container (Show Logs)" geklickt wird
 2. erscheint folgender Log. Es zeigt wie das "Image" gebaut wird
 3. Unten rechts ist ersichtlich ob VS Code in einem Container geöffnet
    wird/wurde.
@@ -154,7 +157,7 @@ sofern das Plugin "Dev Containers" installiert wurde.
 
 </div></div>
 
-#### Terminal öffnen und nginx starten
+#### Terminal öffnen und app starten
 
 <div className="grid"><div>
 
@@ -169,14 +172,15 @@ sofern das Plugin "Dev Containers" installiert wurde.
 
 </div></div>
 
-4. Nginx starten (wie ohne VS Code)
+4. App starten (wie ohne VS Code)
    ```bash
-   chmod -x nginx/scripts/start-nginx # evt. nicht nötig, schadet aber nicht
-   sh nginx/scripts/start-nginx
+   cd app
+   npm i
+   npm run start
    ```
 5. Prüfen ob der Webserver läuft.
    ```bash
-   curl http://localhost:3000
+   curl http://localhost:1234
    ```
 
 ### Produktives Dockerfile testen
@@ -187,15 +191,15 @@ sofern das Plugin "Dev Containers" installiert wurde.
    ```
 2. In der shell oder im Browser prüfen
    ```bash
-   curl http://localhost:3001
+   curl http://localhost:80
    ```
 
 :::info[VS Code Devcontainer kann "docker in docker"]
 
-- Wenn Ihr ein Terminal im VS Code Devcontainer gestartet habt ist es möglich
+- Wenn Ihr ein Terminal im VS Code Devcontainer gestartet habt, ist es möglich
   direkt darin mit `docker compose up production -d` zu starten.
   :exploding_head:
-- Wenn Ihr den Devcontainer via `docker compose` selbst gestartet habt ist kein
+- Wenn Ihr den Devcontainer via `docker compose` selbst gestartet habt, ist kein
   `docker` verfügbar
   - kein Problem! Ihr könnt auch auf der Machine, in einer zweiten Shell den
     Befehl ausführen

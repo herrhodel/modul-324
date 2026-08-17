@@ -63,7 +63,7 @@
     "puppeteer": "^24.43.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-lite-youtube-embed": "^3.6.0",
+    "react-lite-youtube-embed": "^3.6.2",
     "remark-docusaurus-tabs": "^0.2.0",
     "remark-html": "^16.0.1",
     "remark-oembed": "^1.2.2",
