@@ -149,6 +149,22 @@ Alle Programmiersprachen besitzen heute Packagemanager!
 
 ---
 
+# Achtung! Supply Chain Attack 🚨
+
+- Vermehrt wird versucht in weitverbreiteten Pakete, Schadcode einzuschläusen.
+- Da die Pakete einen Teil der Abhängigkeitskette sind (Supply-Chain) werden
+  diese Attacken "Supply-Chain-Attacks" genannt.
+- Das Paradoxe ist, dass Security Best-Practices ein regelmässiges Updaten
+  erfordern.
+- Nun ist das Updaten jedoch auch wieder ein potenzielles Sicherheitsproblem.
+
+**👉 Abhilfe sind
+[sogenannte "Cooldowns"](https://nesbitt.io/2026/03/04/package-managers-need-to-cool-down.html).
+Sie definieren ein Mindestalter von einer Abhängigkeit, bevor sie vom
+Paketmanager überhaupt in Betracht bezogen wird.**
+
+---
+
 # Node: `package.json`
 
 ::: columns s2
