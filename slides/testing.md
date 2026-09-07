@@ -32,9 +32,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ## Frameworks (JavaScript)
 
-- Jasimne / Karma
+- Vitest
 - Jest
-- MochaJs
 
 ---
 
@@ -51,7 +50,7 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 ::: columns
 
 - [Selenium](https://www.selenium.dev/)
-- [Gauge / Taiko](https://gauge.org/)
+- [Playwright](https://playwright.dev)
 
 ::: split
 
@@ -87,7 +86,16 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ---
 
-# Aber Achtung!
+# Aber Achtung 1/2!
+
+> Program testing can be used to show the presence of bugs, but never to show
+> their absence!
+>
+> -- Dijkstra
+
+---
+
+# Aber Achtung 2/2!
 
 > There are known knowns. These are things we know that we know. There are known
 > unknowns. That is to say, there are things that we know we don’t know. But
@@ -95,11 +103,6 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 > know**.
 >
 > -- Donald Rumsfeld, US-Amerikanischer Politiker
-
-> Program testing can be used to show the presence of bugs, but never to show
-> their absence!
->
-> -- Dijkstra
 
 ---
 
