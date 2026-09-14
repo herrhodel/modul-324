@@ -169,7 +169,7 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - name: e2e Test
         working-directory: app
-        run: npm run e2e:ci
+        run: npm ci && npm run e2e:ci
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
