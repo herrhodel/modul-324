@@ -71,7 +71,7 @@ Besitzt die Applikation Unit-Test, macht es nur Sinn, dass diese auch
 automatisiert ausgeführt werden. Es gibt nun **zwei Orte**, an denen die Tests
 ausgeführt werden können.
 
-Behilflich ist uns das Script `npm run test:ci`.
+Behilflich ist uns das Script `npm run test`.
 
 ## GitHub Action Workflow
 
@@ -100,7 +100,7 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - name: Unit Test
         working-directory: app # Wichtig!!
-        run: npm ci && npm run test:ci
+        run: npm ci && npm run test
 ```
 
 :::note

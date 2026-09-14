@@ -171,10 +171,9 @@ jobs:
         working-directory: app
         run: npm run e2e:ci
       - uses: actions/upload-artifact@v4
-        working-directory: app
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
-          path: playwright-report/
+          path: app/playwright-report/
           retention-days: 30
 ```
