@@ -6,6 +6,8 @@
 
 ## Thema
 
+<Slide name="deployment" />
+
 ## Aufgaben
 
 <DocCardList />
