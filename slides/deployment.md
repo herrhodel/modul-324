@@ -79,7 +79,7 @@ flowchart TD
 
 # Deployment mit Kamal (local Registry)
 
-````mermaid width=800px
+````mermaid width=730px
 flowchart TD
 
     subgraph GitHubAction - deploy.yml
@@ -113,6 +113,4 @@ flowchart TD
     %% Legende
     L1>"SSH Tunnel"]
     style L1 fill:#eaffea,stroke:#00aa00,stroke-width:2px,color:#000
-````
-
-
+```

@@ -18,17 +18,17 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 ::: columns
 
+### 🪞 Schriftliche Reflexion
+
+- In der **ersten** Lektion schreibt Ihr wieder eine Reflexion.
+- Diese wird
+  [bewertet](/docs/beurteilungen/LB2#1-teilnote-schriftliche-reflexion)
+
+:::split s2
+
 ## 🎯 Projektende
 
 - Der Stand vom Projekt am Ende der vierten Lektion wird
   [bewertet](/docs/beurteilungen/LB2#2-teilnote-projektstand)
-
-:::split s2
-
-## 🪞🖋️ Schriftliche Reflexion
-
-- In der vierten Lektion schreibt Ihr wieder eine Reflexion.
-- Diese wird
-  [bewertet](/docs/beurteilungen/LB2#1-teilnote-schriftliche-reflexion)
 
 :::
