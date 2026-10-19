@@ -24,12 +24,11 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 **Lektion 1**
 
-- 🏭 _Arbeiten_ mit aktiven deployment.
-- 🏁 Schriftliche Reflexionen nachholen
+- 👨‍🏫 Bewertung besprechen
+- ✏️ Demo des Projekts vorbereiten.
 
 **Lektion 2**
 
-- ✏️ Demo des Projekts vorbereiten.
 - 📽️ Präsentationen
 
 ::: split
@@ -40,22 +39,3 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 
 :::
 
----
-
-# Zitat zum Nachdenken
-
-> Als die Nazis die Kommunisten holten, habe ich geschwiegen;
->
-> - ich war ja kein Kommunist.
->
-> Als sie die Gewerkschaftler holten, habe ich geschwiegen,
->
-> - ich war ja kein Gewerkschaftler.
->
-> Als sie die Juden holten, habe ich geschwiegen,
->
-> - ich war ja kein Jude.
->
-> Als sie mich holten, gab es keinen mehr, der protestieren konnte.
->
-> – Martin Niemöller
