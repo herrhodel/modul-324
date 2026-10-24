@@ -11,9 +11,9 @@ sidebar_position: 2
   - Wir verwenden AWS da wir eine gratis Education Lizenz besitzen.
   - Alle Tools vom Modul gehen auch ohne AWS!
 
-- **Jasimne / Karma**: Testing frameworks von Angular.
+- **Jasmine / Karma**: Testing frameworks von Angular.
   - Jasmine ist die Definition wie die Tests geschrieben werden.
-  - Karma ist ein Testrunner, der die jasmin Tests im Browser ausführt.
+  - Karma ist ein Testrunner, der die Jasmine Tests im Browser ausführt.
   - Karma ist kein Integrationtest-Framework!
 
 - **Prettier**: Tool zur Formatierung von JavaScript/TypeScript/CSS und Co.
@@ -23,7 +23,7 @@ sidebar_position: 2
 - **Kamal**: Ermöglicht das Deployen von "dockerisierten" Apps auf eine ubuntu
   VM via ssh und docker.
 
-- **Terraform**: Infrastructure as a Service (IAAS) durch die
+- **Terraform**: Infrastructure as Code (IaC) durch die
   [Terraform-Configuration-Language](https://developer.hashicorp.com/terraform/language).
   - Ermöglicht es eine AWS (oder auch Azure und Co.) Umgebung in Code zu
     beschreiben, anstatt mit dem GUI manuell zu konfigurieren.

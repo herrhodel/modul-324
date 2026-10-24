@@ -28,9 +28,10 @@ Bitte alle lokal einmal folgende Befehle ausführen:
 - `docker pull ubuntu:24.10`
 - `docker pull nginx`
 
-:bulb: Nächste Woche werden wir lokal entwickeln und diese Befehle stellen
-sicher, dass im Unterricht die Ubuntu Images bei allen bereits lokal gecached
-sind, was das Schulnetz weniger belastet wird.
+:bulb: Nächste Woche arbeiten wir mit Docker (z.B. Devcontainer). Diese Befehle
+laden die benötigten Ubuntu- und Nginx-Images bereits im Voraus herunter. So
+müssen sie im Unterricht nicht von allen gleichzeitig geladen werden, was das
+Schulnetz entlastet.
 
 :::
 

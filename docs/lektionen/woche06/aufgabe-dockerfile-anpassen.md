@@ -17,7 +17,7 @@ Dazu wird in folgende Schritten vorgegangen:
 
 ## Datei `docker-compose.yml` erstellen
 
-Gundsätzlich wäre `docker compose` nicht nötig. Da es jedoch das Bauen, Starten
+Grundsätzlich wäre `docker compose` nicht nötig. Da es jedoch das Bauen, Starten
 und Stoppen von Containern vereinfacht, ist es empfohlen. So kann gewährleistet
 werden, dass alle den Container lokal gleich starten. Daher dient es zugleich
 als Dokumentation.
@@ -107,14 +107,14 @@ docker compose up myapp -d # Ohne logs im Hintergrund, blockiert nix
 App **stoppen**.
 
 ```bash
-docker compose down myapp
+docker compose stop myapp
 ```
 
 #### Docker standalone
 
 :::info
 
-Diese Befehle müssen im gleichen Oder, in dem sich das `Dockerfile` befindet
+Diese Befehle müssen im gleichen Ordner, in dem sich das `Dockerfile` befindet
 ausgeführt werden.
 
 :::
@@ -130,7 +130,7 @@ App **starten**. <br/> ❗**\*Achtung!** Wurden Änderungen vorgenommen, muss di
 App zuerst neu gebaut werden!\*
 
 ```bash
-docker run -it myall:local --name myapp
+docker run -it --name myapp myapp:local
 ```
 
 App **stoppen**.
@@ -196,15 +196,15 @@ werden soll.
 
 Es werden zwei Möglichkeiten vorgestellt die beide auf Angular aufbauen.
 
-- Eine mit Angular und SSG (Server Side Generation). Auf diese Weise wir Angular
+- Eine mit Angular und SSR (Server Side Rendering). Auf diese Weise wir Angular
   über einen eigenen Node Webserver gestartet.
-- Eine mit Angular ohne SSG. Dafür muss Angular über einen dediziert Webserver
+- Eine mit Angular ohne SSR. Dafür muss Angular über einen dediziert Webserver
   (z.B. Nginx) ausgeliefert werden.
 
 :::note[Multistage Image]
 
 Die Dockerfiles beinhalten zwei `FROM` Befehle. Es handelt sich um sogenannte
-Multistage Images. Ein Multistage-Image ermöglicht es zusätzlichen Balast, der
+Multistage Images. Ein Multistage-Image ermöglicht es zusätzlichen Ballast, der
 beim Builden benötigt wird (z.B. node_modules, etc.) im resultierten Image zu
 entfernen damit das gebaute Image so klein wie möglich ist.
 
@@ -214,7 +214,7 @@ entfernen damit das gebaute Image so klein wie möglich ist.
 
 - Überall wo `angular-app-name` steht, müsst Ihr den Namen von eurem Projekt
   angeben.
-- Am besten mal `npm build` **ausserhalb vom Dockerfile** ausführen und schauen
+- Am besten mal `npm run build` **ausserhalb vom Dockerfile** ausführen und schauen
   wie die Pfade heissen, die unter `dist` generiert werden.
 
 :::
@@ -231,12 +231,12 @@ Wenn folgender Error erscheint, müssen Sie zuerst mit `npm install`,
 
 :::
 
-### Beispiel für eine Angular App mit SSG
+### Beispiel für eine Angular App mit SSR
 
 Erstellt eine Datei `Dockerfile` im Projektordner, also da wo sich die
 `package.json` Datei befindet, mit folgendem Inhalt.
 
-```dockerfile title="Beispiel Angular SSG Dockerile"
+```dockerfile title="Beispiel Angular SSR Dockerfile"
 # Mit AS builder geben wir dem Image eine Namen um darauf zuzugreifen
 FROM node:lts-slim AS builder
 
@@ -363,16 +363,16 @@ CMD [ "node", "/app/dist/angular-app-name/server/server.mjs" ]
 
 :::
 
-### Beispiel für eine Angular SPA App ohne SSG, mit nginx geserved
+### Beispiel für eine Angular SPA App ohne SSR, mit nginx geserved
 
 Für alle die eine klassische SPA App entwickeln, welche nicht über einen NodeJs
-Server verfügen (SSG), müssen mit einem dedizierten Webserver geserved werden.
+Server verfügen (SSR), müssen mit einem dedizierten Webserver geserved werden.
 In diesem Modul nehmen wir dafür einen Nginx. Der Builder ist in diesem Falle
-gleich zur SSG app. Das zweite Image ist jedoch einen Nginx.
+gleich zur SSR app. Das zweite Image ist jedoch einen Nginx.
 
 :::danger
 
-Eine Angular App ohne SSG könnte auch via `ng serve` im `Dockerfile` gestartet
+Eine Angular App ohne SSR könnte auch via `ng serve` im `Dockerfile` gestartet
 werden, ohne Nginx. Dies ist jedoch extrem ineffizient, da es sich um den
 Developer Mode handelt. Dieser ist:
 
@@ -456,7 +456,7 @@ LABEL service="myapp"
 ```
 
 Nun wird mit dem `COPY` Befehl, nicht vom Host Dateien kopiert, sondern vom
-vorherigen Image mit dem Namen "builder". Unterschiedlich zum SSG Beispiel wird
+vorherigen Image mit dem Namen "builder". Unterschiedlich zum SSR Beispiel wird
 nur der Part für den Browser kopiert. Und zwar in den Nginx Html Ordner.
 
 ```Dockerfile
@@ -472,7 +472,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 ```
 
 Da das offizielle Image bereits den Port 80 exposed und den Nginx startet,
-entfallen die Befehle `Expose` und `CMD`, die bei der SSG Variante nötig sind.
+entfallen die Befehle `Expose` und `CMD`, die bei der SSR Variante nötig sind.
 
 </details>
 
