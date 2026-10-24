@@ -78,7 +78,7 @@ eigenen Tagesablauf.
 
 ### Einfaches GitHub Kanban Board
 
-![Kanban-Board](images/github-kanban-board.png)
+![Kanban-Board](../img/github-kanban-board.png)
 
 1. Mit <u>Add item</u> können direkt neue Arbeitspakete (_Issues_) erstellt
    werden.
@@ -241,7 +241,7 @@ Die genaue Beschreibung...
 
 ### GitHub Issues: Verweisung auf Code und Abhängigkeiten in
 
-![Referenzen](images/issue-referenzen.png)
+![Referenzen](../img/issue-referenzen.png)
 
 1. Das _Arbeitspaket 2_ ist **"In Progress"**
 2. Es hat **Abhängigkeiten**, wobei eine noch aussteht

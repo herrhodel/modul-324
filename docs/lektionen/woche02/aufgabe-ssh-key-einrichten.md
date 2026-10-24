@@ -26,6 +26,6 @@ Alle die bereits einen Key haben können direkt hier fortfahren
 
 :::tip[Es gibt einen Windows-Tab auf den Webseiten 😉]
 
-![generate-ssh-key-windows](images/generate-ssh-key-windows.png)
+![generate-ssh-key-windows](../../img/generate-ssh-key-windows.png)
 
 :::

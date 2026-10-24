@@ -18,7 +18,7 @@ möglich sein, euer Repository lokal zu klonen.
 
 </div><div>
 
-![bg right fit](./images/github-repository-clone.png)
+![bg right fit](../../img/github-repository-clone.png)
 
 </div></div>
 
@@ -44,7 +44,7 @@ git clone {kopierte-ssh-url-zum-repo}
 
 </div><div>
 
-![bg right fit](images/vscode-open-folder.png)
+![bg right fit](../../img/vscode-open-folder.png)
 
 </div></div>
 

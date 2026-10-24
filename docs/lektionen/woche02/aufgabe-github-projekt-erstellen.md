@@ -26,7 +26,7 @@ führen.
 ### Erstellt ein GitHub Projekt im Projekt Repository
 
 [📜 GitHub Projekt](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-![github-create-kanban-project](images/github-create-kanban-project.png)
+![github-create-kanban-project](../../img/github-create-kanban-project.png)
 
 ### Öffnet die **Project details** und fügt als Beschreibung einen Link zum Repository rein.
 
@@ -38,7 +38,7 @@ führen.
   werden soll (siehe gif).
 - Wird einfach nur ein "Item" erstellt, ist es ein "draft" im Projekt und noch
   nicht an einen Issue gebunden.
-  ![create](./images/github-project-create-issue.gif)
+  ![create](../../img/github-project-create-issue.gif)
 - Verknüpfen, Taggen
 - Erstellt Tasks in Markdown (dieser kann man toggeln)
   ```markdown
@@ -49,11 +49,11 @@ führen.
   - [ ] #1
   ```
 
-![create](./images/github-project-create-issue-2.gif)
+![create](../../img/github-project-create-issue-2.gif)
 
 ### Erstellt einen Branch direkt aus dem Issue
 
-![github-project-create-branch-from-issue](./images/github-project-create-branch-from-issue.jpg)
+![github-project-create-branch-from-issue](../../img/github-project-create-branch-from-issue.jpg)
 
 :::tip
 
@@ -69,11 +69,11 @@ führen.
 - Macht durch das GUI eine Änderung, am besten an der die Datei `README.md`
   - :exclamation: Dabei müsst ihr nicht nochmals einen Subbranch erstellen!
 
-![aufgabe-github-pull-request-erstellen](./images/github-pullrequest-erstellen.jpg)
+![aufgabe-github-pull-request-erstellen](../../img/github-pullrequest-erstellen.jpg)
 
 - Linkt den Issue zum Pull-Request!
 
-![aufgabe-github-pull-request-erstellen](./images/aufgabe-github-pull-request-erstellen.jpg)
+![aufgabe-github-pull-request-erstellen](../../img/aufgabe-github-pull-request-erstellen.jpg)
 
 :::danger[Notenrelevant]
 

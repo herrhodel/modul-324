@@ -138,7 +138,7 @@ soll, sofern das Plugin "Dev Containers" installiert wurde.
 
 </div><div>
 
-![bg right fit](../images/vscode-open-in-devcontainer.png)
+![bg right fit](../../../img/vscode-open-in-devcontainer.png)
 
 </div></div>
 
@@ -153,7 +153,7 @@ soll, sofern das Plugin "Dev Containers" installiert wurde.
 
 </div><div>
 
-![bg right fit](../images/vscode-open-devcontainer-logs.png)
+![bg right fit](../../../img/vscode-open-devcontainer-logs.png)
 
 </div></div>
 
@@ -168,7 +168,7 @@ soll, sofern das Plugin "Dev Containers" installiert wurde.
 
 </div><div>
 
-![bg right fit](../images/vscode-devcontainer-open-terminal.png)
+![bg right fit](../../../img/vscode-devcontainer-open-terminal.png)
 
 </div></div>
 

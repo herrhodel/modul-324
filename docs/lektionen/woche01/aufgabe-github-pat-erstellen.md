@@ -15,14 +15,14 @@ Dies kann mit diesen Schritten erstellt werden.
    - Wenn angemeldet sollte
      [:link: **dieser Link die Settings öffnen**](https://github.com/settings/tokens).
 3. **"Generate new token classic"** wählen
-   ![Generate Pat](img/github-generate-token.png)
+   ![Generate Pat](../../img/github-generate-token.png)
 4. Confirm access mit Mail oder App
 5. Einstellungen
    - Note: PAT
    - Expiration: Custom mit Modul-Enddatum + 1 Tag (z.B. 05.01.2027)
    - Scopes: Repo und Workflow
-     ![GitHub PAT Settings](img/github-pat-settings.png)
-6. Generate ![](img/github-pat-generate.png)
+     ![GitHub PAT Settings](../../img/github-pat-settings.png)
+6. Generate ![](../../img/github-pat-generate.png)
 7. Das Token wird [später im Modul](/docs/lektionen/woche01/aufgabe-nginx-example-klonen.md#personal-access-token-pat-als-secret-setzen) verwendet. Bitte lokal sicher aufbewahren. Am
    besten in einem Passwortmanager.
 

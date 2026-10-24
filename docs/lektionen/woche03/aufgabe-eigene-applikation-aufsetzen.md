@@ -83,7 +83,7 @@ verwendet den.
 
 - https://nodejs.org/en/download
 
-![nodejs-install](./img/nodejs-install-windows.png)
+![nodejs-install](../../img/nodejs-install-windows.png)
 
 ### @angular/cli installieren
 
@@ -156,7 +156,7 @@ Natürlich dürft Ihr auch ein GUI verwenden
 Auf GitHub müsst Ihr nun einen Pull-Request erstellen und diesen vom Team
 reviewen lassen.
 
-![github-pull-request](images/github-pull-request.png)
+![github-pull-request](../../img/github-pull-request.png)
 
 ### Von allen Teammitgliedern lokal testen lassen
 

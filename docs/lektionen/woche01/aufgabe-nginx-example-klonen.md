@@ -54,7 +54,7 @@ angepasst wird.
   Secrets** existieren
   - AWS_CREDENTIALS
   - AWS_SSH_PRIVATE_KEY
-  - AWS_ACCOUNT_ID ![GitHub AWS Secrets Map](img/github_aws_secrets_map.png)
+  - AWS_ACCOUNT_ID ![GitHub AWS Secrets Map](../../img/github_aws_secrets_map.png)
     ![GitHub AWS Secrets Account](../../img/github_ceate_secrets_account_id.png)
 
 ### Personal Access Token (PAT) als Secret setzen.
@@ -77,7 +77,7 @@ angepasst wird.
 2. Ganz nach unten scrollen
 3. **"Allow GitHub Actions to create and approve pull requests"** erlauben
 
-![github_action_pull_request_permissions](images/github_action_pull_request_permissions.png)
+![github_action_pull_request_permissions](../../img/github_action_pull_request_permissions.png)
 
 :::info
 
@@ -115,7 +115,7 @@ Nun wird ein Workflow mit zwei Steps gestartet:
 - der Zweite "Bootstrap Kamal on AWS EC2 instance" installiert die nötigen tools
   in der Ubuntu VM
 
-![github_start_aws_infrastructure](images/github_start_aws_infrastructure.png)
+![github_start_aws_infrastructure](../../img/github_start_aws_infrastructure.png)
 
 - Wenn alles grün ist (hoffentlich :sweat_smile:) sollte die Umgebung parat
   sein, sodass Docker-Images deployt werden können.
@@ -128,12 +128,12 @@ gestartet werden.
 1. **"Deploy to Amazon AWS"** auswählen
 2. **"Run workflow"** auswählen
 
-![github_action_deploy_to_amazon](images/github_action_deploy_to_amazon.png)
+![github_action_deploy_to_amazon](../../img/github_action_deploy_to_amazon.png)
 
 3. Warten bis das Deployment geklappt hat
 4. Nun sollte einen Link "Visit me on http://public-ip :rocket:" sichtbar sein
 
-![github_action_deploy_to_amazon_success](images/github_action_deploy_to_amazon_success.png)
+![github_action_deploy_to_amazon_success](../../img/github_action_deploy_to_amazon_success.png)
 
 ### Webseite in Browser öffnen
 
@@ -155,7 +155,7 @@ deployed werden!
 
 - Navigiert zu **"Code → app → src → index.html"** und klickt auf **"Edit"**
   {/* ![Edit index.html](../../img/github_edit_index_html.png) */}
-  ![github_edit_index_html](images/github_edit_index_html.png).
+  ![github_edit_index_html](../../img/github_edit_index_html_woche01.png).
 - Fügt folgenden Tag in den Body ein
 
   ```html
