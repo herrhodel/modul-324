@@ -1,0 +1,253 @@
+version: 1
+
+landlock:
+  compatibility: best_effort
+
+# 15:19:31 sandbox WARN  Denied staged transparent connection destination=198.18.0.21:443 error=transparent destination mapping is unavailable: transparent TCP mapping is expired                                                                                               │
+# 15:19:31 sandbox OCSF  NET:OPEN [MED] DENIED /workspace/.cache/JetBrains/IntelliJIdea2026.3/acp-agents/.runtimes/node/24.19.0/bin/node(0) -> 198.18.0.21:443 [reason:transparent_tcp_mapping_denied]
+
+# process:
+#   run_as_user: "sandbox"
+#   run_as_group: "sandbox"
+
+# Writable paths so mise can install tools and regenerate shims (`mise reshim`).
+filesystem_policy:
+  include_workdir: true
+  read_only:
+    - /usr
+    - /lib
+    - /proc
+    - /dev/urandom
+    - /etc
+    - /var/log
+  read_write:
+    - /opt/mise
+    - /opt/mise/shims
+    - /sandbox
+    - /workspace
+    - /etc/mise
+    - /tmp
+
+# Merge `network_policies` below into /sandbox/policy.yaml (or load as a separate policy).
+# Covers: mise, JDK 17 via mise, Blade CLI, Gradle, and Liferay workspace bundle downloads.
+network_policies:
+  mise_install:
+    name: mise-install
+    endpoints:
+      - { host: mise.run, port: 443 }
+      - { host: mise.jdx.dev, port: 443 }
+      - { host: mise-versions.jdx.dev, port: 443 }
+      - { host: mise-java.jdx.dev, port: 443 }
+      - { host: github.com, port: 443 }
+      - { host: api.github.com, port: 443 }
+      - { host: objects.githubusercontent.com, port: 443 }
+      - { host: release-assets.githubusercontent.com, port: 443 }
+      - { host: raw.githubusercontent.com, port: 443 }
+      - { host: nodejs.org, port: 443 }
+    binaries:
+      - { path: /usr/bin/curl }
+      - { path: /bin/bash }
+      - { path: /bin/sh }
+      - { path: "**/mise" }
+      - { path: "**/java" }
+      - { path: "**/gradlew" }
+      - { path: /** }
+
+  jdk_download:
+    name: jdk-download
+    endpoints:
+      - { host: api.adoptium.net, port: 443 }
+      - { host: cdn.azul.com, port: 443 }
+      - { host: api.azul.com, port: 443 }
+      - { host: download.oracle.com, port: 443 }
+      - { host: corretto.aws, port: 443 }
+      - { host: download.java.net, port: 443 }
+      - { host: mise-java.jdx.dev, port: 443 }
+      - { host: mise-java.s3.amazonaws.com, port: 443 }
+      - { host: github.com, port: 443 }
+      - { host: objects.githubusercontent.com, port: 443 }
+      - { host: release-assets.githubusercontent.com, port: 443 }
+    binaries:
+      - { path: "**/java" }
+      - { path: "**/gradlew" }
+      - { path: "**/mise" }
+      - { path: /usr/bin/curl }
+      - { path: /** }
+
+  gradle_and_maven:
+    name: gradle-and-maven
+    endpoints:
+      - { host: github.com, port: 443 }
+      - { host: release-assets.githubusercontent.com, port: 443 }
+      - { host: services.gradle.org, port: 443 }
+      - { host: downloads.gradle.org, port: 443 }
+      - { host: downloads.gradle-dn.com, port: 443 }
+      - { host: plugins.gradle.org, port: 443 }
+      - { host: plugins-artifacts.gradle.org, port: 443 }
+      - { host: repo.maven.apache.org, port: 443 }
+      - { host: repo1.maven.org, port: 443 }
+      - { host: jcenter.bintray.com, port: 443 }
+    binaries:
+      - { path: "**/java" }
+      - { path: "**/gradle" }
+      - { path: "**/gradlew" }
+      - { path: "**/mise" }
+      - { path: /usr/bin/curl }
+      - { path: /** }
+
+  liferay_artifacts:
+    name: liferay-artifacts
+    endpoints:
+      - { host: repository.liferay.com, port: 443 }
+      - { host: repository-cdn.liferay.com, port: 443 }
+      - { host: releases-cdn.liferay.com, port: 443 }
+      - { host: cdn.lfrs.sl, port: 443 }
+      - { host: raw.githubusercontent.com, port: 443 }
+      - { host: master.dl.sourceforge.net, port: 443 }
+      - { host: downloads.sourceforge.net, port: 443 }
+      - { host: sourceforge.net, port: 443 }
+    binaries:
+      - { path: "**/java" }
+      - { path: "**/blade" }
+      - { path: "**/gradle" }
+      - { path: "**/gradlew" }
+      - { path: /usr/bin/curl }
+      - { path: /** }
+  intellij:
+    name: intellij
+    endpoints:
+      - { host: download.jetbrains.com, port: 443 }
+      - { host: download-cdn.jetbrains.com, port: 443 }
+      - { host: cache-redirector.jetbrains.com, port: 443 }
+      - { host: plugins.jetbrains.com, port: 443 }
+      - { host: resources.jetbrains.com, port: 443 }
+      - host: registry.npmjs.org
+        port: 443
+        protocol: "rest"
+        rules:
+          - allow:
+              method: GET
+              path: "/**/**"
+        allow_encoded_slash: true
+      - { host: repo.labs.intellij.net, port: 443 }
+      - { host: downloads.marketplace.jetbrains.com, port: 443 }
+      - { host: s3.amazonaws.com, port: 443 }
+      - { host: schemastore.org, port: 443 }
+      - { host: nodejs.org, port: 443 }
+      - { host: www.jetbrains.com, port: 443 }
+      - { host: frameworks.jetbrains.com, port: 443 }
+      # - host: ""
+      #   port: 443
+      #   allowed_ips:
+      #     - 198.18.0.4/32
+      # - { host: 198.18.0.16", port: 443 }
+      # - { host: 198.18.0.30", port: 443 }
+    binaries:
+      - { path: /usr/bin/curl }
+      - { path: /bin/bash }
+      - { path: "**/java" }
+      - { path: "**/remote-dev-server" }
+      - { path: "**/node" }
+  # Gradle wrapper distribution download (services.gradle.org -> downloads.gradle.org -> GitHub release assets)
+  gradle_wrapper_redirects:
+    name: gradle-wrapper-redirects
+    endpoints:
+      - { host: github.com, port: 443 }
+      - { host: objects.githubusercontent.com, port: 443 }
+      - { host: release-assets.githubusercontent.com, port: 443 }
+      - { host: services.gradle.org, port: 443 }
+      - { host: downloads.gradle.org, port: 443 }
+      - { host: downloads.gradle-dn.com, port: 443 }
+    binaries:
+      - { path: "**/java" }
+      - { path: "**/blade" }
+      - { path: "**/gradlew" }
+      - { path: "**/bash" }
+      - { path: "/opt/mise/installs/java/temurin-17/bin/java" }
+  github_ssh_over_https:
+    name: github-ssh-over-https
+    endpoints:
+      - host: github.com
+        port: 443
+        protocol: rest
+        enforcement: enforce
+
+        rules:
+          # Git Smart HTTP read-only: allow clone, fetch, pull
+          # Discovery (query string is included in path matching)
+          - allow:
+              method: GET
+              path: "/**/info/refs*"
+          # Data transfer for reads (all repos)
+          - allow:
+              method: POST
+              path: "/**/git-upload-pack"
+          # Data transfer for writes
+          # - allow:
+          #    method: POST
+          #    path: "/**/git-receive-pack"
+    binaries:
+      - { path: /usr/bin/git }
+
+  nvidia_inference:
+    name: nvidia-inference
+    endpoints:
+      - { host: integrate.api.nvidia.com, port: 443 }
+    binaries:
+      - { path: /usr/bin/curl }
+      - { path: /bin/bash }
+
+  # --- GitHub Copilot API ---
+  # Endpoints from https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+  copilot:
+    name: copilot
+    endpoints:
+      # Auth and user management
+      - { host: github.com, port: 443 }
+      - { host: api.github.com, port: 443 }
+      # Copilot API (subscription-tier routing)
+      - {
+          host: api.githubcopilot.com,
+          port: 443,
+          protocol: rest,
+          enforcement: enforce,
+          access: read-write,
+        }
+      - {
+          host: api.individual.githubcopilot.com,
+          port: 443,
+          protocol: rest,
+          enforcement: enforce,
+          access: read-write,
+        }
+      - {
+          host: api.business.githubcopilot.com,
+          port: 443,
+          protocol: rest,
+          enforcement: enforce,
+          access: read-write,
+        }
+      - {
+          host: api.enterprise.githubcopilot.com,
+          port: 443,
+          protocol: rest,
+          enforcement: enforce,
+          access: read-write,
+        }
+      # Model proxy
+      - {
+          host: copilot-proxy.githubusercontent.com,
+          port: 443,
+          protocol: rest,
+          enforcement: enforce,
+          access: read-write,
+        }
+      # Telemetry, feature flags, updates
+      - { host: origin-tracker.githubusercontent.com, port: 443 }
+      - { host: telemetry.enterprise.githubcopilot.com, port: 443 }
+      - { host: default.exp-tas.com, port: 443 }
+      - { host: release-assets.githubusercontent.com, port: 443 }
+      - { host: exp.business.githubcopilot.com, port: 443 }
+    binaries:
+      - { path: "**/node" }
+      - { path: "**/copilot" }

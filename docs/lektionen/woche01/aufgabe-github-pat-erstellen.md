@@ -19,7 +19,7 @@ Dies kann mit diesen Schritten erstellt werden.
 4. Confirm access mit Mail oder App
 5. Einstellungen
    - Note: PAT
-   - Expiration: Custom mit Modul-Enddatum + 1 Tag (z.B. 21.10.2025)
+   - Expiration: Custom mit Modul-Enddatum + 1 Tag (z.B. 05.01.2027)
    - Scopes: Repo und Workflow
      ![GitHub PAT Settings](img/github-pat-settings.png)
 6. Generate ![](img/github-pat-generate.png)
