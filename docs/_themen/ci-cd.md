@@ -17,7 +17,7 @@ keywords:
    konfigurieren (z.B. _Infrastructure as Code_, Scripting, Virtualisierung,
    Konfiguration mit YAML, Vaults, Profile, SSH-Key etc.).
 
-## Continious Integration
+## Continuous Integration
 
 ### Automatisierungstools
 
@@ -35,7 +35,7 @@ keywords:
 - [`docker push`](https://docs.docker.com/engine/reference/commandline/push/)
 - [`npm publish`](https://docs.npmjs.com/cli/v6/commands/npm-publish)
 
-## Continious Delivery
+## Continuous Delivery
 
 **[Docker Compose](https://docs.docker.com/compose/compose-file/)**
 
