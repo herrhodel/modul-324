@@ -64,8 +64,8 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - Die Workflows folgen
   [dieser Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 
-**:tv:
-[Erklärt auf Youtube](<[https://www.youtube.com/watch?v=R8_veQiYBjI](https://www.youtube.com/watch?v=R8_veQiYBjI)>)**
+
+**:tv: [Erklärt auf Youtube](https://www.youtube.com/watch?v=R8_veQiYBjI)**
 
 ---
 
