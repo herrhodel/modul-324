@@ -87,8 +87,14 @@ Kurzanleitung, wie dies verifiziert werden kann. **Hier sprechen wie von
 - **Es gibt keine Epics in GitHub Projects** :scream:
 - Erstellt ein Tag namens "epic".
 - Erstellt Issues mit dem Tag "epic".
+- Verwendet das "Sub-Issue" Feature um Arbeitspakete zu Gruppieren
+
+  ![Sub-Issue](img/github-subissue.png)
+
 - _Ihr könnt auch_ eine Swimmline "Epic" Erstellen, dies dient der Übersicht
   enorm.
+
+  ![swimmlines](img/github-swimmlines.png)
 
 :::note
 
