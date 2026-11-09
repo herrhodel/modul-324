@@ -6,6 +6,33 @@ keywords:
 
 # Git cheat sheet
 
+## Conventional Commits
+
+- https://www.conventionalcommits.org/en/v1.0.0/
+
+```bash
+<type>[optional scope]: <description>
+```
+
+### Typen
+
+- **fix**: Behebt einen Fehler (version: **patch**)
+
+- **feat**: Erstellt ein Feature (version: **minor**)
+  - weitere sind **build**, **chore**, **ci**, **docs**, **style**,
+    **refactor**, **perf**, **test**
+- **[type]!**: Breaking change! (version: **major**)
+
+### Beispiele
+
+- **feat:** allow provided config object to extend other configs (#12)
+- **feat!**: send an email to the customer when a product is shipped (#13)
+- **feat(api)!**: send an email to the customer when a product is shipped (#13)
+- **chore!**: drop support for Node 6 (#11)
+- **docs**: correct spelling of CHANGELOG
+- **feat(lang)**: add language swiss-german (#7)
+- **fix:** prevent racing of requests (#14)
+
 ## Git Amend
 
 Es ist gut regelmässig Commits zu erstellen. Dies verhindert, dass Code verloren
