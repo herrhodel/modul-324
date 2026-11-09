@@ -67,7 +67,7 @@ export default async (constructorOptions) => {
         const url = process.env.CI
           ? `${modulConfig.url}/${modulConfig.repoName}/docs/`
           : `http://localhost:4000/${modulConfig.repoName}/docs/`;
-        return link.replace(/\/docs\/|\.\.\/docs\//, url);
+        return link.replace(/^\/docs\/|^\.\.\/docs\//, url);
       },
     })
     .use(link, {
