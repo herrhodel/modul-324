@@ -64,7 +64,6 @@ footer: BBZBL / Lukas Hodel / DevOps-Prozese mit Tools unterstützen
 - Die Workflows folgen
   [dieser Syntax](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 
-
 **:tv: [Erklärt auf Youtube](https://www.youtube.com/watch?v=R8_veQiYBjI)**
 
 ---
@@ -134,41 +133,25 @@ jobs:
 
 ---
 
-# Prettier als GitHub Action Job
+# Release Please als Github Action
 
-::: columns
-
-- Es gibt eine Action, die direkt den Code mit prettier formatiert **und
-  commitet!**
-
-- Garantiert formatierten Code.
-- Nicht immer will man das, es **überschreibt den Commit**.
-- 🚨 **keine Pflicht!**
-
-::: split
-
-```yaml "./github/workflows/deploy.yml"
+```yaml "./github/workflows/release-please.yml"
+name: Release Please
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
 jobs:
-  prettier:
-    permissions:
-      contents: write
-      pull-requests: write
+  release-please:
     runs-on: ubuntu-latest
+    environment: aws
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
+      - uses: googleapis/release-please-action@v4
         with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.3
-        with:
-          same_commit: true
-          prettier_options: --write **/*.{js,md}
-          only_changed: true
-  deploy:
-    needs: [prettier]
-    # ...
+          token: ${{ secrets.PAT }}
+          release-type: simple
 ```
-
-:::

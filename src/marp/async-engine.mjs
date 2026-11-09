@@ -65,9 +65,9 @@ export default async (constructorOptions) => {
     .use(markdownItReplaceLink, {
       replaceLink: function (link, env, token, htmlToken) {
         const url = process.env.CI
-          ? `${modulConfig.url}/${modulConfig.repoName}/docs`
-          : `http://localhost:4000/${modulConfig.repoName}/docs`;
-        return link.replace(/\/docs|\.\.\/docs/, url);
+          ? `${modulConfig.url}/${modulConfig.repoName}/docs/`
+          : `http://localhost:4000/${modulConfig.repoName}/docs/`;
+        return link.replace(/\/docs\/|\.\.\/docs\//, url);
       },
     })
     .use(link, {
